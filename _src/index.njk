@@ -1,0 +1,12 @@
+---
+title: home
+layout: layouts/base.njk
+eleventyNavigation:
+  key: home
+---
+<h1>{{ settings.siteName }}</h1>
+{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+
+
+
+
