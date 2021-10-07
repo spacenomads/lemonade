@@ -3,6 +3,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function (config) {
   config.addPassthroughCopy("_src/**/*.jpg");
   config.addPassthroughCopy("_src/**/*.png");
+  config.addPassthroughCopy("_src/assets/css");
   config.addPlugin(eleventyNavigationPlugin);
 
   config.addCollection('blog', collection => {
