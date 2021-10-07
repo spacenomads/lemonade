@@ -1,6 +1,7 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (config) {
+  config.addPassthroughCopy({"_src/domain/cname.txt": "/CNAME"});
   config.addPassthroughCopy("_src/**/*.jpg");
   config.addPassthroughCopy("_src/**/*.png");
   config.addPassthroughCopy("_src/assets/css");
