@@ -60,3 +60,29 @@
 		line-height: lh(30, 14);
 	}
 }
+
+
+
+
+
+@mixin grid() {
+	display: grid;
+
+	@include mq($bp-tablet) {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas: "sidebar-l content content content content sidebar-r";
+		gap: rem($page-gutter);
+	}
+
+	@include mq($bp-desktop) {
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-areas: "sidebar-l content content content content content content sidebar-r";
+	}
+}
+
+@mixin grid-item($area) {
+	@include mq($bp-tablet) {
+		grid-area: $area;
+	}
+}

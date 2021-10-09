@@ -8,6 +8,7 @@ module.exports = function (config) {
   config.addPassthroughCopy("_src/**/img/*.png");
   config.addPassthroughCopy("_src/assets/fonts");
   config.addPassthroughCopy("_src/assets/css");
+  config.addPassthroughCopy("_src/assets/images");
   config.addPlugin(eleventyNavigationPlugin);
 
   config.addCollection('blog', collection => {

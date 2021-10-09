@@ -1,0 +1,39 @@
+.footer {
+  .wrapper {
+    @include grid();
+  }
+}
+
+.footer__content {
+  @include grid-item(content);
+
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  padding: rem($page-gutter);
+}
+
+.footer__license {
+  margin: 0;
+}
+
+.footer__cc {
+  height: rem(1);
+  display: inline-block;
+  padding-top: rem(15);
+  background: img('ico-license.svg') left bottom no-repeat;
+  background-size: rem(45) auto;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-top: rem(-2);
+  width: rem(45);
+}
+
+.footer__author {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

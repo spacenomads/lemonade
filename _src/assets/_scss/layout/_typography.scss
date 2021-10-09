@@ -2,7 +2,3 @@ body {
   font: px($font-size) $font-family;
   color: $color-black;
 }
-
-a:not(.menu__link) {
-  color: $color-correct-blue;
-}

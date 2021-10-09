@@ -26,6 +26,7 @@ $font-semibold: 600;
 $page-margin-mobile: 30;
 $page-margin-tablet: 50;
 $page-max-width: 900;
+$page-gutter: 20;
 
 
 
@@ -41,3 +42,11 @@ $bp-desktop-hd: 1440;
 
 // LEVELS
 $levels: content, menu, header;
+
+
+
+
+
+// THEME
+$theme: '../images/layout/';
+$theme-brand: '../images/brand/';
