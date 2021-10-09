@@ -1,5 +1,2 @@
-$color-lemon: #ffcc00;
-
-body {
-  background-color: $color-lemon;
-}
+@import 'core/core';
+@import 'layout/layout';

@@ -1,0 +1,50 @@
+// PAGE
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.page__header {
+  grid-area: header;
+  position: relative;
+  @include z(header);
+}
+
+.page__main {
+  grid-area: main;
+  position: relative;
+  @include z(content);
+}
+
+.page__footer {
+  grid-area: footer;
+}
+
+
+
+
+// CONTENT
+.wrapper {
+  margin: 0 rem($page-margin-mobile);
+  max-width: rem($page-max-width);
+  z-index: $bp-desktop;
+
+  @include mq($bp-tablet) {
+    margin: 0 rem($page-margin-tablet);
+  }
+
+  @include mq($bp-desktop) {
+    margin: 0 auto;
+  }
+}

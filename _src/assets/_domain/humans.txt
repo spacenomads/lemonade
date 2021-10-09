@@ -5,7 +5,8 @@ Twitter: @oneeyedman.
 Location: Madrid, Granada.
 
 /* THANKS */
-Name: name or url
+Bonaparte: @bonapartethecat.
+Trece: @trecethecat.
 
 /* SITE */
 Last update: 2021/10/7 

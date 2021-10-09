@@ -1,23 +1,25 @@
 const { src, dest, series, watch } = require('gulp');
 const sass = require('gulp-sass')(require('node-sass'));
 const autoprefixer = require('gulp-autoprefixer');
-const gcmq = require('gulp-group-css-media-queries');
-const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const del = require('del');
+const mqpacker = require('@hail2u/css-mqpacker');
+const postcss = require('gulp-postcss');
 
 
 
 
 
 function styles() {
+  const plugins = [mqpacker({ sort: true })];
   return src('./_src/assets/_scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      outputStyle: 'extended',
+    }).on('error', sass.logError))
+    .pipe(postcss(plugins))
     .pipe(autoprefixer({
       cascade: false
     }))
-    .pipe(gcmq())
-    .pipe(cleanCSS())
     .pipe(rename('main.min.css'))
     .pipe(dest('./_src/assets/css'));
 }

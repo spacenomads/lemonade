@@ -7,11 +7,20 @@
   <title>{{ settings.siteName }}</title>
   <link rel="stylesheet" href="assets/css/main.min.css">
 </head>
-<body>
-  {{ content | safe }}
-
-  <footer>
-    {{ settings.year }}
-  </footer>
+<body class="lemon">
+  <div class="page">
+    <header class="page__header">
+      <div class="wrapper">Header</div>
+    </header>
+    <main class="page__main">
+      <div class="wrapper">
+        Main
+        {{ content | safe }}
+      </div>
+    </main>
+    <footer class="page__footer">
+      <div class="wrapper">Footer</div>
+    </footer>
+  </div>
 </body>
 </html>

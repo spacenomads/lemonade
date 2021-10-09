@@ -5,7 +5,13 @@ eleventyNavigation:
   key: home
 ---
 <h1>{{ settings.siteName }}</h1>
-{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+  listElement: 'ul',
+  listItemElement: 'li',
+  listClass: 'menu',
+  listItemClass: 'menu__item',
+  anchorClass: 'menu__link'
+}) | safe }}
 
 
 

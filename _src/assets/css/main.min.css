@@ -1,1 +1,66 @@
-body{background-color:#fc0}
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0 !important;
+  overflow: hidden;
+  position: absolute; }
+
+.hidden {
+  display: none; }
+
+/* bitter-regular - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/bitter/bitter-v19-latin-regular.woff2") format("woff2"), url("../fonts/bitter/bitter-v19-latin-regular.woff") format("woff"); }
+
+/* bitter-600 - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/bitter/bitter-v19-latin-600.woff2") format("woff2"), url("../fonts/bitter/bitter-v19-latin-600.woff") format("woff"); }
+
+body {
+  font: 16px Bitter, serif;
+  color: #212121; }
+
+a:not(.menu__link) {
+  color: #008aff; }
+
+body {
+  margin: 0; }
+
+.page {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+.page__header {
+  grid-area: header;
+  position: relative;
+  z-index: 3; }
+
+.page__main {
+  grid-area: main;
+  position: relative;
+  z-index: 1; }
+
+.page__footer {
+  grid-area: footer; }
+
+.wrapper {
+  margin: 0 1.875rem;
+  max-width: 56.25rem;
+  z-index: 1000; }
+
+@media screen and (min-width: 48em) {
+    .wrapper {
+      margin: 0 3.125rem; } }
+
+@media screen and (min-width: 62.5em) {
+    .wrapper {
+      margin: 0 auto; } }
