@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ settings.lang }}">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
+  {% include "../page-sections/head.njk" %}
 </head>
-<body>:)
-
-  <img src="img/{{ featured_image }}" alt="">
-  {{ content | safe }}
+<body class="lemon">
+  <div class="page">
+    {% include "../page-sections/header.njk" %}
+    <main class="page__main main">
+      <article class="post">
+        <div class="post__cover">
+          <img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ alt }}">
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="content__inner">
+              {{ content | safe }}
+            </div>
+            <aside>paco</aside>
+            <aside>paco</aside>
+          </div>
+        </div>
+      </article>
+    </main>
+    {% include "../page-sections/footer.njk" %}
+  </div>
 </body>
 </html>

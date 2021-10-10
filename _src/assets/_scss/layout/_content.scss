@@ -1,0 +1,9 @@
+.content {
+  .wrapper {
+    @include grid();
+  }
+}
+
+.content__inner {
+  @include grid-item(content);
+}

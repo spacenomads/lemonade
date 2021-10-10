@@ -5,14 +5,9 @@
 </head>
 <body class="lemon">
   <div class="page">
-    <header class="page__header">
-      <div class="wrapper">Header</div>
-    </header>
-    <main class="page__main">
-      <div class="wrapper">
-        Main
-        {{ content | safe }}
-      </div>
+    {% include "../page-sections/header.njk" %}
+    <main class="page__main main">
+      {{ content | safe }}
     </main>
     {% include "../page-sections/footer.njk" %}
   </div>

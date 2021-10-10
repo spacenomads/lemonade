@@ -3,7 +3,7 @@ function getYear() {
 }
 
 module.exports = {
-  "siteName": "Sidiostedalimones.com",
+  "siteName": "Sidiostedalimones",
   "lang": "es",
   "year": getYear()
 }

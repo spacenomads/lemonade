@@ -1,0 +1,14 @@
+// LIST
+.latest-posts {
+  padding: rem(20) 0;
+
+  @include mq($bp_desktop) {
+    padding: rem(40) 0;
+  }
+}
+.latest-posts__items {
+  @extend %unlist;
+}
+.latest-posts__item:not(:first-child) {
+  margin-top: rem(40);
+}
