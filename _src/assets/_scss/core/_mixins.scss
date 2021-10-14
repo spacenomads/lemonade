@@ -31,23 +31,47 @@
 
 @mixin font($type) {
 	@if $type == h1 {
-		font-size: rem(50);
-		line-height: lh(60, 50);
+		margin: 0;
+		font-size: rem(40);
+		line-height: lh(50, 40);
+
+		@include mq($bp-desktop) {
+			font-size: rem(50);
+			line-height: lh(60, 50);
+		}
 	}
 	
 	@if $type == h2 {
-		font-size: rem(40);
-		line-height: lh(50, 40);
+		margin: 0;
+		font-size: rem(30);
+		line-height: lh(40, 30);
+
+		@include mq($bp-desktop) {
+			font-size: rem(40);
+			line-height: lh(50, 40);
+		}
 	}
 	
 	@if $type == h3 {
-		font-size: rem(30);
-		line-height: lh(40, 30);
+		margin: 0;
+		font-size: rem(20);
+		line-height: lh(40, 20);
+
+		@include mq($bp-desktop) {
+			font-size: rem(30);
+			line-height: lh(40, 30);
+		}
 	}
 
 	@if $type == h4 {
-		font-size: rem(20);
-		line-height: lh(40, 20);
+		margin: 0;
+		font-size: rem(18);
+		line-height: lh(30, 18);
+
+		@include mq($bp-desktop) {
+			font-size: rem(20);
+			line-height: lh(40, 20);
+		}
 	}
 	
 	@if $type == p {
@@ -57,6 +81,11 @@
 		@include mq($bp-tablet) {
 			font-size: rem(18);
 			line-height: lh(30, 18);
+		}
+		
+		@include mq($bp-desktop) {
+			font-size: rem(20);
+			line-height: lh(40, 20);
 		}
 	}
 	

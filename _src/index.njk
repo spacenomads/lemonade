@@ -9,23 +9,12 @@ eleventyNavigation:
     <div class="content__inner">
       <ul class="latest-posts__items">
         {% for post in collections.blog | reverse %}
-          {% set publication = {
-            full: post.data.date.toLocaleString('es-ES', {
-                  day: '2-digit',
-                  month: '2-digit',
-                  year: 'numeric'
-                }),
-            year: post.data.date.toLocaleString('es-ES', {year: 'numeric'}),
-            month: post.data.date.toLocaleString('es-ES', {month: '2-digit'}),
-            day: post.data.date.toLocaleString('es-ES', {day: '2-digit'})
-          } %}
+
           <li class="latest-posts__item">
             <div class="post">
               <a class="post__link" href="{{ post.url }}">
-                <div class="post__meta">
-                  <time class="post__published-date" datetime="{{ publication.year }}-{{ publication.month }}-{{ publication.day }}">{{ publication.full }}</time> 
-                  <time class="post__reading-time" datetime="PT{{ post.data.reading_time }}M">{{ post.data.reading_time }} min.</time>
-                </div>
+                {% set data = { reading_time: post.data.reading_time, date: post.data.date } %}
+                {% include './_templates/components/meta-info.njk' %}
                 <h2 class="post__title">{{ post.data.title}}</h2>
               </a>
             </div>

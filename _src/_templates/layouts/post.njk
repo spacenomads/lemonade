@@ -7,7 +7,7 @@
   <div class="page">
     {% include "../page-sections/header.njk" %}
     <main class="page__main main">
-      <article class="post">
+      <article class="post post--entry">
         <div class="post__cover">
           <img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ alt }}">
         </div>
@@ -16,8 +16,6 @@
             <div class="content__inner">
               {{ content | safe }}
             </div>
-            <aside>paco</aside>
-            <aside>paco</aside>
           </div>
         </div>
       </article>

@@ -14,6 +14,13 @@
 .hidden {
   display: none; }
 
+/* bitter-300 - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/bitter/bitter-v19-latin-300.woff2") format("woff2"), url("../fonts/bitter/bitter-v19-latin-300.woff") format("woff"); }
+
 /* bitter-regular - latin */
 @font-face {
   font-family: 'Bitter';
@@ -27,6 +34,162 @@
   font-style: normal;
   font-weight: 600;
   src: local(""), url("../fonts/bitter/bitter-v19-latin-600.woff2") format("woff2"), url("../fonts/bitter/bitter-v19-latin-600.woff") format("woff"); }
+
+/* bitter-300italic - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 300;
+  src: local(""), url("../fonts/bitter/bitter-v19-latin-300italic.woff2") format("woff2"), url("../fonts/bitter/bitter-v19-latin-300italic.woff") format("woff"); }
+
+/* bitter-italic - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/bitter/bitter-v19-latin-italic.woff2") format("woff2"), url("../fonts/bitter/bitter-v19-latin-italic.woff") format("woff"); }
+
+/* bitter-600italic - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 600;
+  src: local(""), url("../fonts/bitter/bitter-v19-latin-600italic.woff2") format("woff2"), url("../fonts/bitter/bitter-v19-latin-600italic.woff") format("woff"); }
+
+/* PrismJS 1.25.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+git+json+markdown+markup-templating+php+regex+scss+sql+twig&plugins=toolbar+copy-to-clipboard */
+code[class*=language-], pre[class*=language-] {
+  color: #f8f8f2;
+  background: 0 0;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+pre[class*=language-] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: .3em; }
+
+:not(pre) > code[class*=language-], pre[class*=language-] {
+  background: #272822; }
+
+:not(pre) > code[class*=language-] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+  color: #8292a2; }
+
+.token.punctuation {
+  color: #f8f8f2; }
+
+.token.namespace {
+  opacity: .7; }
+
+.token.constant, .token.deleted, .token.property, .token.symbol, .token.tag {
+  color: #f92672; }
+
+.token.boolean, .token.number {
+  color: #ae81ff; }
+
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+  color: #a6e22e; }
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url, .token.variable {
+  color: #f8f8f2; }
+
+.token.atrule, .token.attr-value, .token.class-name, .token.function {
+  color: #e6db74; }
+
+.token.keyword {
+  color: #66d9ef; }
+
+.token.important, .token.regex {
+  color: #fd971f; }
+
+.token.bold, .token.important {
+  font-weight: 700; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+div.code-toolbar {
+  position: relative; }
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  top: .3em;
+  right: .2em;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: 0; }
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1; }
+
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1; }
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block; }
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer; }
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+div.code-toolbar > .toolbar > .toolbar-item > a, div.code-toolbar > .toolbar > .toolbar-item > button, div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: #bbb;
+  font-size: .8em;
+  padding: 0 .5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.2);
+  -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: .5em; }
+
+div.code-toolbar > .toolbar > .toolbar-item > a:focus, div.code-toolbar > .toolbar > .toolbar-item > a:hover, div.code-toolbar > .toolbar > .toolbar-item > button:focus, div.code-toolbar > .toolbar > .toolbar-item > button:hover, div.code-toolbar > .toolbar > .toolbar-item > span:focus, div.code-toolbar > .toolbar > .toolbar-item > span:hover {
+  color: inherit;
+  text-decoration: none; }
+
+div.code-toolbar {
+  font-size: .75em; }
+
+div.code-toolbar > .toolbar {
+  top: 0;
+  right: 0.3125rem; }
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+  padding: 0.1875rem 0.9375rem;
+  cursor: pointer; }
 
 body {
   font: 16px Bitter, serif;
@@ -230,8 +393,9 @@ body {
 
 .post__title {
   margin: 0;
-  font-size: 1.875rem;
-  line-height: 133.33333%; }
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 200%; }
 
 .post__cover {
   margin-bottom: 1.25rem; }
@@ -240,14 +404,90 @@ body {
   width: 100%;
   display: block; }
 
-.post .content h1 {
-  font-size: 1.875rem;
-  line-height: 133.33333%;
-  margin: 0; }
-  .post .content h1 a {
+.post--entry {
+  font-size: 1rem;
+  line-height: 187.5%; }
+  .post--entry p,
+  .post--entry ul,
+  .post--entry ol,
+  .post--entry pre,
+  .post--entry blockquote,
+  .post--entry hr {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem; }
+  .post--entry h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 125%; }
+  .post--entry h2 {
+    margin: 0;
+    font-size: 1.875rem;
+    line-height: 133.33333%;
+    margin-top: 3.125rem;
+    margin-bottom: -1.25rem; }
+  .post--entry h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 200%;
+    margin-top: 3.125rem;
+    margin-bottom: -1.25rem; }
+  .post--entry h4 {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 166.66667%;
+    margin-top: 2.5rem;
+    margin-bottom: -1.25rem; }
+  .post--entry h5 {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 166.66667%;
+    margin-top: 2.5rem;
+    margin-bottom: -1.25rem; }
+  .post--entry h6 {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 166.66667%;
+    margin-top: 2.5rem;
+    margin-bottom: -1.25rem; }
+  .post--entry a {
     color: inherit;
     text-decoration: none;
-    pointer-events: none; }
+    pointer-events: none;
+    color: #008aff; }
+  .post--entry li {
+    padding-left: .5em; }
+  .post--entry ol li::marker {
+    font-size: .85em;
+    font-style: italic;
+    color: #858585; }
+  .post--entry ul li::marker {
+    font-size: .75em;
+    color: #9b9b9b; }
+  .post--entry hr {
+    border: 0;
+    text-align: center; }
+    .post--entry hr::before {
+      content: '---';
+      color: #b1b1b1;
+      letter-spacing: 0.125rem; }
+  .post--entry blockquote {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2.5rem; }
+    .post--entry blockquote::before {
+      content: '';
+      width: 0.3125rem;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      background-color: #ffcc00; }
+    .post--entry blockquote p {
+      margin: 0; }
+  .post--entry p > img {
+    width: 100%;
+    border-radius: 0.25rem; }
   @media screen and (min-width: 48em) {
     .wrapper {
       margin: 0 3.125rem; }
@@ -272,9 +512,14 @@ body {
       gap: 1.25rem; }
   .content__inner {
     grid-area: content; }
+  .content__sidebar-l {
+    grid-area: sidebar-l; }
+  .content__sidebar-r {
+    grid-area: sidebar-r; }
     .brand {
-      font-size: 1.25rem;
-      line-height: 200%;
+      margin: 0;
+      font-size: 1.125rem;
+      line-height: 166.66667%;
       -webkit-column-gap: 0.625rem;
       -moz-column-gap: 0.625rem;
       column-gap: 0.625rem; }
@@ -283,9 +528,9 @@ body {
         height: 2rem; }
     .post__cover {
       margin-bottom: 2.5rem; }
-    .post .content h1 {
-      font-size: 2.5rem;
-      line-height: 125%; } }
+    .post--entry {
+      font-size: 1.125rem;
+      line-height: 166.66667%; } }
   @media screen and (min-width: 62.5em) {
     .wrapper {
       margin: 0 auto; }
@@ -301,8 +546,9 @@ body {
       grid-template-columns: repeat(8, 1fr);
       grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
     .brand {
-      font-size: 1.875rem;
-      line-height: 133.33333%;
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 200%;
       -webkit-column-gap: 0.9375rem;
       -moz-column-gap: 0.9375rem;
       column-gap: 0.9375rem; }
@@ -310,4 +556,44 @@ body {
         width: 3.75rem;
         height: 3rem; }
     .latest-posts {
-      padding: 2.5rem 0; } }
+      padding: 2.5rem 0; }
+    .post__title {
+      font-size: 1.875rem;
+      line-height: 133.33333%; }
+    .post--entry {
+      font-size: 1.25rem;
+      line-height: 200%; }
+      .post--entry p,
+      .post--entry ul,
+      .post--entry ol,
+      .post--entry pre,
+      .post--entry blockquote,
+      .post--entry hr {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem; }
+      .post--entry h1 {
+        font-size: 3.125rem;
+        line-height: 120%; }
+      .post--entry h2 {
+        font-size: 2.5rem;
+        line-height: 125%; }
+      .post--entry h3 {
+        font-size: 1.875rem;
+        line-height: 133.33333%; }
+      .post--entry h4 {
+        font-size: 1.25rem;
+        line-height: 200%; }
+      .post--entry h5 {
+        font-size: 1.25rem;
+        line-height: 200%; }
+      .post--entry h6 {
+        font-size: 1.25rem;
+        line-height: 200%; } }
+  @media screen and (min-width: 48em) and (min-width: 62.5em) {
+    .brand {
+      font-size: 1.25rem;
+      line-height: 200%; } }
+  @media screen and (min-width: 62.5em) and (min-width: 62.5em) {
+    .brand {
+      font-size: 1.875rem;
+      line-height: 133.33333%; } }

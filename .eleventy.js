@@ -9,6 +9,7 @@ module.exports = function (config) {
   config.addPassthroughCopy("_src/assets/fonts");
   config.addPassthroughCopy("_src/assets/css");
   config.addPassthroughCopy("_src/assets/images");
+  config.addPassthroughCopy("_src/assets/js");
   config.addPlugin(eleventyNavigationPlugin);
 
   config.addCollection('blog', collection => {

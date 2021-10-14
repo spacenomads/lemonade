@@ -7,7 +7,8 @@ $color-correct-blue: #008aff;
 $color-yellow-orange-juice: #ffcc00;
 $color-yellow-sea: #ff9900; 
 
-
+$color-text: $color-black;
+$color-link: $color-correct-blue;
 
 
 
@@ -15,6 +16,7 @@ $color-yellow-sea: #ff9900;
 $font-size: 16;
 $font-alt: serif;
 $font-family: Bitter, $font-alt;
+$font-light: 300;
 $font-regular: 400;
 $font-semibold: 600;
 

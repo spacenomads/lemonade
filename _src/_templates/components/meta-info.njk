@@ -1,0 +1,11 @@
+{% set publication = {
+  full: data.date.toLocaleString('es-ES', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      }),
+  year: data.date.toLocaleString('es-ES', {year: 'numeric'}),
+  month: data.date.toLocaleString('es-ES', {month: '2-digit'}),
+  day: data.date.toLocaleString('es-ES', {day: '2-digit'})
+} %}
+<div class="post__meta"><time class="post__published-date" datetime="{{ publication.year }}-{{ publication.month }}-{{ publication.day }}">{{ publication.full }}</time>{% if data.reading_time %} <time class="post__reading-time" datetime="PT{{ data.reading_time }}M">{{ data.reading_time }} min.</time>{% endif %}</div>
