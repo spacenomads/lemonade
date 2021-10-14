@@ -7,6 +7,8 @@ Location: Madrid, Granada.
 /* THANKS */
 Bonaparte: @bonapartethecat.
 Trece: @trecethecat.
+11ty community: https://www.11ty.dev/
+Giustino Brozacchiello: https://giustino.blog/how-to-drafts-eleventy/
 
 /* SITE */
 Last update: 2021/10/7 

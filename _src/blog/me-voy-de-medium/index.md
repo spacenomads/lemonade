@@ -1,8 +1,10 @@
 ---
 title: Me voy de Medium
 featured_image: medium.png
-reading_time: 5
+excerpt: Me gusta Medium, pero me voy. Quiero quedarme con lo bueno y tener margen de mejora por mi cuenta.
+reading_time: 3
 date: 2021-10-10
+draft: false
 ---
 
 # {{ title }}

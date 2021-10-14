@@ -1,6 +1,6 @@
 // POST
 .post {
-  @include font(small);
+  @include font(p);
 }
 
 .post__link {
@@ -24,6 +24,8 @@
 }
 
 .post__meta {
+  @include font(small);
+
   display: flex;
   column-gap: rem(5);
 

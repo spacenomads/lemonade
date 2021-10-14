@@ -1,5 +1,5 @@
 .main {
-  background: linear-gradient(to bottom, $color-athens-gray rem(-64), $color_white rem(200));
+  background: linear-gradient(to bottom, $color-athens-gray rem(-200), $color_white rem(200));
 
   @include mq($bp-tablet) {
     background: linear-gradient(to bottom, $color-athens-gray rem(-80), $color_white rem(200));

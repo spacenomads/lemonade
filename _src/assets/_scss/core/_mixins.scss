@@ -92,6 +92,12 @@
 	@if $type == small {
 		font-size: rem(14);
 		line-height: lh(30, 14);
+		font-weight: $font-light;
+	}
+
+	@if $type == copy {
+		font-size: rem(14);
+		line-height: lh(20, 14);
 	}
 }
 

@@ -65,6 +65,7 @@
 
 .footer__content {
   @include grid-item(content);
+  @include font(copy);
 
   background-color: $color-black;
   border-radius: rem(4) rem(4) 0 0;
