@@ -9,6 +9,7 @@ Bonaparte: @bonapartethecat.
 Trece: @trecethecat.
 11ty community: https://www.11ty.dev/
 Giustino Brozacchiello: https://giustino.blog/how-to-drafts-eleventy/
+Matt Claffey: https://mattclaffey.medium.com/how-to-reduce-you-html-output-in-11ty-ec0c358be2ac
 
 /* SITE */
 Last update: 2021/10/7 
