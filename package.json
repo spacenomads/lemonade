@@ -10,7 +10,8 @@
     "start": "npm-run-all --parallel assets serve",
     "assets": "gulp go",
     "clean": "gulp clean",
-    "debug": "DEBUG=* eleventy"
+    "debug": "DEBUG=* eleventy",
+    "publish": "npm run clean && eleventy && cp -r dist public"
   },
   "keywords": [
     "lemonade",
