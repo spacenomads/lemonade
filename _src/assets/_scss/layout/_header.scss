@@ -1,0 +1,17 @@
+.header {
+  .wrapper {
+    padding: rem($page-gutter) 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    @include mq($bp-tablet) {
+      height: rem(100);
+    }
+  }
+}
+
+.header__brand {
+  text-decoration: none;
+  color: inherit;
+}

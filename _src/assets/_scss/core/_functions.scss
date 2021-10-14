@@ -1,0 +1,45 @@
+// FUNCTIONS
+
+@function em( $pixels, $context: $font-size ) {
+	@return ( $pixels / $context * 1em );
+}
+
+
+
+
+
+@function px( $pixels ) {
+	@return ( $pixels * 1px );
+}
+
+
+
+
+
+@function rem( $pixels ) {
+	@return ( $pixels / $font_size * 1rem );
+}
+
+
+
+
+
+@function per( $pixels, $context: $page-max-width ) {
+	@return ( $pixels * 100% / $context );
+}
+
+
+
+
+
+@function img( $image, $path: $theme ) {
+	@return url( $path + $image );
+}
+
+
+
+
+
+@function lh( $fline, $fsize: $font-size ) {
+	@return ( $fline * 100% / $fsize );
+}

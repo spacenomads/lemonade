@@ -1,5 +1,5 @@
-$color-lemon: #ffcc00;
-
-body {
-  background-color: $color-lemon;
-}
+@import 'core/core';
+@import 'vendor/vendor';
+@import 'vendor-overrides/vendor-overrides';
+@import 'layout/layout';
+@import 'components/components';

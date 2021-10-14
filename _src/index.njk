@@ -4,8 +4,28 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: home
 ---
-<h1>{{ settings.siteName }}</h1>
-{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+<section class="latest-posts content">
+  <div class="wrapper">
+    <div class="content__inner">
+      <ul class="latest-posts__items">
+        {% for post in collections.blog | reverse %}
+
+          <li class="latest-posts__item">
+            <div class="post">
+              <a class="post__link" href="{{ post.url }}">
+                {% set data = { reading_time: post.data.reading_time, date: post.data.date } %}
+                {% include './_templates/components/meta-info.njk' %}
+                <h2 class="post__title">{{ post.data.title}}</h2>
+              </a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
 
 

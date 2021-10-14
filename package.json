@@ -1,32 +1,44 @@
 {
   "name": "lemonade",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sidiostedalimones.com 2021 version 🦄",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
+    "serve": "npm run clean && eleventy --serve",
     "start": "npm-run-all --parallel assets serve",
     "assets": "gulp go",
     "clean": "gulp clean",
-    "debug": "DEBUG=* eleventy"
+    "debug": "DEBUG=* eleventy",
+    "publish": "npm run clean && eleventy && cp -r dist public"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "lemonade",
+    "blog",
+    "if god gives you lemons"
+  ],
+  "author": "Carlos Mañas",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
+    "@hail2u/css-mqpacker": "github:hail2u/node-css-mqpacker",
     "del": "^5.1.0",
     "dotenv": "^10.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
+    "html-minifier": "^4.0.0",
     "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5"
-  }
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.15"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 10"
+  ]
 }

@@ -1,0 +1,81 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ settings.siteName }}</title>
+<link rel="stylesheet" href="/assets/css/main.min.css">
+<script src="/assets/js/vendor/prism.js" defer></script>
+
+{% if pageType === 'page' %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@oneeyedman">
+  <meta name="twitter:title" content="{{ settings.siteName }}">
+  <meta name="twitter:description" content="{{ settings.siteDescription }}">
+  <meta name="twitter:image" content="{{ settings.url }}/assets/images/brand/og-logo-sidiostedalimones.png">
+  <meta property="og:title" content="{{ settings.siteName }}">
+  <meta property="og:description" content="{{ settings.siteDescription }}">
+  <meta property="og:image" content="{{ settings.url }}/assets/images/brand/og-logo-sidiostedalimones.png">
+  <meta property="og:image:secure_url" content="{{ settings.url }}/assets/images/brand/og-logo-sidiostedalimones.png">
+{% else %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@oneeyedman">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ excerpt }}">
+  <meta name="twitter:image" content="{{ settings.url }}{{ page.url}}img/{{ featured_image }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ excerpt }}">
+  <meta property="og:image" content="{{ settings.url }}{{ page.url}}img/{{ featured_image }}">
+  <meta property="og:image:secure_url" content="{{ settings.url }}{{ page.url}}img/{{ featured_image }}">
+{% endif %}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "{{ settings.siteName }}",
+    "alternateName": "{{ settings.long_name }}",
+    "url": "{{ settings.url }}"
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/Brand",
+    "@type": "Thing",
+    "name": "{{ settings.siteName }}",
+    "logo": "{{ settings.url }}/assets/images/brand/logo-sidiostedalimones.png",
+    "subjectOf": "CreativeWork"
+  }
+</script>
+
+{% if pageType === 'post' %}
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ settings.url }}{{ page.url}}"
+    },
+    "headline": "{{ title }}",
+    "image": [
+        "{{ settings.url }}{{ page.url}}img/{{ featured_image }}"
+    ],
+    "datePublished": "{{ date.toISOString() }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ settings.author}}"
+        "sameAs": "{{ settings.twitter }}",
+        "email": "{{ settings.email }}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ settings.suteName }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ settings.url }}/assets/images/brand/logo-sidiostedalimones.png",
+        }
+    },
+    "description": "{{ excerpt }}"
+  }
+  </script>
+{% endif %}
