@@ -11,7 +11,7 @@
     "assets": "gulp go",
     "clean": "gulp clean",
     "debug": "DEBUG=* eleventy",
-    "publish": "npm run clean && eleventy && cp -r dist public"
+    "publish": "npm run clean && eleventy && cp -r dist docs"
   },
   "keywords": [
     "lemonade",
