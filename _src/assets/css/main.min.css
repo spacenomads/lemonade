@@ -313,7 +313,8 @@ body {
 
 .main {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-12.5rem, #dfdfdf), color-stop(12.5rem, #fff));
-  background: linear-gradient(to bottom, #dfdfdf -12.5rem, #fff 12.5rem); }
+  background: linear-gradient(to bottom, #dfdfdf -12.5rem, #fff 12.5rem);
+  min-height: 18.125rem; }
 
 .content .wrapper {
   display: grid; }
