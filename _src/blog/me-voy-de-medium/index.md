@@ -1,6 +1,9 @@
 ---
 title: Me voy de Medium
 featured_image: medium.png
+featured_alt: Logo de la plataforma Medium en negro, sobre fondo gris clarito. Siguiendo sus guías de marca.
+ya_image: adios.png
+ya_alt: Emoji de la manita amarilla diciendo adios.
 excerpt: Me gusta Medium, pero me voy. Quiero quedarme con lo bueno y tener margen de mejora por mi cuenta.
 reading_time: 3
 date: 2021-10-10

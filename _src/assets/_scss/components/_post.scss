@@ -189,3 +189,17 @@
     border-radius: rem(4);
   }
 }
+
+
+.post__footer {
+  text-align: center;
+  margin: rem(40) 0 rem(80);
+
+  
+  @include mq($bp_desktop) {
+    margin: rem(50) 0 rem(100);
+  }
+}
+.post__ya {
+  width: rem(50);
+}
