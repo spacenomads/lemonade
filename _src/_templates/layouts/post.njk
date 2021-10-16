@@ -10,7 +10,7 @@
     <main class="page__main main">
       <article class="post post--entry">
         <div class="post__cover">
-          <img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ alt }}">
+          <img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ featured_alt }}">
         </div>
         <div class="content">
           <div class="wrapper">
@@ -19,6 +19,9 @@
             </div>
           </div>
         </div>
+        <footer class="post__footer">
+          <img class="post__ya" src="img/{{ ya_image }}" alt="{{ ya_alt }}">
+        </footer>
       </article>
     </main>
     {% include "../page-sections/footer.njk" %}
