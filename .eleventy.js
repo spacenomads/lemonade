@@ -3,7 +3,11 @@ const htmlmin = require('html-minifier');
 
 const now = new Date();
 const publishedPosts = (post) => post.date <= now && !post.data.draft;
-
+const capitalize = str => {
+  const parts = str.split('');
+  parts[0] = parts[0].toUpperCase();
+  return parts.join('');
+}
 
 
 
@@ -40,6 +44,16 @@ module.exports = function (config) {
     return collection
       .getFilteredByGlob('_src/blog/*/index.md')
       .filter(publishedPosts);
+  });
+
+  config.addNunjucksFilter("hashtag", function(value) {
+    const tag = value
+      .replace(/\W+/g, ' ')
+      .trim()
+      .split(' ')
+      .map(word => capitalize(word))
+      .join('')
+    return `${tag},SiDiosTeDaLimones`;
   });
 
   return {

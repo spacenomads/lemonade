@@ -515,11 +515,38 @@ body {
 .post__footer {
   text-align: center;
   margin: 2.5rem 0 5rem; }
+  .post__footer .wrapper {
+    display: grid; }
 
 .post__ya {
   width: 3.125rem; }
 
-@media screen and (min-width: 48em) {
+.content__social-comment {
+  border: 1px solid #dfdfdf;
+  border-radius: 0.25rem;
+  padding: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.625rem;
+  -moz-column-gap: 0.625rem;
+  column-gap: 0.625rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 5rem 0 -4.375rem; }
+  .content__social-comment::before {
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../images/layout/icons/talk.svg") left top no-repeat;
+    display: block; }
+  .content__social-comment .content__social-comment-link {
+    color: #212121;
+    font-size: .75em; }
+    .content__social-comment .content__social-comment-link:hover {
+      color: #008aff; }
+    @media screen and (min-width: 48em) {
     .wrapper {
       margin: 0 3.125rem; }
     .footer .wrapper {
@@ -564,9 +591,15 @@ body {
       margin-bottom: 2.5rem; }
     .post--entry {
       font-size: 1.125rem;
-      line-height: 166.66667%; } }
-
-@media screen and (min-width: 62.5em) {
+      line-height: 166.66667%; }
+      .post__footer .wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "sidebar-l content content content content sidebar-r";
+        gap: 1.25rem; }
+    .content__social-comment {
+      grid-area: content; } }
+    @media screen and (min-width: 62.5em) {
     .wrapper {
       margin: 0 auto; }
     .footer .wrapper {
@@ -631,14 +664,17 @@ body {
         font-size: 1.25rem;
         line-height: 200%; }
     .post__footer {
-      margin: 3.125rem 0 6.25rem; } }
-
-@media screen and (min-width: 48em) and (min-width: 62.5em) {
+      margin: 3.125rem 0 6.25rem; }
+      .post__footer .wrapper {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
+    .content__social-comment {
+      margin: 6.25rem 0 -5.625rem; } }
+    @media screen and (min-width: 48em) and (min-width: 62.5em) {
     .brand {
       font-size: 1.25rem;
       line-height: 200%; } }
-
-@media screen and (min-width: 62.5em) and (min-width: 62.5em) {
+    @media screen and (min-width: 62.5em) and (min-width: 62.5em) {
     .brand {
       font-size: 1.875rem;
       line-height: 133.33333%; } }

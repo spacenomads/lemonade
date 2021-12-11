@@ -7,6 +7,7 @@ ya_alt: Plato azul de comida de perro, vacío.
 reading_time: 2
 date: 2021-12-10
 draft: false
+tags: tv, anime
 ---
 
 # {{ title }}

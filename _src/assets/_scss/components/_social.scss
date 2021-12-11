@@ -1,0 +1,31 @@
+.content__social-comment {
+  @include grid-item(content);
+  
+  border: 1px solid $color-light-border;
+  border-radius: rem($radius);
+  padding: rem(10);
+  display: flex;
+  column-gap: rem(10);
+  align-items: center;
+  margin: rem(80) 0 rem(-70);
+
+  @include mq($bp_desktop) {
+    margin: rem(100) 0 rem(-90);
+  }
+
+  &::before {
+    content: '';
+    width: rem(40);
+    height: rem(40);
+    background: img('icons/talk.svg') left top no-repeat;
+    display: block;
+  }
+
+  .content__social-comment-link {
+    color: $color_text;
+    font-size: .75em;
+    &:hover {
+      color: $color_link;
+    }
+  }
+}

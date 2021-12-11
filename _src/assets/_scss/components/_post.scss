@@ -219,9 +219,12 @@
   text-align: center;
   margin: rem(40) 0 rem(80);
 
-  
   @include mq($bp_desktop) {
     margin: rem(50) 0 rem(100);
+  }
+  
+  .wrapper {
+    @include grid();
   }
 }
 .post__ya {
