@@ -16,11 +16,18 @@
           <div class="wrapper">
             <div class="content__inner">
               {{ content | safe }}
+
             </div>
           </div>
         </div>
         <footer class="post__footer">
           <img class="post__ya" src="img/{{ ya_image }}" alt="{{ ya_alt }}">
+
+          <div class="wrapper">
+            <div class="content__social-comment">
+                <a href="https://twitter.com/intent/tweet?text=→&hashtags={{ title | hashtag }}&url=https://sidiostedalimones.com{{page.url}}" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">¿Qué te ha parecido?</a>
+              </div>
+          </div>          
         </footer>
       </article>
     </main>
