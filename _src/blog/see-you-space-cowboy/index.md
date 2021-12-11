@@ -8,6 +8,7 @@ reading_time: 2
 date: 2021-12-10
 draft: false
 tags: tv, anime
+clickbait: ¿Qué te ha parecido la serie?
 ---
 
 # {{ title }}

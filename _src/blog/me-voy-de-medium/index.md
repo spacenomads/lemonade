@@ -8,6 +8,8 @@ excerpt: Me gusta Medium, pero me voy. Quiero quedarme con lo bueno y tener marg
 reading_time: 3
 date: 2021-10-10
 draft: false
+tag: blog
+clickbait: ¿A favor o en contra?
 ---
 
 # {{ title }}
