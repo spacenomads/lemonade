@@ -522,7 +522,7 @@ body {
   width: 3.125rem; }
 
 .content__social-comment {
-  border: 1px solid rgba(223, 223, 223, 0.5);
+  border: 1px solid #dfdfdf;
   border-radius: 0.25rem;
   padding: 0.625rem;
   display: -webkit-box;

@@ -1,7 +1,7 @@
 .content__social-comment {
   @include grid-item(content);
   
-  border: 1px solid rgba($color-light-border, .5);
+  border: 1px solid $color-light-border;
   border-radius: rem($radius);
   padding: rem(10);
   display: flex;
