@@ -7,6 +7,8 @@ ya_alt: Planeta con anillo exterior.
 reading_time: 2
 date: 2021-10-13
 draft: false
+tag: cumpleaños, ciclo
+clickbait: ¿Tiene sentido?
 ---
 
 # {{ title }}
@@ -24,7 +26,7 @@ Además, con una pandemia por en medio. Ya está bien.
 
 En este último año he visto lo lejos de los demás que puedo vivir. A veces siendo secretamente súper feliz. No me parece mal y me ha ayudado mucho durante el confinamiento a no volverme loco, a disfrutar de pequeñas cosas y a llevar los momentos más duros. 
 
-**No me parece mal pero tampoco ideal**.
+**No me parece mal, pero tampoco ideal**.
 
 Ahora me siento muy desconectado pero no puedo ni quiero volver a lo de antes. Siempre me dio miedo aislarme de más y perderme en mi, a sabiendas que igual sería suficientemente feliz, o quizás muy feliz. Pasar tiempo solo ha sido algo que he buscado de más, y lo necesito, pero quizás puedo balancearlo mejor.
 
@@ -34,7 +36,7 @@ No me da miedo el trayecto a la oficina, simplemente no quiero ir. He rechazado,
 
 De acuerdo que hay cosas que los primeros días se me van a hacer raras, pero dejarán de hacerlo, no pasa nada, y mentir siempre me ha parecido una mala idea. Igual no hacía falta. **Igual me hacía falta a mi**.
 
-En fin, para mis 48 quiero recolectar, no sé como ni a qué ritmo. Hasta aquí ha estado bien, pero.
+En fin, para mis 48 quiero recuperar la vida, no sé como ni a qué ritmo. Hasta aquí ha estado bien, pero.
 
 Pero, quiero algo mejor.
 
