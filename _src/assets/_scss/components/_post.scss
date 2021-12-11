@@ -1,6 +1,10 @@
 // POST
 .post {
   @include font(p);
+
+  .content__inner {
+    position: relative;
+  }
 }
 
 .post__link {
@@ -47,6 +51,27 @@
     width: rem(20);
     height: rem(20);
     display: block;
+  }
+}
+
+.post__back {
+  position: absolute;
+  background: img('icons/back.svg') left top no-repeat;
+  background-size: rem(30);
+  left: 0;
+  top: rem(10);
+  width: rem(30);
+  height: rem(1);
+  padding: rem(29) 0 0;
+  overflow: hidden;
+  transform: translate(-100%);
+  opacity: .5;
+  z-index: 100000;
+  display: block;
+
+  @include mq($bp_desktop) {
+    top: rem(15);
+    margin-left: rem(-10);
   }
 }
 
@@ -129,7 +154,6 @@
   a {
     color: inherit;
     text-decoration: none;
-    pointer-events: none;
     color: $color-link;
   }
 
