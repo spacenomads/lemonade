@@ -26,7 +26,7 @@ Es cierto, tiene un malo que hace del término "sobre actuar" una broma, aunque 
 
 Ya está cancelada. Las críticas están siendo duras y creo que el personal tiene muy romantizada la serie original, que tampoco es tan obra maestra. 
 
-Puede que en el momento, 1998, fuese un locurón, pero ha llovido mucho desde entonces y quizás en sus corazones esta gente tiene la serie en un lugar especial. La serie ha envejecido muy mal y es demasiado lenta para el margen de atención del que disfrutamos en este mundo del ahora.
+Puede que en el momento, 1998, fuese un locurón, pero **ha llovido mucho desde entonces** y quizás en sus corazones esta gente tiene la serie en un lugar especial. La serie ha envejecido muy mal y es demasiado lenta para el margen de atención del que disfrutamos en este mundo del ahora.
 
 Yo no la vi en su momento y aún con una alta tolerancia a diferentes series se me hace muy dura de seguir. Hay personajes que me aburren muchísimo y está el tema de la sexualización que en anime parece que se quedó estancado en el pasado, o peor.
 
