@@ -1,17 +1,17 @@
 .content {
-  .wrapper {
-    @include grid();
-  }
+	.wrapper {
+		@include grid();
+	}
 }
 
 .content__inner {
-  @include grid-item(content);
+	@include grid-item(content);
 }
 
 .content__sidebar-l {
-  @include grid-item(sidebar-l);
+	@include grid-item(sidebar-l);
 }
 
 .content__sidebar-r {
-  @include grid-item(sidebar-r);
+	@include grid-item(sidebar-r);
 }
