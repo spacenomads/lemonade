@@ -88,6 +88,16 @@
 			line-height: lh(40, 20);
 		}
 	}
+
+	@if $type == comment {
+		font-size: rem(14);
+		line-height: lh(30, 14);
+
+		@include mq($bp-tablet) {
+			font-size: rem(16);
+			line-height: lh(40, 16);
+		}
+	}
 	
 	@if $type == small {
 		font-size: rem(14);
