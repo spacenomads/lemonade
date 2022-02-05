@@ -8,11 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: ci-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
 
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12.18.4'
+      - uses: actions/setup-node@master
       
       - name: Install dependencies & build
         run: |
@@ -24,3 +22,5 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
