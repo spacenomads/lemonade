@@ -15,6 +15,11 @@
         <div class="content">
           <div class="wrapper">
             <div class="content__inner">
+
+              <h1>{{ title }}</h1>
+
+              {% set data = { reading_time: reading_time, date: date } %}
+              {% include '../../_templates/components/meta-info.njk' %}
               {{ content | safe }}
 
             </div>

@@ -46,16 +46,25 @@ module.exports = function (config) {
       .filter(publishedPosts);
   });
 
-  config.addNunjucksFilter("hashtag", function(value) {
-    const tag = value
-      .replace(/\W+/g, ' ')
-      .trim()
-      .split(' ')
-      .map(word => capitalize(word))
-      .join('')
+  config.addNunjucksFilter('hashtag', function(str) {
+    const tag = str
+    .toLowerCase()
+    .trim()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[¿?!¡\.,-]/g, '')
+    .replace(/ +/g, ' ')
+    .split(' ')
+    .map(word => capitalize(word))
+    .join('');
+
     return `${tag},SiDiosTeDaLimones`;
   });
 
+
+
+
+  
   return {
     dir: {
       input: '_src',

@@ -11,11 +11,6 @@ tags: tv, anime
 clickbait: ¿Qué te ha parecido la serie?
 ---
 
-# {{ title }}
-
-{% set data = { reading_time: reading_time, date: date } %}
-{% include '../../_templates/components/meta-info.njk' %}
-
 Estaba acabando la serie cuando leí la noticia de que Netflix había cancelado la serie.
 
 Dentro de que no sorprende y que Netflix debería hacer una feature de este rollo suyo de hype+cancelación solo tengo que decir que la serie mola. 
