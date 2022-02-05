@@ -2,6 +2,21 @@ function getYear() {
   return new Date().getFullYear();
 }
 
+
+
+
+
+function getStaticsVersion() {
+  const version = new Date()
+    .toISOString()
+    .replace(/[^A-SU-Y0-9]/g, '');
+  return version;
+}
+
+
+
+
+
 module.exports = {
   "siteName": "Sidiostedalimones",
   "siteDescription": "Si dios te da limones, haces limonada",
@@ -11,5 +26,6 @@ module.exports = {
   "email": "carlos@sidiostedalimones.com",
   "twitter": "https//twitter.com/oneeyedman",
   "lang": "es",
-  "year": getYear()
+  "year": getYear(),
+  "version": getStaticsVersion()
 }

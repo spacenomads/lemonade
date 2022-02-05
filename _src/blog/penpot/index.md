@@ -4,7 +4,7 @@ featured_image: penpot.png
 featured_alt: Cubilete con lápices en perspectiva simulando al cubilete del logo de la aplicación. Todo en blancos, negros, grises y con un fondo amarillo.
 ya_image: adios.png 
 ya_alt: Imagotipo del logo de Penpot con un detalle de sombras en amarillos anaranjados.
-reading_time: 2
+reading_time: 3
 date: 2022-01-05
 draft: false
 tags: design, development
