@@ -11,11 +11,6 @@ tag: cumpleaños, ciclo
 clickbait: ¿Tiene sentido?
 ---
 
-# {{ title }}
-
-{% set data = { reading_time: reading_time, date: date } %}
-{% include '../../_templates/components/meta-info.njk' %}
-
 48 años ya, madre de Crom!
 
 Y ahora qué? No tengo muy claro qué esperar de los 48, que perseguir o qué intentar.

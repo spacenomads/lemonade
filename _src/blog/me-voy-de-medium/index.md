@@ -12,11 +12,6 @@ tag: blog
 clickbait: ¿A favor o en contra?
 ---
 
-# {{ title }}
-
-{% set data = { reading_time: reading_time, date: date } %}
-{% include '../../_templates/components/meta-info.njk' %}
-
 Me gusta Medium, pero me voy.
 
 Al final no han sido los "tu controlas el contenido" tanto como querer poder hacer ciertas cosas a mi manera.

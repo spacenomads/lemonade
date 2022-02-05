@@ -11,11 +11,6 @@ tags: design, development
 clickbait: ¿Lo has probado ya?
 ---
 
-# {{ title }}
-
-{% set data = { reading_time: reading_time, date: date } %}
-{% include '../../_templates/components/meta-info.njk' %}
-
 Cómo que no sabes lo que es [**Penpot**](https://penpot.app/)? Seguro que sí.
 
 Es una aplicación de diseño y prototipado desarrollada por [Kaleidos Open Source](https://kaleidos.net/), vamos, en "casa". Tiene esta pinta:
