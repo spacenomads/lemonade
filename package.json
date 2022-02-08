@@ -4,10 +4,11 @@
   "description": "Sidiostedalimones.com 2021 version 🦄",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run clean; eleventy",
+    "build:pro": "cross-env MODE=pro npm run build",
     "watch": "eleventy --watch",
     "serve": "npm run clean && eleventy --serve",
-    "start": "npm-run-all --parallel assets serve",
+    "start": "cross-env MODE=dev npm-run-all --parallel assets serve",
     "assets": "gulp go",
     "clean": "gulp clean",
     "debug": "DEBUG=* eleventy",
@@ -20,12 +21,12 @@
   ],
   "author": "Carlos Mañas",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@hail2u/css-mqpacker": "github:hail2u/node-css-mqpacker",
+    "cross-env": "^7.0.3",
     "del": "^5.1.0",
-    "dotenv": "^10.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",

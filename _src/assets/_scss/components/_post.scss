@@ -231,3 +231,32 @@
 .post__ya {
 	width: rem(50);
 }
+
+
+
+
+// ANCHOR TAGS
+.post--draft,
+.post--future {
+	.post__title {
+		display: flex;
+		column-gap: rem(5);
+		align-items: center;
+	}
+}
+
+.post--draft {
+	.post__title {
+		&::before {
+			@include tag('draft', $color-draft);
+		}
+	}
+}
+
+.post--future {
+	.post__title {
+		&::after {
+			@include tag('future', $color-future);
+		}
+	}
+}
