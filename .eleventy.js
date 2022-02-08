@@ -1,8 +1,14 @@
+const MODE_DEVELOPMENT = 'dev';
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const htmlmin = require('html-minifier');
 
 const now = new Date();
-const publishedPosts = (post) => post.date <= now && !post.data.draft;
+const {MODE: mode} = process.env;
+
+const publishedPosts = (post) => {
+  if (mode === MODE_DEVELOPMENT) return true;
+  return post.date <= now && !post.data.draft;
+};
 const capitalize = str => {
   const parts = str.split('');
   parts[0] = parts[0].toUpperCase();
@@ -59,6 +65,12 @@ module.exports = function (config) {
     .join('');
 
     return `${tag},SiDiosTeDaLimones`;
+  });
+
+  config.addNunjucksFilter('isFuture', function(date) {
+    const postDate = new Date(date);
+    const now = new Date();
+    return postDate > now ? 'post--future': '';
   });
 
 

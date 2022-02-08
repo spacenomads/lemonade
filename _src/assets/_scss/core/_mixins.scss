@@ -136,3 +136,18 @@
 		grid-area: $area;
 	}
 }
+
+
+
+
+
+@mixin tag($text, $color) {
+	content: $text;
+	padding: rem(4) rem(8);
+	border-radius: rem(3);
+	background-color: $color;
+	font-size: rem(12);
+	line-height: 1;
+	color: $color-white;
+	order: -1;
+}

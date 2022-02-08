@@ -18,14 +18,15 @@ function getStaticsVersion() {
 
 
 module.exports = {
-  "siteName": "Sidiostedalimones",
-  "siteDescription": "Si dios te da limones, haces limonada",
-  "long_name": "Si dios te da limones",
-  "url": "https://sidiostedalimones.com",
   "author": "Carlos Mañas",
   "email": "carlos@sidiostedalimones.com",
-  "twitter": "https//twitter.com/oneeyedman",
   "lang": "es",
+  "long_name": "Si dios te da limones",
+  "mode": process.env.MODE,
+  "siteDescription": "Si dios te da limones, haces limonada",
+  "siteName": "Sidiostedalimones",
+  "twitter": "https//twitter.com/oneeyedman",
+  "url": "https://sidiostedalimones.com",
+  "version": getStaticsVersion(),
   "year": getYear(),
-  "version": getStaticsVersion()
 }
