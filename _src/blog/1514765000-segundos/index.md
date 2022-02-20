@@ -7,7 +7,7 @@ ya_alt: Planeta con anillo exterior.
 reading_time: 2
 date: 2021-10-13
 draft: false
-tag: cumpleaños, ciclo
+tag: [cumpleaños, ciclo]
 clickbait: ¿Tiene sentido?
 ---
 

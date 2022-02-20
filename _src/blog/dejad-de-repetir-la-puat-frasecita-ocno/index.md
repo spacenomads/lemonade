@@ -7,7 +7,7 @@ ya_alt: Imagen de la siguiente Estrella de la muerte.
 reading_time: 1
 date: 2022-02-05
 draft: false
-tags: star wars, yoda, vendemotos
+tags: [star wars, yoda, vendemotos]
 clickbait: Dime qué tú no machacas a la gente con la frasecita.
 ---
 

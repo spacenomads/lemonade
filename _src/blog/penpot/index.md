@@ -7,7 +7,7 @@ ya_alt: Imagotipo del logo de Penpot con un detalle de sombras en amarillos anar
 reading_time: 3
 date: 2022-01-05
 draft: false
-tags: design, development
+tags: [design, development]
 clickbait: ¿Lo has probado ya?
 ---
 
