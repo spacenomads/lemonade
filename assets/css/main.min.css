@@ -521,6 +521,42 @@ body {
 .post__ya {
   width: 3.125rem; }
 
+.post--draft .post__title,
+.post--future .post__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.3125rem;
+  -moz-column-gap: 0.3125rem;
+  column-gap: 0.3125rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.post--draft .post__title::before {
+  content: "draft";
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.1875rem;
+  background-color: #64B6AC;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #fff;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1; }
+
+.post--future .post__title::after {
+  content: "future";
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.1875rem;
+  background-color: #ec5766;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #fff;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1; }
+
 .content__social-comment {
   -webkit-box-align: center;
   -ms-flex-align: center;
