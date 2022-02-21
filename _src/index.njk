@@ -9,7 +9,6 @@ eleventyNavigation:
     <div class="content__inner">
       <ul class="latest-posts__items">
         {% for post in collections.blog | reverse %}
-
           <li class="latest-posts__item">
             <div class="post {{ 'post--draft' if post.data.draft }} {{ post.data.date | isFuture }}">
               <a class="post__link" href="{{ post.url }}">
