@@ -17,7 +17,7 @@ No hay fiesta de la democracia en la que no participe explicando quién es el en
 
 A ver, que el psoe ha movido una serie de cambios sociales, sí. Las aborda con la cucharilla del té, en situaciones muy especiales.
 
-El resto del tiempo o van cortos de representación y se les obliga o se sienten cómodos con lo  que hay: monarquía representativa, no intervenir los alquileres y viendo qué energética les tocará mañana.
+El resto del tiempo o van cortos de representación y se les obliga o se sienten cómodos con lo  que hay: monarquía parlamentaria, no intervenir los alquileres y viendo qué energética les tocará mañana.
 
 Sin vergüenza y en estas condiciones se venden como la alternativa a derecha o ultraderecha al grito de "que viene el lobo".  
 
