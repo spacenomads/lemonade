@@ -72,4 +72,4 @@ Es callejero? Lo es, pero más triste es tener un truño de logo.
 
 ---
 
-Y hasta aquí hemos llegado. Sigue estos paso o comenta algunos alternativos y hagamos que el mundo, en este caso el del rol, luz un poco más definido. O qué?
+Y hasta aquí hemos llegado. Sigue estos pasos o comenta algunos alternativos y hagamos que el mundo, en este caso el del rol, luz un poco más definido. O qué?
