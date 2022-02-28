@@ -15,9 +15,9 @@ Este mes me he encargado de hacer las portadas de las partidas de marzo de [Resi
 
 Spoiler: TODO.
 
-Para alguien que lleva ya unos años en desarrollo web y ha visto, de alguna manera, el triunfo del formato SVG un poco al carro de las pantallas de alta definición de pixels el mundo del rol es como una vuelta al oscurantismo de los 2000 en los que ni el cliente sabía si tenía su logo fuera de su tarjeta de visita, y mucho menos en vectorial.
+Para alguien que lleva ya unos años en desarrollo web y ha visto, de alguna manera, el triunfo del formato SVG un poco al carro de las pantallas de alta definición de píxeles el mundo del rol es como una vuelta al oscurantismo de los 2000 en los que ni el cliente sabía si tenía su logo fuera de su tarjeta de visita, y mucho menos en vectorial.
 
-En mundo rol se nota que faltan medios y que el nivel técnico ha sido consumido por la aventura, la investigación y la audacia. Esta gente te plantea mundos plagados de horrores y posibilidades infinitas. Te acompaña si hace faltas a las puertas del infierno o al planeta más lejano. Te enseña a crear un personaje capaz de destruir a un ejército de sectarios o de invocar a la criatura más mortal que puedas imaginar... pero los logos son bitmap y sigue usando [RAR](https://es.wikipedia.org/wiki/RAR) para comprimir las cosas.
+En mundo rol se nota que faltan medios y que el nivel técnico ha sido consumido por la aventura, la investigación y la audacia. Esta gente te plantea mundos plagados de horrores y posibilidades infinitas. Te acompaña si hace falta a las puertas del infierno o al planeta más lejano. Te enseña a crear un personaje capaz de destruir a un ejército de sectarios o de invocar a la criatura más mortal que puedas imaginar... pero los logos son bitmap y se sigue usando [RAR](https://es.wikipedia.org/wiki/RAR) para comprimir las cosas.
 
 ---
 
@@ -31,12 +31,12 @@ Un ejemplo de imagen bitmap sería el logo de Cultos Innombrables:
 Encontrarlo a buena calidad/tamaño y con fondo transparente ya es un pequeña proeza, pero además ser capaz de invertirle los colores (que se puede) es un extra importante.
 
 En la imagen se puede ver el logo completo y un detalle ampliado para ver el tema bitmap con los píxeles como puños.
-Obviamente en pixels te puedes lucir más con el desgaste de las letras, pero complicas que, de manera no profesional, lo puedas usar en tus partidas para que los jugadores identifiquen el sistema de juego.
+Obviamente en píxeles te puedes lucir más con el desgaste de las letras, pero complicas que, de manera no profesional, lo puedas usar en tus partidas para que los jugadores identifiquen el sistema de juego.
 
 Y un ejemplo de imagen vectorial lo tendríamos en el logo de Vampiro:
 ![Logo de Vampiro con detalle vectorial](./img/logo-vectorial.png)
 
-Hay menos detalles pero ponerle un fondo, ampliarlo o reducirlo de tamaño sin pérdida de calidad o cambiarlo de color son tareas súper fáciles.
+Hay menos detalles pero ponerle un fondo, ampliarlo o reducirlo de tamaño sin pérdida de calidad, o cambiarlo de color son tareas súper fáciles.
 
 En web esto lo tenemos bastante superado llegando en casos extremos a tener versiones bitmaps muy concretas y vectoriales para uso a blanco y negro, y en diferentes formatos (cartelería de gran tamaño, camionetas, etc.).
 
