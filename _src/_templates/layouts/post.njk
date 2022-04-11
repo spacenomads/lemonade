@@ -11,6 +11,9 @@
       <article class="post post--entry">
         <div class="post__cover">
           <img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ featured_alt }}">
+          {% if (featured_credits) %}
+          <p class="post__cover-credits">Foto: <a href="{{ featured_credits.link }}">{{ featured_credits.author }} </a> | {{featured_credits.site}}</p>
+          {% endif %}
         </div>
         <div class="content">
           <div class="wrapper">

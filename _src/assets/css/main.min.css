@@ -422,7 +422,21 @@ body {
   margin: 0; }
 
 .post__cover {
+  position: relative;
   margin-bottom: 1.25rem; }
+
+.post__cover-credits {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 !important;
+  font-size: 0.625rem;
+  background: rgba(255, 255, 255, 0.85);
+  line-height: 1;
+  padding: .5em 1em;
+  border-radius: 0.125rem 0 0; }
+  .post__cover-credits a {
+    color: #0870c8 !important; }
 
 .post__featured-image {
   display: block;
@@ -646,6 +660,11 @@ body {
       line-height: 166.66667%; }
     .post__cover {
       margin-bottom: 2.5rem; }
+    .post__cover-credits {
+      right: 0.3125rem;
+      bottom: 0.3125rem;
+      font-size: 0.75rem;
+      border-radius: 0.125rem; }
     .post--entry {
       font-size: 1.125rem;
       line-height: 166.66667%; }
