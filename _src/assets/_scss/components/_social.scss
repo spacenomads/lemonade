@@ -25,6 +25,7 @@
 
 	.content__social-comment-link {
 		@include font(comment);
+		text-align: left;
 
 		color: $color_text;
 		&::before {

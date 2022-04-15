@@ -4,7 +4,7 @@
   "description": "Sidiostedalimones.com 2021 version 🦄",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean; eleventy",
+    "build": "(npm run clean || true) && eleventy",
     "build:pro": "cross-env MODE=pro npm run build",
     "watch": "eleventy --watch",
     "serve": "npm run clean && eleventy --serve",

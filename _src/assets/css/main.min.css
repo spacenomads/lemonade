@@ -598,6 +598,7 @@ body {
   .content__social-comment .content__social-comment-link {
     font-size: 0.875rem;
     line-height: 214.28571%;
+    text-align: left;
     color: #212121; }
     .content__social-comment .content__social-comment-link::before {
       border-radius: 0.25rem;
