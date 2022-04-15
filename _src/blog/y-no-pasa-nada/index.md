@@ -19,7 +19,8 @@ Hace unas semanas me preocupaba entrar en instagram y ver a conocidos en la mani
 
 Por twitter preguntaron si es que preocupaba tener conocidos con diferentes ideas políticas, que pensaban que era de broma.
 
-Uso la palabra "conocidos" creo que un poco por miedo a esa persona mucho más cercana que no tienes localizada.
+Uso la palabra "conocidos" creo que un poco por miedo a esa persona mucho más cercana que no tienes localizSchrodingerGata
+ada.
 Conocidos con diferentes ideas políticas tenemos todos, pero son eso, conocidos; gente más lateral en tu vida.
 
 Cuando se trata de alguien más cercano ya estamos en otro terreno totalmente diferente.
