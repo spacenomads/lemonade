@@ -6,7 +6,7 @@ ya_image: anillo.png
 ya_alt: Este es el anillo del javascript. Anillo cerámico negro con una línea blanca en el centro.
 reading_time: 2
 date: 2022-04-18
-draft: true
+draft: false
 tags: [programación, js, miedo]
 clickbait: ¿Cómo nos llevamos con el JS?
 ---
