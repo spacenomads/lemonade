@@ -587,7 +587,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5rem 0 0.9375rem;
+  margin: 0 0 0.9375rem;
   padding: 0.625rem;
   position: relative; }
   .content__social-comment::before {
@@ -755,9 +755,7 @@ body {
         grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
       .post__footer .wrapper {
         margin-top: 6.25rem;
-        grid-template-areas: "sidebar-l note note note note note note sidebar-r" "sidebar-l content content content content content content sidebar-r"; }
-    .content__social-comment {
-      margin: 6.25rem 0 0.9375rem; } }
+        grid-template-areas: "sidebar-l note note note note note note sidebar-r" "sidebar-l content content content content content content sidebar-r"; } }
     @media screen and (min-width: 48em) and (min-width: 62.5em) {
     .brand {
       font-size: 1.25rem;
