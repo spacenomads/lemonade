@@ -7,13 +7,9 @@
 	box-sizing: border-box;
 	column-gap: rem(10);
 	display: flex;
-	margin: rem(80) 0 rem(15);
+	margin: 0 0 rem(15);
 	padding: rem(10);
 	position: relative;
-
-	@include mq($bp_desktop) {
-		margin: rem(100) 0 rem(15);
-	}
 
 	&::before {
 		background: img('icons/talk.svg') left top no-repeat;
