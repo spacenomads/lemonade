@@ -64,7 +64,7 @@ module.exports = function (config) {
     .map(word => capitalize(word))
     .join('');
 
-    return `${tag},SiDiosTeDaLimones`;
+    return `#${tag}%20#SiDiosTeDaLimones`;
   });
 
   config.addNunjucksFilter('isFuture', function(date) {

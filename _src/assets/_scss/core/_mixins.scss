@@ -116,7 +116,7 @@
 
 
 @mixin grid() {
-	display: grid;
+	
 
 	@include mq($bp-tablet) {
 		display: grid;
