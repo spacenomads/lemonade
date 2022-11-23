@@ -222,9 +222,6 @@ body {
   max-width: 56.25rem;
   z-index: 1000; }
 
-.footer .wrapper {
-  display: grid; }
-
 .footer__chuck {
   margin: 1.25rem auto 0;
   position: relative;
@@ -315,9 +312,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-12.5rem, #dfdfdf), color-stop(12.5rem, #fff));
   background: linear-gradient(to bottom, #dfdfdf -12.5rem, #fff 12.5rem);
   min-height: 18.125rem; }
-
-.content .wrapper {
-  display: grid; }
 
 .brand {
   -webkit-box-align: center;
@@ -527,13 +521,20 @@ body {
     width: 100%; }
 
 .post__footer {
-  margin: 2.5rem 0 5rem;
+  margin: 2.5rem 0 0;
   text-align: center; }
   .post__footer .wrapper {
-    display: grid; }
+    margin-top: 5rem; }
 
 .post__ya {
   width: 3.125rem; }
+
+.post__footer-note {
+  grid-area: note;
+  font-size: 0.875rem;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 0.625rem; }
 
 .post--draft .post__title,
 .post--future .post__title {
@@ -586,7 +587,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5rem 0 -4.375rem;
+  margin: 5rem 0 0.9375rem;
   padding: 0.625rem;
   position: relative; }
   .content__social-comment::before {
@@ -621,11 +622,11 @@ body {
     @media screen and (min-width: 48em) {
     .wrapper {
       margin: 0 3.125rem; }
-    .footer .wrapper {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-areas: "sidebar-l content content content content sidebar-r";
-      gap: 1.25rem; }
+  .footer .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "sidebar-l content content content content sidebar-r";
+    gap: 1.25rem; }
     .footer__chuck {
       width: 13.125rem; }
     .footer__content {
@@ -635,11 +636,11 @@ body {
     .main {
       background: -webkit-gradient(linear, left top, left bottom, color-stop(-5rem, #dfdfdf), color-stop(12.5rem, #fff));
       background: linear-gradient(to bottom, #dfdfdf -5rem, #fff 12.5rem); }
-    .content .wrapper {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-areas: "sidebar-l content content content content sidebar-r";
-      gap: 1.25rem; }
+  .content .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "sidebar-l content content content content sidebar-r";
+    gap: 1.25rem; }
   .content__inner {
     grid-area: content; }
   .content__sidebar-l {
@@ -674,6 +675,10 @@ body {
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: "sidebar-l content content content content sidebar-r";
         gap: 1.25rem; }
+      .post__footer .wrapper {
+        grid-template-areas: "sidebar-l note note note note sidebar-r" "sidebar-l content content content content sidebar-r"; }
+    .post__footer-note {
+      margin-bottom: 0; }
     .content__social-comment {
       grid-area: content; }
       .content__social-comment .content__social-comment-link {
@@ -682,17 +687,17 @@ body {
     @media screen and (min-width: 62.5em) {
     .wrapper {
       margin: 0 auto; }
-    .footer .wrapper {
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
+  .footer .wrapper {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
     .footer__chuck {
       margin: 2.5rem auto 1.25rem; }
     .main {
       background: -webkit-gradient(linear, left top, left bottom, color-stop(-6.25rem, #dfdfdf), color-stop(18.75rem, #fff));
       background: linear-gradient(to bottom, #dfdfdf -6.25rem, #fff 18.75rem); }
-    .content .wrapper {
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
+  .content .wrapper {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
     .brand {
       margin: 0;
       font-size: 1.25rem;
@@ -744,12 +749,15 @@ body {
         font-size: 1.25rem;
         line-height: 200%; }
     .post__footer {
-      margin: 3.125rem 0 6.25rem; }
+      margin: 3.125rem 0 0; }
       .post__footer .wrapper {
         grid-template-columns: repeat(8, 1fr);
         grid-template-areas: "sidebar-l content content content content content content sidebar-r"; }
+      .post__footer .wrapper {
+        margin-top: 6.25rem;
+        grid-template-areas: "sidebar-l note note note note note note sidebar-r" "sidebar-l content content content content content content sidebar-r"; }
     .content__social-comment {
-      margin: 6.25rem 0 -5.625rem; } }
+      margin: 6.25rem 0 0.9375rem; } }
     @media screen and (min-width: 48em) and (min-width: 62.5em) {
     .brand {
       font-size: 1.25rem;
