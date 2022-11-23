@@ -240,20 +240,48 @@
 
 
 .post__footer {
-	margin: rem(40) 0 rem(80);
+	margin: rem(40) 0 0;
 	text-align: center;
 
 	@include mq($bp_desktop) {
-		margin: rem(50) 0 rem(100);
+		margin: rem(50) 0 0;
 	}
 
 	.wrapper {
 		@include grid();
+		margin-top: rem(80);
+
+		@include mq($bp-tablet) {
+			grid-template-areas:
+				"sidebar-l note note note note sidebar-r"
+				"sidebar-l content content content content sidebar-r";
+		}
+	
+		@include mq($bp-desktop) {
+			margin-top: rem(100);
+			grid-template-areas:
+				"sidebar-l note note note note note note sidebar-r"
+				"sidebar-l content content content content content content sidebar-r";
+		}
+		
+		
 	}
 }
 
 .post__ya {
 	width: rem(50);
+}
+
+.post__footer-note {
+	grid-area: note;
+	font-size: rem(14);
+	line-height: 150%;
+	text-align: left;
+	margin-bottom: rem(10);
+
+	@include mq($bp-tablet) {
+		margin-bottom: 0;
+	}
 }
 
 

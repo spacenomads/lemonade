@@ -32,9 +32,10 @@
           <img class="post__ya" src="img/{{ ya_image }}" alt="{{ ya_alt }}">
 
           <div class="wrapper">
+            <div class="post__footer-note"><strong>Actualización</strong>: Mientras dejo twitter del todo y apaño esto voy a redirigir los comentarios, de haberlos, al mail y ya veré cómo lo integro luego de vuelta.</div>
             <div class="content__social-comment">
-                <a href="https://twitter.com/intent/tweet?text=→&hashtags={{ title | hashtag }}&url=https://sidiostedalimones.com{{page.url}}&via=oneeyedman" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</a>
-              </div>
+              <a href="mailto:comments@sidiostedalimones.com?subject=[Comment]%20{{ title }}&body={{ title | hashtag }}%0Ahttps://sidiostedalimones.com{{page.url}}%0A" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</a>
+            </div>
           </div>          
         </footer>
       </article>
