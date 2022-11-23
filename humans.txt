@@ -5,7 +5,7 @@ Mastodon: https://mastodon.social/@oneeyedman.
 Location: Madrid, Granada.
 
 /* THANKS */
-Bonaparte: https://paquita.masto.hosy/@bonapartethecat.
+Bonaparte: https://paquita.masto.host/@bonapartethecat.
 Trece ❤
 11ty community: https://www.11ty.dev/
 Giustino Brozacchiello: https://giustino.blog/how-to-drafts-eleventy/
