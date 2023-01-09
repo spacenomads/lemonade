@@ -48,7 +48,7 @@ module.exports = function (config) {
 
   config.addCollection('blog', collection => {
     return collection
-      .getFilteredByGlob('_src/blog/*/index.md')
+      .getFilteredByGlob('_src/blog/**/index.md')
       .filter(publishedPosts);
   });
 
