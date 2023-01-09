@@ -2,24 +2,23 @@
 $color-black: #212121;
 $color-white: #fff;
 $color-athens-gray: #dfdfdf;
-$color-mercury: #E5E5E5;
-$color-correct-blue: #008aff;
-$color-yellow-orange-juice: #ffcc00;
-$color-yellow-sea: #ff9900; 
-$color-green-sheen: #64B6AC;
-$color-fiery-rose: #ec5766;
-$color-blue-munsell: #0892A5;
+$color-correct-blue: #007aff;
+$color-tangerine: #ffcc00;
+$color-safety-orange: #ff9900;
+$color-dev-green-sheen: #64B6AC;
+$color-dev-fiery-rose: #ec5766;
+$color-dev-blue-munsell: #0892A5;
 
 $color-text: $color-black;
 $color-link: $color-correct-blue;
 $color-light-border: $color-athens-gray;
-$color-draft: $color-green-sheen;
-$color-future: $color-fiery-rose;
+$color-draft: $color-dev-green-sheen;
+$color-future: $color-dev-fiery-rose;
 
 
 
 // RADIUS
-$radius: 4;
+
 
 
 
@@ -31,6 +30,7 @@ $font-alt: serif;
 $font-family: Bitter, $font-alt;
 $font-light: 300;
 $font-regular: 400;
+$font-medium: 500;
 $font-semibold: 600;
 
 
@@ -38,30 +38,23 @@ $font-semibold: 600;
 
 
 // PAGE
-$page-margin-mobile: 30;
-$page-margin-tablet: 50;
-$page-max-width: 900;
-$page-gutter: 20;
+
 
 
 
 
 
 // BREAKPOINT
-$bp-tablet: 768;
-$bp-desktop: $page-max-width + $page-margin-tablet * 2;
-$bp-desktop-hd: 1440;
+
 
 
 
 
 // LEVELS
-$levels: content, menu, header;
+
 
 
 
 
 
 // THEME
-$theme: '../images/layout/';
-$theme-brand: '../images/brand/';

@@ -1,0 +1,41 @@
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0 !important;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* bitter-300 - latin */
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/bitter/bitter-v32-latin-300.woff2") format("woff2"), url("../fonts/bitter/bitter-v32-latin-300.woff") format("woff");
+}
+/* bitter-regular - latin */
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/bitter/bitter-v32-latin-regular.woff2") format("woff2"), url("../fonts/bitter/bitter-v32-latin-regular.woff") format("woff");
+}
+/* bitter-500 - latin */
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/bitter/bitter-v32-latin-500.woff2") format("woff2"), url("../fonts/bitter/bitter-v32-latin-500.woff") format("woff");
+}
+/* bitter-600 - latin */
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/bitter/bitter-v32-latin-600.woff2") format("woff2"), url("../fonts/bitter/bitter-v32-latin-600.woff") format("woff");
+}
+body {
+  font-size: 100%;
+  font-family: Bitter, serif;
+}
+/*# sourceMappingURL=main.css.map */
