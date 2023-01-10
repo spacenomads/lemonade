@@ -1,5 +1,3 @@
-// MIXINS
-
 @mixin mq($pixels, $width: min-width) {
 	@media screen and ($width: em($pixels)) {
 		@content;
@@ -18,11 +16,48 @@
 
 
 
-// TODO: Mejorar esto
+@mixin grid() {
+	@include mq($bp-tablet-v) {
+		display: grid;
+		gap: rem($page-gap);
+		grid-template-areas: "left content content content content right";
+		grid-template-columns: repeat($page-cols-tablet, 1fr);
+	}
+	@include mq($bp-desktop) {
+		gap: rem($page-gap-desktop);
+		grid-template-areas: "left content content content content content content right";
+		grid-template-columns: repeat($page-cols-desktop, 1fr);
+	}
+}
+
+
+
+
+
 @mixin screen-reader-only() {
 	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
 	height: 1px;
-	margin: 0 !important;
+	margin: -1px;
 	overflow: hidden;
+	padding: 0;
 	position: absolute;
+	width: 1px;
+}
+
+
+
+
+@mixin font($type) {
+
+	@if $type == brand {
+		font-size: rem(18);
+		line-height: lh(32, 18);
+		font-weight: $font-medium;
+
+		@media screen and (min-width: em($bp-desktop)) and (min-height: em($bp-tablet-v)) {
+			font-size: rem(24);
+			line-height: lh(48, 24);
+		}
+	}
 }

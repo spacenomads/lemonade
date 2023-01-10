@@ -1,0 +1,17 @@
+.lemon {
+	margin: 0;
+}
+
+.wrapper {
+	@include grid();
+
+	margin: 0 rem($page-mobile);
+
+	@include mq($bp-tablet-v) {
+		margin: 0 rem($page-tablet);
+	}
+	@include mq($bp-desktop) {
+		margin: 0 auto;
+		max-width: rem($page-max-width);
+	}
+}

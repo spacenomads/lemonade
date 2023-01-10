@@ -5,9 +5,9 @@
   {% include "../page-sections/head.njk" %}
 </head>
 <body class="lemon">
-  <div class="page">
+  <div class="lemon__container">
     {% include "../page-sections/header.njk" %}
-    <main class="page__main main">
+    <main class="lemon__main main">
       <article class="post post--entry">
         <div class="post__cover">
           <img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ featured_alt }}">
@@ -36,7 +36,7 @@
             <div class="content__social-comment">
               <a href="mailto:comments@sidiostedalimones.com?subject=[Comment]%20{{ title }}&body={{ title | hashtag }}%0Ahttps://sidiostedalimones.com{{page.url}}%0A" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</a>
             </div>
-          </div>          
+          </div>
         </footer>
       </article>
     </main>

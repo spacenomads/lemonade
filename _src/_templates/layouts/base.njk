@@ -2,15 +2,15 @@
 <html lang="{{ settings.lang }}">
 <head>
   {% set pageType = 'page' %}
-  {% include "../page-sections/head.njk" %}
+  {% include "page-sections/head.njk" %}
 </head>
 <body class="lemon">
-  <div class="page">
-    {% include "../page-sections/header.njk" %}
-    <main class="page__main main">
+  <div class="lemon__container">
+    {% include "page-sections/header.njk" %}
+    <main class="lemon__main main">
       {{ content | safe }}
     </main>
-    {% include "../page-sections/footer.njk" %}
+    {% include "page-sections/footer.njk" %}
   </div>
 </body>
 </html>

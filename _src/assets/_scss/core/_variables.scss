@@ -17,8 +17,8 @@ $color-future: $color-dev-fiery-rose;
 
 
 
-// RADIUS
-
+// UNITS
+$unit: 8;
 
 
 
@@ -37,24 +37,35 @@ $font-semibold: 600;
 
 
 
-// PAGE
-
-
-
-
-
 
 // BREAKPOINT
+$bp-tablet-v: 768;
+$bp-tablet-h: 1024;
+$bp-desktop: 1280;
 
 
+
+
+
+// PAGE
+$page-mobile: $unit * 3; // 24
+$page-tablet: $unit * 6; // 48
+$page-desktop: $unit * 7; // 56
+$page-max-width: $bp-desktop - $page-desktop * 2;
+$page-gap: $unit * 2;
+$page-gap-desktop: $unit * 3;
+$page-cols-tablet: 6;
+$page-cols-desktop: 8;
 
 
 
 // LEVELS
-
+$levels: background, content, header;
 
 
 
 
 
 // THEME
+$theme-brand: '../images/brand/';
+$theme-icons: '../images/layout/icons/'

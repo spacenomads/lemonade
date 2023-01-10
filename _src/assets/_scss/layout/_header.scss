@@ -1,0 +1,37 @@
+.lemon__header {
+	background-color: $color-white;
+	padding: rem(20) 0;
+}
+
+.lemon__brand-link {
+	color: inherit;
+	column-gap: rem(12);
+	display: flex;
+	text-decoration: none;
+
+	@include mq($bp-tablet-h) {
+		grid-area: content;
+		margin-left: rem((40 + 12) * -1);
+	};
+
+	&::before {
+		background: img('lemon.svg', $theme-brand) left top no-repeat;
+		background-size: 100% auto;
+		content: '';
+		height: rem(32);
+		width: rem(40);
+
+		@media screen and (min-width: em($bp-desktop)) and (min-height: em($bp-tablet-v)) {
+			height: rem(48);
+			width: rem(60);
+		}
+	}
+
+	@media screen and (min-width: em($bp-desktop)) and (min-height: em($bp-tablet-v)) {
+		margin-left: rem((60 + 12) * -1);
+	}
+}
+
+.lemon__brand {
+	@include font(brand);
+}

@@ -41,5 +41,5 @@
 
 
 @function lh( $fline, $fsize: $font-size ) {
-	@return ( $fline * 100% / $fsize );
+	@return calc($fline * 100% / $fsize)
 }
