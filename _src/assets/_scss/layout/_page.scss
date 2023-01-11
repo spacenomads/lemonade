@@ -1,5 +1,8 @@
 .lemon {
 	margin: 0;
+	background-color: $color-white;
+	background-color: pink;
+	background-image: linear-gradient(to bottom, $color-athens-gray, $color-white rem(400));
 }
 
 .wrapper {
@@ -14,4 +17,15 @@
 		margin: 0 auto;
 		max-width: rem($page-max-width);
 	}
+}
+
+.lemon__container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+.lemon__main {
+	flex-grow: 1;
 }

@@ -1,0 +1,30 @@
+.lemon__footer-content {
+	background-color: $color-black;
+	color: $color-white;
+	grid-area: content;
+	padding: rem($unit * 2);
+}
+
+.lemon__license {
+	@include font(footer);
+
+	align-items: center;
+	display: flex;
+	gap: rem($unit/2);
+	justify-content: center;
+	margin: 0;
+}
+
+.lemon__cc {
+	background: img('license.svg', $theme-icons) left top no-repeat;
+	background-size: 100% auto;
+	display: block;
+	height: rem(1);
+	overflow: hidden;
+	padding-top: rem(15);
+	width: rem(45);
+}
+
+.lemon__author {
+	color: inherit;
+}

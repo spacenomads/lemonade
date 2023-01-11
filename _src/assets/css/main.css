@@ -39,7 +39,6 @@
   src: local(""), url("../fonts/bitter/bitter-v32-latin-600.woff2") format("woff2"), url("../fonts/bitter/bitter-v32-latin-600.woff") format("woff");
 }
 .lemon {
-  background-color: #fff;
   color: #212121;
   font-family: Bitter, serif;
   font-size: 100%;
@@ -212,10 +211,32 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 
 .lemon {
   margin: 0;
+  background-color: #fff;
+  background-color: pink;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), color-stop(25rem, #fff));
+  background-image: linear-gradient(to bottom, #dfdfdf, #fff 25rem);
 }
 
 .wrapper {
   margin: 0 1.5rem;
+}
+
+.lemon__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.lemon__main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .lemon__header {
@@ -247,9 +268,56 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   font-weight: 500;
 }
 
+.lemon__footer-content {
+  background-color: #212121;
+  color: #fff;
+  grid-area: content;
+  padding: 1rem;
+}
+
+.lemon__license {
+  font-size: 0.875rem;
+  line-height: 114.2857142857%;
+  font-weight: 400;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.lemon__cc {
+  background: url("../images/layout/icons/license.svg") left top no-repeat;
+  background-size: 100% auto;
+  display: block;
+  height: 0.0625rem;
+  overflow: hidden;
+  padding-top: 0.9375rem;
+  width: 2.8125rem;
+}
+
+.lemon__author {
+  color: inherit;
+}
+
 .content__inner {
   background: lime;
   grid-area: content;
+}
+
+a {
+  color: #007aff;
+}
+
+.latest-posts__items {
+  height: 50vh;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 48em) {

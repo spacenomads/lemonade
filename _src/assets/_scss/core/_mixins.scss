@@ -60,4 +60,10 @@
 			line-height: lh(48, 24);
 		}
 	}
+
+	@if $type == footer {
+		font-size: rem(14);
+		line-height: lh(16, 14);
+		font-weight: $font-regular;
+	}
 }

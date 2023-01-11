@@ -12,7 +12,7 @@
 	@include mq($bp-tablet-h) {
 		grid-area: content;
 		margin-left: rem((40 + 12) * -1);
-	};
+	}
 
 	&::before {
 		background: img('lemon.svg', $theme-brand) left top no-repeat;
