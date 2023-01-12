@@ -255,9 +255,9 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   -webkit-column-gap: 0.75rem;
   -moz-column-gap: 0.75rem;
   column-gap: 0.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   text-decoration: none;
 }
 .lemon__brand-link::before {
@@ -325,15 +325,33 @@ a {
 }
 
 .home-posts__content {
-  background: pink;
   grid-area: content;
 }
 
-.home-posts__item {
-  background: deeppink;
-}
 .home-posts__item + .home-posts__item {
   margin-top: 1rem;
+}
+
+.home-posts {
+  margin-top: 1rem;
+}
+
+.home-posts__year {
+  border: 1px solid #dfdfdf;
+  height: 3rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  padding: 0 0.5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.375rem;
+  line-height: 150%;
+  font-weight: 500;
 }
 
 .home-post {
@@ -341,39 +359,44 @@ a {
 }
 
 .home-post__link {
-  background: yellow;
+  background: #ffcc00;
   display: block;
   height: 100%;
   position: relative;
 }
 
 .home-post__title {
-  position: absolute;
-  right: 0;
-  width: 100%;
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-weight: 600;
+  bottom: 0rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 8px;
-  bottom: 0;
-  z-index: 1;
   margin: 0;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
   text-align: right;
-  font-size: 2em;
+  width: 100%;
+  z-index: 1;
 }
 
 .home-post__mark {
   background-color: #212121;
   color: #fff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.15625rem 0.5rem;
 }
 
 .home-post__cover {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
   height: 100%;
+  left: 0;
   -o-object-fit: cover;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 48em) {
@@ -388,6 +411,20 @@ a {
   }
   .home-posts__item + .home-posts__item {
     margin-top: 0;
+  }
+  .home-posts__year {
+    font-size: 1.625rem;
+    line-height: 150%;
+  }
+  .home-posts__year {
+    height: 3.5rem;
+  }
+  .home-post__title {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+  .home-post__title {
+    bottom: 0rem;
   }
 }
 
@@ -407,6 +444,21 @@ a {
   .wrapper {
     margin: 0 auto;
     max-width: 73rem;
+  }
+  .home-posts {
+    margin-top: 1.5rem;
+  }
+  .home-posts__year {
+    font-size: 2rem;
+    line-height: 150%;
+  }
+  .home-posts__year {
+    height: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  .home-post--featured .home-post__title {
+    font-size: 2rem;
+    line-height: 143.75%;
   }
 }
 

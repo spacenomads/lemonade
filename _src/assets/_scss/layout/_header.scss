@@ -6,7 +6,7 @@
 .lemon__brand-link {
 	color: inherit;
 	column-gap: rem(12);
-	display: flex;
+	display: inline-flex;
 	text-decoration: none;
 
 	@include mq($bp-tablet-h) {

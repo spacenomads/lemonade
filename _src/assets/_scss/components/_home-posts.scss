@@ -1,26 +1,13 @@
-.home-posts { }
-
+// HOME
 .home-posts__content {
-
-		background: pink;
-		grid-area: content;
-
+	grid-area: content;
 }
-
-.home-posts--latest { }
-.home-posts--2023 { }
-
-.home-posts__year { }
-
-.home-posts__content { }
 
 .home-posts__items {
 	@extend %unlist;
 }
 
 .home-posts__item {
-	background: deeppink;
-
 	& + .home-posts__item {
 		margin-top: rem($unit * 2);
 
@@ -30,6 +17,33 @@
 	}
 }
 
+.home-posts {
+	margin-top: rem($unit * 2);
+
+	@include mq($bp-desktop) {
+		margin-top: rem($unit * 3);
+	}
+}
+
+.home-posts__year {
+	border: 1px solid $color-athens-gray;
+	height: rem($unit * 6);
+	margin-bottom: rem($unit * 2);
+	display: flex;
+	align-items: end;
+	padding: 0 rem($unit);
+	box-sizing: border-box;
+	@include font(h2);
+
+	@include mq($bp-tablet-v) {
+		height: rem($unit * 7);
+	}
+
+	@include mq($bp-desktop) {
+		height: rem($unit * 8);
+		margin-bottom: rem($unit * 3);
+	}
+}
 
 
 
@@ -39,39 +53,62 @@
 	height: rem($unit * 19);
 }
 .home-post__link {
-	background: yellow;
+	background: $color-tangerine;
 	display: block;
 	height: 100%;
 	position: relative;
 }
 
 .home-post__title {
+	@include font(gridTitle);
+
+	bottom: rem($post-title-offset);
+	box-sizing: border-box;
+	margin: 0;
+	padding: rem($unit);
 	position: absolute;
 	right: 0;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 8px;
-	bottom: 0;
-	z-index: 1;
-	margin: 0;
 	text-align: right;
-	font-size: 2em;
+	width: 100%;
+	z-index: 1;
+
+	@include mq($bp-tablet-v) {
+		bottom: rem($post-title-offset-tablet);
+	}
 }
+
 
 .home-post__mark {
 	background-color: $color-black;
 	color: $color-white;
+	box-decoration-break: clone;
+	padding: rem(2.5) rem($unit);
 }
 
 .home-post__cover {
-	position: absolute;
-	left: 0; top: 0;
-	width: 100%;
 	height: 100%;
+	left: 0;
 	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 
-.home-post--draft {}
-.home-post--future {}
-.home-post--no-img {}
+.home-post--draft {
+	//
+}
+
+.home-post--future {
+	//
+}
+
+.home-post--no-img {
+	//
+}
+
+.home-post--featured .home-post__title {
+	@include mq($bp-desktop) {
+		@include font(gridTitleLG)
+	}
+}

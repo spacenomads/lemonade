@@ -66,4 +66,68 @@
 		line-height: lh(16, 14);
 		font-weight: $font-regular;
 	}
+
+	@if $type == gridTitle {
+		font-size: rem(18);
+		line-height: lh(27, 18);
+		font-weight: $font-semibold;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(24);
+			line-height: lh(36, 24);
+		}
+	}
+
+	@if $type == gridTitleLG {
+		font-size: rem(32);
+		line-height: lh(46, 32);
+	}
+
+	@if $type == h1 {
+		font-size: rem(28);
+		line-height: lh(36, 28);
+		font-weight: $font-medium;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(36);
+			line-height: lh(51, 36);
+		}
+
+		@include mq($bp-desktop) {
+			font-size: rem(48);
+			line-height: lh(73, 48);
+		}
+	}
+
+	@if $type == h2 {
+		font-size: rem(22);
+		line-height: lh(33, 22);
+		font-weight: $font-medium;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(26);
+			line-height: lh(39, 26);
+		}
+
+		@include mq($bp-desktop) {
+			font-size: rem(32);
+			line-height: lh(48, 32);
+		}
+	}
+
+	@if $type == h3 {
+		font-size: rem(18);
+		line-height: lh(27, 18);
+		font-weight: $font-medium;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(22);
+			line-height: lh(33, 22);
+		}
+
+		@include mq($bp-desktop) {
+			font-size: rem(28);
+			line-height: lh(42, 28);
+		}
+	}
 }
