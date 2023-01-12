@@ -2,26 +2,39 @@
 title: home
 layout: layouts/base.njk
 eleventyNavigation:
-  key: home
+	key: home
 ---
-<section class="latest-posts content" data-published="{{ settings.version }}" data-mode="{{ settings.mode }}">
-  <div class="wrapper">
-    <div class="content__inner">
-      <ul class="latest-posts__items">
-        {% for post in collections.blog | reverse %}
-          <li class="latest-posts__item">
-            <div class="post {{ 'post--draft' if post.data.draft }} {{ post.data.date | isFuture }}">
-              <a class="post__link" href="{{ post.url }}">
-                {% set data = { reading_time: post.data.reading_time, date: post.data.date, post: false } %}
-                {% include './_templates/components/meta-info.njk' %}
-                <h2 class="post__title">{{ post.data.title }}</h2>
-              </a>
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+{# TODO: Falta el h1 #}
+<section class="home-posts home-posts--latest home-posts--2023" data-published="{{ settings.version }}" data-mode="{{ settings.mode }}">
+	<div class="wrapper">
+		<div class="home-posts__content">
+			<h1 class="sr-only">Mis posts</h1>
+			<h2 class="home-posts__year">2023</h2>
+			<ul class="home-posts__items">
+
+				{% for post in collections.blog | reverse %}
+					<li class="home-posts__item">
+
+						<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }}">
+							<a class="home-post__link" href="{{ post.url }}">
+
+								<h3 class="home-post__title">
+									<span class="home-post__mark">{{ post.data.title }}</span>
+								</h3>
+
+								{% if post.data.featured_image %}
+									<img src="{{ post.url }}img/{{ post.data.featured_image }}" class="home-post__cover" alt="{{ post.data.featured_alt }}">
+								{% endif %}
+
+							</a>
+						</article>
+
+					</li>
+				{% endfor %}
+
+			</ul>
+		</div>
+	</div>
 </section>
 
 

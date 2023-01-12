@@ -69,7 +69,7 @@ module.exports = function (config) {
   config.addNunjucksFilter('isFuture', function(date) {
     const postDate = new Date(date);
     const now = new Date();
-    return postDate > now ? 'post--future': '';
+    return postDate > now ? 'home-post--future': '';
   });
 
 

@@ -1,17 +1,13 @@
-
-
-.content__inner {
-	background: lime;
-	grid-area: content;
-}
-
 a {
 	color: $color-link;
 }
 
-.latest-posts__items {
-	height: 50vh;
-	overflow: hidden;
+
+
+.home-posts__year {
+	margin: 0;
 }
 
-
+.post__title {
+	margin: 0;
+}

@@ -1,3 +1,9 @@
+.home-posts__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
@@ -306,18 +312,68 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   color: inherit;
 }
 
-.content__inner {
-  background: lime;
-  grid-area: content;
-}
-
 a {
   color: #007aff;
 }
 
-.latest-posts__items {
-  height: 50vh;
-  overflow: hidden;
+.home-posts__year {
+  margin: 0;
+}
+
+.post__title {
+  margin: 0;
+}
+
+.home-posts__content {
+  background: pink;
+  grid-area: content;
+}
+
+.home-posts__item {
+  background: deeppink;
+}
+.home-posts__item + .home-posts__item {
+  margin-top: 1rem;
+}
+
+.home-post {
+  height: 9.5rem;
+}
+
+.home-post__link {
+  background: yellow;
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.home-post__title {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px;
+  bottom: 0;
+  z-index: 1;
+  margin: 0;
+  text-align: right;
+  font-size: 2em;
+}
+
+.home-post__mark {
+  background-color: #212121;
+  color: #fff;
+}
+
+.home-post__cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 48em) {
@@ -329,6 +385,9 @@ a {
   }
   .wrapper {
     margin: 0 3rem;
+  }
+  .home-posts__item + .home-posts__item {
+    margin-top: 0;
   }
 }
 

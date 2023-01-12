@@ -1,0 +1,77 @@
+.home-posts { }
+
+.home-posts__content {
+
+		background: pink;
+		grid-area: content;
+
+}
+
+.home-posts--latest { }
+.home-posts--2023 { }
+
+.home-posts__year { }
+
+.home-posts__content { }
+
+.home-posts__items {
+	@extend %unlist;
+}
+
+.home-posts__item {
+	background: deeppink;
+
+	& + .home-posts__item {
+		margin-top: rem($unit * 2);
+
+		@include mq($bp-tablet-v) {
+			margin-top: 0;
+		}
+	}
+}
+
+
+
+
+
+// POST
+.home-post {
+	height: rem($unit * 19);
+}
+.home-post__link {
+	background: yellow;
+	display: block;
+	height: 100%;
+	position: relative;
+}
+
+.home-post__title {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+	bottom: 0;
+	z-index: 1;
+	margin: 0;
+	text-align: right;
+	font-size: 2em;
+}
+
+.home-post__mark {
+	background-color: $color-black;
+	color: $color-white;
+}
+
+.home-post__cover {
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.home-post--draft {}
+.home-post--future {}
+.home-post--no-img {}
