@@ -39,5 +39,6 @@ module.exports = {
   url: 'https://sidiostedalimones.com',
   version: getStaticsVersion(),
   year: getYear(),
-	date: getCurrentDate()
+	date: getCurrentDate(),
+	post_years: [2022, 2021]
 }

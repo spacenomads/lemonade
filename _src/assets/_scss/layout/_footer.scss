@@ -10,7 +10,7 @@
 
 	align-items: center;
 	display: flex;
-	gap: rem($unit/2);
+	gap: rem( calc($unit/2) );
 	justify-content: center;
 	margin: 0;
 }

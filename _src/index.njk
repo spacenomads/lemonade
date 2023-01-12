@@ -12,7 +12,7 @@ eleventyNavigation:
 			<h2 class="home-posts__year">2023</h2>
 			<ul class="home-posts__items">
 
-				{% for post in collections.blog | reverse %}
+				{% for post in collections.blog | filterByYear(2023) | reverse %}
 					<li class="home-posts__item">
 
 						<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }}">
@@ -37,7 +37,38 @@ eleventyNavigation:
 	</div>
 </section>
 
+{% for year in settings.post_years %}
+	<section class="home-posts home-posts--{{ year }}" data-published="{{ settings.version }}" data-mode="{{ settings.mode }}">
+		<div class="wrapper">
+			<div class="home-posts__content">
+				<h2 class="home-posts__year">{{ year }}</h2>
+				<ul class="home-posts__items">
 
+					{% for post in collections.blog | filterByYear(year) | reverse %}
+						<li class="home-posts__item">
+
+							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }}">
+								<a class="home-post__link" href="{{ post.url }}">
+
+									<h3 class="home-post__title">
+										<span class="home-post__mark">{{ post.data.title }}</span>
+									</h3>
+
+									{% if post.data.featured_image %}
+										<img src="{{ post.url }}img/{{ post.data.featured_image }}" class="home-post__cover" alt="{{ post.data.featured_alt }}">
+									{% endif %}
+
+								</a>
+							</article>
+
+						</li>
+					{% endfor %}
+
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endfor %}
 
 
 

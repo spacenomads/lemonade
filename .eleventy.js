@@ -72,6 +72,14 @@ module.exports = function (config) {
     return postDate > now ? 'home-post--future': '';
   });
 
+	config.addNunjucksFilter('filterByYear', function(collection, year) {
+
+    return collection
+			.filter(post => {
+				return year === post.data.date.getFullYear();
+			});
+  });
+
 
 
 
