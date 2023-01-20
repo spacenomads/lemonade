@@ -1,0 +1,35 @@
+.home-salute {
+	margin: rem($unit * 2) 0;
+
+	@include mq($bp-desktop) {
+		margin: rem($unit * 3) 0;
+	}
+}
+
+.home-salute__container {
+	background: linear-gradient(to right, #cdcdcd, #b6b6b6);
+	grid-area: content;
+	display: flex;
+	height: rem($unit * 15);
+
+	@include mq($bp-tablet-v) {
+		height: rem($unit * 19);
+	}
+
+	@include mq($bp-desktop) {
+		height: rem($unit * 32);
+	}
+}
+
+.home-salute__avatar {
+	margin: auto;
+	height: rem($unit * 10);
+
+	@include mq($bp-tablet-v) {
+		height: rem($unit * 12);
+	}
+
+	@include mq($bp-desktop) {
+		height: rem($unit * 23);
+	}
+}

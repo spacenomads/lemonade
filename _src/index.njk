@@ -11,25 +11,28 @@ eleventyNavigation:
 			<h2 class="home-posts__year sr-only">2023</h2>
 			<ul class="home-posts__items">
 
-				{% for post in collections.blog | filterByYear(2023) | reverse %}
-					<li class="home-posts__item">
+				{# TODO: Por Crom, no se te olvide quitar esto 🫣 #}
 
-						<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
-							<a class="home-post__link" href="{{ post.url }}">
+					{% for post in collections.blog | filterByYear(2023) | reverse %}
+						<li class="home-posts__item">
 
-								<h3 class="home-post__title">
-									<span class="home-post__mark">{{ post.data.title }}</span>
-								</h3>
+							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
+								<a class="home-post__link" href="{{ post.url }}">
 
-								{% if post.data.featured_image %}
-									<img src="{{ post.url }}img/{{ post.data.featured_image }}" class="home-post__cover" alt="{{ post.data.featured_alt }}">
-								{% endif %}
+									<h3 class="home-post__title">
+										<span class="home-post__mark">{{ post.data.title }}</span>
+									</h3>
 
-							</a>
-						</article>
+									{% if post.data.featured_image %}
+										<img src="{{ post.url }}img/{{ post.data.featured_image }}" class="home-post__cover" alt="{{ post.data.featured_alt }}">
+									{% endif %}
 
-					</li>
-				{% endfor %}
+								</a>
+							</article>
+
+						</li>
+					{% endfor %}
+
 
 			</ul>
 		</div>
@@ -69,6 +72,6 @@ eleventyNavigation:
 	</section>
 {% endfor %}
 
-
+{% include "components/salute.njk" %}
 
 
