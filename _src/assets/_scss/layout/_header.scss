@@ -3,14 +3,20 @@
 	padding: rem(20) 0;
 }
 
+.lemon__brand {
+	display: flex;
+	@include mq($bp-tablet-v) {
+		grid-area: content;
+	}
+}
+
 .lemon__brand-link {
 	color: inherit;
 	column-gap: rem(12);
 	display: inline-flex;
 	text-decoration: none;
 
-	@include mq($bp-tablet-h) {
-		grid-area: content;
+	@include mq($bp-tablet-v) {
 		margin-left: rem((40 + 12) * -1);
 	}
 
@@ -32,6 +38,6 @@
 	}
 }
 
-.lemon__brand {
+.lemon__brand-name {
 	@include font(brand);
 }

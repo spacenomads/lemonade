@@ -48,6 +48,7 @@
 
 
 
+
 @mixin font($type) {
 
 	@if $type == brand {
@@ -130,4 +131,111 @@
 			line-height: lh(42, 28);
 		}
 	}
+
+	@if $type == paragraph {
+		font-size: rem(16);
+		line-height: lh(27.2, 16);
+
+		@include mq($bp-desktop) {
+			font-size: rem(22);
+			line-height: lh(37.4, 22);
+		}
+	}
+
+	@if $type == bigParagraph {
+		font-size: rem(18);
+		line-height: lh(27, 18);
+		font-weight: $font-regular;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(22);
+			line-height: lh(33, 22);
+		}
+
+		@include mq($bp-desktop) {
+			font-size: rem(26);
+			line-height: lh(39, 26);
+			font-weight: $font-medium;
+		}
+	}
+
+	@if $type == meta {
+		font-size: rem(14);
+		line-height: lh(16, 14);
+
+		@include mq($bp-desktop) {
+			font-size: rem(16);
+			line-height: lh(24, 16);
+		}
+	}
+
+	@if $type == tldrIcon {
+		font-size: rem(18);
+		line-height: lh(27, 18);
+		font-weight: $font-medium;
+
+		@include mq($bp-desktop) {
+			font-size: rem(32);
+			line-height: lh(48, 32);
+		}
+	}
+
+	@if $type == tldrParagraph {
+		font-size: rem(16);
+		line-height: lh(24, 16);
+		font-weight: $font-regular;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(18);
+			line-height: lh(27, 18);
+		}
+
+		@include mq($bp-desktop) {
+			font-size: rem(22);
+			line-height: lh(33, 22);
+		}
+	}
+
+	@if $type == quote {
+		font-size: rem(16);
+		line-height: lh(27.2, 16);
+		font-weight: $font-regular;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(18);
+			line-height: lh(30.6, 18);
+		}
+
+		@include mq($bp-desktop) {
+			font-size: rem(22);
+			line-height: lh(37.4, 22);
+		}
+	}
+
+	@if $type == quoteAuthor {
+		font-size: rem(14);
+		line-height: lh(18.2, 14);
+
+		@include mq($bp-desktop) {
+			font-size: rem(16);
+			line-height: lh(20.8, 16);
+		}
+	}
+
+	@if $type == comments {
+		font-size: rem(15);
+		line-height: lh(18, 15);
+		font-weight: $font-regular;
+
+		@include mq($bp-tablet-v) {
+			font-size: rem(16);
+			line-height: lh(25.6, 16);
+		}
+
+		@include mq($bp-desktop) {
+			font-size: rem(22);
+			line-height: lh(37.4, 22);
+		}
+	}
+
 }

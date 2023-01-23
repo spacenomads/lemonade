@@ -1,7 +1,9 @@
 <header class="lemon__header">
   <div class="wrapper">
-    <a href="/" class="lemon__brand-link">
-      <span class="lemon__brand">{{ settings.siteName }}{{ ' (local)' if settings.mode === 'dev'}}</span>
-    </a>
+		<div class="lemon__brand">
+			<a href="/" class="lemon__brand-link">
+				<span class="lemon__brand-name">{{ settings.siteName }}{{ ' (local)' if settings.mode === 'dev'}}</span>
+			</a>
+		</div>
   </div>
 </header>

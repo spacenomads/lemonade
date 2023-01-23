@@ -250,6 +250,12 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   padding: 1.25rem 0;
 }
 
+.lemon__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .lemon__brand-link {
   color: inherit;
   -webkit-column-gap: 0.75rem;
@@ -268,7 +274,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   width: 2.5rem;
 }
 
-.lemon__brand {
+.lemon__brand-name {
   font-size: 1.125rem;
   line-height: 177.7777777778%;
   font-weight: 500;
@@ -429,6 +435,12 @@ a {
   .wrapper {
     margin: 0 3rem;
   }
+  .lemon__brand {
+    grid-area: content;
+  }
+  .lemon__brand-link {
+    margin-left: -3.25rem;
+  }
   .home-posts__item + .home-posts__item {
     margin-top: 0;
   }
@@ -500,13 +512,6 @@ a {
   }
 }
 
-@media screen and (min-width: 64em) {
-  .lemon__brand-link {
-    grid-area: content;
-    margin-left: -3.25rem;
-  }
-}
-
 @media screen and (min-width: 80em) {
   .wrapper {
     gap: 1.5rem;
@@ -574,7 +579,7 @@ a {
   .lemon__brand-link {
     margin-left: -4.5rem;
   }
-  .lemon__brand {
+  .lemon__brand-name {
     font-size: 1.5rem;
     line-height: 200%;
   }
