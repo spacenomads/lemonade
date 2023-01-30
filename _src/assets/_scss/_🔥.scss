@@ -11,3 +11,63 @@ a {
 .post__title {
 	margin: 0;
 }
+
+
+.lemon__container {
+	// overflow: hidden;
+}
+
+.content__inner {
+	grid-area: content;
+}
+
+
+.post__quote {
+	margin: 2em 0;
+	padding: 1em 0;
+	position: relative;
+
+	&::before {
+		background: #e6e6e6;
+		content: '';
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100vw;
+	}
+}
+
+.post__quote--wrapper {
+	position: relative;
+}
+
+.content__social-comment-link {
+	grid-area: content
+}
+
+.content__social-comment {
+	background: yellow;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+}
+.content__social-comment-icon {
+	background-color: lime;
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+.content__social-comment-info {
+	grid-column: span 3;
+	background: crimson;
+	color: white;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.content__social-comment-clickbait {
+	display: block;
+}

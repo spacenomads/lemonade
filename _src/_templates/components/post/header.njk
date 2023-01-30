@@ -1,0 +1,34 @@
+<header class="post__header">
+	<div class="content">
+		<div class="wrapper">
+			<div class="content__inner">
+				<h1 class="post__title">
+					<span class="post__title-mark">{{ title }}</span></h1>
+				<a class="post__back" href="/">Volver a la home</a>
+
+				<div class="post__meta">
+					<time class="post__published-date" datetime="{{ date | datetime }}">{{ date | formatDate }}</time>
+
+					{% if reading_time %}
+						<p>
+							<time class="post__reading-time" datetime="PT{{ reading_time }}M">{{ reading_time }}
+								<abbr title="minutos">min</abbr>.</time>
+						</p>
+					{% endif %}
+
+					{% if cover_credits %}
+						<p class="post__credits">Foto: <a href="{{ cover_credits.link }}" class="post__link">{{ cover_credits.author }}</a> | <a href="{{ credits[cover_credits.site.toLowerCase()]}}" class="post__link">{{ cover_credits.site }}</a>
+						</p>
+					{% endif %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="post__cover {{ '' if featured_image else 'post__cover--no-img' }}">
+		{% if featured_image %}
+			<img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ featured_alt }}">
+		{% endif %}
+	</div>
+</header>

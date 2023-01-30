@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ settings.lang }}">
-<head>
-  {% set pageType = 'post' %}
-  {% include "../page-sections/head.njk" %}
-</head>
-<body class="lemon">
-  <div class="lemon__container">
-    {% include "../page-sections/header.njk" %}
-    <main class="lemon__main main">
-      <article class="post post--entry">
-        <div class="post__cover">
-          <img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ featured_alt }}">
-          {% if (featured_credits) %}
-          <p class="post__cover-credits">Foto: <a href="{{ featured_credits.link }}">{{ featured_credits.author }} </a> | {{featured_credits.site}}</p>
-          {% endif %}
-        </div>
-        <div class="content">
-          <div class="wrapper">
-            <div class="content__inner">
+	<head>
+		{% set pageType = 'post' %}
+		{% include "../page-sections/head.njk" %}
+	</head>
+	<body class="lemon">
+		<div class="lemon__container">
+			{% include "../page-sections/header.njk" %}
+			<main class="lemon__main main">
+				<article class="post post--entry">
 
-              <h1>{{ title }}</h1>
+					{% include "components/post/header.njk" %}
+					<div class="content">
+						<div class="wrapper">
+							<div class="content__inner">
+								{{ content | safe }}
+								     {# content__inner #}
+							</div>
+						</div>
+					</div>
+					<footer class="post__footer">
+						<img class="post__ya" src="img/{{ ya_image }}" alt="{{ ya_alt }}">
 
-              {% set data = { reading_time: reading_time, date: date } %}
-              {% include '../../_templates/components/meta-info.njk' %}
-              {{ content | safe }}
-
-            </div>
-          </div>
-        </div>
-        <footer class="post__footer">
-          <img class="post__ya" src="img/{{ ya_image }}" alt="{{ ya_alt }}">
-
-          <div class="wrapper">
-            <div class="post__footer-note"><strong>Actualización</strong>: Mientras dejo twitter del todo y apaño esto voy a redirigir los comentarios, de haberlos, al mail y ya veré cómo lo integro luego de vuelta.</div>
-            <div class="content__social-comment">
-              <a href="mailto:comments@sidiostedalimones.com?subject=[Comment]%20{{ title }}&body={{ title | hashtag }}%0Ahttps://sidiostedalimones.com{{page.url}}%0A" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</a>
-            </div>
-          </div>
-        </footer>
-      </article>
-    </main>
-    {% include "../page-sections/footer.njk" %}
-  </div>
-</body>
+						<div class="wrapper">
+							{% include "components/post/comments.njk" %}
+						</div>
+					</footer>
+				</article>
+			</main>
+			{% include "../page-sections/footer.njk" %}
+		</div>
+	</body>
 </html>

@@ -1,0 +1,11 @@
+<a href="{{ url | replace('#', '%23') | replace(' ', '+')}}" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">
+	<div class="content__social-comment">
+		{% set url = 'mailto:comments@sidiostedalimones.com?subject=[Comment] ' + title + '&body=' + (title | hashtag) + '%0Ahttps://sidiostedalimones.com' + page.url + '%0A' %}
+		<div class="content__social-comment-icon"></div>
+		<p class="content__social-comment-info">
+			<span class="content__social-comment-info-inner">
+				<span class="content__social-comment-clickbait">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</span> Cuéntamelo por email!
+			</span>
+		</p>
+	</div>
+</a>

@@ -9,12 +9,20 @@ const publishedPosts = (post) => {
   if (mode === MODE_DEVELOPMENT) return true;
   return post.date <= now && !post.data.draft;
 };
+
 const capitalize = str => {
   const parts = str.split('');
   parts[0] = parts[0].toUpperCase();
   return parts.join('');
 }
 
+function getLocaleDate(date) {
+	return date.toLocaleString('es-ES', {
+		day: '2-digit',
+		month: '2-digit',
+		year: 'numeric'
+	});
+}
 
 
 
@@ -63,7 +71,7 @@ module.exports = function (config) {
     .map(word => capitalize(word))
     .join('');
 
-    return `#${tag}%20#SiDiosTeDaLimones`;
+    return `#${tag} #SiDiosTeDaLimones`;
   });
 
   config.addNunjucksFilter('isFuture', function(date) {
@@ -78,6 +86,18 @@ module.exports = function (config) {
 			.filter(post => {
 				return year === post.data.date.getFullYear();
 			});
+  });
+
+
+	config.addNunjucksFilter('datetime', function(date) {
+		return getLocaleDate(date)
+			.split('/')
+			.reverse()
+			.join('-');;
+  });
+
+	config.addNunjucksFilter('formatDate', function(date) {
+    return getLocaleDate(date);
   });
 
 
