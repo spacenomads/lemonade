@@ -389,6 +389,22 @@ a {
   display: block;
 }
 
+.post__media--full {
+  background: pink;
+}
+
+.post__media--center {
+  background: yellow;
+}
+
+.post__media--mini {
+  background: lime;
+}
+
+.about__content {
+  grid-area: content;
+}
+
 .home-posts__content {
   grid-area: content;
 }
@@ -465,6 +481,63 @@ a {
   top: 0;
   width: 100%;
 }
+.post__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+.post__header .content__inner {
+  position: relative;
+}
+
+.post__title {
+  font-size: 1.75rem;
+  line-height: 128.5714285714%;
+  font-weight: 500;
+}
+
+.post__title-mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.post__title-mark span {
+  background: red;
+  padding: 0 5px;
+}
+
+.post__back {
+  position: absolute;
+  background: url("../images/layout/icons/back.svg") center no-repeat #dfdfdf;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 0.0625rem;
+  padding-top: 2.375rem;
+  overflow: hidden;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.post__cover {
+  background-color: #ffcc00;
+}
+
+.post__featured-image {
+  width: 100%;
+  display: block;
+}
+
+.post__cover--no-img {
+  min-height: 16rem;
+}
+
 .home-salute {
   margin: 1rem 0;
 }
@@ -529,6 +602,17 @@ a {
   }
   .home-posts .home-posts__item {
     grid-column: span 2;
+  }
+  .post__title {
+    font-size: 2.25rem;
+    line-height: 141.6666666667%;
+  }
+  .post__title {
+    line-height: 4.5625rem !important;
+  }
+  .post__back {
+    padding-top: 3.1875rem;
+    width: 3.25rem;
   }
   .home-salute__container {
     height: 9.5rem;
@@ -618,6 +702,14 @@ a {
   .home-posts--2022 .home-posts__item:last-child {
     grid-row: 2/4;
     grid-column: 5/7;
+  }
+  .post__title {
+    font-size: 3rem;
+    line-height: 152.0833333333%;
+  }
+  .post__back {
+    padding-top: 4.5rem;
+    width: 4.5625rem;
   }
   .home-salute {
     margin: 1.5rem 0;

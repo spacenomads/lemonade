@@ -1,0 +1,8 @@
+<div class="hobby">
+	<h3 class="hobby__title">{{ hobby.title }}</h3>
+	<p class="hobby__content">{{ hobby.content | safe }}
+		{% if hobby.link.url %}
+			<a href="{{ hobby.link.url }}" class="hobby__link">{{ hobby.link.label }}</a>
+		{% endif %}
+	</p>
+</div>

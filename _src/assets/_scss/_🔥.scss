@@ -71,3 +71,18 @@ a {
 .content__social-comment-clickbait {
 	display: block;
 }
+
+
+.post__media--full {
+	background: pink;
+}
+.post__media--center {
+	background: yellow;
+}
+.post__media--mini {
+	background: lime;
+}
+
+.about__content {
+	grid-area: content;
+}

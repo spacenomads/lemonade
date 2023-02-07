@@ -1,0 +1,32 @@
+{
+  "intro": "Aunque voy un poco despistado me he puesto a terminar todas esas series que llevaba a medias.",
+  "items": [
+    {
+      "title":"En papel, o no",
+      "icon":"book",
+      "content":"Blackhand & Ironhead vol 01, de David López",
+      "link":{
+        "url": "https://panelsyndicate.com/comics/blackhand-ironhead",
+        "label": "PanelSyndicate"
+      }
+    },
+    {
+      "title":"En la Play",
+      "icon":"play",
+      "content":"Tunic",
+      "link":{
+        "url": "",
+        "label": "Tunicgame.com"
+      }
+    },
+    {
+      "title":"En la tele",
+      "icon":"tv",
+      "content":"Jack Ryan, temporada 3",
+      "link":{
+        "url": "https://www.primevideo.com/detail/0LICP9T44G7F1H5YO7ES0MVU8M/ref=atv_dp_season_select_s3",
+        "label": "Prime Video"
+      }
+    }
+  ]
+}

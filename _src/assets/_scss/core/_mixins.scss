@@ -49,6 +49,20 @@
 
 
 
+@mixin mark() {
+	background-color: $color-black;
+	color: $color-white;
+	box-decoration-break: clone;
+	padding: rem(2.5) rem($unit);
+
+	@include mq($bp-tablet-v) {
+		padding: rem(4) rem($unit);
+	}
+}
+
+
+
+
 @mixin font($type) {
 
 	@if $type == brand {

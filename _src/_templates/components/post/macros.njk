@@ -11,7 +11,9 @@
 	<figure class="post__tldr">
 		<figcaption class="post__tldr-caption">TL;DR</figcaption>
 		<div class="post__tldr-content">
-			{% for p in content %}<p class="post__tldr-paragraph">{{ p }}</p>{% endfor %}
+			{%- for p in content -%}
+				<p class="post__tldr-paragraph">{{ p }}</p>
+			{%- endfor -%}
 		</div>
 	</figure>
 {%- endmacro -%}
@@ -21,9 +23,25 @@
 	<figure class="post__quote">
 		<div class="post__quote--wrapper">
 			<blockquote class="post__quote-block"{% if config.cite.url %} cite="{{ config.cite.url }}"{% endif %}>
-				{% for p in config.content %}<p class="post__quote-paragraph">{{ p }}</p>{% endfor %}
+				{%- for p in config.content -%}
+					<p class="post__quote-paragraph">{{ p }}</p>
+				{%- endfor -%}
 			</blockquote>
-			<figcaption class="post__quote-caption">—{{ config.author }}{% if config.cite.work %}, <cite class="post__quote-cite">{{ config.cite.work }}</cite>{% endif %}</figcaption>
+			<figcaption class="post__quote-caption">—{{ config.author }}
+				{%- if config.cite.work -%}
+					, <cite class="post__quote-cite">{{ config.cite.work }}</cite>
+				{%- endif -%}
+			</figcaption>
 		</div>
 	</figure>
+{%- endmacro -%}
+
+
+{%- macro img(config) -%}
+<figure class="post__media post__media--{{ config.mode }}">
+	<img src="{{ config.src }}" alt="{{ config.alt }}" class="post__media-image">
+	{%- if config.caption -%}
+		<figcaption class="post__media-caption">{{ config.caption | safe }}</figcaption>
+	{%- endif -%}
+</figure>
 {%- endmacro -%}

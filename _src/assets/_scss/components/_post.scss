@@ -1,0 +1,86 @@
+.post__header {
+	display: flex;
+	flex-direction: column-reverse;
+	.content {}
+
+	.content__inner {
+		position: relative;
+
+	}
+}
+
+.post__title {
+	@include font(h1);
+
+
+	@include mq($bp-tablet-v) {
+		line-height: rem(73) !important
+	}
+}
+
+.post__title-mark {
+	// @include mark();
+	// padding: 3px;
+	// // TODO: Revisar si incluir en el mixin
+	// @include mq($bp-desktop) {
+	// 	padding: 8px;
+	// }
+	display: flex;
+	flex-wrap: wrap;
+	span {
+		background: red;
+		padding: 0 5px;
+	}
+
+}
+
+.post__back {
+	position: absolute;
+	background: img('back.svg', $theme-icons) center no-repeat $color-athens-gray;
+	top: 0;
+	left: 0;
+	width: rem(24);
+	height: rem(1);
+	padding-top: rem(38);
+	overflow: hidden;
+	transform: translateX(-100%);
+
+	@include mq($bp-tablet-v) {
+		padding-top: rem(51);
+		width: rem(52);
+	}
+
+	@include mq($bp-desktop) {
+		padding-top: rem(72);
+		width: rem(73);
+	}
+}
+
+.post__meta {}
+
+.post__published-date {}
+
+.post__reading-time {}
+
+.post__credits {}
+
+.post__link {}
+
+
+
+
+
+
+// Cover
+.post__cover {
+	background-color: $color-tangerine;
+}
+
+.post__featured-image {
+	width: 100%;
+	display: block;
+}
+
+.post__cover--no-img {
+	min-height: rem($unit * 32);
+}

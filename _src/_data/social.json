@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Sígueme en Mastondon",
+    "id": "mastodon",
+    "url": "https://mastodon.social/@oneeyedman"
+  },
+  {
+    "label": "Sígueme en Pixelfed",
+    "id": "pixelfed",
+    "url": "https://pixelfed.social/@oneeyedman"
+  },
+  {
+    "label": "Sígueme en Twitch",
+    "id": "twitch",
+    "url": "https://twtich.tv/chuck_as_usual"
+  },
+  {
+    "label": "Sígueme en GitHub",
+    "id": "github",
+    "url": "https://github.com/oneeyedman"
+  }
+]

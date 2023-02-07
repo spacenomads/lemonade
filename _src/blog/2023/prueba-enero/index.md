@@ -2,6 +2,7 @@
 title: Prueba enero
 featured_image: false
 featured_alt:
+featured_color: fabada
 ya_image: false
 ya_alt:
 reading_time: 4
@@ -21,7 +22,28 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure vero accusant
 
  {{ macros.tldr(['Vaya tela', 'Vaya toalla']) }}
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure vero accusantium temporibus eum doloribus, consequatur, laboriosam dolor doloremque nobis laudantium. Assumenda laboriosam corrupti debitis excepturi laborum explicabo, est atque aspernatur dolore iure ducimus non ipsum quis inventore vel blanditiis distinctio maxime tempore error quae, impedit ratione asperiores reiciendis. Rerum ad, excepturi voluptatum deleniti debitis accusamus maiores quo nihil blanditiis laboriosam nobis recusandae fugiat sed corrupti veritatis amet commodi dignissimos molestias! Nisi veniam eos eius, minima fugit consequuntur aperiam temporibus sapiente cumque eum iure quibusdam illum veritatis ab ipsum dolor inventore sit vel eveniet neque odio eligendi non odit! Eum!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure vero accusantium temporibus eum doloribus, consequatur, laboriosam dolor doloremque nobis laudantium. Assumenda laboriosam corrupti debitis excepturi laborum explicabo, est atque aspernatur dolore iure ducimus non ipsum quis inventore vel blanditiis distinctio maxime tempore error quae, impedit ratione asperiores reiciendis. Rerum ad, excepturi voluptatum deleniti debitis accusamus maiores quo nihil blanditiis laboriosam nobis recusandae fugiat sed corrupti veritatis amet commodi dignissimos molestias!
+
+
+
+
+
+![Gatico en taza roja](https://www.catster.com/wp-content/uploads/2015/06/tiny-persian-kitten-in-teacup1.jpg "Title de la imagen")
+
+
+{% set imgConfig = {
+  src: 'https://www.catster.com/wp-content/uploads/2015/06/tiny-persian-kitten-in-teacup1.jpg',
+  alt: 'Gatico en taza roja',
+  caption: 'Foto encontrada por <a href="https://duckduckgo.com/?t=ffab&q=cats&iax=images&ia=images&iaf=size%3ASmall&iai=https%3A%2F%2Fwww.catster.com%2Fwp-content%2Fuploads%2F2015%2F06%2Ftiny-persian-kitten-in-teacup1.jpg">ahí</a>.',
+  mode: 'full'
+} %}
+{{ macros.img(imgConfig) }}
+
+***
+
+
+
+Nisi veniam eos eius, minima fugit consequuntur aperiam temporibus sapiente cumque eum iure quibusdam illum veritatis ab ipsum dolor inventore sit vel eveniet neque odio eligendi non odit! Eum!
 
 
 

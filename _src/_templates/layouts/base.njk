@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ settings.lang }}">
 <head>
-  {% set pageType = 'page' %}
-  {% include "page-sections/head.njk" %}
+	{% set pageType = 'page' %}
+	{% include "page-sections/head.njk" %}
 </head>
 <body class="lemon">
-  <div class="lemon__container">
-    {% include "page-sections/header.njk" %}
-    <main class="lemon__main main">
-      {{ content | safe }}
-    </main>
-    {% include "page-sections/footer.njk" %}
-  </div>
+	<div class="lemon__container">
+		{% include "page-sections/header.njk" %}
+		<main class="lemon__main main">
+			{{ content | safe }}
+		</main>
+		{% include "page-sections/footer.njk" %}
+	</div>
 </body>
 </html>
