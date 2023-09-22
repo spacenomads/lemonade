@@ -1,4 +1,19 @@
-// HOME
+// ***
+//  Stylesheet _home-post.scss
+//
+//  Table of Contents:
+//    1. Home
+//    2. Posts
+//    3. Grid
+//
+// ***
+
+
+
+
+
+// 1. Home
+// ---
 .home-posts__content {
 	grid-area: content;
 }
@@ -49,7 +64,8 @@
 
 
 
-// POST
+// 2. Posts
+// ---
 .home-post {
 	min-height: rem($unit * 15);
 	height: 100%;
@@ -96,15 +112,15 @@
 
 
 .home-post--draft {
-	//
+	// TODO: pending
 }
 
 .home-post--future {
-	//
+	// TODO: pending
 }
 
 .home-post--no-img {
-	//
+	// TODO: pending
 }
 
 .home-post--featured .home-post__title {
@@ -117,8 +133,8 @@
 
 
 
-
-// GRID
+// 3. Grid
+// ---
 @include mq($bp-tablet-v) {
 	.home-posts {
 		.home-posts__items {

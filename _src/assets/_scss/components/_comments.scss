@@ -1,0 +1,100 @@
+// ***
+//  Stylesheet _comments.scss
+//
+//  Table of Contents:
+//    1. Comments
+//
+// ***
+
+
+
+
+
+// 1. Comments
+// ---
+.content__social-comment-link {
+	@include font(comments);
+
+	display: block;
+	margin: 0 rem(-12) rem($unit * 3);
+	text-decoration: none;
+
+	@include mq($bp-tablet-v) {
+		grid-area: content;
+		margin: 0 0 rem($unit * 4);
+	}
+
+	@include mq($bp-desktop) {
+		grid-area: unset;
+		grid-column: 3 / span 4;
+		margin-bottom: rem($unit * 5);
+	}
+}
+
+.content__social-comment {
+	display: grid;
+	grid-template-columns: rem(53) 1fr;
+	background-color: rgba($color-athens-gray, .5);
+
+	@include mq($bp-tablet-v) {
+		grid-template-columns: rem(84) 1fr;
+	}
+
+	@include mq($bp-desktop) {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: rem($unit * 3);
+	}
+}
+
+.content__social-comment-icon {
+	aspect-ratio: 1;
+	background: img('mail.svg', $theme-icons) center no-repeat $color-link;
+	position: relative;
+
+	@include mq($bp-tablet-v) {
+		background-size: rem($unit * 4);
+	}
+
+	@include mq($bp-desktop) {
+		background-size: rem($unit * 6);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border: rem($unit) solid $color-link;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+
+		@include mq($bp-tablet-v) {
+			border-width: rem($unit * 1.5);
+		}
+
+		@include mq($bp-desktop) {
+			border-width: rem($unit * 2);
+		}
+	}
+}
+
+.content__social-comment-info {
+	margin: 0;
+	padding: rem($unit);
+
+	@include mq($bp-tablet-v) {
+		padding: rem($unit * 2);
+	}
+
+	@include mq($bp-desktop) {
+		grid-column: span 3;
+		padding: rem($unit* 3) rem($unit* 3) rem($unit* 3) 0;
+	}
+}
+
+.content__social-comment-clickbait {
+	color: $color-text;
+	display: block;
+}

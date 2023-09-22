@@ -74,11 +74,20 @@ module.exports = function (config) {
     return `#${tag} #SiDiosTeDaLimones`;
   });
 
+
+  config.addNunjucksFilter('spanMe', function(str) {
+    return str.split(' ')
+			.map(word => `<span class="post__title-mark-item">${word}</span>`)
+			.join(' ');
+  });
+
+
   config.addNunjucksFilter('isFuture', function(date) {
     const postDate = new Date(date);
     const now = new Date();
     return postDate > now ? 'home-post--future': '';
   });
+
 
 	config.addNunjucksFilter('filterByYear', function(collection, year) {
 

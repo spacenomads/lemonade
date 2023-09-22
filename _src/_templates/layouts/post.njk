@@ -20,7 +20,10 @@
 						</div>
 					</div>
 					<footer class="post__footer">
-						<img class="post__ya" src="img/{{ ya_image }}" alt="{{ ya_alt }}">
+
+						<figure class="post__ya">
+							<img class="post__ya-image" src="img/{{ ya_image }}" alt="{{ ya_alt }}">
+						</figure>
 
 						<div class="wrapper">
 							{% include "components/post/comments.njk" %}

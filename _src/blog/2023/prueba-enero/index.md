@@ -20,16 +20,15 @@ cover_credits:
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure vero accusantium temporibus eum doloribus, consequatur, laboriosam dolor doloremque nobis laudantium.
 
- {{ macros.tldr(['Vaya tela', 'Vaya toalla']) }}
+ {{ macros.tldr(['Hay varias generaciones repitiendo una frase que nunca  tuvo sentido.']) }}
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure vero accusantium temporibus eum doloribus, consequatur, laboriosam dolor doloremque nobis laudantium. Assumenda laboriosam corrupti debitis excepturi laborum explicabo, est atque aspernatur dolore iure ducimus non ipsum quis inventore vel blanditiis distinctio maxime tempore error quae, impedit ratione asperiores reiciendis. Rerum ad, excepturi voluptatum deleniti debitis accusamus maiores quo nihil blanditiis laboriosam nobis recusandae fugiat sed corrupti veritatis amet commodi dignissimos molestias!
 
+## Título 2
 
-
-
+Deleniti [debitis accusamus](#2) maiores quo nihil *blanditiis laboriosam* ~~nobis recusandae~~ fugiat sed corrupti veritatis amet commodi dignissimos molestias!
 
 ![Gatico en taza roja](https://www.catster.com/wp-content/uploads/2015/06/tiny-persian-kitten-in-teacup1.jpg "Title de la imagen")
-
 
 {% set imgConfig = {
   src: 'https://www.catster.com/wp-content/uploads/2015/06/tiny-persian-kitten-in-teacup1.jpg',
@@ -39,9 +38,25 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure vero accusant
 } %}
 {{ macros.img(imgConfig) }}
 
+{% set imgConfig = {
+  src: 'https://www.catster.com/wp-content/uploads/2015/06/tiny-persian-kitten-in-teacup1.jpg',
+  alt: 'Gatico en taza roja',
+  caption: 'Texto de pie de foto más largo que el comer, y que un día sin pan',
+  max_width: 193,
+  mode: 'center'
+} %}
+{{ macros.img(imgConfig) }}
+
+{% set imgConfig = {
+  src: 'https://www.catster.com/wp-content/uploads/2015/06/tiny-persian-kitten-in-teacup1.jpg',
+  alt: 'Gatico en taza roja',
+  caption: 'Pie de foto chiquitiqui :)',
+  max_width: 50,
+  mode: 'mini'
+} %}
+{{ macros.img(imgConfig) }}
+
 ***
-
-
 
 Nisi veniam eos eius, minima fugit consequuntur aperiam temporibus sapiente cumque eum iure quibusdam illum veritatis ab ipsum dolor inventore sit vel eveniet neque odio eligendi non odit! Eum!
 

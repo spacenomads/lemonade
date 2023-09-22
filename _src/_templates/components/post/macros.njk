@@ -19,6 +19,9 @@
 {%- endmacro -%}
 
 
+
+
+
 {%- macro quote(config) -%}
 	<figure class="post__quote">
 		<div class="post__quote--wrapper">
@@ -39,9 +42,16 @@
 
 {%- macro img(config) -%}
 <figure class="post__media post__media--{{ config.mode }}">
-	<img src="{{ config.src }}" alt="{{ config.alt }}" class="post__media-image">
+
+	{%- if config.link.url -%}
+		<a href="{{ config.link.url }}">
+	{%- endif -%}
+	<img src="{{ config.src }}" alt="{{ config.alt }}" class="post__media-image" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %} {% if config.title %}title="{{ config.title }}"{% endif %}>
+	{%- if config.link.url -%}
+		</a>
+	{%- endif -%}
 	{%- if config.caption -%}
-		<figcaption class="post__media-caption">{{ config.caption | safe }}</figcaption>
+		<figcaption class="post__media-caption {{ 'sr-only' if config.mode === 'mini' }}" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %}>{{ config.caption | safe }}</figcaption>
 	{%- endif -%}
 </figure>
 {%- endmacro -%}

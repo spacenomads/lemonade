@@ -13,19 +13,21 @@ date: 2022-04-11
 draft: false
 tag: [ideologia, politica]
 clickbait: Quizás no estemos de acuerdo nunca...
+cover_credits:
+  author: Nicholas Desjardins
+  site: Unsplash
 ---
 
 Hace unas semanas me preocupaba entrar en instagram y ver a conocidos en la manifestación "improvisada" frente a la sede de los populares por el tema ayuso/casado.
 
 Por twitter preguntaron si es que preocupaba tener conocidos con diferentes ideas políticas, que pensaban que era de broma.
 
-Uso la palabra "conocidos" creo que un poco por miedo a esa persona mucho más cercana que no tienes localizSchrodingerGata
-ada.
+Uso la palabra "conocidos" creo que un poco por miedo a esa persona mucho más cercana que no tienes localizada.
 Conocidos con diferentes ideas políticas tenemos todos, pero son eso, conocidos; gente más lateral en tu vida.
 
 Cuando se trata de alguien más cercano ya estamos en otro terreno totalmente diferente.
 
-Las amistades funcionan a otro rollo y hay de todo. Personalmente me cuesta tener cerca a gente con cierto tipo de ideas con las que no comulgo para nada o me molestan especialmente. Eso no quiere decir que todos los casos sean iguales y a veces quieres a una persona en tu vida sí o sí. 
+Las amistades funcionan a otro rollo y hay de todo. Personalmente me cuesta tener cerca a gente con cierto tipo de ideas con las que no comulgo para nada o me molestan especialmente. Eso no quiere decir que todos los casos sean iguales y a veces quieres a una persona en tu vida sí o sí.
 
 Y está guay, pero no es gratis.
 
@@ -47,10 +49,10 @@ Así, que sí, me da miedo entrar en instagram y encontrarme a cierta gente en l
 
 Y para mi es un problema tener que valorar hasta qué punto quiero mantener cierta relación con esta persona.
 
-Normalmente se forma una grieta importante y empiezas a prestar atención a una serie de detalles que dejan de tener gracia. 
+Normalmente se forma una grieta importante y empiezas a prestar atención a una serie de detalles que dejan de tener gracia.
 
 Si las diferencias son leves pues es más fácil, pero hay saltos que son tremendamente complicados.
 
 Esto no solo pasa en diferencias políticas. Si compro mucho en amazon y mi amigue está viendo que tiene que cerrar la librería porque no hay manera de competir con semejante monstruo… le puedo pedir que no le toque mucho la moral? O que me ría las gracias?
 
-**Le puedo decir que que no pasa nada?**
+**Le puedo decir que no pasa nada?**

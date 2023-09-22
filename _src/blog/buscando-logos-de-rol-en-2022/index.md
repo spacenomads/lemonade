@@ -10,6 +10,7 @@ draft: false
 tags: [rol, logo, vectorial, portadas]
 clickbait: ¿Juegas a rol? ¿A qué?
 ---
+{% import "components/post/macros.njk" as macros %}
 
 Este mes me he encargado de hacer las portadas de las partidas de marzo de [Resistencia Lúdica](https://resistencialudica.com) y me puse como meta mejor algunos de los logos de sistemas de juego que ya teníamos. Qué podría salir mal?
 
@@ -21,12 +22,18 @@ En mundo rol se nota que faltan medios y que el nivel técnico ha sido consumido
 
 ---
 
-Las imágenes pueden ser de dos tipos: **[bitmap](https://es.wikipedia.org/wiki/Imagen_de_mapa_de_bits)** o **[vectorial](https://es.wikipedia.org/wiki/Gráfico_vectorial)**.  
-Las **bitmap** son un conjunto de cuadraditos de colores con el tamaño que tienen y ya; a más detalle o tamaño, pesan más.  
+Las imágenes pueden ser de dos tipos: **[bitmap](https://es.wikipedia.org/wiki/Imagen_de_mapa_de_bits)** o **[vectorial](https://es.wikipedia.org/wiki/Gráfico_vectorial)**.
+Las **bitmap** son un conjunto de cuadraditos de colores con el tamaño que tienen y ya; a más detalle o tamaño, pesan más.
 Las **vectoriales** son un conjunto de datos de nodos, posiciones, manecillas, colores, etc. que representan una imagen que puedes aumentar sin pérdida de calidad, ocupan y pesan mucho menos.
 
 Un ejemplo de imagen bitmap sería el logo de Cultos Innombrables:
-![Logo de Cultos innombrables con detalle bitmap](./img/logo-bitmap.png)
+
+{% set imgConfig = {
+  src: './img/logo-bitmap.png',
+  alt: 'Logo de Cultos innombrables con detalle bitmap',
+  mode: 'full'
+} %}
+{{ macros.img(imgConfig) }}
 
 Encontrarlo a buena calidad/tamaño y con fondo transparente ya es un pequeña proeza, pero además ser capaz de invertirle los colores (que se puede) es un extra importante.
 
@@ -34,7 +41,13 @@ En la imagen se puede ver el logo completo y un detalle ampliado para ver el tem
 Obviamente en píxeles te puedes lucir más con el desgaste de las letras, pero complicas que, de manera no profesional, lo puedas usar en tus partidas para que los jugadores identifiquen el sistema de juego.
 
 Y un ejemplo de imagen vectorial lo tendríamos en el logo de Vampiro:
-![Logo de Vampiro con detalle vectorial](./img/logo-vectorial.png)
+
+{% set imgConfig = {
+  src: './img/logo-vectorial.png',
+  alt: 'Logo de Vampiro con detalle vectorial',
+  mode: 'full'
+} %}
+{{ macros.img(imgConfig) }}
 
 Hay menos detalles pero ponerle un fondo, ampliarlo o reducirlo de tamaño sin pérdida de calidad, o cambiarlo de color son tareas súper fáciles.
 

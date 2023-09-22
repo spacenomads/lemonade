@@ -43,45 +43,10 @@ a {
 	position: relative;
 }
 
-.content__social-comment-link {
-	grid-area: content
-}
-
-.content__social-comment {
-	background: yellow;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 16px;
-}
-.content__social-comment-icon {
-	background-color: lime;
-	width: 100%;
-	aspect-ratio: 1;
-}
-
-.content__social-comment-info {
-	grid-column: span 3;
-	background: crimson;
-	color: white;
-	margin: 0;
-	display: flex;
-	align-items: center;
-}
-
-.content__social-comment-clickbait {
-	display: block;
-}
 
 
-.post__media--full {
-	background: pink;
-}
-.post__media--center {
-	background: yellow;
-}
-.post__media--mini {
-	background: lime;
-}
+
+
 
 .about__content {
 	grid-area: content;

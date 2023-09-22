@@ -10,9 +10,11 @@ draft: false
 tag: [mastodon, twitter, migracion]
 clickbait: Vente, nos faltas tú
 ---
+{% import "components/post/macros.njk" as macros %}
+
 Esto era un hilo de twitter, pero he pensado que tiene más sentido un post.
 
-> **TL;DR**  
+> **TL;DR**
 Vente, el agua está bien y tenemos sombrilla para ti.
 
 [Mastodon](https://joinmastodon.org) es un poco lo que debería ser twitter, o **lo más parecido a lo que era al principio**. No técnicamente, sino como concepto: un espacio abierto para personas, vamos, una red social.
@@ -33,9 +35,9 @@ No sabría cómo rentabilizar twitter para tener un equipo que lo mantenga y mej
 
 A lo que voy es que twitter no lleva días muriendo.
 
-El tema de la publicidad le ha hecho mucho daño, para los usuarios que no somos marcas sino personas, pero daño, daño. Y ahora pudiendo **comprar la marca de verificado** ya es la risión. 
+El tema de la publicidad le ha hecho mucho daño, para los usuarios que no somos marcas sino personas, pero daño, daño. Y ahora pudiendo **comprar la marca de verificado** ya es la risión.
 
-De repente tu contenido es más publicidad y acentúa la diferencia entre los usuarios **personas**. 
+De repente tu contenido es más publicidad y acentúa la diferencia entre los usuarios **personas**.
 Entiendo que las marcas lo pagarán del presupuesto que tengan para publicidad.
 
 **Mastodon es un espacio donde podemos tener lo que teníamos** en twitter. Que le faltan cosas para mejorar? Pues claro. twitter al principio tb iba cortico.
@@ -53,7 +55,14 @@ Vendrán diseños mejores, vendrán avances en seguridad, vendrán mejores inter
 A día de hoy no es twitter, y no lo es tb para lo malo. Pasa que empezar de nuevo es una pereza siempre.
 
 Si queréis, un día lo vemos!
-[![Tweet donde me ofrezco a hacer un día u directo/video explicando Mastodon](img/tweet-como-funciona.png)](https://twitter.com/oneeyedman/status/1588835746659856384 "Vemos un día cómo funciona Mastodon")
+
+{% set imgConfig = {
+  src: './img/tweet-como-funciona.png',
+  alt: 'Tweet donde me ofrezco a hacer un día u directo/video explicando Mastodon',
+  max_width: 598,
+  mode: 'center'
+} %}
+{{ macros.img(imgConfig) }}
 
 Las bases de Mastodon son buenas, y es un sitio donde volver a tener lo que teníamos antes, con mucho menos riesgo de que se convierta en lo que hay ahora en twitter.
 

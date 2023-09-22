@@ -1,11 +1,12 @@
+{% set url = 'mailto:comments@sidiostedalimones.com?subject=[Comment] ' + title + '&body=→%20Escribe%20tu%20comentario%20aquí%0A%0A' + (title | hashtag) + '%0Ahttps://sidiostedalimones.com' + page.url + '%0A' %}
+
 <a href="{{ url | replace('#', '%23') | replace(' ', '+')}}" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">
 	<div class="content__social-comment">
-		{% set url = 'mailto:comments@sidiostedalimones.com?subject=[Comment] ' + title + '&body=' + (title | hashtag) + '%0Ahttps://sidiostedalimones.com' + page.url + '%0A' %}
 		<div class="content__social-comment-icon"></div>
 		<p class="content__social-comment-info">
 			<span class="content__social-comment-info-inner">
 				<span class="content__social-comment-clickbait">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</span> Cuéntamelo por email!
-			</span>
+			</span>1
 		</p>
 	</div>
 </a>

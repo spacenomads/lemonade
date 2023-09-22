@@ -1,77 +1,31 @@
+// ***
+//  Stylesheet _post.scss
+//
+//  Table of Contents:
+//    1. Header
+//    2. Content
+//    3. Images
+//    4. HR
+//    5. TL;DR
+//    6. YA image
+//
+// ***
+
+
+
+
+
+// 1. Header
+// ---
 .post__header {
 	display: flex;
 	flex-direction: column-reverse;
-	.content {}
 
 	.content__inner {
 		position: relative;
-
 	}
 }
 
-.post__title {
-	@include font(h1);
-
-
-	@include mq($bp-tablet-v) {
-		line-height: rem(73) !important
-	}
-}
-
-.post__title-mark {
-	// @include mark();
-	// padding: 3px;
-	// // TODO: Revisar si incluir en el mixin
-	// @include mq($bp-desktop) {
-	// 	padding: 8px;
-	// }
-	display: flex;
-	flex-wrap: wrap;
-	span {
-		background: red;
-		padding: 0 5px;
-	}
-
-}
-
-.post__back {
-	position: absolute;
-	background: img('back.svg', $theme-icons) center no-repeat $color-athens-gray;
-	top: 0;
-	left: 0;
-	width: rem(24);
-	height: rem(1);
-	padding-top: rem(38);
-	overflow: hidden;
-	transform: translateX(-100%);
-
-	@include mq($bp-tablet-v) {
-		padding-top: rem(51);
-		width: rem(52);
-	}
-
-	@include mq($bp-desktop) {
-		padding-top: rem(72);
-		width: rem(73);
-	}
-}
-
-.post__meta {}
-
-.post__published-date {}
-
-.post__reading-time {}
-
-.post__credits {}
-
-.post__link {}
-
-
-
-
-
-
-// Cover
 .post__cover {
 	background-color: $color-tangerine;
 }
@@ -83,4 +37,247 @@
 
 .post__cover--no-img {
 	min-height: rem($unit * 32);
+}
+
+.post__title {
+	@include font(h1);
+}
+
+.post__title-mark {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.post__title-mark-item {
+	background-color: $color-black;
+	color: $color-white;
+	padding: 0 rem(5);
+}
+
+.post__back {
+	position: absolute;
+	background: img('back.svg', $theme-icons) center no-repeat $color-athens-gray;
+	top: 0;
+	left: 0;
+	width: rem(24);
+	height: rem(1);
+	padding-top: rem(35);
+	overflow: hidden;
+	transform: translateX(-100%);
+
+	@include mq($bp-tablet-v) {
+		padding-top: rem(50);
+		width: rem(52);
+	}
+
+	@include mq($bp-desktop) {
+		padding-top: rem(72);
+		width: rem(73);
+	}
+}
+
+.post__meta {
+	@include font(meta);
+	margin-bottom: rem($unit *2);
+
+	@include mq($bp-desktop) {
+		margin-bottom: rem($unit *2);
+	}
+}
+
+.post__meta-time {
+	margin: rem($unit * 2) 0 rem($unit);
+
+	@include mq($bp-desktop) {
+		margin-top: rem($unit * 3);
+	}
+}
+
+.post__published-date {
+	margin-right: rem($unit * 2 - 4);
+
+	@include mq($bp-desktop) {
+		margin-right: rem($unit * 3 - 4);
+	}
+}
+
+
+.post__reading-time {
+	background: img('timer.svg', $theme-icons) left center no-repeat;
+	background-size: rem(16);
+	padding-left: rem(20);
+}
+
+.post__reading-time-abbr {
+	text-decoration-color: $color-correct-blue;
+}
+
+.post__credits {
+	margin: 0;
+
+	.post__link {
+		// TODO: poner así todos los enlaces? 🤔
+		color: inherit;
+		text-decoration: underline $color-correct-blue;
+		transition: color ease .3s;
+
+		&:hover {
+			color: $color-correct-blue;
+		}
+	}
+}
+
+
+
+
+
+// 2. Content
+// ---
+
+
+
+
+
+
+// 3. Images
+// ---
+.post__media {
+	margin: rem($unit * 4) 0;
+
+	@include mq($bp-desktop) {
+		margin: rem($unit * 5) 0;
+	}
+}
+
+.post__media-image {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+.post__media-caption {
+	@include font(meta);
+
+	margin-top: rem($unit);
+}
+
+
+.post__media--center {
+	.post__media-image,
+	.post__media-caption {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.post__media--mini {
+	.post__media-image {
+		max-width: rem($unit * 12);
+	}
+}
+
+
+
+
+// 4. HR
+// ---
+.post--entry .content hr {
+	border: 0;
+	width: rem($unit * 4);
+	height: rem($unit * 4);
+	background: img('divider.svg', $theme-icons) center no-repeat $color-graphic-block;
+	margin: rem($unit * 3) auto;
+
+	@include mq($bp-tablet-v) {
+		margin: rem($unit * 4) auto;
+	}
+}
+
+
+
+
+
+// 5. TL;DR
+// ---
+.post__tldr {
+	margin: rem($unit * 3) 0;
+	display: grid;
+	grid-template-columns: rem(83) 1fr;
+	column-gap: rem($unit * 2);
+
+	@include mq($bp-tablet-v) {
+		margin: rem($unit * 4) 0;
+		grid-template-columns:repeat(4, 1fr);
+
+	}
+
+	@include mq($bp-desktop) {
+		grid-template-columns:repeat(6, 1fr);
+		column-gap: rem($unit * 3);
+		margin: rem($unit * 5) 0;
+	}
+}
+
+.post__tldr-caption {
+	background-color: $color-graphic-block;
+	@include font(tldrIcon);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: rem($unit * 2);
+	margin-left: rem($unit * -3);
+
+	@include mq($bp-tablet-v) {
+		justify-content: center;
+		padding-right: 0;
+		margin-left: 0;
+	}
+
+	@include mq($bp-desktop) {
+		grid-column: span 2;
+	}
+}
+
+.post__tldr-content {
+	@include font(tldrParagraph);
+
+	@include mq($bp-tablet-v) {
+		grid-column: span 3;
+	}
+
+	@include mq($bp-desktop) {
+		grid-column: span 4;
+	}
+}
+
+.post__tldr-paragraph {
+	margin: 0;
+}
+
+.post__tldr-paragraph + .post__tldr-paragraph {
+	margin-top: 1em;
+}
+
+
+
+
+
+// 6. YA image
+// ---
+.post__ya {
+	margin: rem($unit * 6) 0 rem($unit * 10);
+	text-align: center;
+
+	@include mq($bp-tablet-v) {
+		margin: rem($unit * 7) 0 rem($unit * 10);
+	}
+
+	@include mq($bp-desktop) {
+		margin: rem($unit * 8) 0 rem($unit * 9);
+	}
+}
+
+.post__ya-image {
+	width: rem($unit * 7);
+	height: rem($unit * 7);
 }
