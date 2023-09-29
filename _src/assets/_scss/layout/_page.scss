@@ -1,7 +1,6 @@
 .lemon {
 	margin: 0;
 	background-color: $color-white;
-	background-color: pink;
 	background-image: linear-gradient(to bottom, $color-athens-gray, $color-white rem(400));
 }
 
@@ -13,6 +12,7 @@
 	@include mq($bp-tablet-v) {
 		margin: 0 rem($page-tablet);
 	}
+
 	@include mq($bp-desktop) {
 		margin: 0 auto;
 		max-width: rem($page-max-width);

@@ -1,5 +1,25 @@
-// COLORS
+// ***
+//  Stylesheet _variables.scss
+//
+//  Table of Contents:
+//    1. Colors
+//    2. Units
+//    3. Fonts
+//    4. Breakpoints
+//    5. Page
+//    6. Levels
+//    7. Themes
+//
+// ***
+
+
+
+
+
+// 1. Colors
+// ---
 $color-black: #212121;
+$color-pure-black: #121212;
 $color-white: #fff;
 $color-athens-gray: #dfdfdf;
 $color-correct-blue: #007aff;
@@ -9,23 +29,30 @@ $color-dev-green-sheen: #64B6AC;
 $color-dev-fiery-rose: #ec5766;
 $color-dev-blue-munsell: #0892A5;
 
-$color-text: $color-black;
+$color-text: $color-pure-black;
+$color-tldr-text: $color-black;
 $color-link: $color-correct-blue;
 $color-light-border: $color-athens-gray;
 $color-draft: $color-dev-green-sheen;
 $color-future: $color-dev-fiery-rose;
 $color-graphic-block: $color-tangerine;
+$color-quote-bg: rgba($color-athens-gray, .5);
 
 
 
-// UNITS
+
+
+
+// 2. Units
+// ---
 $unit: 8;
 
 
 
 
 
-// FONTS
+// 3. Fonts
+// ---
 $font-size: 16;
 $font-alt: serif;
 $font-family: Bitter, $font-alt;
@@ -38,8 +65,8 @@ $font-semibold: 600;
 
 
 
-
-// BREAKPOINT
+// 4. Breakpoints
+// ---
 $bp-tablet-v: 768;
 $bp-tablet-h: 1024;
 $bp-desktop: 1280;
@@ -48,7 +75,8 @@ $bp-desktop: 1280;
 
 
 
-// PAGE
+// 5. Page
+// ---
 $page-mobile: $unit * 3; // 24
 $page-tablet: $unit * 6; // 48
 $page-desktop: $unit * 7; // 56
@@ -62,13 +90,16 @@ $post-title-offset-tablet: .5;
 
 
 
-// LEVELS
-$levels: background, content, header;
+
+// 6. Levels
+// ---
+$levels: background, content, warning, header;
 
 
 
 
 
-// THEME
+// 7. Themes
+// ---
 $theme-brand: '../images/brand/';
-$theme-icons: '../images/layout/icons/'
+$theme-icons: '../images/layout/icons/';

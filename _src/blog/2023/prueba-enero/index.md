@@ -65,8 +65,7 @@ Nisi veniam eos eius, minima fugit consequuntur aperiam temporibus sapiente cumq
 
   {% set config = {
     content: [
-      'May the forces of evil become confused on the way to your house.',
-      'Otra frase'
+      'May the forces of evil become confused on the way to your house.'
     ],
     author: 'George Carlin',
     cite: {

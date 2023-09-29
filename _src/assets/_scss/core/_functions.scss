@@ -1,5 +1,18 @@
-// FUNCTIONS
+// ***
+//  Stylesheet _funcitons.scss
+//
+//  Table of Contents:
+//    1. em()
+//    2. rem()
+//    3. px()
+//    4. per()
+//    5. img()
+//    6. lh()
+//
+// ***
 
+// 1. em()
+// ---
 @function em( $pixels, $context: $font-size ) {
 	@return calc($pixels / $context * 1em);
 }
@@ -7,7 +20,17 @@
 
 
 
+// 2. rem()
+// ---
+@function rem( $pixels ) {
+	@return calc($pixels / $font-size * 1rem);
+}
 
+
+
+
+// 3. px()
+// ---
 @function px( $pixels ) {
 	@return calc($pixels * 1px);
 }
@@ -16,14 +39,8 @@
 
 
 
-@function rem( $pixels ) {
-	@return calc($pixels / $font-size * 1rem);
-}
-
-
-
-
-
+// 4. per()
+// ---
 @function per( $pixels, $context: $page-max-width ) {
 	@return ( $pixels * 100% / $context );
 }
@@ -32,6 +49,8 @@
 
 
 
+// 5. img()
+// ---
 @function img( $image, $path: $theme ) {
 	@return url( $path + $image );
 }
@@ -40,6 +59,8 @@
 
 
 
+// 6. lh()
+// ---
 @function lh( $fline, $fsize: $font-size ) {
 	@return calc($fline * 100% / $fsize)
 }

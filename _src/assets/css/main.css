@@ -45,7 +45,7 @@
   src: local(""), url("../fonts/bitter/bitter-v32-latin-600.woff2") format("woff2"), url("../fonts/bitter/bitter-v32-latin-600.woff") format("woff");
 }
 .lemon {
-  color: #212121;
+  color: #121212;
   font-family: Bitter, serif;
   font-size: 100%;
   font-weight: 300;
@@ -210,7 +210,7 @@ div.code-toolbar > .toolbar {
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > button {
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: consolas, monaco, "andale mono", "ubuntu mono", monospace;
   padding: 0.1875rem 0.9375rem;
   cursor: pointer;
 }
@@ -218,7 +218,6 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 .lemon {
   margin: 0;
   background-color: #fff;
-  background-color: pink;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), color-stop(25rem, #fff));
   background-image: linear-gradient(to bottom, #dfdfdf, #fff 25rem);
 }
@@ -334,27 +333,6 @@ a {
   grid-area: content;
 }
 
-.post__quote {
-  margin: 2em 0;
-  padding: 1em 0;
-  position: relative;
-}
-.post__quote::before {
-  background: #e6e6e6;
-  content: "";
-  height: 100%;
-  left: 50%;
-  position: absolute;
-  top: 0;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 100vw;
-}
-
-.post__quote--wrapper {
-  position: relative;
-}
-
 .about__content {
   grid-area: content;
 }
@@ -380,7 +358,7 @@ a {
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: end;
+  align-items: flex-end;
   padding: 0 0.5rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -576,10 +554,11 @@ a {
 }
 
 .post__tldr-caption {
-  background-color: #ffcc00;
   font-size: 1.125rem;
   line-height: 150%;
   font-weight: 500;
+  background-color: #ffcc00;
+  color: #212121;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,6 +584,59 @@ a {
 
 .post__tldr-paragraph + .post__tldr-paragraph {
   margin-top: 1em;
+}
+
+.post__quote {
+  margin: 1.5rem 0;
+  padding: 0.75rem 0 1.5rem 1.5rem;
+  position: relative;
+}
+.post__quote::before {
+  background: rgba(223, 223, 223, 0.5);
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100vw;
+  pointer-events: none;
+  z-index: -1;
+}
+.post__quote::after {
+  content: "";
+  background: url("../images/layout/icons/quotes.svg") left bottom no-repeat #212121;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 2.25rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.post__quote-block {
+  font-size: 1rem;
+  line-height: 170%;
+  font-weight: 400;
+  margin: 0;
+}
+
+.post__quote-paragraph {
+  margin: 0;
+}
+
+.post__quote-paragraph + .post__quote-paragraph {
+  margin-top: 1em;
+}
+
+.post__quote-caption {
+  font-size: 0.875rem;
+  line-height: 130%;
+  margin-top: 0.5rem;
+  text-align: end;
 }
 
 .post__ya {
@@ -655,7 +687,7 @@ a {
 }
 
 .content__social-comment-clickbait {
-  color: #212121;
+  color: #121212;
   display: block;
 }
 
@@ -752,6 +784,24 @@ a {
   }
   .post__tldr-content {
     grid-column: span 3;
+  }
+  .post__quote {
+    margin: 2rem 0;
+    padding: 1.5rem 0 1.5rem 4.5rem;
+    grid-area: content;
+  }
+  .post__quote::after {
+    width: 3rem;
+    height: 3.5rem;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .post__quote-block {
+    font-size: 1.125rem;
+    line-height: 170%;
+  }
+  .post__quote-caption {
+    margin-top: 1rem;
   }
   .post__ya {
     margin: 3.5rem 0 5rem;
@@ -913,6 +963,25 @@ a {
   }
   .post__tldr-content {
     grid-column: span 4;
+  }
+  .post__quote {
+    margin: 3.5rem 0;
+    padding: 2rem 0 2rem 5.5rem;
+  }
+  .post__quote::after {
+    width: 3.5rem;
+    height: 4rem;
+  }
+  .post__quote-block {
+    font-size: 1.375rem;
+    line-height: 170%;
+  }
+  .post__quote-caption {
+    font-size: 1rem;
+    line-height: 130%;
+  }
+  .post__quote-caption {
+    margin-top: 0.5rem;
   }
   .post__ya {
     margin: 4rem 0 4.5rem;

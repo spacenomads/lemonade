@@ -7,7 +7,8 @@
 //    3. Images
 //    4. HR
 //    5. TL;DR
-//    6. YA image
+//    6. Quotes
+//    7. YA image
 //
 // ***
 
@@ -219,8 +220,10 @@
 }
 
 .post__tldr-caption {
-	background-color: $color-graphic-block;
 	@include font(tldrIcon);
+
+	background-color: $color-graphic-block;
+	color: $color-tldr-text;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -262,7 +265,96 @@
 
 
 
-// 6. YA image
+// 6. Quotes
+// ---
+.post__quote {
+	margin: rem($unit * 3) 0;
+	padding: rem(calc($unit * 3 / 2)) 0 rem($unit * 3) rem($unit * 3);
+	position: relative;
+
+	@include mq($bp-tablet-v) {
+		margin: rem($unit * 4) 0;
+		padding: rem($unit * 3) 0 rem($unit * 3) rem($unit * 9);
+		grid-area: content;
+	}
+
+	@include mq($bp-desktop) {
+		margin: rem($unit * 7) 0;
+		padding: rem($unit * 4) 0 rem($unit * 4) rem($unit * 11);
+	}
+
+	&::before {
+		background: $color-quote-bg;
+		content: '';
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100vw;
+		pointer-events: none;
+		z-index: -1;
+	}
+
+	&::after {
+		content: '';
+		background: img('quotes.svg', $theme-icons) left bottom no-repeat $color-black;
+		background-size: 100% auto;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: rem($unit * 3);
+		height: rem(calc(($unit * 3) + ($unit * 3) / 2));
+		transform: translateX(-50%);
+
+		@include mq($bp-tablet-v) {
+			width: rem($unit * 6);
+			height: rem($unit * 7);
+			transform: translateX(0);
+		}
+
+		@include mq($bp-desktop) {
+			width: rem($unit * 7);
+			height: rem($unit * 8);
+		}
+	}
+}
+
+.post__quote-block {
+	@include font(quote);
+
+	margin: 0;
+}
+
+.post__quote-paragraph {
+	margin: 0;
+}
+
+.post__quote-paragraph + .post__quote-paragraph {
+	margin-top: 1em;
+}
+
+.post__quote-caption {
+	@include font(quoteAuthor);
+
+	margin-top: rem($unit);
+	text-align: end;
+
+	@include mq($bp-tablet-v) {
+		margin-top: rem($unit * 2);
+	}
+
+	@include mq($bp-desktop) {
+		margin-top: rem($unit);
+	}
+}
+
+
+
+
+
+
+// 7. YA image
 // ---
 .post__ya {
 	margin: rem($unit * 6) 0 rem($unit * 10);

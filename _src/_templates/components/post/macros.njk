@@ -24,18 +24,16 @@
 
 {%- macro quote(config) -%}
 	<figure class="post__quote">
-		<div class="post__quote--wrapper">
-			<blockquote class="post__quote-block"{% if config.cite.url %} cite="{{ config.cite.url }}"{% endif %}>
-				{%- for p in config.content -%}
-					<p class="post__quote-paragraph">{{ p }}</p>
-				{%- endfor -%}
-			</blockquote>
-			<figcaption class="post__quote-caption">—{{ config.author }}
-				{%- if config.cite.work -%}
-					, <cite class="post__quote-cite">{{ config.cite.work }}</cite>
-				{%- endif -%}
-			</figcaption>
-		</div>
+		<blockquote class="post__quote-block"{% if config.cite.url %} cite="{{ config.cite.url }}"{% endif %}>
+			{%- for p in config.content -%}
+				<p class="post__quote-paragraph">{{ p }}</p>
+			{%- endfor -%}
+		</blockquote>
+		<figcaption class="post__quote-caption">—{{ config.author }}
+			{%- if config.cite.work -%}
+				, <cite class="post__quote-cite">{% if config.cite.url %}<a href="{{ config.cite.url }}">{% endif %}{{ config.cite.work }}{% if config.cite.url %}</a>{% endif %}</cite>
+			{%- endif -%}
+		</figcaption>
 	</figure>
 {%- endmacro -%}
 

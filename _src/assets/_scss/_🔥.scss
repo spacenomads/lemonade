@@ -22,32 +22,6 @@ a {
 }
 
 
-.post__quote {
-	margin: 2em 0;
-	padding: 1em 0;
-	position: relative;
-
-	&::before {
-		background: #e6e6e6;
-		content: '';
-		height: 100%;
-		left: 50%;
-		position: absolute;
-		top: 0;
-		transform: translateX(-50%);
-		width: 100vw;
-	}
-}
-
-.post__quote--wrapper {
-	position: relative;
-}
-
-
-
-
-
-
 .about__content {
 	grid-area: content;
 }

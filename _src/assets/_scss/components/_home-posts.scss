@@ -45,7 +45,7 @@
 	height: rem($unit * 6);
 	margin-bottom: rem($unit * 2);
 	display: flex;
-	align-items: end;
+	align-items: flex-end;
 	padding: 0 rem($unit);
 	box-sizing: border-box;
 	@include font(h2);
