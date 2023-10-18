@@ -2,6 +2,7 @@
 //  Stylesheet _funcitons.scss
 //
 //  Table of Contents:
+//    0. @use
 //    1. em()
 //    2. rem()
 //    3. px()
@@ -11,9 +12,20 @@
 //
 // ***
 
+
+
+
+
+// 0. @use
+// ---
+@use 'variables' as vars;
+
+
+
+
 // 1. em()
 // ---
-@function em( $pixels, $context: $font-size ) {
+@function em( $pixels, $context: vars.$font-size ) {
 	@return calc($pixels / $context * 1em);
 }
 
@@ -23,7 +35,7 @@
 // 2. rem()
 // ---
 @function rem( $pixels ) {
-	@return calc($pixels / $font-size * 1rem);
+	@return calc($pixels / vars.$font-size * 1rem);
 }
 
 
@@ -41,7 +53,7 @@
 
 // 4. per()
 // ---
-@function per( $pixels, $context: $page-max-width ) {
+@function per( $pixels, $context: vars.$page-max-width ) {
 	@return ( $pixels * 100% / $context );
 }
 
@@ -51,7 +63,7 @@
 
 // 5. img()
 // ---
-@function img( $image, $path: $theme ) {
+@function img( $image, $path: vars.$theme ) {
 	@return url( $path + $image );
 }
 
@@ -61,6 +73,6 @@
 
 // 6. lh()
 // ---
-@function lh( $fline, $fsize: $font-size ) {
+@function lh( $fline, $fsize: vars.$font-size ) {
 	@return calc($fline * 100% / $fsize)
 }

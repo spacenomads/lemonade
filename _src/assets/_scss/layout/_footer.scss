@@ -1,28 +1,30 @@
+@use 'core/core';
+
 .lemon__footer-content {
-	background-color: $color-black;
-	color: $color-white;
+	background-color: core.$color-black;
+	color: core.$color-white;
 	grid-area: content;
-	padding: rem($unit * 2);
+	padding: core.rem(core.$unit * 2);
 }
 
 .lemon__license {
-	@include font(footer);
+	@include core.font(footer);
 
 	align-items: center;
 	display: flex;
-	gap: rem( calc($unit/2) );
+	gap: core.rem( calc(core.$unit/2) );
 	justify-content: center;
 	margin: 0;
 }
 
 .lemon__cc {
-	background: img('license.svg', $theme-icons) left top no-repeat;
+	background: core.img('license.svg', core.$theme-icons) left top no-repeat;
 	background-size: 100% auto;
 	display: block;
-	height: rem(1);
+	height: core.rem(1);
 	overflow: hidden;
-	padding-top: rem(15);
-	width: rem(45);
+	padding-top: core.rem(15);
+	width: core.rem(45);
 }
 
 .lemon__author {

@@ -1,6 +1,6 @@
-@import 'variables';
-@import 'mixins';
-@import 'functions';
-@import 'placeholders';
-@import 'utils';
-@import 'fonts';
+@forward 'variables';
+@forward 'functions';
+@forward 'mixins';
+@forward 'placeholders';
+@forward 'utils';
+@forward 'fonts';

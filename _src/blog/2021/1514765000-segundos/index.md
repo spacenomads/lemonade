@@ -9,7 +9,7 @@ date: 2021-10-13
 draft: false
 tag: [cumpleaños, ciclo]
 clickbait: ¿Tiene sentido?
-permalink: blog/1514765000-segundos/
+permalink: /blog/1514765000-segundos/
 ---
 
 48 años ya, madre de Crom!
@@ -21,6 +21,7 @@ Los 47 no han ido mal sin ser tampoco una locura. De hecho, desde los 45 no guar
 Además, con una pandemia por en medio. Ya está bien.
 
 En este último año he visto lo lejos de los demás que puedo vivir. A veces siendo secretamente súper feliz. No me parece mal y me ha ayudado mucho durante el confinamiento a no volverme loco, a disfrutar de pequeñas cosas y a llevar los momentos más duros.
+
 
 **No me parece mal, pero tampoco ideal**.
 

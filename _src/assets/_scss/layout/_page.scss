@@ -1,21 +1,23 @@
+@use 'core/core';
+
 .lemon {
 	margin: 0;
-	background-color: $color-white;
-	background-image: linear-gradient(to bottom, $color-athens-gray, $color-white rem(400));
+	background-color: core.$color-white;
+	background-image: linear-gradient(to bottom, core.$color-athens-gray, core.$color-white core.rem(400));
 }
 
 .wrapper {
-	@include grid();
+	@include core.grid();
 
-	margin: 0 rem($page-mobile);
+	margin: 0 core.rem(core.$page-mobile);
 
-	@include mq($bp-tablet-v) {
-		margin: 0 rem($page-tablet);
+	@include core.mq(core.$bp-tablet-v) {
+		margin: 0 core.rem(core.$page-tablet);
 	}
 
-	@include mq($bp-desktop) {
+	@include core.mq(core.$bp-desktop) {
 		margin: 0 auto;
-		max-width: rem($page-max-width);
+		max-width: core.rem(core.$page-max-width);
 	}
 }
 

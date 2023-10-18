@@ -2,11 +2,20 @@
 //  Stylesheet _home-post.scss
 //
 //  Table of Contents:
+//    0. @use
 //    1. Home
 //    2. Posts
 //    3. Grid
 //
 // ***
+
+
+
+
+
+// 0. @use
+// ---
+@use 'core/core';
 
 
 
@@ -24,39 +33,39 @@
 
 .home-posts__item {
 	& + .home-posts__item {
-		margin-top: rem($unit * 2);
+		margin-top: core.rem(core.$unit * 2);
 
-		@include mq($bp-tablet-v) {
+		@include core.mq(core.$bp-tablet-v) {
 			margin-top: 0;
 		}
 	}
 }
 
 .home-posts {
-	margin-top: rem($unit * 2);
+	margin-top: core.rem(core.$unit * 2);
 
-	@include mq($bp-desktop) {
-		margin-top: rem($unit * 3);
+	@include core.mq(core.$bp-desktop) {
+		margin-top: core.rem(core.$unit * 3);
 	}
 }
 
 .home-posts__year {
-	border: 1px solid $color-athens-gray;
-	height: rem($unit * 6);
-	margin-bottom: rem($unit * 2);
+	border: 1px solid core.$color-athens-gray;
+	height: core.rem(core.$unit * 6);
+	margin-bottom: core.rem(core.$unit * 2);
 	display: flex;
 	align-items: flex-end;
-	padding: 0 rem($unit);
+	padding: 0 core.rem(core.$unit);
 	box-sizing: border-box;
-	@include font(h2);
+	@include core.font(h2);
 
-	@include mq($bp-tablet-v) {
-		height: rem($unit * 7);
+	@include core.mq(core.$bp-tablet-v) {
+		height: core.rem(core.$unit * 7);
 	}
 
-	@include mq($bp-desktop) {
-		height: rem($unit * 8);
-		margin-bottom: rem($unit * 3);
+	@include core.mq(core.$bp-desktop) {
+		height: core.rem(core.$unit * 8);
+		margin-bottom: core.rem(core.$unit * 3);
 	}
 }
 
@@ -67,11 +76,11 @@
 // 2. Posts
 // ---
 .home-post {
-	min-height: rem($unit * 15);
+	min-height: core.rem(core.$unit * 15);
 	height: 100%;
 }
 .home-post__link {
-	background: $color-tangerine;
+	background: core.$color-tangerine;
 	display: block;
 	height: 100%;
 	min-height: inherit;
@@ -79,26 +88,26 @@
 }
 
 .home-post__title {
-	@include font(gridTitle);
+	@include core.font(gridTitle);
 
-	bottom: rem($post-title-offset);
+	bottom: core.rem(core.$post-title-offset);
 	box-sizing: border-box;
 	margin: 0;
-	padding: rem($unit);
+	padding: core.rem(core.$unit);
 	position: absolute;
 	right: 0;
 	text-align: right;
 	width: 100%;
 	z-index: 1;
 
-	@include mq($bp-tablet-v) {
-		bottom: rem($post-title-offset-tablet);
+	@include core.mq(core.$bp-tablet-v) {
+		bottom: core.rem(core.$post-title-offset-tablet);
 	}
 }
 
 
 .home-post__mark {
-	@include mark();
+	@include core.mark();
 }
 
 .home-post__cover {
@@ -124,8 +133,8 @@
 }
 
 .home-post--featured .home-post__title {
-	@include mq($bp-desktop) {
-		@include font(gridTitleLG)
+	@include core.mq(core.$bp-desktop) {
+		@include core.font(gridTitleLG)
 	}
 }
 
@@ -135,14 +144,14 @@
 
 // 3. Grid
 // ---
-@include mq($bp-tablet-v) {
+@include core.mq(core.$bp-tablet-v) {
 	.home-posts {
 		.home-posts__items {
 			display: grid;
-			gap: rem($page-gap);
-			grid-auto-rows: rem(120);
+			gap: core.rem(core.$page-gap);
+			grid-auto-rows: core.rem(120);
 			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: rem(120);
+			grid-template-rows: core.rem(120);
 		}
 
 
@@ -151,10 +160,10 @@
 		}
 	}
 }
-@media (min-width: em($bp-tablet-v)) and (max-width: em($bp-desktop - 1)) {
+@media (min-width: em(core.$bp-tablet-v)) and (max-width: em(core.$bp-desktop - 1)) {
 	.home-posts--latest {
 		.home-posts__items {
-			grid-template-rows: rem(200);
+			grid-template-rows: core.rem(200);
 		}
 
 		.home-posts__item {
@@ -199,19 +208,19 @@
 	}
 }
 
-@include mq($bp-desktop) {
+@include core.mq(core.$bp-desktop) {
 	.home-posts {
 		.home-posts__items {
-			gap: rem($page-gap-desktop);
-			grid-auto-rows: rem(136);
+			gap: core.rem(core.$page-gap-desktop);
+			grid-auto-rows: core.rem(136);
 			grid-template-columns: repeat(6, 1fr);
-			grid-template-rows: rem(136);
+			grid-template-rows: core.rem(136);
 		}
 	}
 
 	.home-posts--latest {
 		.home-posts__items {
-			grid-template-rows: rem(312);
+			grid-template-rows: core.rem(312);
 		}
 
 		.home-posts__item {

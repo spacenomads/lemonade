@@ -1,5 +1,7 @@
+@use 'core/core';
+
 a {
-	color: $color-link;
+	color: core.$color-link;
 }
 
 

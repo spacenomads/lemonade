@@ -1,3 +1,5 @@
+@use 'variables' as vars;
+
 /* bitter-300 - latin */
 @font-face {
   font-family: 'Bitter';
@@ -43,8 +45,8 @@
 
 
 .lemon {
-	color: $color-text;
-	font-family: $font-family;
+	color: vars.$color-text;
+	font-family: vars.$font-family;
 	font-size: 100%;
-	font-weight: $font-light;
+	font-weight: vars.$font-light;
 }
