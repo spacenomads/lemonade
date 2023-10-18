@@ -229,20 +229,26 @@
 	justify-content: flex-end;
 	padding-right: rem($unit * 2);
 	margin-left: rem($unit * -3);
+	min-height: rem($unit * 6);
 
 	@include mq($bp-tablet-v) {
 		justify-content: center;
 		padding-right: 0;
 		margin-left: 0;
+		min-height: rem($unit * 7);
 	}
 
 	@include mq($bp-desktop) {
 		grid-column: span 2;
+		min-height: rem($unit * 9);
 	}
 }
 
 .post__tldr-content {
 	@include font(tldrParagraph);
+
+	display: flex;
+	align-items: center;
 
 	@include mq($bp-tablet-v) {
 		grid-column: span 3;

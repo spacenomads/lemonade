@@ -9,6 +9,7 @@ date: 2022-02-28
 draft: false
 tags: [rol, logo, vectorial, portadas]
 clickbait: ¿Juegas a rol? ¿A qué?
+permalink: blog/buscando-logos-de-rol-en-2022/
 ---
 {% import "components/post/macros.njk" as macros %}
 

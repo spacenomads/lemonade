@@ -9,11 +9,12 @@ date: 2021-12-10
 draft: false
 tags: [tv, anime]
 clickbait: ¿Qué te ha parecido la serie?
+permalink: blog/see-you-space-cowboy/
 ---
 
 Estaba acabando la serie cuando leí la noticia de que Netflix había cancelado la serie.
 
-Dentro de que no sorprende y que Netflix debería hacer una feature de este rollo suyo de hype+cancelación solo tengo que decir que la serie mola. 
+Dentro de que no sorprende y que Netflix debería hacer una feature de este rollo suyo de hype+cancelación solo tengo que decir que la serie mola.
 
 Pasa que es muy difícil vivir con la barra de medir tan alta y centrándose en lo que no es: **No es la serie de anime, gracias a Crom.**
 
@@ -21,7 +22,7 @@ Sin embargo sí es una serie bastante cuidada, de aventuras, en el espacio, con 
 
 Es cierto, tiene un malo que hace del término "sobre actuar" una broma, aunque en contexto no hace tantísimo daño a la serie. Realmente el personaje tiene su sitio y na vez que lo aceptas por lo que es... ni tan mal.
 
-Ya está cancelada. Las críticas están siendo duras y creo que el personal tiene muy romantizada la serie original, que tampoco es tan obra maestra. 
+Ya está cancelada. Las críticas están siendo duras y creo que el personal tiene muy romantizada la serie original, que tampoco es tan obra maestra.
 
 Puede que en el momento, 1998, fuese un locurón, pero **ha llovido mucho desde entonces** y quizás en sus corazones esta gente tiene la serie en un lugar especial. La serie ha envejecido muy mal y es demasiado lenta para el margen de atención del que disfrutamos en este mundo del ahora.
 
@@ -29,5 +30,5 @@ Yo no la vi en su momento y aún con una alta tolerancia a diferentes series se 
 
 Quizás por esto he visto la nueva serie con ojos nuevos, sin un altar inalcanzable, y he podido disfrutarla bastante.
 
-No creo que la serie tuviese ninguna oportunidad real.  
+No creo que la serie tuviese ninguna oportunidad real.
 Estaréis contentos.

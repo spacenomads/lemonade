@@ -1,11 +1,7 @@
 ---
 title: Y no pasa nada...
 featured_image: ideas.jpg
-featured_alt: Escultura enorme de la cabeza de joven griego. Ha perdido como de base de la nariz hacia arriba. En todos de grises.
-featured_credits:
-  author: Levi Meir Clancy
-  link: https://unsplash.com/photos/jZaQOzrC3XU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-  site: Unsplash
+featured_alt: Escultura enorme de la cabeza de joven griego. Ha perdido como de base de la nariz hacia arriba. En tonos de grises.
 ya_image: estatua.png
 ya_alt: Misma cabeza pero encajada en un pequeño círculo de color gris..
 reading_time: 3
@@ -13,6 +9,7 @@ date: 2022-04-11
 draft: false
 tag: [ideologia, politica]
 clickbait: Quizás no estemos de acuerdo nunca...
+permalink: blog/y-no-pasa-nada/
 cover_credits:
   author: Nicholas Desjardins
   site: Unsplash

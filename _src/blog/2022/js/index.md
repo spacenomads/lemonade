@@ -1,6 +1,6 @@
 ---
 title: JS
-featured_image: js.jpg 
+featured_image: js.jpg
 featured_alt: Logo cuadrado amarillo de JS sobre fondo gris con un degradado de diseñador.
 ya_image: anillo.png
 ya_alt: Este es el anillo del javascript. Anillo cerámico negro con una línea blanca en el centro.
@@ -9,6 +9,7 @@ date: 2022-04-18
 draft: false
 tags: [programación, js, miedo]
 clickbait: ¿Cómo nos llevamos con el JS?
+permalink: blog/js/
 ---
 
 A mí, javascript, me daba muchísimo miedo. Miedo nivel "tengo un anillo que me pongo cuando programo JS porque hace sentir seguro".
@@ -16,7 +17,7 @@ Como la mayor parte de estos 24 años he currado solo pues no tenía de quién t
 
 Las cosas más habituales de manejo del DOM pues entran con más o menos sangre, pero entran. Eventualmente hay redes sociales y varios compañeros apuntan los horrores, te echan una mano y tu código mejora.
 
-Creo que mi primera petición a una API fue en 2017 cuando lo tuve que enseñar de profe. Tan solo unos meses antes, en un proyecto, tuve que armar un calendario para una parte privada de un conocido club de fútbol, tenía que crearlo directamente desde JS y me quitó el sueño, pero bien. 
+Creo que mi primera petición a una API fue en 2017 cuando lo tuve que enseñar de profe. Tan solo unos meses antes, en un proyecto, tuve que armar un calendario para una parte privada de un conocido club de fútbol, tenía que crearlo directamente desde JS y me quitó el sueño, pero bien.
 
 De verdad pensaba que no podría y después de mirar doscientos plugins que no me servían para lo que había que hacer decidí que, como muchos otros problemas, si lo descomponía en pequeñas partes igual veía ese hilo conductor que al final tuviese el problema solucionado.
 
@@ -53,4 +54,3 @@ Sí que he perdido mucho miedo, sobre todo si hay alguien mirando, pero siempre 
 Ahora me niego a perder ese "hacer algo divertido" y me gusta hacer pequeñas cosas cuando puedo.
 
 El anillo lo sigo llevando cerca.
- 

@@ -9,6 +9,7 @@ date: 2022-05-16
 draft: false
 tags: [redes sociales, mastodon, pixelfed]
 clickbait: ¿Te vienes o qué?
+permalink: blog/nuestras-redes-sociales/
 ---
 {% import "components/post/macros.njk" as macros %}
 

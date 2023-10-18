@@ -9,6 +9,7 @@ date: 2022-01-05
 draft: false
 tags: [design, development]
 clickbait: ¿Lo has probado ya?
+permalink: blog/penpot/
 ---
 {% import "components/post/macros.njk" as macros %}
 

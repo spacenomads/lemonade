@@ -9,6 +9,7 @@ date: 2022-02-21
 draft: false
 tags: [psoe, miedo, rastreros, lobos, república]
 clickbait: ¿Y tú, cuánto pagas de luz?
+permalink: blog/capitalizando-el-miedo/
 ---
 
 Me llama mucho la atención cómo el psoe es capaz de hacer tan bien algo tan rastrero como **capitalizar el miedo**.
@@ -19,16 +20,16 @@ A ver, que el psoe ha movido una serie de cambios sociales, sí. Las aborda con 
 
 El resto del tiempo o van cortos de representación y se les obliga o se sienten cómodos con lo  que hay: monarquía parlamentaria, no intervenir los alquileres y viendo qué energética les tocará mañana.
 
-Sin vergüenza y en estas condiciones se venden como la alternativa a derecha o ultraderecha al grito de "que viene el lobo".  
+Sin vergüenza y en estas condiciones se venden como la alternativa a derecha o ultraderecha al grito de "que viene el lobo".
 
 Luego, los alquileres están imposibles, no para de subir la luz y el campechano ha huído de la justicia preventivamente.
 
-Los últimos avances sociales, lejos de ser poca cosa, son relativos, muy insuficientes y han entrado a pesar del psoe; por obligación.  
+Los últimos avances sociales, lejos de ser poca cosa, son relativos, muy insuficientes y han entrado a pesar del psoe; por obligación.
 El espectáculo lamentable de la reforma laboral ha sido, eso, lamentable.
 
 Y aquí estamos, con los fascistas a las puertas y quitando la basura con el cepillo de dientes, si les dejan.
 
-No creo que vaya a ver una república, pero hay muchas cosas que deberían ir pasando.  
+No creo que vaya a ver una república, pero hay muchas cosas que deberían ir pasando.
 Me sorprende que tener una empresa pública energética o de vivienda suene tan a Venezuela y luego a tope con la Sanidad Pública. No es el mismo caso?
 
 Con esta gente, tan obreros ellos, no vamos a ver esto jamás.

@@ -3,8 +3,12 @@
 <head>
 	{% set pageType = 'page' %}
 	{% include "page-sections/head.njk" %}
+	{% if redirect %}
+		<meta http-equiv="refresh" content="0; url={{ redirect }}" />
+	{% endif %}
 </head>
 <body class="lemon">
+	{% if not redirect %}
 	<div class="lemon__container">
 		{% include "page-sections/header.njk" %}
 		<main class="lemon__main main">
@@ -12,5 +16,6 @@
 		</main>
 		{% include "page-sections/footer.njk" %}
 	</div>
+	{% endif %}
 </body>
 </html>

@@ -9,13 +9,13 @@ date: 2022-11-06
 draft: false
 tag: [mastodon, twitter, migracion]
 clickbait: Vente, nos faltas tú
+permalink: blog/nos-faltas-tu/
 ---
 {% import "components/post/macros.njk" as macros %}
 
 Esto era un hilo de twitter, pero he pensado que tiene más sentido un post.
 
-> **TL;DR**
-Vente, el agua está bien y tenemos sombrilla para ti.
+{{ macros.tldr(['Vente, el agua está bien y tenemos sombrilla para ti.']) }}
 
 [Mastodon](https://joinmastodon.org) es un poco lo que debería ser twitter, o **lo más parecido a lo que era al principio**. No técnicamente, sino como concepto: un espacio abierto para personas, vamos, una red social.
 
