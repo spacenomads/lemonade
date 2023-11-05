@@ -10,7 +10,6 @@ date: 2023-01-09
 draft: true
 tags:
 clickbait: ¿Cómo nos llevamos con el JS?
-permalink: blog/prueba-enero/
 cover_credits:
   link: https://unsplash.com/@owlonduty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
   author: Huseyin Cakir

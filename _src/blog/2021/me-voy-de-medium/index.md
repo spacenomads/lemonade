@@ -10,7 +10,6 @@ date: 2021-10-10
 draft: false
 tag: [blog]
 clickbait: ¿A favor o en contra?
-permalink: blog/me-voy-de-medium/
 ---
 {% import "components/post/macros.njk" as macros %}
 

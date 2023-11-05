@@ -9,7 +9,6 @@ date: 2022-11-06
 draft: false
 tag: [mastodon, twitter, migracion]
 clickbait: Vente, nos faltas tú
-permalink: blog/nos-faltas-tu/
 ---
 {% import "components/post/macros.njk" as macros %}
 

@@ -9,7 +9,6 @@ date: 2022-04-11
 draft: false
 tag: [ideologia, politica]
 clickbait: Quizás no estemos de acuerdo nunca...
-permalink: blog/y-no-pasa-nada/
 cover_credits:
   author: Nicholas Desjardins
   site: Unsplash

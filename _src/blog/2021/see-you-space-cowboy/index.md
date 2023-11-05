@@ -9,7 +9,6 @@ date: 2021-12-10
 draft: false
 tags: [tv, anime]
 clickbait: ¿Qué te ha parecido la serie?
-permalink: blog/see-you-space-cowboy/
 ---
 
 Estaba acabando la serie cuando leí la noticia de que Netflix había cancelado la serie.

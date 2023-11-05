@@ -9,7 +9,6 @@ date: 2022-04-18
 draft: false
 tags: [programación, js, miedo]
 clickbait: ¿Cómo nos llevamos con el JS?
-permalink: blog/js/
 ---
 
 A mí, javascript, me daba muchísimo miedo. Miedo nivel "tengo un anillo que me pongo cuando programo JS porque hace sentir seguro".

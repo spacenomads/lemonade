@@ -8,8 +8,7 @@ reading_time: 1
 date: 2022-02-05
 draft: false
 tags: [star wars, yoda, vendemotos]
-clickbait: Dime qué tú no machacas a la gente con la frasecita.
-permalink: blog/dejad-de-repetir-la-puat-frasecita-ocno/
+clickbait: Tú tb repites LA FRASECITA?
 ---
 
 "**Hazlo... o no lo hagas. Pero no lo intentes.**"

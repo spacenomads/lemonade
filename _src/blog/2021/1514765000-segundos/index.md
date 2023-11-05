@@ -9,7 +9,6 @@ date: 2021-10-13
 draft: false
 tag: [cumpleaños, ciclo]
 clickbait: ¿Tiene sentido?
-permalink: /blog/1514765000-segundos/
 ---
 
 48 años ya, madre de Crom!

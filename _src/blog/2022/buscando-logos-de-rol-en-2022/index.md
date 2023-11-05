@@ -1,5 +1,5 @@
 ---
-title: Buscando logos de juegos de rol en 2022
+title: Buscando logos de rol en 2022
 featured_image: rol.jpg
 featured_alt: Fragmentos de las portadas de varias partidas de rol apiladas una detrás de otra (hacia el fondo) donde se ven diferente logos de sistemas de juego.
 ya_image: dado.png
@@ -9,7 +9,6 @@ date: 2022-02-28
 draft: false
 tags: [rol, logo, vectorial, portadas]
 clickbait: ¿Juegas a rol? ¿A qué?
-permalink: blog/buscando-logos-de-rol-en-2022/
 ---
 {% import "components/post/macros.njk" as macros %}
 

@@ -9,7 +9,6 @@ date: 2022-02-21
 draft: false
 tags: [psoe, miedo, rastreros, lobos, república]
 clickbait: ¿Y tú, cuánto pagas de luz?
-permalink: blog/capitalizando-el-miedo/
 ---
 
 Me llama mucho la atención cómo el psoe es capaz de hacer tan bien algo tan rastrero como **capitalizar el miedo**.
