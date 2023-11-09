@@ -217,9 +217,9 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 
 .lemon {
   margin: 0;
-  background-color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), color-stop(25rem, #fff));
-  background-image: linear-gradient(to bottom, #dfdfdf, #fff 25rem);
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), color-stop(25rem, #ffffff));
+  background-image: linear-gradient(to bottom, #dfdfdf, #ffffff 25rem);
 }
 
 .wrapper {
@@ -245,7 +245,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 }
 
 .lemon__header {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1.25rem 0;
 }
 
@@ -281,7 +281,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 
 .lemon__footer-content {
   background-color: #212121;
-  color: #fff;
+  color: #ffffff;
   grid-area: content;
   padding: 1rem;
 }
@@ -377,6 +377,7 @@ a {
   display: block;
   height: 100%;
   min-height: inherit;
+  overflow: hidden;
   position: relative;
 }
 
@@ -398,10 +399,12 @@ a {
 
 .home-post__mark {
   background-color: #212121;
-  color: #fff;
+  color: #ffffff;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   padding: 0.15625rem 0.5rem;
+  -webkit-box-shadow: 0 0 0.375rem rgba(33, 33, 33, 0.25);
+  box-shadow: 0 0 0.375rem rgba(33, 33, 33, 0.25);
 }
 
 .home-post__cover {
@@ -455,7 +458,7 @@ a {
 
 .post__title-mark-item {
   background-color: #212121;
-  color: #fff;
+  color: #ffffff;
   padding: 0 0.3125rem;
 }
 
@@ -1009,6 +1012,23 @@ a {
   .lemon__brand-name {
     font-size: 1.5rem;
     line-height: 200%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-post__link:hover .home-post__title {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .home-post__title {
+    opacity: 0.1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: opacity ease 0.6s, -webkit-transform ease 0.5s;
+    transition: opacity ease 0.6s, -webkit-transform ease 0.5s;
+    transition: transform ease 0.5s, opacity ease 0.6s;
+    transition: transform ease 0.5s, opacity ease 0.6s, -webkit-transform ease 0.5s;
   }
 }
 

@@ -2,6 +2,7 @@
 //  Stylesheet _variables.scss
 //
 //  Table of Contents:
+//    0. @use
 //    1. Colors
 //    2. Units
 //    3. Fonts
@@ -16,15 +17,23 @@
 
 
 
+// 0. @use
+// ---
+@use 'library' as lib;
+
+
+
+
+
 // 1. Colors
 // ---
-$color-black: #212121;
-$color-pure-black: #121212;
-$color-white: #fff;
-$color-athens-gray: #dfdfdf;
-$color-correct-blue: #007aff;
-$color-tangerine: #ffcc00;
-$color-safety-orange: #ff9900;
+$color-black: lib.$color-black;
+$color-pure-black: lib.$color-pure-black;
+$color-white: lib.$color-white;
+$color-athens-gray: lib.$color-athens-gray;
+$color-correct-blue: lib.$color-correct-blue;
+$color-tangerine: lib.$color-tangerine;
+$color-safety-orange: lib.$color-safety-orange;
 $color-dev-green-sheen: #64B6AC;
 $color-dev-fiery-rose: #ec5766;
 $color-dev-blue-munsell: #0892A5;

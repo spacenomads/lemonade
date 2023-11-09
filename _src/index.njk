@@ -17,7 +17,7 @@ eleventyNavigation:
 						<li class="home-posts__item">
 
 							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
-								<a class="home-post__link" href="{{ post.url }}">
+								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}">
 
 									<h3 class="home-post__title">
 										<span class="home-post__mark">{{ post.data.title }}</span>
@@ -40,7 +40,6 @@ eleventyNavigation:
 </section>
 
 {% for year in settings.post_years %}
-	<div class="paco"></div>
 	<section class="home-posts home-posts--{{ year }}">
 		<div class="wrapper">
 			<div class="home-posts__content">
@@ -51,7 +50,7 @@ eleventyNavigation:
 						<li class="home-posts__item">
 
 							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }}">
-								<a class="home-post__link" href="{{ post.url }}">
+								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}">
 
 									<h3 class="home-post__title">
 										<span class="home-post__mark">{{ post.data.title }}</span>
@@ -60,7 +59,6 @@ eleventyNavigation:
 									{% if post.data.featured_image %}
 										<img src="{{ post.url }}img/{{ post.data.featured_image }}" class="home-post__cover" alt="{{ post.data.featured_alt }}">
 									{% endif %}
-
 								</a>
 							</article>
 
