@@ -23,8 +23,8 @@
   "author": "Carlos Mañas",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy": "*",
+    "@11ty/eleventy-navigation": "*",
     "@hail2u/css-mqpacker": "github:hail2u/node-css-mqpacker",
     "cross-env": "^7.0.3",
     "eslint": "^6.8.0",

@@ -17,7 +17,7 @@ function getStaticsVersion() {
 
 
 
-function getCurrentDate() {
+function getCurrentFormattedDate() {
 	const [day, month, year] = new Date()
 		.toLocaleDateString('es-ES')
 		.split('/');
@@ -39,6 +39,7 @@ module.exports = {
   url: 'https://sidiostedalimones.com',
   version: getStaticsVersion(),
   year: getYear(),
-	date: getCurrentDate(),
+	date: getCurrentFormattedDate(),
+	build_date: new Date(),
 	post_years: [2022, 2021]
 }
