@@ -1,0 +1,162 @@
+// ***
+//  Stylesheet _about
+//
+//  Table of Contents:
+//    0. @use
+//    1. Header
+//    2. Title
+//    3. Cover
+//    4. Intro
+//    5. Social
+//
+// ***
+
+
+
+
+
+
+// 0. @use
+// ---
+@use 'core/core';
+
+
+
+
+
+
+// 1. Header
+// ---
+.about__header {
+	height: core.rem(core.$unit * 32);
+	position: relative;
+
+	@include core.mq(core.$bp-tablet-v) {
+		height: core.rem(core.$unit * 40);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		height: core.rem(core.$unit * 50);
+	}
+}
+
+.about__header .content {
+	@include core.z(content);
+
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.about__header .content__inner {
+	position: relative;
+}
+
+
+
+
+
+
+// 2. Title
+// ---
+.about__title {
+	width: 10.5ch;
+
+	.post__title-mark-item:last-of-type::after {
+		content: '!';
+		color: core.$color-tangerine;
+	}
+}
+
+.about__back {
+	top: unset;
+	bottom: 0;
+}
+
+
+
+
+
+
+// 3. Cover
+// ---
+.about__cover {
+	height: inherit;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	@include core.z(background);
+}
+
+.about__cover .wrapper {
+	height: inherit;
+}
+
+.about__cover-inner {
+	grid-area: content;
+	position: relative;
+	height: inherit;
+}
+
+.about__cover-image {
+	position: absolute;
+	bottom: core.rem(core.$unit);
+	right: 0;
+	width: core.rem(core.$unit*18);
+
+	@include core.mq(376) {
+		right: 25%;
+		transform: translateX(50%);
+	}
+
+	@include core.mq(core.$bp-tablet-v) {
+		bottom: core.rem(core.$unit * 2);
+		width: core.rem(core.$unit*23);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		width: core.rem(core.$unit*30);
+	}
+}
+
+
+
+
+
+// 4. Intro
+// ---
+.about__intro {
+	padding-top: core.rem(core.$unit * 2);
+
+	@include core.mq(core.$bp-tablet-v) {
+		padding-top: core.rem(core.$unit * 3);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		padding-top: core.rem(core.$unit * 4);
+	}
+}
+
+
+
+
+
+// 5. Social
+// ---
+.about__content .social {
+	margin-top: core.rem(core.$unit * -2);
+}
+
+.about__status {
+	padding-bottom: core.rem(core.$unit * 16);
+
+	@include core.mq(core.$bp-tablet-v) {
+		padding-bottom: core.rem(core.$unit * 18);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		padding-bottom: core.rem(core.$unit * 20);
+	}
+}

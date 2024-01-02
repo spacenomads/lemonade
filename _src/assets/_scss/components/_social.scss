@@ -1,0 +1,77 @@
+@use 'core/core';
+
+.social {
+	@extend %unlist;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: core.rem(core.$unit);
+
+	@include core.mq(core.$bp-desktop) {
+		gap: core.rem(core.$unit * 2);
+	}
+}
+
+.social__item {}
+
+.social__link {
+	background-color: core.$color-correct-blue;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: core.rem(core.$unit * 3) auto;
+	display: block;
+	height: core.rem(1);
+	overflow: hidden;
+	padding-top: core.rem(core.$unit * 5 - 1);
+	width: core.rem(core.$unit * 5);
+
+	transition: background-color ease .5s;
+}
+
+.social__link--mastodon {
+	background-image: core.img('mastodon.svg', core.$theme-icons);
+
+	&:hover {
+		background-color: #6364ff;
+	}
+}
+
+.social__link--pixelfed {
+	background-image: core.img('pixelfed.svg', core.$theme-icons);
+
+	&:hover {
+		background-color: #d846df;
+	}
+}
+
+.social__link--youtube {
+	background-image: core.img('youtube.svg', core.$theme-icons);
+
+	&:hover {
+		background-color: #f00;
+	}
+}
+
+.social__link--twitch {
+	background-image: core.img('twitch.svg', core.$theme-icons);
+
+	&:hover {
+		background-color: #9146ff;
+	}
+}
+
+.social__link--github {
+	background-image: core.img('github.svg', core.$theme-icons);
+
+	&:hover {
+		background-color: #0d1117;
+	}
+}
+
+.social__link--codeberg {
+	background-image: core.img('codeberg.svg', core.$theme-icons);
+
+	&:hover {
+		background-color: #144b49;
+	}
+}

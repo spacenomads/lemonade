@@ -1,0 +1,21 @@
+<header class="about__header">
+	<div class="content">
+		<div class="wrapper">
+			<div class="content__inner">
+				<h1 class="about__title post__title">
+					<span class="about__title-mark post__title-mark">{{ title | spanMe | safe }}</span></h1>
+				<a class="about__back post__back" href="/">Volver a la home</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="about__cover" style="background-color: #{{ about_bg_color }}">
+		{% if about_cover_image %}
+			<div class="wrapper">
+				<div class="about__cover-inner">
+					<img class="about__cover-image" src="/assets/images/me/{{ about_cover_image }}" alt="{{ about_cover_alt }}">
+				</div>
+			</div>
+		{% endif %}
+	</div>
+</header>

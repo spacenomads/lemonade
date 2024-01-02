@@ -30,6 +30,15 @@
 .post__header {
 	display: flex;
 	flex-direction: column-reverse;
+	margin-bottom: core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin-bottom: core.rem(core.$unit * 4);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin-bottom: core.rem(core.$unit * 5);
+	}
 
 	.content__inner {
 		position: relative;
@@ -88,15 +97,10 @@
 
 .post__meta {
 	@include core.font(meta);
-	margin-bottom: core.rem(core.$unit *2);
-
-	@include core.mq(core.$bp-desktop) {
-		margin-bottom: core.rem(core.$unit *2);
-	}
 }
 
 .post__meta-time {
-	margin: core.rem(core.$unit * 2) 0 core.rem(core.$unit);
+	margin: core.rem(core.$unit * 2) 0 0;
 
 	@include core.mq(core.$bp-desktop) {
 		margin-top: core.rem(core.$unit * 3);
@@ -123,10 +127,9 @@
 }
 
 .post__credits {
-	margin: 0;
+	margin: core.rem(core.$unit) 0 0;
 
 	.post__link {
-		// TODO: poner así todos los enlaces? 🤔
 		color: inherit;
 		text-decoration: underline core.$color-correct-blue;
 		transition: color ease .3s;
@@ -143,6 +146,52 @@
 
 // 2. Content
 // ---
+.post__content h2 {
+	@include core.font(h2);
+	margin: core.rem(core.$unit * 6) 0 core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin-top: core.rem(core.$unit * 7);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 9) 0 core.rem(core.$unit * 4) ;
+	}
+}
+
+.post__content h3 {
+	@include core.font(h3);
+	margin: core.rem(core.$unit * 4) 0 core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 4) ;
+	}
+}
+
+.post__content > p,
+.post__content > ul,
+.post__content > ol,
+.post__content > blockquote {
+	@include core.font(paragraph);
+	margin: 0 0 core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-desktop) {
+		margin-bottom: core.rem(core.$unit * 4);
+	}
+}
+
+.post__content:not(.post__content--no-featured) > p:first-of-type {
+	@include core.font(bigParagraph);
+}
+
+.post__content > *:last-child {
+		margin-bottom: 0;
+}
+
+
+.post__content a {
+	color: core.$color-link;
+}
 
 
 
@@ -181,6 +230,13 @@
 }
 
 .post__media--mini {
+
+	margin: core.rem(core.$unit * 3) 0;
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 4) 0;
+	}
+
 	.post__media-image {
 		max-width: core.rem(core.$unit * 12);
 	}
@@ -191,7 +247,7 @@
 
 // 4. HR
 // ---
-.post--entry .content hr {
+.post__content hr {
 	border: 0;
 	width: core.rem(core.$unit * 4);
 	height: core.rem(core.$unit * 4);
@@ -380,7 +436,7 @@
 	}
 
 	@include core.mq(core.$bp-desktop) {
-		margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 9);
+		margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 12);
 	}
 }
 

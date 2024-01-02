@@ -1,21 +1,18 @@
 ---
-title: Chuck
+title: Hola, me llamo Chuck
+about_bg_color: ffcc00
+about_cover_image: about.png
+about_cover_alt:
 layout: layouts/base.njk
 eleventyNavigation:
   key: chuck
 ---
 <article class="about">
-	<header class="about__header">
-		<div class="wrapper">
-			<div class="about__content">
-				<h1 class="about__title">Hola, me llamo Carlos</h1>
-			</div>
-		</div>
-	</header>
+	{% include "components/about/header.njk" %}
 
 	<section class="about__intro">
 		<div class="wrapper">
-			<div class="about__content">
+			<div class="about__content post__content post__content--no-featured">
 				<h2 class="sr-only">Te cuento un poco de mi</h2>
 
 				<p>Soy un diseñador gráfico que aprendió a maquetar, y 25 años después soy un desarrollador front con mucho cuidado por el detalle y muy pendiente de la semántica y la accesibilidad.</p>

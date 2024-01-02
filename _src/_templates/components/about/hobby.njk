@@ -1,8 +1,8 @@
 <div class="hobby">
-	<h3 class="hobby__title">{{ hobby.title }}</h3>
+	<h3 class="hobby__title hobby__title--{{ hobby.icon }}">{{ hobby.title }}</h3>
 	<p class="hobby__content">{{ hobby.content | safe }}
 		{% if hobby.link.url %}
-			<a href="{{ hobby.link.url }}" class="hobby__link">{{ hobby.link.label }}</a>
+			<span class="hobby__link-outer"><a href="{{ hobby.link.url }}" class="hobby__link">{{ hobby.link.label }}</a></span>
 		{% endif %}
 	</p>
 </div>

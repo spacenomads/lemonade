@@ -10,9 +10,6 @@ eleventyNavigation:
 			<h1 class="sr-only">Mis posts</h1>
 			<h2 class="home-posts__year sr-only">2023</h2>
 			<ul class="home-posts__items">
-=== => ->
-				{# TODO: Por Crom, no se te olvide quitar esto 🫣 #}
-
 					{% for post in collections.blog | filterByYear(2023) | reverse %}
 						<li class="home-posts__item">
 

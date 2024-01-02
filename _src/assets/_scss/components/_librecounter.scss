@@ -1,0 +1,5 @@
+@use 'core/mixins';
+
+.librecounter {
+	@include mixins.screen-reader-only();
+}
