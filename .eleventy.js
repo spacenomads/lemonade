@@ -29,7 +29,7 @@ function getLocaleDate(date) {
 module.exports = function (config) {
 	config.addPassthroughCopy({'_src/assets/_domain/cname.txt': '/CNAME'});
 	config.addPassthroughCopy({'_src/assets/_icon/favicon.ico': '/favicon.ico'});
-	config.addPassthroughCopy('_src/blog/**/img/*.{png,svg,jpg}');
+	config.addPassthroughCopy('_src/blog/**/img/*.{png,svg,jpg,webp}');
 	config.addPassthroughCopy('_src/assets/fonts');
 	config.addPassthroughCopy('_src/assets/css');
 	config.addPassthroughCopy('_src/assets/images');
@@ -46,10 +46,14 @@ module.exports = function (config) {
 				collapseWhitespace: true,
 				preserveLineBreaks: false
 			});
-
-			return minified;
 		}
 
+		if (outputPath.endsWith('.xml')) {
+			const regex = /(max-width:[0-9]{1,}(px|%)*;)/g;
+			const undangeredContent = content.replace(regex, '');
+
+			return undangeredContent;
+		}
 		return content;
 	});
 
@@ -114,6 +118,10 @@ module.exports = function (config) {
 		const resultStr = `src="https://sidiostedalimones.com${postURL}img`;
 		const content = post.replaceAll(targetStr, resultStr);
 		return content;
+	});
+
+	config.addNunjucksFilter('rfc822Inator', function(strDate) {
+		return new Date(strDate).toUTCString();
 	});
 
 

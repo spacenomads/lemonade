@@ -132,7 +132,7 @@
 	@if $type == bigParagraph {
 		font-size: fn.rem(18);
 		line-height: fn.lh(27, 18);
-		font-weight: vars.$font-regular;
+		font-weight: vars.$font-light;
 
 		@include mq(vars.$bp-tablet-v) {
 			font-size: fn.rem(22);
@@ -142,7 +142,7 @@
 		@include mq(vars.$bp-desktop) {
 			font-size: fn.rem(26);
 			line-height: fn.lh(39, 26);
-			font-weight: vars.$font-medium;
+			font-weight: vars.$font-light;
 		}
 	}
 

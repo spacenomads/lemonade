@@ -11,9 +11,11 @@
 	<figure class="post__tldr">
 		<figcaption class="post__tldr-caption">TL;DR</figcaption>
 		<div class="post__tldr-content">
-			{%- for p in content -%}
-				<p class="post__tldr-paragraph">{{ p }}</p>
-			{%- endfor -%}
+			<div class="post__tldr-content-inner">
+				{%- for p in content -%}
+					<p class="post__tldr-paragraph">{{ p }}</p>
+				{%- endfor -%}
+			</div>
 		</div>
 	</figure>
 {%- endmacro -%}

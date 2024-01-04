@@ -38,6 +38,15 @@ $color-dev-green-sheen: #64B6AC;
 $color-dev-fiery-rose: #ec5766;
 $color-dev-blue-munsell: #0892A5;
 
+$color-mastodon: #6364ff;
+$color-pixelfed-1: #4a00e0;
+$color-pixelfed-2: #d846df;
+$color-youtube: #f00;
+$color-twitch: #9146ff;
+$color-github: #0d1117;
+$color-codeberg: #144b49;
+
+
 $color-text: $color-pure-black;
 $color-tldr-text: $color-black;
 $color-link: $color-correct-blue;
@@ -112,6 +121,3 @@ $levels: background, content, warning, header;
 // ---
 $theme-brand: '../images/brand/';
 $theme-icons: '../images/layout/icons/';
-
-
-$paco: #830000;

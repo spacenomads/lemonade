@@ -1,0 +1,110 @@
+// ***
+//  Stylesheet _404
+//
+//  Table of Contents:
+//    0. @use
+//    1. 404
+//    2. Header
+//    3. intro
+//
+// ***
+
+
+
+
+
+// 0. @use
+// ---
+@use 'core/core';
+
+
+
+
+
+// 1. 404
+// ---
+.e404 {}
+
+
+
+
+
+// 2. Header
+// ---
+.e404__header {
+	block-size: core.rem(core.$unit * 32);
+	position: relative;
+
+	@include core.mq(core.$bp-tablet-v) {
+		block-size: core.rem(core.$unit * 40);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		block-sixe: core.rem(core.$unit * 50);
+	}
+}
+
+.e404__header .content {
+	position: relative;
+	@include core.z(content, core.$levels);
+	block-size: inherit;
+}
+
+.e404__header .wrapper {
+	block-size: 100%;
+	position: relative;
+}
+
+.e404__header .content__inner {
+	position: absolute;
+	inset-inline-start: 0;
+	inset-block-end: 0;
+}
+
+.e404__title {
+	inline-size: 18ch;
+}
+
+.e404__back {
+	inset-block-start: unset;
+	inset-block-end: 0;
+}
+
+.e404__cover {
+	position: absolute;
+	inset: 0 0;
+
+	@include core.z(background, core.$levels);
+}
+
+.e404__cover-inner {
+	block-size: inherit;
+	grid-area: content;
+	display: flex;
+}
+
+.e404__cover-image {
+	margin: auto;
+}
+
+
+
+
+
+// 3. Intro
+// ---
+.e404__intro {
+	padding-block-start: core.rem(core.$unit * 2);
+
+	@include core.mq(core.$bp-tablet-v) {
+		padding-block-start: core.rem(core.$unit * 3);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		padding-block-start: core.rem(core.$unit * 4);
+	}
+}
+
+.e404__content {
+	grid-area: content;
+}

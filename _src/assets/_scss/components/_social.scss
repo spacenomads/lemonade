@@ -16,62 +16,99 @@
 
 .social__link {
 	background-color: core.$color-correct-blue;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: core.rem(core.$unit * 3) auto;
 	display: block;
 	height: core.rem(1);
 	overflow: hidden;
 	padding-top: core.rem(core.$unit * 5 - 1);
 	width: core.rem(core.$unit * 5);
+	position: relative;
+	overflow: hidden;
 
-	transition: background-color ease .5s;
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		height: 100%;
+		content: '';
+		transition: top ease .5s;
+	}
+
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: core.rem(core.$unit * 3) auto;
+	}
+
+	&:hover {
+		&::before {
+			top: 0;
+		}
+	}
 }
 
 .social__link--mastodon {
-	background-image: core.img('mastodon.svg', core.$theme-icons);
+	&::before {
+		background-color: core.$color-mastodon;
+	}
 
-	&:hover {
-		background-color: #6364ff;
+	&::after {
+		background-image: core.img('mastodon.svg', core.$theme-icons);
 	}
 }
 
 .social__link--pixelfed {
-	background-image: core.img('pixelfed.svg', core.$theme-icons);
+	&::before {
+		background-image: linear-gradient(to right, core.$color-pixelfed-1, core.$color-pixelfed-2);
+	}
 
-	&:hover {
-		background-color: #d846df;
+	&::after {
+		background-image: core.img('pixelfed.svg', core.$theme-icons);
 	}
 }
 
 .social__link--youtube {
-	background-image: core.img('youtube.svg', core.$theme-icons);
+	&::before {
+		background-color: core.$color-youtube;
+	}
 
-	&:hover {
-		background-color: #f00;
+	&::after {
+		background-image: core.img('youtube.svg', core.$theme-icons);
 	}
 }
 
 .social__link--twitch {
-	background-image: core.img('twitch.svg', core.$theme-icons);
+	&::after {
+		background-image: core.img('twitch.svg', core.$theme-icons);
+	}
 
-	&:hover {
-		background-color: #9146ff;
+	&::before {
+		background-color: core.$color-twitch;
 	}
 }
 
 .social__link--github {
-	background-image: core.img('github.svg', core.$theme-icons);
+	&::after {
+		background-image: core.img('github.svg', core.$theme-icons);
+	}
 
-	&:hover {
-		background-color: #0d1117;
+	&::before {
+		background-color: core.$color-github;
 	}
 }
 
 .social__link--codeberg {
-	background-image: core.img('codeberg.svg', core.$theme-icons);
+	&::after {
+		background-image: core.img('codeberg.svg', core.$theme-icons);
+	}
 
-	&:hover {
-		background-color: #144b49;
+	&::before {
+		background-color: core.$color-codeberg;
 	}
 }
