@@ -1,0 +1,354 @@
+// ***
+//  Stylesheet _home-post.scss
+//
+//  Table of Contents:
+//    0. @use
+//    1. Home
+//    2. Posts
+//    3. Grid
+//    4. 2021
+//    5. 2022
+//    6. 2023
+//    7. 2024
+//
+// ***
+
+// 0. @use
+// ---
+@use "core/core";
+
+// 1. Home
+// ---
+.home-posts__content {
+	grid-area: content;
+}
+
+.home-posts__items {
+	@extend %unlist;
+}
+
+.home-posts__item {
+	& + .home-posts__item {
+		margin-top: core.rem(core.$unit * 2);
+
+		@include core.mq(core.$bp-tablet-v) {
+			margin-top: 0;
+		}
+	}
+}
+
+.home-posts {
+	margin-top: core.rem(core.$unit * 2);
+
+	@include core.mq(core.$bp-desktop) {
+		margin-top: core.rem(core.$unit * 3);
+	}
+}
+
+.home-posts__year {
+	border: 1px solid core.$color-athens-gray;
+	height: core.rem(core.$unit * 6);
+	margin-bottom: core.rem(core.$unit * 2);
+	display: flex;
+	align-items: flex-end;
+	padding: 0 core.rem(core.$unit);
+	box-sizing: border-box;
+	@include core.font(h2);
+
+	@include core.mq(core.$bp-tablet-v) {
+		height: core.rem(core.$unit * 7);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		height: core.rem(core.$unit * 8);
+		margin-bottom: core.rem(core.$unit * 3);
+	}
+}
+
+// 2. Posts
+// ---
+.home-post {
+	min-height: core.rem(core.$unit * 15);
+	height: 100%;
+}
+.home-post__link {
+	background: core.$color-tangerine;
+	display: block;
+	height: 100%;
+	min-height: inherit;
+	overflow: hidden;
+	position: relative;
+}
+
+.home-post__link:hover .home-post__title {
+	@media (prefers-reduced-motion: no-preference) {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.home-post__title {
+	@include core.font(gridTitle);
+
+	bottom: core.rem(core.$post-title-offset);
+	box-sizing: border-box;
+	margin: 0;
+	padding: core.rem(core.$unit);
+	position: absolute;
+	right: 0;
+	text-align: right;
+	width: 100%;
+	z-index: 1;
+
+	@media (prefers-reduced-motion: no-preference) {
+		opacity: 0.1;
+		transform: translateY(100%);
+		transition: transform ease 0.5s, opacity ease 0.6s;
+	}
+
+	@include core.mq(core.$bp-tablet-v) {
+		bottom: core.rem(core.$post-title-offset-tablet);
+	}
+}
+
+.home-post__mark {
+	@include core.mark();
+
+	box-shadow: 0 0 core.rem(6) rgba(core.$color-black, 0.25);
+}
+
+.home-post__cover {
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.home-post--draft .home-post__link::before,
+.home-post--future .home-post__link::after {
+	background: core.$color-dev-fiery-rose;
+	content: "";
+	height: core.rem(core.$unit);
+	inset-inline-start: core.rem(core.$unit);
+	position: absolute;
+	inset-block-start: core.rem(core.$unit);
+	width: core.rem(core.$unit * 3);
+	z-index: 3;
+}
+
+.home-post--future .home-post__link::after {
+	background: core.$color-dev-green-sheen;
+}
+
+.home-post--draft.home-post--future .home-post__link::after {
+	inset-inline-start: core.rem(core.$unit * 4);
+}
+
+.home-post--no-img {
+	// TODO: pending
+}
+
+.home-post--featured .home-post__title {
+	@include core.mq(core.$bp-desktop) {
+		@include core.font(gridTitleLG);
+	}
+}
+
+// 3. Grid
+// ---
+@include core.mq(core.$bp-tablet-v) {
+	.home-posts {
+		.home-posts__items {
+			display: grid;
+			gap: core.rem(core.$page-gap);
+			grid-auto-rows: core.rem(120);
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: core.rem(120);
+		}
+
+		.home-posts__item {
+			grid-column: span 2;
+		}
+	}
+}
+@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
+	.home-posts--latest {
+		.home-posts__items {
+			grid-template-rows: core.rem(200);
+		}
+
+		.home-posts__item {
+			grid-row: span 2;
+
+			&:nth-child(1) {
+				grid-column: span 2;
+			}
+
+			&:nth-child(2) {
+				grid-column: span 2;
+			}
+		}
+	}
+}
+
+@include core.mq(core.$bp-desktop) {
+	.home-posts {
+		.home-posts__items {
+			gap: core.rem(core.$page-gap-desktop);
+			grid-auto-rows: core.rem(136);
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: core.rem(136);
+		}
+	}
+
+	.home-posts--latest {
+		.home-posts__items {
+			grid-template-rows: core.rem(312);
+		}
+
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-column: span 4;
+			}
+			&:nth-child(2) {
+				grid-column: span 2;
+			}
+		}
+	}
+}
+
+
+
+
+
+// 4. 2021
+// ---
+.home-posts--2021 {
+	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
+		.home-posts__item:nth-child(1) {
+			grid-row: span 2;
+		}
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		.home-posts__item:nth-child(1) {
+			grid-row: span 2;
+			grid-column: span 4;
+		}
+
+		.home-posts__item:nth-child(2) {
+			grid-row: span 2;
+			grid-column: span 2;
+		}
+
+		.home-posts__item:nth-child(3) {
+			grid-row: span 1;
+			grid-column: span 6;
+		}
+	}
+}
+
+
+
+
+
+// 5. 2022
+// ---
+.home-posts--2022 {
+	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
+		.home-posts__item:nth-child(2n + 2) {
+			grid-row: span 2;
+		}
+
+		.home-posts__item:nth-last-child(1) {
+			grid-row: span 1;
+		}
+
+		.home-posts__item:nth-last-child(2) {
+			grid-row: span 2;
+		}
+
+		.home-posts__item:nth-last-child(3) {
+			grid-row: span 1;
+		}
+
+		.home-posts__item:nth-last-child(4) {
+			grid-row: span 2;
+		}
+
+
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-row: span 2;
+				grid-column: span 4;
+			}
+			&:nth-child(5){
+				grid-column: span 3;
+			}
+			&:nth-child(6){
+				grid-column: span 3;
+			}
+			&:nth-child(7) {
+				grid-row: 2 / 4;
+				grid-column: 5 / 7;
+			}
+		}
+	}
+}
+
+
+
+
+
+// 5. 2023
+// ---
+.home-posts--2023 {
+	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-row: span 1;
+				grid-column: span 4;
+			}
+		}
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-row: span 2;
+				grid-column: span 6;
+			}
+		}
+	}
+}
+
+
+
+
+
+// 6. 2024
+// ---
+.home-posts--2024 {
+	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-row: span 2;
+				grid-column: span 4;
+			}
+		}
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-row: span 2;
+				grid-column: span 6;
+			}
+		}
+	}
+}

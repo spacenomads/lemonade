@@ -1,0 +1,42 @@
+<header class="post__header">
+	<div class="content">
+		<div class="wrapper">
+			<div class="content__inner">
+				<h1 class="post__title">
+					<span class="post__title-mark">{{ title | spanMe | safe }}</span></h1>
+				<a class="post__back" href="/">Volver a la home</a>
+
+				<div class="post__meta">
+					<p class="post__meta-time">
+						<time class="post__published-date" datetime="{{ date | datetime }}">{{ date | formatDate }}</time>
+
+						{% if reading_time %}
+							<time class="post__reading-time" datetime="PT{{ reading_time }}M">{{ reading_time }} <abbr class="post__reading-time-abbr" title="minutos">min</abbr>.</time>
+						{% endif %}
+					</p>
+
+					{% if cover_credits and featured_image %}
+						<p class="post__credits">Foto:
+							{% if cover_credits.link %}
+								<a href="{{ cover_credits.link }}" class="post__link">{{ cover_credits.author }}</a>
+							{% else %}
+								{{ cover_credits.author }}
+							{% endif%}
+
+							{% if cover_credits.site %}
+							| <a href="{{ credits[cover_credits.site.toLowerCase()]}}" class="post__link">{{ cover_credits.site }}</a>
+							{% endif %}
+						</p>
+					{% endif %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="post__cover {{ '' if featured_image else 'post__cover--no-img' }}" style="background-color: #{{ featured_color}}">
+		{% if featured_image %}
+			<img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ featured_alt }}">
+		{% endif %}
+	</div>
+</header>

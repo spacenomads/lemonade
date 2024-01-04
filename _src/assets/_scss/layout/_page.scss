@@ -1,49 +1,33 @@
-// PAGE
+@use 'core/core';
 
-body {
+.lemon {
 	margin: 0;
+	background-color: core.$color-white;
+	background-image: linear-gradient(to bottom, core.$color-athens-gray, core.$color-white core.rem(400));
 }
 
-.page {
-	display: grid;
-	grid-template-areas: "header"
-	"main"
-	"footer";
-	grid-template-rows: auto 1fr auto;
-	min-height: 100vh;
-}
-
-.page__header {
-	@include z(header);
-
-	grid-area: header;
-	position: relative;
-}
-
-.page__main {
-	@include z(content);
-
-	grid-area: main;
-	position: relative;
-}
-
-.page__footer {
-	grid-area: footer;
-}
-
-
-
-
-// CONTENT
 .wrapper {
-	margin: 0 rem($page-margin-mobile);
-	max-width: rem($page-max-width);
-	z-index: $bp-desktop;
+	@include core.grid();
 
-	@include mq($bp-tablet) {
-		margin: 0 rem($page-margin-tablet);
+	margin: 0 core.rem(core.$page-mobile);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: 0 core.rem(core.$page-tablet);
 	}
-	@include mq($bp-desktop) {
+
+	@include core.mq(core.$bp-desktop) {
 		margin: 0 auto;
+		max-width: core.rem(core.$page-max-width);
 	}
+}
+
+.lemon__container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+.lemon__main {
+	flex-grow: 1;
 }

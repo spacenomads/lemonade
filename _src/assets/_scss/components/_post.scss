@@ -1,314 +1,458 @@
-// POST
-.post {
-	@include font(p);
+// ***
+//  Stylesheet _post.scss
+//
+//  Table of Contents:
+//    0. @use
+//    1. Header
+//    2. Content
+//    3. Images
+//    4. HR
+//    5. TL;DR
+//    6. Quotes
+//    7. YA image
+//
+// ***
+
+
+
+
+
+// 0. @use
+// ---
+@use 'core/core';
+
+
+
+
+
+// 1. Header
+// ---
+.post__header {
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin-bottom: core.rem(core.$unit * 4);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin-bottom: core.rem(core.$unit * 5);
+	}
 
 	.content__inner {
 		position: relative;
 	}
 }
 
-.post__link {
-	color: inherit;
-	display: block;
-	position: relative;
-	text-decoration: none;
+.post__cover {
+	background-color: core.$color-tangerine;
+}
 
-	&:hover {
-		&::before {
-			background-color: mix($color-yellow-orange-juice, $color-yellow-sea);
-			bottom: 0;
-			content: '';
-			left: 0;
-			position: absolute;
-			top: 0;
-			transform: translateX(rem($page-gutter * -1));
-			width: rem(5);
-		}
+.post__featured-image {
+	width: 100%;
+	display: block;
+}
+
+.post__cover--no-img {
+	min-height: core.rem(core.$unit * 32);
+}
+
+.post__title {
+	@include core.font(h1);
+}
+
+.post__title-mark {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.post__title-mark-item {
+	background-color: core.$color-black;
+	color: core.$color-white;
+	padding: 0 core.rem(5);
+}
+
+.post__back {
+	position: absolute;
+	background: core.img('back.svg', core.$theme-icons) center no-repeat core.$color-athens-gray;
+	top: 0;
+	left: 0;
+	width: core.rem(24);
+	height: core.rem(1);
+	padding-top: core.rem(35);
+	overflow: hidden;
+	transform: translateX(-100%);
+
+	@include core.mq(core.$bp-tablet-v) {
+		padding-top: core.rem(50);
+		width: core.rem(52);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		padding-top: core.rem(72);
+		width: core.rem(73);
 	}
 }
 
 .post__meta {
-	@include font(small);
+	@include core.font(meta);
+}
 
-	column-gap: rem(5);
-	display: flex;
+.post__meta-time {
+	margin: core.rem(core.$unit * 2) 0 0;
 
-	.post .content & {
-		margin-bottom: rem(30);
+	@include core.mq(core.$bp-desktop) {
+		margin-top: core.rem(core.$unit * 3);
+	}
+}
+
+.post__published-date {
+	margin-right: core.rem(core.$unit * 2 - 4);
+
+	@include core.mq(core.$bp-desktop) {
+		margin-right: core.rem(core.$unit * 3 - 4);
 	}
 }
 
 
 .post__reading-time {
-	align-items: center;
+	background: core.img('timer.svg', core.$theme-icons) left center no-repeat;
+	background-size: core.rem(16);
+	padding-left: core.rem(20);
+}
+
+.post__reading-time-abbr {
+	text-decoration-color: core.$color-correct-blue;
+}
+
+.post__credits {
+	margin: core.rem(core.$unit) 0 0;
+
+	.post__link {
+		color: inherit;
+		text-decoration: underline core.$color-correct-blue;
+		transition: color ease .3s;
+
+		&:hover {
+			color: core.$color-correct-blue;
+		}
+	}
+}
+
+
+
+
+
+// 2. Content
+// ---
+.post__content h2 {
+	@include core.font(h2);
+	margin: core.rem(core.$unit * 6) 0 core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin-top: core.rem(core.$unit * 7);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 9) 0 core.rem(core.$unit * 4) ;
+	}
+}
+
+.post__content h3 {
+	@include core.font(h3);
+	margin: core.rem(core.$unit * 4) 0 core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 4) ;
+	}
+}
+
+.post__content > p,
+.post__content > ul,
+.post__content > ol,
+.post__content > blockquote {
+	@include core.font(paragraph);
+	margin: 0 0 core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-desktop) {
+		margin-bottom: core.rem(core.$unit * 4);
+	}
+}
+
+.post__content:not(.post__content--no-featured) > p:first-of-type {
+	@include core.font(bigParagraph);
+}
+
+.post__content > *:last-child {
+		margin-bottom: 0;
+}
+
+
+.post__content a {
+	color: core.$color-link;
+}
+
+
+
+
+
+
+// 3. Images
+// ---
+.post__media {
+	margin: core.rem(core.$unit * 4) 0;
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 5) 0;
+	}
+}
+
+.post__media-image {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+.post__media-caption {
+	@include core.font(meta);
+
+	margin-top: core.rem(core.$unit);
+	text-align: center;
+}
+
+
+.post__media--center {
+	.post__media-image,
+	.post__media-caption {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.post__media--mini {
+
+	margin: core.rem(core.$unit * 3) 0;
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 4) 0;
+	}
+
+	.post__media-image {
+		max-width: core.rem(core.$unit * 12);
+	}
+}
+
+
+
+
+// 4. HR
+// ---
+.post__content hr {
+	border: 0;
+	width: core.rem(core.$unit * 4);
+	height: core.rem(core.$unit * 4);
+	background: core.img('divider.svg', core.$theme-icons) center no-repeat core.$color-graphic-block;
+	margin: core.rem(core.$unit * 3) auto;
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: core.rem(core.$unit * 4) auto;
+	}
+}
+
+
+
+
+
+// 5. TL;DR
+// ---
+.post__tldr {
+	margin: 0 0 core.rem(core.$unit * 3);
+	display: grid;
+	grid-template-columns: core.rem(83) 1fr;
+	column-gap: core.rem(core.$unit * 2);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: 0 0 core.rem(core.$unit * 4);
+		grid-template-columns:repeat(4, 1fr);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		grid-template-columns:repeat(6, 1fr);
+		column-gap: core.rem(core.$unit * 3);
+		margin: 0 0 core.rem(core.$unit * 5);
+	}
+
+	p + & {
+		margin: core.rem(core.$unit * 3) 0;
+
+		@include core.mq(core.$bp-tablet-v) {
+			margin: core.rem(core.$unit * 4) 0;
+		}
+
+		@include core.mq(core.$bp-desktop) {
+			margin: core.rem(core.$unit * 5) 0;
+		}
+	}
+}
+
+.post__tldr-caption {
+	@include core.font(tldrIcon);
+
+	background-color: core.$color-graphic-block;
+	color: core.$color-tldr-text;
 	display: flex;
-	vertical-align: middle;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: core.rem(core.$unit * 2);
+	margin-left: core.rem(core.$unit * -3);
+	min-height: core.rem(core.$unit * 6);
+
+	@include core.mq(core.$bp-tablet-v) {
+		justify-content: center;
+		padding-right: 0;
+		margin-left: 0;
+		min-height: core.rem(core.$unit * 7);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		grid-column: span 2;
+		min-height: core.rem(core.$unit * 9);
+	}
+}
+
+.post__tldr-content {
+	@include core.font(tldrParagraph);
+
+	display: flex;
+	align-items: center;
+
+	@include core.mq(core.$bp-tablet-v) {
+		grid-column: span 3;
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		grid-column: span 4;
+	}
+}
+
+.post__tldr-paragraph {
+	margin: 0;
+}
+
+.post__tldr-paragraph + .post__tldr-paragraph {
+	margin-top: 1em;
+}
+
+
+
+
+
+// 6. Quotes
+// ---
+.post__quote {
+	margin: core.rem(core.$unit * 3) 0;
+	padding: core.rem(calc(core.$unit * 3 / 2)) 0 core.rem(core.$unit * 3) core.rem(core.$unit * 3);
+	position: relative;
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: core.rem(core.$unit * 4) 0;
+		padding: core.rem(core.$unit * 3) 0 core.rem(core.$unit * 3) core.rem(core.$unit * 9);
+		grid-area: content;
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 7) 0;
+		padding: core.rem(core.$unit * 4) 0 core.rem(core.$unit * 4) core.rem(core.$unit * 11);
+	}
 
 	&::before {
-		background: img('icons/timer.svg') left top no-repeat;
-		background-size: rem(20);
+		background: core.$color-quote-bg;
 		content: '';
-		display: block;
-		height: rem(20);
-		width: rem(20);
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100vw;
+		pointer-events: none;
+		z-index: -1;
+	}
+
+	&::after {
+		content: '';
+		background: core.img('quotes.svg', core.$theme-icons) left bottom no-repeat core.$color-black;
+		background-size: 100% auto;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: core.rem(core.$unit * 3);
+		height: core.rem(calc((core.$unit * 3) + (core.$unit * 3) / 2));
+		transform: translateX(-50%);
+
+		@include core.mq(core.$bp-tablet-v) {
+			width: core.rem(core.$unit * 6);
+			height: core.rem(core.$unit * 7);
+			transform: translateX(0);
+		}
+
+		@include core.mq(core.$bp-desktop) {
+			width: core.rem(core.$unit * 7);
+			height: core.rem(core.$unit * 8);
+		}
 	}
 }
 
-.post__back {
-	background: img('icons/back.svg') left top no-repeat;
-	background-size: rem(30);
-	display: block;
-	height: rem(1);
-	left: 0;
-	opacity: .5;
-	overflow: hidden;
-	padding: rem(29) 0 0;
-	position: absolute;
-	top: rem(10);
-	transform: translate(-100%);
-	width: rem(30);
-	z-index: 100000;
-
-	@include mq($bp_desktop) {
-		margin-left: rem(-10);
-		top: rem(15);
-	}
-}
-
-.post__title {
-	@include font(h3);
+.post__quote-block {
+	@include core.font(quote);
 
 	margin: 0;
 }
 
-.post__cover {
-	position: relative;
-	margin-bottom: rem(20);
-
-	@include mq($bp_tablet) {
-		margin-bottom: rem(40);
-	}
+.post__quote-paragraph {
+	margin: 0;
 }
 
-.post__cover-credits {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	margin: 0 !important;
-	font-size: rem(10);
-	background: rgba($color-white, .85);
-	line-height: 1;
-	padding: .5em 1em;
-	border-radius: rem(2) 0 0;
-
-	@include mq($bp_tablet) {
-		right: rem(5);
-		bottom: rem(5);
-		font-size: rem(12);
-		border-radius: rem(2);
-	}
-
-	a {
-		color: mix($color-link, $color-black, 75%) !important;
-	}
+.post__quote-paragraph + .post__quote-paragraph {
+	margin-top: 1em;
 }
 
-.post__featured-image {
-	display: block;
-	width: 100%;
-}
+.post__quote-caption {
+	@include core.font(quoteAuthor);
 
-.post--entry {
-	@include font(p);
+	margin-top: core.rem(core.$unit);
+	text-align: end;
 
-	p,
-	ul,
-	ol,
-	pre,
-	blockquote,
-	hr {
-		margin-bottom: rem(30);
-		margin-top: rem(30);
-
-		@include mq($bp-desktop) {
-			margin-bottom: rem(40);
-			margin-top: rem(40);
-		}
+	@include core.mq(core.$bp-tablet-v) {
+		margin-top: core.rem(core.$unit * 2);
 	}
 
-	h1 {
-		@include font(h1);
-	}
-
-	h2 {
-		@include font(h2);
-
-		margin-bottom: rem(-20);
-		margin-top: rem(50);
-	}
-
-	h3 {
-		@include font(h3);
-
-		margin-bottom: rem(-20);
-		margin-top: rem(50);
-	}
-
-	h4 {
-		@include font(h4);
-
-		margin-bottom: rem(-20);
-		margin-top: rem(40);
-	}
-
-	h5 {
-		@include font(h4);
-
-		margin-bottom: rem(-20);
-		margin-top: rem(40);
-	}
-
-	h6 {
-		@include font(h4);
-
-		margin-bottom: rem(-20);
-		margin-top: rem(40);
-	}
-
-	a {
-		color: inherit;
-		color: $color-link;
-		text-decoration: none;
-	}
-
-	li {
-		padding-left: .5em;
-	}
-
-	ol {
-		li::marker {
-			color: mix($color-black, $color-white, 55%);
-			font-size: .85em;
-			font-style: italic;
-		}
-	}
-
-	ul {
-		li::marker {
-			color: mix($color-black, $color-white, 45%);
-			font-size: .75em;
-		}
-	}
-
-	hr {
-		border: 0;
-		text-align: center;
-
-		&::before {
-			color: mix($color-black, $color-white, 35%);
-			content: '---';
-			letter-spacing: rem(2);
-		}
-	}
-
-	blockquote {
-		margin-left: 0;
-		margin-right: 0;
-		padding: rem(40);
-		position: relative;
-
-		&::before {
-			background-color: $color-yellow-orange-juice;
-			content: '';
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: rem(5);
-		}
-
-		p {
-			margin: 0;
-		}
-	}
-
-	p img {
-		border-radius: rem(4);
-		width: 100%;
+	@include core.mq(core.$bp-desktop) {
+		margin-top: core.rem(core.$unit);
 	}
 }
 
 
-.post__footer {
-	margin: rem(40) 0 0;
+
+
+
+
+// 7. YA image
+// ---
+.post__ya {
+	margin: core.rem(core.$unit * 6) 0 core.rem(core.$unit * 10);
 	text-align: center;
 
-	@include mq($bp_desktop) {
-		margin: rem(50) 0 0;
+	@include core.mq(core.$bp-tablet-v) {
+		margin: core.rem(core.$unit * 7) 0 core.rem(core.$unit * 10);
 	}
 
-	.wrapper {
-		@include grid();
-		margin-top: rem(80);
-
-		@include mq($bp-tablet) {
-			grid-template-areas:
-				"sidebar-l note note note note sidebar-r"
-				"sidebar-l content content content content sidebar-r";
-		}
-	
-		@include mq($bp-desktop) {
-			margin-top: rem(100);
-			grid-template-areas:
-				"sidebar-l note note note note note note sidebar-r"
-				"sidebar-l content content content content content content sidebar-r";
-		}
-		
-		
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 12);
 	}
 }
 
-.post__ya {
-	width: rem(50);
-}
-
-.post__footer-note {
-	grid-area: note;
-	font-size: rem(14);
-	line-height: 150%;
-	text-align: left;
-	margin-bottom: rem(10);
-
-	@include mq($bp-tablet) {
-		margin-bottom: 0;
-	}
-}
-
-
-
-
-// ANCHOR TAGS
-.post--draft,
-.post--future {
-	.post__title {
-		display: flex;
-		column-gap: rem(5);
-		align-items: center;
-	}
-}
-
-.post--draft {
-	.post__title {
-		&::before {
-			@include tag('draft', $color-draft);
-		}
-	}
-}
-
-.post--future {
-	.post__title {
-		&::after {
-			@include tag('future', $color-future);
-		}
-	}
+.post__ya-image {
+	width: core.rem(core.$unit * 7);
+	height: core.rem(core.$unit * 7);
 }

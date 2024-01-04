@@ -1,17 +1,45 @@
-.header {
-	.wrapper {
-		align-items: center;
-		box-sizing: border-box;
-		display: flex;
-		padding: rem($page-gutter) 0;
+@use 'core/core';
 
-		@include mq($bp-tablet) {
-			height: rem(100);
-		}
+.lemon__header {
+	background-color: core.$color-white;
+	padding: core.rem(20) 0;
+}
+
+.lemon__brand {
+	display: flex;
+	@include core.mq(core.$bp-tablet-v) {
+		grid-area: content;
 	}
 }
 
-.header__brand {
+.lemon__brand-link {
 	color: inherit;
+	column-gap: core.rem(12);
+	display: inline-flex;
 	text-decoration: none;
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin-left: core.rem((40 + 12) * -1);
+	}
+
+	&::before {
+		background: core.img('lemon.svg', core.$theme-brand) left top no-repeat;
+		background-size: 100% auto;
+		content: '';
+		height: core.rem(32);
+		width: core.rem(40);
+
+		@media screen and (min-width: core.em(core.$bp-desktop)) and (min-height: core.em(core.$bp-tablet-v)) {
+			height: core.rem(48);
+			width: core.rem(60);
+		}
+	}
+
+	@media screen and (min-width: core.em(core.$bp-desktop)) and (min-height: core.em(core.$bp-tablet-v)) {
+		margin-left: core.rem((60 + 12) * -1);
+	}
+}
+
+.lemon__brand-name {
+	@include core.font(brand);
 }

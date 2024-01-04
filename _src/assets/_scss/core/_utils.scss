@@ -1,13 +1,5 @@
-// UTILS
+@use 'mixins';
 
 .sr-only {
-	@include screen-reader-only();
-}
-
-
-
-
-
-.hidden {
-	display: none;
+	@include mixins.screen-reader-only();
 }

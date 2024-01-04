@@ -1,98 +1,32 @@
-.footer {
-	.wrapper {
-		@include grid();
-	}
+@use 'core/core';
+
+.lemon__footer-content {
+	background-color: core.$color-black;
+	color: core.$color-white;
+	grid-area: content;
+	padding: core.rem(core.$unit * 2);
 }
 
-.footer__chuck {
-	margin: rem(20) auto 0;
-	position: relative;
-	width: rem(200);
+.lemon__license {
+	@include core.font(footer);
 
-	@include mq($bp_tablet) {
-		width: rem(210);
-	}
-	@include mq($bp_desktop) {
-		margin: rem(40) auto rem(20);
-	}
-
-	&::before {
-		background-color: $color-black;
-		border-radius: 50%;
-		color: $color-yellow-orange-juice;
-		content: 'º-)';
-		display: none;
-		font-family: verdana, serif;
-		height: rem(75);
-		left: 100%;
-		line-height: rem(75);
-		position: absolute;
-		text-align: center;
-		top: 0;
-		transform: translateX(-50%) rotate(15deg);
-		width: rem(75);
-	}
-
-	&::after {
-		border: 10px solid transparent;
-		border-right-color: $color-black;
-		border-width: 10px 15px;
-		content: '';
-		display: none;
-		height: 0;
-		position: absolute;
-		right: rem(75/3 + 3);
-		top: rem(75/2 + 3);
-		transform: rotate(-30deg);
-		transform-origin: center right;
-		width: 0;
-	}
-
-	&:hover {
-		&::before,
-		&::after {
-			display: block;
-		}
-	}
-}
-
-.footer__chuck-avatar {
-	display: block;
-	width: 100%;
-}
-
-.footer__content {
-	@include grid-item(content);
-	@include font(copy);
-
-	background-color: $color-black;
-	border-radius: rem(4) rem(4) 0 0;
-	color: $color-white;
-	padding: rem($page-gutter);
-	text-align: center;
-}
-
-.footer__license {
+	align-items: center;
+	display: flex;
+	gap: core.rem( calc(core.$unit/2) );
+	justify-content: center;
 	margin: 0;
 }
 
-.footer__cc {
-	background: img('ico-license.svg') left bottom no-repeat;
-	background-size: rem(45) auto;
-	display: inline-block;
-	height: rem(1);
-	margin-top: rem(-2);
+.lemon__cc {
+	background: core.img('license.svg', core.$theme-icons) left top no-repeat;
+	background-size: 100% auto;
+	display: block;
+	height: core.rem(1);
 	overflow: hidden;
-	padding-top: rem(15);
-	vertical-align: middle;
-	width: rem(45);
+	padding-top: core.rem(15);
+	width: core.rem(45);
 }
 
-.footer__author {
+.lemon__author {
 	color: inherit;
-	text-decoration: none;
-
-	&:hover {
-		text-decoration: underline;
-	}
 }

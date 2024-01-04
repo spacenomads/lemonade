@@ -1,48 +1,114 @@
-.content__social-comment {
-	@include grid-item(content);
+@use 'core/core';
 
-	align-items: center;
-	border-radius: rem($radius);
-	box-shadow: inset 0 0 0 rem(1) $color-light-border;
-	box-sizing: border-box;
-	column-gap: rem(10);
+.social {
+	@extend %unlist;
+
 	display: flex;
-	margin: 0 0 rem(15);
-	padding: rem(10);
+	flex-wrap: wrap;
+	gap: core.rem(core.$unit);
+
+	@include core.mq(core.$bp-desktop) {
+		gap: core.rem(core.$unit * 2);
+	}
+}
+
+.social__item {}
+
+.social__link {
+	background-color: core.$color-correct-blue;
+	display: block;
+	height: core.rem(1);
+	overflow: hidden;
+	padding-top: core.rem(core.$unit * 5 - 1);
+	width: core.rem(core.$unit * 5);
 	position: relative;
+	overflow: hidden;
 
 	&::before {
-		background: img('icons/talk.svg') left top no-repeat;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		height: 100%;
 		content: '';
-		display: block;
-		height: rem(40);
-		width: rem(40);
+		transition: top ease .5s;
 	}
 
-	.content__social-comment-link {
-		@include font(comment);
-		text-align: left;
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: core.rem(core.$unit * 3) auto;
+	}
 
-		color: $color_text;
+	&:hover {
 		&::before {
-			border-radius: rem($radius);
-			box-sizing: border-box;
-			content: '';
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			pointer-events: none;
-			position: absolute;
 			top: 0;
-			transition: opacity ease .3s;
-			width: 100%;
 		}
+	}
+}
 
-		&:hover {
-			&::before {
-				box-shadow: inset 0 0 0 rem(1) $color-link;
-				opacity: 1;
-			}
-		}
+.social__link--mastodon {
+	&::before {
+		background-color: core.$color-mastodon;
+	}
+
+	&::after {
+		background-image: core.img('mastodon.svg', core.$theme-icons);
+	}
+}
+
+.social__link--pixelfed {
+	&::before {
+		background-image: linear-gradient(to right, core.$color-pixelfed-1, core.$color-pixelfed-2);
+	}
+
+	&::after {
+		background-image: core.img('pixelfed.svg', core.$theme-icons);
+	}
+}
+
+.social__link--youtube {
+	&::before {
+		background-color: core.$color-youtube;
+	}
+
+	&::after {
+		background-image: core.img('youtube.svg', core.$theme-icons);
+	}
+}
+
+.social__link--twitch {
+	&::after {
+		background-image: core.img('twitch.svg', core.$theme-icons);
+	}
+
+	&::before {
+		background-color: core.$color-twitch;
+	}
+}
+
+.social__link--github {
+	&::after {
+		background-image: core.img('github.svg', core.$theme-icons);
+	}
+
+	&::before {
+		background-color: core.$color-github;
+	}
+}
+
+.social__link--codeberg {
+	&::after {
+		background-image: core.img('codeberg.svg', core.$theme-icons);
+	}
+
+	&::before {
+		background-color: core.$color-codeberg;
 	}
 }

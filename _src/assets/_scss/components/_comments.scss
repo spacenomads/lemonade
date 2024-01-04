@@ -1,0 +1,108 @@
+// ***
+//  Stylesheet _comments.scss
+//
+//  Table of Contents:
+//    0. @use
+//    1. Comments
+//
+// ***
+
+
+
+
+
+// 0. @use
+// ---
+@use 'core/core';
+
+
+
+
+// 1. Comments
+// ---
+.content__social-comment-link {
+	@include core.font(comments);
+
+	display: block;
+	margin: 0 core.rem(-12) core.rem(core.$unit * 3);
+	text-decoration: none;
+
+	@include core.mq(core.$bp-tablet-v) {
+		grid-area: content;
+		margin: 0 0 core.rem(core.$unit * 4);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		grid-area: unset;
+		grid-column: 3 / span 4;
+		margin-bottom: core.rem(core.$unit * 5);
+	}
+}
+
+.content__social-comment {
+	display: grid;
+	grid-template-columns: core.rem(53) 1fr;
+	background-color: rgba(core.$color-athens-gray, .5);
+
+	@include core.mq(core.$bp-tablet-v) {
+		grid-template-columns: core.rem(84) 1fr;
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: core.rem(core.$unit * 3);
+	}
+}
+
+.content__social-comment-icon {
+	aspect-ratio: 1;
+	background: core.img('mail.svg', core.$theme-icons) center no-repeat core.$color-link;
+	position: relative;
+
+	@include core.mq(core.$bp-tablet-v) {
+		background-size: core.rem(core.$unit * 4);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		background-size: core.rem(core.$unit * 6);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border: core.rem(core.$unit) solid core.$color-link;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+
+		@include core.mq(core.$bp-tablet-v) {
+			border-width: core.rem(core.$unit * 1.5);
+		}
+
+		@include core.mq(core.$bp-desktop) {
+			border-width: core.rem(core.$unit * 2);
+		}
+	}
+}
+
+.content__social-comment-info {
+	margin: 0;
+	padding: core.rem(core.$unit);
+
+	@include core.mq(core.$bp-tablet-v) {
+		padding: core.rem(core.$unit * 2);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		grid-column: span 3;
+		padding: core.rem(core.$unit* 3) core.rem(core.$unit* 3) core.rem(core.$unit* 3) 0;
+	}
+}
+
+.content__social-comment-clickbait {
+	color: core.$color-text;
+	display: block;
+}

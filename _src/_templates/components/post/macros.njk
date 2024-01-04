@@ -1,0 +1,57 @@
+{%- macro test(title) -%}
+	<h1>{{ title }}</h1>
+	<p style="color:red; font-size:3em;">Yas!</p>
+{%- endmacro -%}
+
+
+
+
+
+{%- macro tldr(content) -%}
+	<figure class="post__tldr">
+		<figcaption class="post__tldr-caption">TL;DR</figcaption>
+		<div class="post__tldr-content">
+			<div class="post__tldr-content-inner">
+				{%- for p in content -%}
+					<p class="post__tldr-paragraph">{{ p }}</p>
+				{%- endfor -%}
+			</div>
+		</div>
+	</figure>
+{%- endmacro -%}
+
+
+
+
+
+{%- macro quote(config) -%}
+	<figure class="post__quote">
+		<blockquote class="post__quote-block"{% if config.cite.url %} cite="{{ config.cite.url }}"{% endif %}>
+			{%- for p in config.content -%}
+				<p class="post__quote-paragraph">{{ p }}</p>
+			{%- endfor -%}
+		</blockquote>
+		<figcaption class="post__quote-caption">—{{ config.author }}
+			{%- if config.cite.work -%}
+				, <cite class="post__quote-cite">{% if config.cite.url %}<a href="{{ config.cite.url }}">{% endif %}{{ config.cite.work }}{% if config.cite.url %}</a>{% endif %}</cite>
+			{%- endif -%}
+		</figcaption>
+	</figure>
+{%- endmacro -%}
+
+
+{%- macro img(config) -%}
+<figure class="post__media post__media--{{ config.mode }}">
+
+	{%- if config.link.url -%}
+		<a href="{{ config.link.url }}">
+	{%- endif -%}
+	<img src="{{ config.src }}" alt="{{ config.alt }}" class="post__media-image" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %} {% if config.title %}title="{{ config.title }}"{% endif %}>
+	{%- if config.link.url -%}
+		</a>
+	{%- endif -%}
+	{%- if config.caption -%}
+		<figcaption class="post__media-caption {{ 'sr-only' if config.mode === 'mini' }}" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %}>{{ config.caption | safe }}</figcaption>
+	{%- endif -%}
+</figure>
+{%- endmacro -%}

@@ -1,0 +1,32 @@
+{
+  "intro": "Aunque voy un poco despistado me he puesto a terminar todas esas series que llevaba a medias.",
+  "items": [
+    {
+      "title":"En papel, o no",
+      "icon":"comic",
+      "content":"Blackhand & Ironhead vol 01, de David López",
+      "link":{
+        "url": "https://panelsyndicate.com/comics/blackhand-ironhead",
+        "label": "PanelSyndicate"
+      }
+    },
+    {
+      "title":"En la Switch",
+      "icon":"switch",
+      "content":"The Legend of Zelda: Breath of the Wild",
+      "link":{
+        "url": "https://zelda.nintendo.com/breath-of-the-wild/",
+        "label": "Nintendo.com"
+      }
+    },
+    {
+      "title":"En la tele",
+      "icon":"tv",
+      "content":"The Dragon Prince: Mystery of Aaravos",
+      "link":{
+        "url": "https://www.netflix.com/title/80212245 ",
+        "label": "Netflix"
+      }
+    }
+  ]
+}

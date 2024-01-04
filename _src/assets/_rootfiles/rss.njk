@@ -1,0 +1,37 @@
+---
+permalink: /rss.xml
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<atom:link href="{{ settings.url }}/rss.xml" rel="self" type="application/rss+xml" />
+	<title>Si dios te da RSS</title>
+	<description>Feed RSS de sidiostedalimones.com</description>
+	<link>{{ settings.url }}</link>
+	<language>es-ES</language>
+	<image>
+		<url>https://sidiostedalimones.com/assets/rss/lemon-rss.png</url>
+		<title>Si dios te da RSS</title>
+		<link>{{ settings.url }}</link>
+	</image>
+	<copyright>{{ settings.year}} CC BY-SA 4.0 International</copyright>
+	<webMaster>{{ settings.email }} ({{ settings.author }})</webMaster>
+	<lastBuildDate>{{ settings.build_date | rfc822Inator }}</lastBuildDate>
+
+	{% for post in collections.blog | reverse %}
+	<item>
+		<title>{{ post.data.title }}</title>
+		<description></description>
+		<content:encoded>{{ post.content | convertToAbsoluteURL(post.url) }}</content:encoded>
+		{% for tags in post.data.tags %}
+		<category>{{ tags }}</category>
+		{% endfor %}
+		<link>{{ settings.url }}{{ post.url }}</link>
+		<guid isPermaLink="true">{{ settings.url }}{{ post.url }}</guid>
+		<pubDate>{{ post.data.date | rfc822Inator }}</pubDate>
+	</item>
+	{% endfor %}
+
+
+</channel>
+</rss>

@@ -1,0 +1,80 @@
+@use 'core/core';
+
+.hobbies {
+	@extend %unlist;
+
+	margin-top: core.rem(core.$unit * 4) !important;
+
+	@include core.mq(core.$bp-desktop) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: core.rem(core.$page-gap-desktop);
+	}
+}
+
+.hobbies__item + .hobbies__item {
+	margin-top: inherit;
+
+	@include core.mq(core.$bp-desktop) {
+		margin-top: 0;
+	}
+}
+
+
+.hobby {}
+
+.about__content  .hobby__title {
+	display: flex;
+	gap: core.rem(core.$unit);
+	align-items: center;
+	margin: 0 0 core.rem(core.$unit);
+}
+
+.hobby__title::before {
+	content: '';
+	width: core.rem(core.$unit * 5);
+	height: core.rem(core.$unit * 5);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: core.rem(core.$unit * 3) auto;
+
+	@include core.mq(core.$bp-desktop) {
+		background-size: core.rem(core.$unit * 4) auto;
+	}
+}
+
+.hobby__title--audio::before {
+	background-image: core.img('audio.svg', core.$theme-icons);
+}
+
+.hobby__title--book::before {
+	background-image: core.img('book.svg', core.$theme-icons);
+}
+
+.hobby__title--comic::before {
+	background-image: core.img('comic.svg', core.$theme-icons);
+}
+
+.hobby__title--ps5::before {
+	background-image: core.img('ps5.svg', core.$theme-icons);
+}
+
+.hobby__title--switch::before {
+	background-image: core.img('switch.svg', core.$theme-icons);
+}
+
+.hobby__title--tv::before {
+	background-image: core.img('tv.svg', core.$theme-icons);
+}
+
+.hobby__content {
+	margin: 0;
+}
+
+.hobby__link-outer {
+	display: inline-block;
+	color: core.$color-correct-blue;
+}
+.hobby__link-outer::before {
+	content: '@';
+}

@@ -1,0 +1,29 @@
+@use 'core/core';
+
+a {
+	color: core.$color-link;
+}
+
+
+
+.home-posts__year {
+	margin: 0;
+}
+
+.post__title {
+	margin: 0;
+}
+
+
+.lemon__container {
+	// overflow: hidden;
+}
+
+.content__inner {
+	grid-area: content;
+}
+
+
+.about__content {
+	grid-area: content;
+}

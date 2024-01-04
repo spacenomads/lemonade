@@ -1,0 +1,19 @@
+<header class="e404__header">
+	<div class="content">
+		<div class="wrapper">
+			<div class="content__inner">
+				<h1 class="e404__title post__title">
+					<span class="e404__title-mark post__title-mark">{{ title | spanMe | safe }}</span></h1>
+				<a class="e404__back post__back" href="/">Volver a la home</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="e404__cover" style="background-color: #{{ e404_bg_color }}">
+		<div class="wrapper">
+			<div class="e404__cover-inner">
+				<img class="e404__cover-image" src="/assets/images/layout/icons/not-found.svg" alt="{{ e404_cover_alt }}">
+			</div>
+		</div>
+	</div>
+</header>

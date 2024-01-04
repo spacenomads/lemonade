@@ -1,0 +1,59 @@
+// ***
+//  Stylesheet _salute.scss
+//
+//  Table of Contents:
+//    0. @use
+//    1. Salute
+//
+// ***
+
+
+
+
+
+// 0. @use
+// ---
+@use 'core/core';
+
+
+
+
+
+// 1. Salute
+// ---
+.home-salute {
+	margin: core.rem(core.$unit * 2) 0;
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 3) 0;
+	}
+}
+
+.home-salute__container {
+	// TODO: Oye, las variables!! 🫣
+	background: linear-gradient(to right, #cdcdcd, #b6b6b6);
+	grid-area: content;
+	display: flex;
+	height: core.rem(core.$unit * 15);
+
+	@include core.mq(core.$bp-tablet-v) {
+		height: core.rem(core.$unit * 19);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		height: core.rem(core.$unit * 32);
+	}
+}
+
+.home-salute__avatar {
+	margin: auto;
+	height: core.rem(core.$unit * 10);
+
+	@include core.mq(core.$bp-tablet-v) {
+		height: core.rem(core.$unit * 12);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		height: core.rem(core.$unit * 23);
+	}
+}

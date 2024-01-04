@@ -1,12 +1,16 @@
+@use 'core/core';
+
 div.code-toolbar {
   font-size: .75em;
 }
+
 div.code-toolbar > .toolbar {
   top: 0;
-  right: rem(5);
+  right: core.rem(5);
 }
+
 div.code-toolbar > .toolbar > .toolbar-item > button {
-  font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
-  padding: rem(3) rem(15);
+  font-family: consolas, monaco, 'andale mono', 'ubuntu mono', monospace;
+  padding: core.rem(3) core.rem(15);
   cursor: pointer;
 }

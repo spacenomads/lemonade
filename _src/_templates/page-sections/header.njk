@@ -1,15 +1,9 @@
-<header class="page__header header">
+<header class="lemon__header">
   <div class="wrapper">
-    <a href="/" class="header__brand">
-      <div class="brand">{{ settings.siteName }}</div>
-    </a>
+		<div class="lemon__brand">
+			<a href="/" class="lemon__brand-link">
+				<span class="lemon__brand-name">{{ settings.siteName }}{{ ' (local)' if settings.mode === 'dev'}}</span>
+			</a>
+		</div>
   </div>
-
-  {# {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
-  listElement: 'ul',
-  listItemElement: 'li',
-  listClass: 'menu',
-  listItemClass: 'menu__item',
-  anchorClass: 'menu__link'
-}) | safe }} #}
 </header>

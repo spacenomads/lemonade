@@ -1,0 +1,16 @@
+<section class="about__status">
+	<div class="wrapper">
+		<div class="about__content post__content post__content--no-featured">
+			<h2>En qué ando...</h2>
+			<p>{{ hobbies.intro | safe }}</p>
+
+			<ul class="hobbies">
+				{% for hobby in hobbies.items %}
+					<li class="hobbies__item">
+						{% include 'components/about/hobby.njk' %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

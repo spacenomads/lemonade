@@ -1,7 +1,272 @@
-// MIXINS
+// ***
+//  Stylesheet _mixins.scss
+//
+//  Table of Contents:
+//    0. @use
+//    1. font()
+//    2. mark()
+//    3. z()
+//    4. mq()
+//    5. grid()
+//    6. screen-reader-only()
+//
+// ***
 
+
+
+
+
+// 0. @use
+// ---
+@use 'variables' as vars;
+@use 'functions' as fn;
+
+
+
+
+// 1. font()
+// ---
+@mixin font($type) {
+
+	$done: vars.$color_text;
+
+	@if $type == brand {
+
+		font-size: fn.rem(18);
+		line-height: fn.lh(32, 18);
+		font-weight: vars.$font-medium;
+
+		@media screen and (min-width: fn.em(vars.$bp-desktop)) and (min-height: fn.em(vars.$bp-tablet-v)) {
+			font-size: fn.rem(24);
+			line-height: fn.lh(48, 24);
+		}
+	}
+
+	@if $type == footer {
+
+		font-size: fn.rem(14);
+		line-height: fn.lh(16, 14);
+		font-weight: vars.$font-regular;
+	}
+
+	@if $type == gridTitle {
+
+		font-size: fn.rem(18);
+		line-height: fn.lh(27, 18);
+		font-weight: vars.$font-semibold;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(24);
+			line-height: fn.lh(36, 24);
+		}
+	}
+
+	@if $type == gridTitleLG {
+
+		font-size: fn.rem(32);
+		line-height: fn.lh(46, 32);
+	}
+
+	@if $type == h1 {
+
+		font-size: fn.rem(28);
+		line-height: fn.rem(36);
+		font-weight: vars.$font-medium;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(36);
+			line-height: fn.rem(51);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(48);
+			line-height: fn.rem(73);
+		}
+	}
+
+	@if $type == h2 {
+
+		font-size: fn.rem(22);
+		line-height: fn.lh(33, 22);
+		font-weight: vars.$font-medium;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(26);
+			line-height: fn.lh(39, 26);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(32);
+			line-height: fn.lh(48, 32);
+		}
+	}
+
+	@if $type == h3 {
+
+		font-size: fn.rem(18);
+		line-height: fn.lh(27, 18);
+		font-weight: vars.$font-medium;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(22);
+			line-height: fn.lh(33, 22);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(28);
+			line-height: fn.lh(42, 28);
+		}
+	}
+
+	@if $type == paragraph {
+
+		font-size: fn.rem(16);
+		line-height: fn.lh(27.2, 16);
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(22);
+			line-height: fn.lh(37.4, 22);
+		}
+	}
+
+	@if $type == bigParagraph {
+		font-size: fn.rem(18);
+		line-height: fn.lh(27, 18);
+		font-weight: vars.$font-light;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(22);
+			line-height: fn.lh(33, 22);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(26);
+			line-height: fn.lh(39, 26);
+			font-weight: vars.$font-light;
+		}
+	}
+
+	@if $type == meta {
+
+		font-size: fn.rem(14);
+		line-height: fn.lh(16, 14);
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(16);
+			line-height: fn.lh(24, 16);
+		}
+	}
+
+	@if $type == tldrIcon {
+
+		font-size: fn.rem(18);
+		line-height: fn.lh(27, 18);
+		font-weight: vars.$font-medium;
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(32);
+			line-height: fn.lh(48, 32);
+		}
+	}
+
+	@if $type == tldrParagraph {
+
+		font-size: fn.rem(16);
+		line-height: fn.lh(24, 16);
+		font-weight: vars.$font-regular;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(18);
+			line-height: fn.lh(27, 18);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(22);
+			line-height: fn.lh(33, 22);
+		}
+	}
+
+	@if $type == quote {
+
+		font-size: fn.rem(16);
+		line-height: fn.lh(27.2, 16);
+		font-weight: vars.$font-regular;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(18);
+			line-height: fn.lh(30.6, 18);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(22);
+			line-height: fn.lh(37.4, 22);
+		}
+	}
+
+	@if $type == quoteAuthor {
+
+		font-size: fn.rem(14);
+		line-height: fn.lh(18.2, 14);
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(16);
+			line-height: fn.lh(20.8, 16);
+		}
+	}
+
+	@if $type == comments {
+
+		font-size: fn.rem(15);
+		line-height: fn.lh(18, 15);
+		font-weight: vars.$font-regular;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(16);
+			line-height: fn.lh(25.6, 16);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(22);
+			line-height: fn.lh(37.4, 22);
+		}
+	}
+}
+
+
+
+
+
+// 2. mark()
+// ---
+@mixin mark() {
+	background-color: vars.$color-black;
+	color: vars.$color-white;
+	box-decoration-break: clone;
+	padding: fn.rem(2.5) fn.rem(vars.$unit);
+
+	@include mq(vars.$bp-tablet-v) {
+		padding: fn.rem(4) fn.rem(vars.$unit);
+	}
+}
+
+
+
+
+
+// 3. z()
+// ---
+@mixin z($level, $list: vars.$levels) {
+	z-index: index($list, $level);
+}
+
+
+
+
+
+// 4. mq()
+// ---
 @mixin mq($pixels, $width: min-width) {
-	@media screen and ($width: em($pixels)) {
+	@media screen and ($width: fn.em($pixels)) {
 		@content;
 	}
 }
@@ -10,144 +275,35 @@
 
 
 
-@mixin z($level, $list: $levels) {
-	z-index: index($list, $level);
+// 5. grid()
+// ---
+@mixin grid() {
+	@include mq(vars.$bp-tablet-v) {
+		display: grid;
+		gap: fn.rem(vars.$page-gap);
+		grid-template-areas: "left content content content content right";
+		grid-template-columns: repeat(vars.$page-cols-tablet, 1fr);
+	}
+	@include mq(vars.$bp-desktop) {
+		gap: fn.rem(vars.$page-gap-desktop);
+		grid-template-areas: "left content content content content content content right";
+		grid-template-columns: repeat(vars.$page-cols-desktop, 1fr);
+	}
 }
 
 
 
 
 
+// 6. screen-reader-only()
+// ---
 @mixin screen-reader-only() {
 	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
 	height: 1px;
-	margin: 0 !important;
+	margin: -1px;
 	overflow: hidden;
+	padding: 0;
 	position: absolute;
-}
-
-
-
-
-@mixin font($type) {
-	@if $type == h1 {
-		margin: 0;
-		font-size: rem(40);
-		line-height: lh(50, 40);
-
-		@include mq($bp-desktop) {
-			font-size: rem(50);
-			line-height: lh(60, 50);
-		}
-	}
-	
-	@if $type == h2 {
-		margin: 0;
-		font-size: rem(30);
-		line-height: lh(40, 30);
-
-		@include mq($bp-desktop) {
-			font-size: rem(40);
-			line-height: lh(50, 40);
-		}
-	}
-	
-	@if $type == h3 {
-		margin: 0;
-		font-size: rem(20);
-		line-height: lh(40, 20);
-
-		@include mq($bp-desktop) {
-			font-size: rem(30);
-			line-height: lh(40, 30);
-		}
-	}
-
-	@if $type == h4 {
-		margin: 0;
-		font-size: rem(18);
-		line-height: lh(30, 18);
-
-		@include mq($bp-desktop) {
-			font-size: rem(20);
-			line-height: lh(40, 20);
-		}
-	}
-	
-	@if $type == p {
-		font-size: rem(16);
-		line-height: lh(30, 16);
-
-		@include mq($bp-tablet) {
-			font-size: rem(18);
-			line-height: lh(30, 18);
-		}
-		
-		@include mq($bp-desktop) {
-			font-size: rem(20);
-			line-height: lh(40, 20);
-		}
-	}
-
-	@if $type == comment {
-		font-size: rem(14);
-		line-height: lh(30, 14);
-
-		@include mq($bp-tablet) {
-			font-size: rem(16);
-			line-height: lh(40, 16);
-		}
-	}
-	
-	@if $type == small {
-		font-size: rem(14);
-		line-height: lh(30, 14);
-		font-weight: $font-light;
-	}
-
-	@if $type == copy {
-		font-size: rem(14);
-		line-height: lh(20, 14);
-	}
-}
-
-
-
-
-
-@mixin grid() {
-	
-
-	@include mq($bp-tablet) {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-areas: "sidebar-l content content content content sidebar-r";
-		gap: rem($page-gutter);
-	}
-
-	@include mq($bp-desktop) {
-		grid-template-columns: repeat(8, 1fr);
-		grid-template-areas: "sidebar-l content content content content content content sidebar-r";
-	}
-}
-
-@mixin grid-item($area) {
-	@include mq($bp-tablet) {
-		grid-area: $area;
-	}
-}
-
-
-
-
-
-@mixin tag($text, $color) {
-	content: $text;
-	padding: rem(4) rem(8);
-	border-radius: rem(3);
-	background-color: $color;
-	font-size: rem(12);
-	line-height: 1;
-	color: $color-white;
-	order: -1;
+	width: 1px;
 }
