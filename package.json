@@ -1,6 +1,6 @@
 {
   "name": "lemonade",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Sidiostedalimones.com 2024 version 🦄",
   "main": "dist/index.html",
   "scripts": {
