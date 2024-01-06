@@ -1557,12 +1557,12 @@ p + .post__tldr {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .home-post__link:hover .home-post__title {
+  .lemon:not(.--hasTouchScreen) .home-post__link:hover .home-post__title {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  .home-post__title {
+  .lemon:not(.--hasTouchScreen) .home-post__title {
     opacity: 0.1;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);

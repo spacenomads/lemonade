@@ -13,9 +13,17 @@
 //
 // ***
 
+
+
+
+
 // 0. @use
 // ---
 @use "core/core";
+
+
+
+
 
 // 1. Home
 // ---
@@ -65,6 +73,10 @@
 	}
 }
 
+
+
+
+
 // 2. Posts
 // ---
 .home-post {
@@ -80,7 +92,7 @@
 	position: relative;
 }
 
-.home-post__link:hover .home-post__title {
+.lemon:not(.--hasTouchScreen) .home-post__link:hover .home-post__title {
 	@media (prefers-reduced-motion: no-preference) {
 		opacity: 1;
 		transform: translateY(0);
@@ -100,10 +112,12 @@
 	width: 100%;
 	z-index: 1;
 
-	@media (prefers-reduced-motion: no-preference) {
-		opacity: 0.1;
-		transform: translateY(100%);
-		transition: transform ease 0.5s, opacity ease 0.6s;
+	.lemon:not(.--hasTouchScreen) & {
+		@media (prefers-reduced-motion: no-preference) {
+			opacity: 0.1;
+			transform: translateY(100%);
+			transition: transform ease 0.5s, opacity ease 0.6s;
+		}
 	}
 
 	@include core.mq(core.$bp-tablet-v) {
