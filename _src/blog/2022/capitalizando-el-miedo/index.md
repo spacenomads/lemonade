@@ -7,7 +7,9 @@ ya_alt: Imagen del emoji de la gota de sangre.
 reading_time: 2
 date: 2022-02-21
 draft: false
+categories: [politics]
 tags: [psoe, miedo, rastreros, lobos, república]
+description: Nadie capitaliza el miedo como el psoe, y siempre tiene un enemigo a mano.
 clickbait: ¿Y tú, cuánto pagas de luz?
 ---
 

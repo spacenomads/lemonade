@@ -7,7 +7,9 @@ ya_alt: Ocho en horizontal, como si fuese un símbolo de infinito
 reading_time: 3
 date: 2023-08-17
 draft: false
+categories: [ia, tools]
 tags: [ia, robar, privacidad]
+description: Se nos llena la boca con la IA, pero nos estamos haciendo las primeras preguntas.
 clickbait: ¿Qué te ha parecido?
 cover_credits:
   link: https://unsplash.com/@pheiskan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText

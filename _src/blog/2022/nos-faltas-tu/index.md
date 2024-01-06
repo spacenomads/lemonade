@@ -7,7 +7,9 @@ ya_alt: Logo simple de Mastodon.
 reading_time: 3
 date: 2022-11-06
 draft: false
+categories: [rrss, web0]
 tag: [mastodon, twitter, migracion]
+description: Retomar nuestra web tb pasa por las redes sociales, y en este nuevo espacio tb nos faltas tú.
 clickbait: Vente, nos faltas tú
 ---
 {% import "components/post/macros.njk" as macros %}

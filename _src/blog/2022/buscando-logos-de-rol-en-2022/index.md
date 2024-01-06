@@ -7,7 +7,9 @@ ya_alt: Emoji del dado de 6 caras, la cara del 1 tiene un punto de color rjo mie
 reading_time: 4
 date: 2022-02-28
 draft: false
+categories: [rol]
 tags: [rol, logo, vectorial, portadas]
+description: Buscar logos vectoriales de sistemas de rol tiene su aquel, y te lo cuento.
 clickbait: ¿Juegas a rol? ¿A qué?
 ---
 {% import "components/post/macros.njk" as macros %}

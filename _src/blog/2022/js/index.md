@@ -7,14 +7,16 @@ ya_alt: Este es el anillo del javascript. Anillo cerámico negro con una línea 
 reading_time: 2
 date: 2022-04-18
 draft: false
+categories: [front]
 tags: [programación, js, miedo]
+description: Mi relación con javascript no es mala, pero...
 clickbait: ¿Cómo nos llevamos con el JS?
 ---
 
 A mí, javascript, me daba muchísimo miedo. Miedo nivel "tengo un anillo que me pongo cuando programo JS porque hace sentir seguro".
 Como la mayor parte de estos 24 años he currado solo pues no tenía de quién tirar para el tema del javascript. Ni del ASP o PHP en su momento. Así que lo vas aprendiendo como puedes.
 
-Las cosas más habituales de manejo del DOM pues entran con más o menos sangre, pero entran. Eventualmente hay redes sociales y varios compañeros apuntan los horrores, te echan una mano y tu código mejora.
+Las cosas más habituales de manejo del DOM entran con más o menos sangre, pero entran. Eventualmente, hay redes sociales y varios compañeros apuntan los horrores, te echan una mano y tu código mejora.
 
 Creo que mi primera petición a una API fue en 2017 cuando lo tuve que enseñar de profe. Tan solo unos meses antes, en un proyecto, tuve que armar un calendario para una parte privada de un conocido club de fútbol, tenía que crearlo directamente desde JS y me quitó el sueño, pero bien.
 
@@ -28,7 +30,7 @@ Aquello fue un pequeño éxito, aunque de ahí a creérselo hay un mundo.
 
 En 2017 estuve de profe en un bootcamp enseñando front (html, css, JS y react). Para mi tb fue un salto porque si no me creo yo que sea programador de qué me voy a poner enfrente de 20 criaturas a contárselo.
 
-De las alumnas aprendí a perderle ese miedo a todo lo que fuese programar. Yo venía de muchos años de JQuery y las veía a ellas, con todo el miedo, con cero experiencia, y escribiendo su JS como campeonas. Y claro, también quiero eso para mí. Joé, si ellas lo estaban haciendo…  toda esa experiencia que tienes no debería jugar en tu favor en lugar de acojonarte vivo?
+De las alumnas aprendí a perderle ese miedo a todo lo que fuese programar. Yo venía de muchos años de JQuery y las veía a ellas, con todo el miedo, con cero experiencia, y escribiendo su JS como campeonas. Y claro, también quiero eso para mí. Joé, si ellas lo estaban haciendo… toda esa experiencia que tienes no debería jugar en tu favor en lugar de acojonarte vivo?
 
 Siempre les estaré súper agradecido porque ese salto me estaba costando muchísimo. En clase, con ellas, aprendí a escribir yo también javascript, a que no pasa nada si no sale y sobre todo a fallar y que no se me hunda el mundo.
 
