@@ -7,7 +7,8 @@ ya_alt: Planeta con anillo exterior.
 reading_time: 2
 date: 2021-10-13
 draft: false
-tag: [cumpleaños, ciclo]
+categories: [birthday]
+description: Cómo vamos a afrontar los 48 años.
 clickbait: ¿Tiene sentido?
 ---
 
@@ -19,12 +20,12 @@ Los 47 no han ido mal sin ser tampoco una locura. De hecho, desde los 45 no guar
 
 Además, con una pandemia por en medio. Ya está bien.
 
-En este último año he visto lo lejos de los demás que puedo vivir. A veces siendo secretamente súper feliz. No me parece mal y me ha ayudado mucho durante el confinamiento a no volverme loco, a disfrutar de pequeñas cosas y a llevar los momentos más duros.
+En este último año he visto lo lejos de los demás que puedo vivir. A veces siendo secretamente súperfeliz. No me parece mal y me ha ayudado mucho durante el confinamiento a no volverme loco, a disfrutar de pequeñas cosas y a llevar los momentos más duros.
 
 
 **No me parece mal, pero tampoco ideal**.
 
-Ahora me siento muy desconectado pero no puedo ni quiero volver a lo de antes. Siempre me dio miedo aislarme de más y perderme en mi, a sabiendas que igual sería suficientemente feliz, o quizás muy feliz. Pasar tiempo solo ha sido algo que he buscado de más, y lo necesito, pero quizás puedo balancearlo mejor.
+Ahora me siento muy desconectado, pero no puedo ni quiero volver a lo de antes. Siempre me dio miedo aislarme de más y perderme en mí, a sabiendas de que igual sería suficientemente feliz, o quizás muy feliz. Pasar tiempo solo ha sido algo que he buscado de más, y lo necesito, pero quizás puedo balancearlo mejor.
 
 El confinamiento y la pandemia, con sus salvedades y desde cierto punto de vista, me han dado la excusa perfecta: el miedo.
 

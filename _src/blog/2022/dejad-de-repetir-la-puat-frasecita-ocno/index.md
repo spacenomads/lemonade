@@ -7,7 +7,9 @@ ya_alt: Imagen de la siguiente Estrella de la muerte.
 reading_time: 1
 date: 2022-02-05
 draft: false
+categories: [movies]
 tags: [star wars, yoda, vendemotos]
+description: No sabéis el daño que hacéis entre jajas y jejes; dejad a Yoda en paz.
 clickbait: Tú tb repites LA FRASECITA?
 ---
 

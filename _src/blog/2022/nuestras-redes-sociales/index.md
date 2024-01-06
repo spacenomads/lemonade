@@ -7,7 +7,9 @@ ya_alt: Versión en pixel art de la mitad de la ilustración, en una rejilla de 
 reading_time: 5
 date: 2022-05-16
 draft: false
+categories: [rrss, web0]
 tags: [redes sociales, mastodon, pixelfed]
+description: Resumen del problema actual con las redes sociales, y qué opciones tenemos.
 clickbait: ¿Te vienes o qué?
 ---
 {% import "components/post/macros.njk" as macros %}
@@ -25,7 +27,7 @@ Cuando una comunidad está creciendo todo es vino y alegrías, pero luego empiez
 Me apunté en 2007, poco después de su lanzamiento, y ha sido un viaje estupendo hasta el punto de que está totalmente integrada en mi día a día.
 Puedo seguir a un montón de gente diferente, mantenerme más o menos informado, he conocido a gente estupenda e incluso proyectos en los que currar.
 
-Ahora, desde ese 2007 (empezó en 2006) ha cambiado casi todo, sobre todo que somos más. Poner ese "somos más" en contexto se hablar que ahora tienen cuenta gente que estaba más alejada de la tecnología, famosos, marcas y partidos políticos.
+Ahora, desde ese 2007 (empezó en 2006) ha cambiado casi todo, sobre todo que somos más. Poner ese "somos más" en contexto es hablar de que ahora tienen cuenta gente que estaba más alejada de la tecnología: famosos, marcas y partidos políticos.
 
 No es que antes fuese maravilloso, es que éramos pocos con más puntos en común y ahora se parece más a un reflejo de la realidad.
 
