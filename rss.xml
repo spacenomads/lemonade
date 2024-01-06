@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="rss/pretty-feed-v3.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<atom:link href="https://sidiostedalimones.com/rss.xml" rel="self" type="application/rss+xml" />
-	<title>Si dios te da RSS</title>
+	<title>🍋 Si dios te da limones</title>
 	<description>Feed RSS de sidiostedalimones.com</description>
 	<link>https://sidiostedalimones.com</link>
-	<language>es-ES</language>
+	<language>es-es</language>
 	<image>
-		<url>https://sidiostedalimones.com/assets/rss/lemon-rss.png</url>
-		<title>Si dios te da RSS</title>
+		<url>https://sidiostedalimones.com/rss/lemon.png</url>
+		<title>🍋 Si dios te da limones</title>
 		<link>https://sidiostedalimones.com</link>
 	</image>
 	<copyright>2024 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Thu, 04 Jan 2024 12:04:40 GMT</lastBuildDate>
-
+	<lastBuildDate>Sat, 06 Jan 2024 10:00:38 GMT</lastBuildDate>
 	
 	<item>
 		<title>v2.0.0</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Parecía que no, pero tras 40 sesiones (CUARENTAH) he sacado la versión dos (DOH) de mi blog.&lt;/p&gt;
+		<description>Tras mucho esfuerzo y 40 sesiones en vídeo, he sacado el rediseño de mi blog.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/v2/img/cover.jpg&quot; alt=&quot;Sobre un fondo amarillísimo, un limón, también amarillo, sueña que es feliz (se ve un bocadillo de circulitos y dentro un smiley)&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Parecía que no, pero tras 40 sesiones (CUARENTAH) he sacado la versión dos (DOH) de mi blog.&lt;/p&gt;
 &lt;figure class=&quot;post__tldr&quot;&gt;
 		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
 		&lt;div class=&quot;post__tldr-content&quot;&gt;
@@ -52,21 +53,12 @@ Macros para elementos gráficos como las imágenes, el TL;DR y los - separadores
 &lt;hr&gt;
 &lt;p&gt;Ahora queda publicarlo, y que todo vaya bien. No he podido probar las RSS y aunque tienen buena pinta, cuando las vea funcionando...&lt;/p&gt;
 &lt;p&gt;Deseadme suerte o recordadme tuerto.&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/v2/img/lemon.png&quot; width=&quot;56&quot; alt=&quot;Emoji del limón&quot;&gt;&lt;/p&gt;</content:encoded>
 		
 		<category>blog</category>
 		
-		<category>desarrollo</category>
-		
-		<category>limonada</category>
-		
-		<category>cambio de estilo</category>
-		
-		<category>11ty</category>
-		
-		<category>gulp</category>
-		
-		<category>penpot</category>
+		<category>front</category>
 		
 		<link>https://sidiostedalimones.com/blog/2024/v2/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2024/v2/</guid>
@@ -75,8 +67,9 @@ Macros para elementos gráficos como las imágenes, el TL;DR y los - separadores
 	
 	<item>
 		<title>Es lícito el uso de la IA?</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;En una de tantas newsletters leía el otro día un pie de foto que decía “Imagen original de Xxxxxx Xxxxxx y DALL-E”. Y automáticamente pensé, original, original, todo lo original que puede ser una imagen generada a partir del &lt;strong&gt;trabajo no pagado, no cedido y no acreditado de mogollón de compañeres&lt;/strong&gt;, no?&lt;/p&gt;
+		<description>Se nos llena la boca con la IA, pero nos estamos haciendo las primeras preguntas.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2023/es-licito-el-uso-de-la-ia/img/cover.webp&quot; alt=&quot;jsdlajdl&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;En una de tantas newsletters leía el otro día un pie de foto que decía “Imagen original de Xxxxxx Xxxxxx y DALL-E”. Y automáticamente pensé, original, original, todo lo original que puede ser una imagen generada a partir del &lt;strong&gt;trabajo no pagado, no cedido y no acreditado de mogollón de compañeres&lt;/strong&gt;, no?&lt;/p&gt;
 &lt;figure class=&quot;post__tldr&quot;&gt;
 		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
 		&lt;div class=&quot;post__tldr-content&quot;&gt;
@@ -109,13 +102,12 @@ Macros para elementos gráficos como las imágenes, el TL;DR y los - separadores
 &lt;li&gt;Sabiendo que estamos dando acceso a código protegido, &lt;strong&gt;¿es lícito que usemos las aplicaciones de IA?&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;¿Cuál es la posición de tu empresa con respecto a estas IA? ¿Y la tuya?&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2023/es-licito-el-uso-de-la-ia/img/infineight.png&quot; width=&quot;56&quot; alt=&quot;Ocho en horizontal, como si fuese un símbolo de infinito&quot;&gt;&lt;/p&gt;</content:encoded>
 		
 		<category>ia</category>
 		
-		<category>robar</category>
-		
-		<category>privacidad</category>
+		<category>tools</category>
 		
 		<link>https://sidiostedalimones.com/blog/2023/es-licito-el-uso-de-la-ia/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2023/es-licito-el-uso-de-la-ia/</guid>
@@ -124,8 +116,9 @@ Macros para elementos gráficos como las imágenes, el TL;DR y los - separadores
 	
 	<item>
 		<title>Nos faltas tú</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Esto era un hilo de twitter, pero he pensado que tiene más sentido un post.&lt;/p&gt;
+		<description>Retomar nuestra web tb pasa por las redes sociales, y en este nuevo espacio tb nos faltas tú.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/nos-faltas-tu/img/mastodon-nos-faltas-tu.png&quot; alt=&quot;Logo de Mastodon sobre fondo claro, con bocadillo que reza «Vente, solo nos faltas tú».&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Esto era un hilo de twitter, pero he pensado que tiene más sentido un post.&lt;/p&gt;
 &lt;figure class=&quot;post__tldr&quot;&gt;
 		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
 		&lt;div class=&quot;post__tldr-content&quot;&gt;
@@ -160,7 +153,12 @@ Entiendo que las marcas lo pagarán del presupuesto que tengan para publicidad.&
 &lt;p&gt;Que eso no te frene, vente y tengamos un espacio para personas.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Si te molaría venirte pero se te hace bola, pregunta, pide ayuda y vemos como echar una mano.&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/nos-faltas-tu/img/masto.svg&quot; width=&quot;56&quot; alt=&quot;Logo simple de Mastodon.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>rrss</category>
+		
+		<category>web0</category>
 		
 		<link>https://sidiostedalimones.com/blog/2022/nos-faltas-tu/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2022/nos-faltas-tu/</guid>
@@ -169,15 +167,16 @@ Entiendo que las marcas lo pagarán del presupuesto que tengan para publicidad.&
 	
 	<item>
 		<title>Nuestras redes sociales</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Con internet vino una nueva forma de conectar entre nosotras. La misma de siempre pero nueva. Y nos hemos ido adaptando a cada paso.&lt;/p&gt;
+		<description>Resumen del problema actual con las redes sociales, y qué opciones tenemos.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/nuestras-redes-sociales/img/ollie-v2.jpg&quot; alt=&quot;Plano cerrado de la cara de Ollie, el pajarito de Twitterrific, enfadado con los ojos rojos y echando humo por la nariz&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Con internet vino una nueva forma de conectar entre nosotras. La misma de siempre pero nueva. Y nos hemos ido adaptando a cada paso.&lt;/p&gt;
 &lt;p&gt;Las comunidades de chats no han parado de crecer, evolucionar e integrarse, hasta el punto que muchísimas aplicaciones traen de serie un sistema más o menos maduro de &amp;quot;amigos&amp;quot;. Gracias a esto hemos saltado de nuestro barrio/ciudad a relacionarnos en una escala mucho mayor, a conocer gentes y costumbres que de otra manera serían inalcanzables.&lt;/p&gt;
 &lt;p&gt;Este camino que se empezó en pequeños grupos con el gesto torcido de un mayoría que ha sido mayormente absorbida y que ahora vemos como parte de la fauna habitual.&lt;/p&gt;
 &lt;p&gt;Cuando una comunidad está creciendo todo es vino y alegrías, pero luego empieza a tener un tamaño y aquí estamos.&lt;/p&gt;
 &lt;h2&gt;Twitter, por ejemplo&lt;/h2&gt;
 &lt;p&gt;Me apunté en 2007, poco después de su lanzamiento, y ha sido un viaje estupendo hasta el punto de que está totalmente integrada en mi día a día.
 Puedo seguir a un montón de gente diferente, mantenerme más o menos informado, he conocido a gente estupenda e incluso proyectos en los que currar.&lt;/p&gt;
-&lt;p&gt;Ahora, desde ese 2007 (empezó en 2006) ha cambiado casi todo, sobre todo que somos más. Poner ese &amp;quot;somos más&amp;quot; en contexto se hablar que ahora tienen cuenta gente que estaba más alejada de la tecnología, famosos, marcas y partidos políticos.&lt;/p&gt;
+&lt;p&gt;Ahora, desde ese 2007 (empezó en 2006) ha cambiado casi todo, sobre todo que somos más. Poner ese &amp;quot;somos más&amp;quot; en contexto es hablar de que ahora tienen cuenta gente que estaba más alejada de la tecnología: famosos, marcas y partidos políticos.&lt;/p&gt;
 &lt;p&gt;No es que antes fuese maravilloso, es que éramos pocos con más puntos en común y ahora se parece más a un reflejo de la realidad.&lt;/p&gt;
 &lt;p&gt;Este aumento de alcance nos trae nuevos problemas y soluciones, el primero es que el volumen de datos/contenido ya no es tan lateral y siempre sale alguien que quiere rentabilizarlo.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -217,13 +216,12 @@ Obviamente la principal pega no es la falta de gente sino la falta de tu gente. 
 &lt;hr&gt;
 &lt;p&gt;Esto no es un cambiar para volver a cambiar, ni un vámonos por Elon Musk o el enésimo comprador…  Yo lo veo como un replantear algo que no está funcionando.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Podemos tener una redes sociales mejores, pero no si nos quedamos donde estamos&lt;/strong&gt;.&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/nuestras-redes-sociales/img/bye.png&quot; width=&quot;56&quot; alt=&quot;Versión en pixel art de la mitad de la ilustración, en una rejilla de 6x6&quot;&gt;&lt;/p&gt;</content:encoded>
 		
-		<category>redes sociales</category>
+		<category>rrss</category>
 		
-		<category>mastodon</category>
-		
-		<category>pixelfed</category>
+		<category>web0</category>
 		
 		<link>https://sidiostedalimones.com/blog/2022/nuestras-redes-sociales/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2022/nuestras-redes-sociales/</guid>
@@ -232,17 +230,18 @@ Obviamente la principal pega no es la falta de gente sino la falta de tu gente. 
 	
 	<item>
 		<title>JS</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;A mí, javascript, me daba muchísimo miedo. Miedo nivel &amp;quot;tengo un anillo que me pongo cuando programo JS porque hace sentir seguro&amp;quot;.
+		<description>Mi relación con javascript no es mala, pero...</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/js/img/js.jpg&quot; alt=&quot;Logo cuadrado amarillo de JS sobre fondo gris con un degradado de diseñador.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;A mí, javascript, me daba muchísimo miedo. Miedo nivel &amp;quot;tengo un anillo que me pongo cuando programo JS porque hace sentir seguro&amp;quot;.
 Como la mayor parte de estos 24 años he currado solo pues no tenía de quién tirar para el tema del javascript. Ni del ASP o PHP en su momento. Así que lo vas aprendiendo como puedes.&lt;/p&gt;
-&lt;p&gt;Las cosas más habituales de manejo del DOM pues entran con más o menos sangre, pero entran. Eventualmente hay redes sociales y varios compañeros apuntan los horrores, te echan una mano y tu código mejora.&lt;/p&gt;
+&lt;p&gt;Las cosas más habituales de manejo del DOM entran con más o menos sangre, pero entran. Eventualmente, hay redes sociales y varios compañeros apuntan los horrores, te echan una mano y tu código mejora.&lt;/p&gt;
 &lt;p&gt;Creo que mi primera petición a una API fue en 2017 cuando lo tuve que enseñar de profe. Tan solo unos meses antes, en un proyecto, tuve que armar un calendario para una parte privada de un conocido club de fútbol, tenía que crearlo directamente desde JS y me quitó el sueño, pero bien.&lt;/p&gt;
 &lt;p&gt;De verdad pensaba que no podría y después de mirar doscientos plugins que no me servían para lo que había que hacer decidí que, como muchos otros problemas, si lo descomponía en pequeñas partes igual veía ese hilo conductor que al final tuviese el problema solucionado.&lt;/p&gt;
 &lt;p&gt;Al final, lo que más me costó fue creerme que podía. Recuerdo la tarde con mi libreta y el funcional en catalán. Sacando tareas y planteando un problema cada vez.&lt;/p&gt;
 &lt;p&gt;En algún punto vi que tenía una lista de tareas abordables y que juntas solucionaban el calendario completo.&lt;/p&gt;
 &lt;p&gt;Aquello fue un pequeño éxito, aunque de ahí a creérselo hay un mundo.&lt;/p&gt;
 &lt;p&gt;En 2017 estuve de profe en un bootcamp enseñando front (html, css, JS y react). Para mi tb fue un salto porque si no me creo yo que sea programador de qué me voy a poner enfrente de 20 criaturas a contárselo.&lt;/p&gt;
-&lt;p&gt;De las alumnas aprendí a perderle ese miedo a todo lo que fuese programar. Yo venía de muchos años de JQuery y las veía a ellas, con todo el miedo, con cero experiencia, y escribiendo su JS como campeonas. Y claro, también quiero eso para mí. Joé, si ellas lo estaban haciendo…  toda esa experiencia que tienes no debería jugar en tu favor en lugar de acojonarte vivo?&lt;/p&gt;
+&lt;p&gt;De las alumnas aprendí a perderle ese miedo a todo lo que fuese programar. Yo venía de muchos años de JQuery y las veía a ellas, con todo el miedo, con cero experiencia, y escribiendo su JS como campeonas. Y claro, también quiero eso para mí. Joé, si ellas lo estaban haciendo… toda esa experiencia que tienes no debería jugar en tu favor en lugar de acojonarte vivo?&lt;/p&gt;
 &lt;p&gt;Siempre les estaré súper agradecido porque ese salto me estaba costando muchísimo. En clase, con ellas, aprendí a escribir yo también javascript, a que no pasa nada si no sale y sobre todo a fallar y que no se me hunda el mundo.&lt;/p&gt;
 &lt;p&gt;Además, encontré otra forma de relacionarme con JS porque si hay que escribirlo, se escribe, pero igual no se tiene que sufrir mucho, e intentaba hacer ejercicios más divertidos, que mostrasen lo que hay que aprender de otra manera. Principalmente con la caca 💩 y el unicornio 🦄, que siempre lo mejoran todo.&lt;/p&gt;
 &lt;p&gt;Ahí encontré para mí una forma de divertirme cuando necesito aprender algo o simplemente de monear y divertirme.&lt;/p&gt;
@@ -261,13 +260,10 @@ Como la mayor parte de estos 24 años he currado solo pues no tenía de quién t
 &lt;p&gt;Sí que he perdido mucho miedo, sobre todo si hay alguien mirando, pero siempre puot queda algo.&lt;/p&gt;
 &lt;p&gt;Ahora me niego a perder ese &amp;quot;hacer algo divertido&amp;quot; y me gusta hacer pequeñas cosas cuando puedo.&lt;/p&gt;
 &lt;p&gt;El anillo lo sigo llevando cerca.&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/js/img/anillo.png&quot; width=&quot;56&quot; alt=&quot;Este es el anillo del javascript. Anillo cerámico negro con una línea blanca en el centro.&quot;&gt;&lt;/p&gt;</content:encoded>
 		
-		<category>programación</category>
-		
-		<category>js</category>
-		
-		<category>miedo</category>
+		<category>front</category>
 		
 		<link>https://sidiostedalimones.com/blog/2022/js/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2022/js/</guid>
@@ -276,8 +272,9 @@ Como la mayor parte de estos 24 años he currado solo pues no tenía de quién t
 	
 	<item>
 		<title>Buscando logos de rol en 2022</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Este mes me he encargado de hacer las portadas de las partidas de marzo de &lt;a href=&quot;https://resistencialudica.com&quot;&gt;Resistencia Lúdica&lt;/a&gt; y me puse como meta mejor algunos de los logos de sistemas de juego que ya teníamos. Qué podría salir mal?&lt;/p&gt;
+		<description>Buscar logos vectoriales de sistemas de rol tiene su aquel, y te lo cuento.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/buscando-logos-de-rol-en-2022/img/rol.jpg&quot; alt=&quot;Fragmentos de las portadas de varias partidas de rol apiladas una detrás de otra (hacia el fondo) donde se ven diferente logos de sistemas de juego.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Este mes me he encargado de hacer las portadas de las partidas de marzo de &lt;a href=&quot;https://resistencialudica.com&quot;&gt;Resistencia Lúdica&lt;/a&gt; y me puse como meta mejor algunos de los logos de sistemas de juego que ya teníamos. Qué podría salir mal?&lt;/p&gt;
 &lt;p&gt;Spoiler: TODO.&lt;/p&gt;
 &lt;p&gt;Para alguien que lleva ya unos años en desarrollo web y ha visto, de alguna manera, el triunfo del formato SVG un poco al carro de las pantallas de alta definición de píxeles el mundo del rol es como una vuelta al oscurantismo de los 2000 en los que ni el cliente sabía si tenía su logo fuera de su tarjeta de visita, y mucho menos en vectorial.&lt;/p&gt;
 &lt;p&gt;En mundo rol se nota que faltan medios y que el nivel técnico ha sido consumido por la aventura, la investigación y la audacia. Esta gente te plantea mundos plagados de horrores y posibilidades infinitas. Te acompaña si hace falta a las puertas del infierno o al planeta más lejano. Te enseña a crear un personaje capaz de destruir a un ejército de sectarios o de invocar a la criatura más mortal que puedas imaginar... pero los logos son bitmap y se sigue usando &lt;a href=&quot;https://es.wikipedia.org/wiki/RAR&quot;&gt;RAR&lt;/a&gt; para comprimir las cosas.&lt;/p&gt;
@@ -311,15 +308,10 @@ Obviamente en píxeles te puedes lucir más con el desgaste de las letras, pero 
 &lt;p&gt;Es callejero? Lo es, pero más triste es tener un truño de logo.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Y hasta aquí hemos llegado. Sigue estos pasos o comenta algunos alternativos y hagamos que el mundo, en este caso el del rol, luz un poco más definido. O qué?&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/buscando-logos-de-rol-en-2022/img/dado.png&quot; width=&quot;56&quot; alt=&quot;Emoji del dado de 6 caras, la cara del 1 tiene un punto de color rjo mientras las caras de 2 y 6 solo tienen puntos negros.&quot;&gt;&lt;/p&gt;</content:encoded>
 		
 		<category>rol</category>
-		
-		<category>logo</category>
-		
-		<category>vectorial</category>
-		
-		<category>portadas</category>
 		
 		<link>https://sidiostedalimones.com/blog/2022/buscando-logos-de-rol-en-2022/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2022/buscando-logos-de-rol-en-2022/</guid>
@@ -328,8 +320,9 @@ Obviamente en píxeles te puedes lucir más con el desgaste de las letras, pero 
 	
 	<item>
 		<title>Capitalizando el miedo</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Me llama mucho la atención cómo el psoe es capaz de hacer tan bien algo tan rastrero como &lt;strong&gt;capitalizar el miedo&lt;/strong&gt;.&lt;/p&gt;
+		<description>Nadie capitaliza el miedo como el psoe, y siempre tiene un enemigo a mano.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/capitalizando-el-miedo/img/psoe.png&quot; alt=&quot;Logotipo del psoe escondiendo el lobo que lleva dentro.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Me llama mucho la atención cómo el psoe es capaz de hacer tan bien algo tan rastrero como &lt;strong&gt;capitalizar el miedo&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;No hay fiesta de la democracia en la que no participe explicando quién es el enemigo que viene a comerte(le) la tostada y del que solo ellos, con el reparto de votos, te puede proteger; olvídate de las propuestas sociales.&lt;/p&gt;
 &lt;p&gt;A ver, que el psoe ha movido una serie de cambios sociales, sí. Las aborda con la cucharilla del té, en situaciones muy especiales.&lt;/p&gt;
 &lt;p&gt;El resto del tiempo o van cortos de representación y se les obliga o se sienten cómodos con lo  que hay: monarquía parlamentaria, no intervenir los alquileres y viendo qué energética les tocará mañana.&lt;/p&gt;
@@ -343,17 +336,10 @@ Me sorprende que tener una empresa pública energética o de vivienda suene tan 
 &lt;p&gt;Con esta gente, tan obreros ellos, no vamos a ver esto jamás.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Antes de ir a votar a la siguiente, miremos quién ha hecho qué, quién ha puesto todas las trabas, cómo están los alquileres de nuestra ciudad y las facturas, o qué?&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/capitalizando-el-miedo/img/sangre.png&quot; width=&quot;56&quot; alt=&quot;Imagen del emoji de la gota de sangre.&quot;&gt;&lt;/p&gt;</content:encoded>
 		
-		<category>psoe</category>
-		
-		<category>miedo</category>
-		
-		<category>rastreros</category>
-		
-		<category>lobos</category>
-		
-		<category>república</category>
+		<category>politics</category>
 		
 		<link>https://sidiostedalimones.com/blog/2022/capitalizando-el-miedo/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2022/capitalizando-el-miedo/</guid>
@@ -362,8 +348,9 @@ Me sorprende que tener una empresa pública energética o de vivienda suene tan 
 	
 	<item>
 		<title>¡Dejad de repetir la puat frasecita, ocño!</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;&amp;quot;&lt;strong&gt;Hazlo... o no lo hagas. Pero no lo intentes.&lt;/strong&gt;&amp;quot;
+		<description>No sabéis el daño que hacéis entre jajas y jejes; dejad a Yoda en paz.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/dejad-de-repetir-la-puat-frasecita-ocno/img/yoda-lifting-x-wing.jpg&quot; alt=&quot;Escena de The Empire Strikes Back donde Yoda saca el X-wing del pantano para que Luke vea cómo se hacen las cosas.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;&amp;quot;&lt;strong&gt;Hazlo... o no lo hagas. Pero no lo intentes.&lt;/strong&gt;&amp;quot;
 Vaya tela tener que leer/escuchar a alguien cada poco tiempo citar la frasecita. Como si fuese un buen ejemplo de algo. Como si ellos lo aplicasen.&lt;/p&gt;
 &lt;p&gt;Además, que siempre son los mismos los que la citan. Esa gente que entre medias risas vende al personaje como si de ellos mismos se tratase. Esa gente de muletilla fácil y que va dando lecciones como si fuesen suyas.&lt;/p&gt;
 &lt;p&gt;Pues no, señores, las cosas se consiguen a fuerza de intentos.&lt;/p&gt;
@@ -375,13 +362,10 @@ Pero claro, &lt;strong&gt;esto no se cuenta&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;No seáis como Yoda y permitid al personal equivocarse, aprender y mejorar; no seáis pequeños sacos de mireda verde.&lt;/p&gt;
 &lt;p&gt;—No, hombre, que no se dice en serio, hay que ver cómo te pones, XD.
 —Que te calles, pesao!&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/dejad-de-repetir-la-puat-frasecita-ocno/img/death-star.png&quot; width=&quot;56&quot; alt=&quot;Imagen de la siguiente Estrella de la muerte.&quot;&gt;&lt;/p&gt;</content:encoded>
 		
-		<category>star wars</category>
-		
-		<category>yoda</category>
-		
-		<category>vendemotos</category>
+		<category>movies</category>
 		
 		<link>https://sidiostedalimones.com/blog/2022/dejad-de-repetir-la-puat-frasecita-ocno/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2022/dejad-de-repetir-la-puat-frasecita-ocno/</guid>
@@ -390,8 +374,9 @@ Pero claro, &lt;strong&gt;esto no se cuenta&lt;/strong&gt;.&lt;/p&gt;
 	
 	<item>
 		<title>Penpot?</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Cómo que no sabes lo que es &lt;a href=&quot;https://penpot.app/&quot;&gt;&lt;strong&gt;Penpot&lt;/strong&gt;&lt;/a&gt;? Seguro que sí.&lt;/p&gt;
+		<description>Hay más vida fuera de figma. Aquí en casa Kaleidos está desarrollando una herramienta de diseño y prototipado de código abierto y basada en el estándar SVG.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/penpot/img/penpot.png&quot; alt=&quot;Cubilete con lápices en perspectiva simulando al cubilete del logo de la aplicación. Todo en blancos, negros, grises y con un fondo amarillo.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Cómo que no sabes lo que es &lt;a href=&quot;https://penpot.app/&quot;&gt;&lt;strong&gt;Penpot&lt;/strong&gt;&lt;/a&gt;? Seguro que sí.&lt;/p&gt;
 &lt;p&gt;Es una aplicación de diseño y prototipado desarrollada por &lt;a href=&quot;https://kaleidos.net/&quot;&gt;Kaleidos Open Source&lt;/a&gt;, vamos, en &amp;quot;casa&amp;quot;. Tiene esta pinta:&lt;/p&gt;
 &lt;figure class=&quot;post__media post__media--full&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/penpot/img/browser.png&quot; alt=&quot;Interfaz de Penpot en el navegador Chrome&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
 &lt;p&gt;Es de código abierto, se basa en SVG y funciona en un navegador. Cómo te quedas?&lt;/p&gt;
@@ -422,11 +407,12 @@ Ahora los puedes añadir, pero no sé cómo borrarlos cuando igual por rendimien
 &lt;p&gt;A mi me llama la atención porque que es de &lt;strong&gt;código abierto&lt;/strong&gt;, &lt;strong&gt;producto nacional&lt;/strong&gt; y que ya en beta &lt;strong&gt;las bases son buenas&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Lo del producto nacional es también poca broma porque pareciese a veces que todo lo bueno lo hacen los demás.&lt;/p&gt;
 &lt;p&gt;Penpot es un producto con un equipo fuerte y va a ser súper interesante seguir el progreso.&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/penpot/img/adios.png&quot; width=&quot;56&quot; alt=&quot;Imagotipo del logo de Penpot con un detalle de sombras en amarillos anaranjados.&quot;&gt;&lt;/p&gt;</content:encoded>
 		
 		<category>design</category>
 		
-		<category>development</category>
+		<category>front</category>
 		
 		<link>https://sidiostedalimones.com/blog/2022/penpot/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2022/penpot/</guid>
@@ -435,8 +421,9 @@ Ahora los puedes añadir, pero no sé cómo borrarlos cuando igual por rendimien
 	
 	<item>
 		<title>See you, space cowboy...</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Estaba acabando la serie cuando leí la noticia de que Netflix había cancelado la serie.&lt;/p&gt;
+		<description>Vaya palo que no haya gustado la serie y la hayan cancelado. A mi me ha gustado mucho.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2021/see-you-space-cowboy/img/space-cowboy.jpg&quot; alt=&quot;Fotograma de la serie. Se ve a Spike, de espaldas desde la cubierta de la Bebop, a punto de salir con su nave, de la que se ve un poco a la derecha.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Estaba acabando la serie cuando leí la noticia de que Netflix había cancelado la serie.&lt;/p&gt;
 &lt;p&gt;Dentro de que no sorprende y que Netflix debería hacer una feature de este rollo suyo de hype+cancelación solo tengo que decir que la serie mola.&lt;/p&gt;
 &lt;p&gt;Pasa que es muy difícil vivir con la barra de medir tan alta y centrándose en lo que no es: &lt;strong&gt;No es la serie de anime, gracias a Crom.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Sin embargo sí es una serie bastante cuidada, de aventuras, en el espacio, con unos colores maravillosos y su puot propio recorrido.&lt;/p&gt;
@@ -447,9 +434,10 @@ Ahora los puedes añadir, pero no sé cómo borrarlos cuando igual por rendimien
 &lt;p&gt;Quizás por esto he visto la nueva serie con ojos nuevos, sin un altar inalcanzable, y he podido disfrutarla bastante.&lt;/p&gt;
 &lt;p&gt;No creo que la serie tuviese ninguna oportunidad real.
 Estaréis contentos.&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2021/see-you-space-cowboy/img/adios.jpg&quot; width=&quot;56&quot; alt=&quot;Plato azul de comida de perro, vacío.&quot;&gt;&lt;/p&gt;</content:encoded>
 		
-		<category>tv</category>
+		<category>tvshows</category>
 		
 		<category>anime</category>
 		
@@ -460,21 +448,25 @@ Estaréis contentos.&lt;/p&gt;
 	
 	<item>
 		<title>1514765000 segundos</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;48 años ya, madre de Crom!&lt;/p&gt;
+		<description>Cómo vamos a afrontar los 48 años.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2021/1514765000-segundos/img/space-48.jpg&quot; alt=&quot;Ilustración de los 48 años. Aparece un lego espacial tuerto sobre un fondo espacial de azul oscuro a rojo oscuro, se ven estrellas, planeta y cometas, y el texto 48.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;48 años ya, madre de Crom!&lt;/p&gt;
 &lt;p&gt;Y ahora qué? No tengo muy claro qué esperar de los 48, que perseguir o qué intentar.&lt;/p&gt;
 &lt;p&gt;Los 47 no han ido mal sin ser tampoco una locura. De hecho, desde los 45 no guardo muy buenos recuerdos. No los guardo y he estado quejándome con más o menos razón, con más o menos ira.&lt;/p&gt;
 &lt;p&gt;Además, con una pandemia por en medio. Ya está bien.&lt;/p&gt;
-&lt;p&gt;En este último año he visto lo lejos de los demás que puedo vivir. A veces siendo secretamente súper feliz. No me parece mal y me ha ayudado mucho durante el confinamiento a no volverme loco, a disfrutar de pequeñas cosas y a llevar los momentos más duros.&lt;/p&gt;
+&lt;p&gt;En este último año he visto lo lejos de los demás que puedo vivir. A veces siendo secretamente súperfeliz. No me parece mal y me ha ayudado mucho durante el confinamiento a no volverme loco, a disfrutar de pequeñas cosas y a llevar los momentos más duros.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;No me parece mal, pero tampoco ideal&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Ahora me siento muy desconectado pero no puedo ni quiero volver a lo de antes. Siempre me dio miedo aislarme de más y perderme en mi, a sabiendas que igual sería suficientemente feliz, o quizás muy feliz. Pasar tiempo solo ha sido algo que he buscado de más, y lo necesito, pero quizás puedo balancearlo mejor.&lt;/p&gt;
+&lt;p&gt;Ahora me siento muy desconectado, pero no puedo ni quiero volver a lo de antes. Siempre me dio miedo aislarme de más y perderme en mí, a sabiendas de que igual sería suficientemente feliz, o quizás muy feliz. Pasar tiempo solo ha sido algo que he buscado de más, y lo necesito, pero quizás puedo balancearlo mejor.&lt;/p&gt;
 &lt;p&gt;El confinamiento y la pandemia, con sus salvedades y desde cierto punto de vista, me han dado la excusa perfecta: el miedo.&lt;/p&gt;
 &lt;p&gt;No me da miedo el trayecto a la oficina, simplemente no quiero ir. He rechazado, y lo sigo haciendo, actividades que realmente no quiero hacer poniendo una excusa que es más fácil que compre la otra parte.&lt;/p&gt;
 &lt;p&gt;De acuerdo que hay cosas que los primeros días se me van a hacer raras, pero dejarán de hacerlo, no pasa nada, y mentir siempre me ha parecido una mala idea. Igual no hacía falta. &lt;strong&gt;Igual me hacía falta a mi&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;En fin, para mis 48 quiero recuperar la vida, no sé como ni a qué ritmo. Hasta aquí ha estado bien, pero.&lt;/p&gt;
 &lt;p&gt;Pero, quiero algo mejor.&lt;/p&gt;
 &lt;p&gt;Deseadme suerte o recordadme tuerto.&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2021/1514765000-segundos/img/planet.svg&quot; width=&quot;56&quot; alt=&quot;Planeta con anillo exterior.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>birthday</category>
 		
 		<link>https://sidiostedalimones.com/blog/2021/1514765000-segundos/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2021/1514765000-segundos/</guid>
@@ -483,16 +475,17 @@ Estaréis contentos.&lt;/p&gt;
 	
 	<item>
 		<title>Me voy de Medium</title>
-		<description></description>
-		<content:encoded>&lt;p&gt;Me gusta Medium, pero me voy.&lt;/p&gt;
-&lt;p&gt;Al final no han sido los &amp;quot;tu controlas el contenido&amp;quot; tanto como querer poder hacer ciertas cosas a mi manera.&lt;/p&gt;
+		<description>Recuperar tu espacio en la red pasa por dejarme de medium y volverme a mi blog.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2021/me-voy-de-medium/img/medium.png&quot; alt=&quot;Logo de la plataforma Medium en negro, sobre fondo gris clarito. Siguiendo sus guías de marca.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Me gusta Medium, pero me voy.&lt;/p&gt;
+&lt;p&gt;Al final no han sido los &amp;quot;tú controlas el contenido&amp;quot; tanto como querer poder hacer ciertas cosas a mi manera.&lt;/p&gt;
 &lt;p&gt;Siempre me ha dado un poco igual eso de que tú controlas tu contenido cuando al final ibas y te montabas la misma plataforma de publicación en tus servidores, que son tan tuyos como lo era la plataforma anterior.
 En cualquier caso las diferentes opciones llevan años con una opción para exportar ese tu contenido, y con importadores para que lo muevas donde quieras.&lt;/p&gt;
-&lt;p&gt;Para mi esto nunca ha sido un problema, con el extra de que la parte más social (comentarios, likes/kudos, compartir) ya la tenían implementada. Y pensaba que me funcionaba bien.&lt;/p&gt;
+&lt;p&gt;Para mí esto nunca ha sido un problema, con el extra de que la parte más social (comentarios, likes/kudos, compartir) ya la tenían implementada. Y pensaba que me funcionaba bien.&lt;/p&gt;
 &lt;p&gt;Mirando un poco hacia atrás veo que he ido moviéndome a estructuras más simples, con menos cosas, y tras unos años con Médium (que ya es fácil de por sí) creo que necesito menos todavía.&lt;/p&gt;
-&lt;p&gt;En Médium me metí con muchas ganas (incluso he sido usuario de pago), aunque igual no he encontrado todo el contenido que quería. No lo he hecho porque está enterrado entre las 5 cosas que hace cada mañana la gente de éxito, los 20 tips para una relación sana o las 5 extensiones de VS Code que necesitas pero igual no lo sabes.&lt;/p&gt;
+&lt;p&gt;En Médium me metí con muchas ganas (incluso he sido usuario de pago), aunque igual no he encontrado todo el contenido que quería. No lo he hecho porque está enterrado entre las 5 cosas que hace cada mañana la gente de éxito, los 20 tips para una relación sana o las 5 extensiones de VS Code que necesitas, pero igual no lo sabes.&lt;/p&gt;
 &lt;p&gt;Quizás no he encontrado el contenido que quería, pero tampoco me he puesto yo a crear contenido en serio. El blog tiene sentido para mi en ciertos casos y no muy en serio, porque me canso.&lt;/p&gt;
-&lt;p&gt;Tengo parado Sidiostedalimones.com y he pensado en usar las cosas que he aprendido con generadores de estático para hacerme un blog con las cosas que me molaban de Médium, sin las cosas que no me molaban tanto o no uso, y con alguna (o la posibilidad) que quiero y no tengo ;)&lt;/p&gt;
+&lt;p&gt;Tengo parado &lt;a href=&quot;https://sidiostedalimones.com&quot;&gt;Sidiostedalimones.com&lt;/a&gt; y he pensado en usar las cosas que he aprendido con generadores de estático para hacerme un blog con las cosas que me molaban de Médium, sin las cosas que no me molaban tanto o no uso, y con alguna (o la posibilidad) que quiero y no tengo ;)&lt;/p&gt;
 &lt;p&gt;De primeras voy a salir con una versión que funcione, y ya tengo cosas en el tintero que añadir por si veo que me aburro.&lt;/p&gt;
 &lt;p&gt;Me he hecho un esquema de cómo veo el proyecto.&lt;/p&gt;
 &lt;figure class=&quot;post__media post__media--full&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2021/me-voy-de-medium/img/esquema.png&quot; alt=&quot;Esquema del blog&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
@@ -503,14 +496,17 @@ En cualquier caso las diferentes opciones llevan años con una opción para expo
 &lt;p&gt;Supongo que sortear lo que sí quiero es ya interesante de por sí como para justificar perderlo.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;A ver qué tal va, o qué?&lt;/p&gt;
-</content:encoded>
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2021/me-voy-de-medium/img/adios.png&quot; width=&quot;56&quot; alt=&quot;Emoji de la manita amarilla diciendo adios.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>blog</category>
+		
+		<category>web0</category>
 		
 		<link>https://sidiostedalimones.com/blog/2021/me-voy-de-medium/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2021/me-voy-de-medium/</guid>
 		<pubDate>Sun, 10 Oct 2021 00:00:00 GMT</pubDate>
 	</item>
 	
-
-
 </channel>
 </rss>
