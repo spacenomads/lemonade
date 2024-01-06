@@ -66,7 +66,7 @@
     "datePublished": "{{ date.toISOString() }}",
     "author": {
         "@type": "Person",
-        "name": "{{ settings.author}}"
+        "name": "{{ settings.author}}",
         "sameAs": "{{ settings.twitter }}",
         "email": "{{ settings.email }}"
     },
@@ -75,10 +75,11 @@
         "name": "{{ settings.suteName }}",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{ settings.url }}/assets/images/brand/logo-sidiostedalimones.png",
+          "url": "{{ settings.url }}/assets/images/brand/logo-sidiostedalimones.png"
         }
     },
     "description": "{{ excerpt }}"
   }
   </script>
 {% endif %}
+<script src="/assets/js/flags.js" defer></script>
