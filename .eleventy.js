@@ -125,6 +125,11 @@ module.exports = function (config) {
 		return new Date(strDate).toUTCString();
 	});
 
+	config.addNunjucksFilter('getUniqueYears', function(posts) {
+		const result = posts.reverse().map(post => new Date(post.data.date).getFullYear());
+		return [...new Set(result)];
+	});
+
 
 
 

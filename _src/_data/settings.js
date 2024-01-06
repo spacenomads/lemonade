@@ -1,20 +1,14 @@
 function getYear() {
-  return new Date().getFullYear();
+	return new Date().getFullYear();
 }
-
-
-
 
 
 function getStaticsVersion() {
-  const version = new Date()
-    .toISOString()
-    .replace(/[^A-SU-Y0-9]/g, '');
-  return version;
+	const version = new Date()
+		.toISOString()
+		.replace(/[^A-SU-Y0-9]/g, '');
+	return version;
 }
-
-
-
 
 
 function getCurrentFormattedDate() {
@@ -25,21 +19,17 @@ function getCurrentFormattedDate() {
 }
 
 
-
-
-
 module.exports = {
-  author: 'Carlos Mañas',
-  email: 'carlos@sidiostedalimones.com',
-  lang: 'es',
-  long_name: 'Si dios te da limones',
-  mode: process.env.MODE,
-  siteDescription: 'Si dios te da limones, haces limonada',
-  siteName: 'Sidiostedalimones',
-  url: 'https://sidiostedalimones.com',
-  version: getStaticsVersion(),
-  year: getYear(),
+	author: 'Carlos Mañas',
+	email: 'carlos@sidiostedalimones.com',
+	lang: 'es',
+	long_name: 'Si dios te da limones',
+	mode: process.env.MODE,
+	siteDescription: 'Si dios te da limones, haces limonada',
+	siteName: 'Sidiostedalimones',
+	url: 'https://sidiostedalimones.com',
+	version: getStaticsVersion(),
+	year: getYear(),
 	date: getCurrentFormattedDate(),
-	build_date: new Date(),
-	post_years: [2023, 2022, 2021]
+	build_date: new Date()
 }

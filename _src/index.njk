@@ -4,70 +4,29 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: home
 ---
-{# TODO: Madre de Crom, esto hay que automatizarlo y unificarlo, chatiqui, que yo te quiero mucho y tal, pero me has metido el año en curso y los siguientes a PINCHAQUEN!  #}
-{% set current_posts = collections.blog | filterByYear(2024) | reverse %}
-{% if (current_posts.length) %}
-<section class="home-posts home-posts--latest home-posts--2024" data-published="{{ settings.version }}" data-mode="{{ settings.mode }}">
-	<div class="wrapper">
-		<div class="home-posts__content">
-			<h1 class="sr-only">Mis posts</h1>
-			<h2 class="home-posts__year sr-only">2023</h2>
-			<ul class="home-posts__items">
-					{% for post in current_posts %}
-						<li class="home-posts__item">
-
-							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
-								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}">
-
-									<h3 class="home-post__title">
-										<span class="home-post__mark">{{ post.data.title }}</span>
-									</h3>
-
-									{% if post.data.featured_image %}
-										<img src="{{ post.url }}img/{{ post.data.featured_image }}" class="home-post__cover" alt="{{ post.data.featured_alt }}">
-									{% endif %}
-
-								</a>
-							</article>
-
-						</li>
-					{% endfor %}
-
-
-			</ul>
-		</div>
-	</div>
-</section>
-{% endif %}
-
-{% for year in settings.post_years %}
-	{% set posts = collections.blog | filterByYear(year) | reverse %}
+{% set years = collections.blog | getUniqueYears %}
+{% for year in years %}
+	{% set posts = collections.blog | filterByYear(year) %}
 	{% if (posts.length) %}
-		<section class="home-posts home-posts--{{ year }}">
+		<section class="home-posts home-posts--{{ year }} {{ 'home-posts--latest' if (year === settings.year) }}">
 			<div class="wrapper">
 				<div class="home-posts__content">
-					<h2 class="home-posts__year">{{ year }}</h2>
+					<h2 class="home-posts__year {{ 'sr-only' if year === settings.year }}">{{ year }}</h2>
 					<ul class="home-posts__items" data-total="{{ posts.length }}">
-
 						{% for post in posts %}
 							<li class="home-posts__item">
-
-								<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }}">
+								<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if (year === settings.year) and (loop.first) }}">
 									<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}">
-
 										<h3 class="home-post__title">
 											<span class="home-post__mark">{{ post.data.title }}</span>
 										</h3>
-
 										{% if post.data.featured_image %}
 											<img src="{{ post.url }}img/{{ post.data.featured_image }}" class="home-post__cover" alt="{{ post.data.featured_alt }}">
 										{% endif %}
 									</a>
 								</article>
-
 							</li>
 						{% endfor %}
-
 					</ul>
 				</div>
 			</div>
