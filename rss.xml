@@ -3,18 +3,18 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<atom:link href="https://sidiostedalimones.com/rss.xml" rel="self" type="application/rss+xml" />
-	<title>🍋 Si dios te da limones</title>
+	<title>Si dios te da limones</title>
 	<description>Feed RSS de sidiostedalimones.com</description>
 	<link>https://sidiostedalimones.com</link>
 	<language>es-es</language>
 	<image>
 		<url>https://sidiostedalimones.com/rss/lemon.png</url>
-		<title>🍋 Si dios te da limones</title>
+		<title>Si dios te da limones</title>
 		<link>https://sidiostedalimones.com</link>
 	</image>
 	<copyright>2024 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Sat, 06 Jan 2024 10:00:38 GMT</lastBuildDate>
+	<lastBuildDate>Sat, 06 Jan 2024 10:20:27 GMT</lastBuildDate>
 	
 	<item>
 		<title>v2.0.0</title>
