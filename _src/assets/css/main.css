@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* PrismJS 1.25.0
 https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+git+json+markdown+markup-templating+php+regex+scss+sql+twig&plugins=toolbar+copy-to-clipboard */
 code[class*=language-], pre[class*=language-] {
@@ -713,6 +714,109 @@ p + .post__tldr {
   text-align: end;
 }
 
+.post__dialog {
+  position: relative;
+  margin-block: 0 2rem;
+  padding: 1rem 0;
+}
+.post__dialog::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset-block: 0 0;
+  inset-inline-start: 50%;
+  inline-size: 100vw;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 0.0625rem solid #dfdfdf;
+  border-inline-width: 0;
+}
+p + .post__dialog {
+  -webkit-margin-before: 2rem;
+  margin-block-start: 2rem;
+}
+
+.post__dialog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  inline-size: 100%;
+  max-inline-size: 25rem;
+  margin-inline: auto;
+}
+
+.post__dialog-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  position: relative;
+  font-size: 1rem;
+  line-height: 170%;
+}
+
+.post__dialog-text::before {
+  content: "•••";
+  color: #ffffff;
+  inline-size: 2rem;
+  block-size: 2rem;
+  background: #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.post__dialog-text::after {
+  content: "";
+  border: 0.5rem solid transparent;
+  border-block-start-width: 0.5rem;
+  border-inline-width: 0.375rem;
+  border-block-start-color: #dfdfdf;
+  position: absolute;
+  inset-block-start: 1.4375rem;
+  inset-inline-start: 1.5625rem;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.post__dialog-text + .post__dialog-text {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.post__dialog-text--me::before {
+  background-color: #ffcc00;
+}
+.post__dialog-text--me::after {
+  border-block-start-color: #ffcc00;
+  inset-inline-start: unset;
+  inset-inline-end: 1.5625rem;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .post__ya {
   margin: 3rem 0 5rem;
   text-align: center;
@@ -1197,6 +1301,21 @@ p + .post__tldr {
   .post__quote-caption {
     margin-top: 1rem;
   }
+  .post__dialog {
+    margin-block: 0 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  p + .post__dialog {
+    -webkit-margin-before: 2.5rem;
+    margin-block-start: 2.5rem;
+  }
+  .post__dialog-content {
+    grid-column: 2/span 2;
+    max-width: 100%;
+    margin-inline: unset;
+  }
   .post__ya {
     margin: 3.5rem 0 5rem;
   }
@@ -1469,6 +1588,39 @@ p + .post__tldr {
   }
   .post__quote-caption {
     margin-top: 0.5rem;
+  }
+  .post__dialog {
+    margin-block: 0 3.5rem;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    padding-block: 2rem;
+  }
+  p + .post__dialog {
+    -webkit-margin-before: 3.5rem;
+    margin-block-start: 3.5rem;
+  }
+  .post__dialog-content {
+    grid-column: 2/span 4;
+    padding-inline: 2rem;
+    gap: 1.5rem;
+  }
+  .post__dialog-text {
+    font-size: 1.375rem;
+    line-height: 170%;
+  }
+  .post__dialog-text::before {
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+  }
+  .post__dialog-text::after {
+    border-block-start-width: 0.5rem;
+    border-inline-width: 0.375rem;
+    inset-block-start: 1.9375rem;
+    inset-inline-start: 2rem;
+  }
+  .post__dialog-text--me::after {
+    inset-inline-start: unset;
+    inset-inline-end: 2rem;
   }
   .post__ya {
     margin: 4rem 0 6rem;

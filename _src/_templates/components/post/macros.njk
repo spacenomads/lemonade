@@ -40,6 +40,9 @@
 {%- endmacro -%}
 
 
+
+
+
 {%- macro img(config) -%}
 <figure class="post__media post__media--{{ config.mode }}">
 
@@ -54,4 +57,19 @@
 		<figcaption class="post__media-caption {{ 'sr-only' if config.mode === 'mini' }}" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %}>{{ config.caption | safe }}</figcaption>
 	{%- endif -%}
 </figure>
+{%- endmacro -%}
+
+
+
+
+
+{%- macro dialog(config) -%}
+	<figure class="post__dialog">
+		<blockquote class="post__dialog-content">
+			{% set me = config.me or 2 %}
+			{%- for item in config.conv -%}
+				<p class="post__dialog-text {{ 'post__dialog-text--me' if (me === loop.index) }}">{{ item }}</p>
+			{%- endfor -%}
+		</blockquote>
+	</figure>
 {%- endmacro -%}
