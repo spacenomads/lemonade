@@ -45,7 +45,8 @@ module.exports = function (config) {
 				useShortDoctype: true,
 				removeComments: true,
 				collapseWhitespace: true,
-				preserveLineBreaks: false
+				preserveLineBreaks: false,
+				caseSensitive: true
 			});
 		}
 
