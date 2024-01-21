@@ -336,8 +336,9 @@
 .home-posts--2024 {
 	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
 		.home-posts__item {
-			&:nth-child(1) {
-				grid-row: span 2;
+			&:nth-child(1),
+			&:nth-child(2) {
+				grid-row: span 1;
 				grid-column: span 4;
 			}
 		}
@@ -345,7 +346,8 @@
 
 	@include core.mq(core.$bp-desktop) {
 		.home-posts__item {
-			&:nth-child(1) {
+			&:nth-child(1),
+			&:nth-child(2) {
 				grid-row: span 2;
 				grid-column: span 6;
 			}
