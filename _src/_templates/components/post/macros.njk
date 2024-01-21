@@ -13,7 +13,7 @@
 		<div class="post__tldr-content">
 			<div class="post__tldr-content-inner">
 				{%- for p in content -%}
-					<p class="post__tldr-paragraph">{{ p }}</p>
+					<p class="post__tldr-paragraph">{{ p | safe }}</p>
 				{%- endfor -%}
 			</div>
 		</div>
