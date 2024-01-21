@@ -40,7 +40,7 @@ Cuando google u openai admiten que **sus AI no pueden funcionar sólo con materi
 
 Hace unas semanas escuchaba a alguien decir que **sólo con sustituir la palabra «inteligencia» por algo más exacto como «automatización»** seríamos capaces de valorar mejor el tema de las AI, porque **detrás no hay una inteligencia de ningún tipo** y es lo que nos hace atribuirle a unas automatizaciones unos **atributos de objetividad y exactitud**, para empezar...
 
-Entiendo que **es fácil perderse entre lo que quieres que sea y lo que es**. Yo también quiero una [caja madre (1971)](https://es.wikipedia.org/wiki/Caja_Madre) que lo sepa todo y me permita hacer cosas increíbles, o [ver como evolucionan como seres (1982)](https://en.wikipedia.org/wiki/Blade_Runner); lo que tenemos es otra cosa.
+Entiendo que **es fácil perderse entre lo que quieres que sea y lo que es**. Yo también quiero una [caja madre (1971)](https://en.wikipedia.org/wiki/Mother_Box) que lo sepa todo y me permita hacer cosas increíbles, o [ver como máquinas evolucionan como seres (1982)](https://en.wikipedia.org/wiki/Blade_Runner), pero lo que tenemos es otra cosa.
 
 Además, **el sistema es suficientemente perverso** y sobre lo que ya he contado antes, añade el que se tiene que estar alimentando continuamente con nuevo contenido, ya que si sólo usa el que produce, **el resultado acaba degradándose**.
 
