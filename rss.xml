@@ -14,7 +14,44 @@
 	</image>
 	<copyright>2024 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Mon, 15 Jan 2024 22:02:36 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 21 Jan 2024 23:09:21 GMT</lastBuildDate>
+	
+	<item>
+		<title>Imagina que...</title>
+		<description>Estamos pagando por nuestro propio trabajo...</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/imagina-que/img/the-eyes.jpg&quot; alt=&quot;En la oscuridad dos ojos verdes miran hacia la izquierda.&quot;&gt;&lt;/p&gt;
+			&lt;figure class=&quot;post__tldr&quot;&gt;
+		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
+		&lt;div class=&quot;post__tldr-content&quot;&gt;
+			&lt;div class=&quot;post__tldr-content-inner&quot;&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;Este post va, otra vez, sobre la IA.&lt;/p&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;Si no te preguntas de dónde vienen los datos con los que se entrenan, de verdad, sigue nadando; &lt;strong&gt;no hay nada interesante aquí&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/figure&gt;
+&lt;p&gt;Pero vamos al turrón. Imagina que decido &lt;strong&gt;montar un negocio en paralelo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Imagina que pido a mis compañeres que me den &lt;strong&gt;acceso a los repos de sus proyectos&lt;/strong&gt; bajo la promesa de que &lt;strong&gt;examinando su código les puedo sugerir mejoras en su forma de programar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Imagina que &lt;strong&gt;no saltan las alarmas&lt;/strong&gt; y consigo ese acceso y me dedico, con un equipo, claro, a hacer eso que he dicho: revisar el código que generamos en la empresa.&lt;/p&gt;
+&lt;p&gt;Necesito un poquito de suspensión de la realidad, pero creo que merece la pena.&lt;/p&gt;
+&lt;p&gt;Bien, supongamos que voy lanzando sugerencias y aunque no siempre funcionen, pues &lt;strong&gt;son sólo sugerencias&lt;/strong&gt; y es una promesa que lucha un poco a favor de nuestro síndrome del impostor y la ilusión de que alguien que sabe más está revisando el trabajo y sugiriendo «mejoras».&lt;/p&gt;
+&lt;p&gt;Imaginemos que el sistema tiene suficiente aceptación y decido cobrarles un poco. ¿Sería lo justo, no? &lt;strong&gt;Ellos cobran por su trabajo y yo tb quiero cobrar por el mío.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Continuad conmigo un poco más y digamos que varios deciden pagar. No es nada carísimo.&lt;/p&gt;
+&lt;p&gt;Ahora, un día, la empresa se entera de que estoy llevando un negocio en paralelo que consiste en monetizar su propio producto, y que no revierte en ellos. &lt;strong&gt;¿Cómo iría esa conversación con mi empresa? ¿Habría un despido? ¿Quizás una demanda por temas de confidencialidad o acceso a material sensible?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ya no estamos hablando ni del trabajo de les compañeres, voy directamente a la empresa. &lt;strong&gt;¿Cómo piensas que iría esto? ¿Te suena a algo de lo que estamos viviendo?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Recordemos que no estamos hablando de un proyecto gubernamental de desarrollo de la cultura… &lt;strong&gt;Es la empresa privada de alguien vendiéndonos un servicio sólo posible con nuestro propio contenido&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Cuando google u openai admiten que &lt;strong&gt;sus AI no pueden funcionar sólo con material libre de derechos y que necesitan «saltarse» el copyright&lt;/strong&gt;, ¿Nuestra respuesta es que no se pueden poner puertas al campo? ¿Seguimos diciendo sin parar que es uno de los avances tecnológicos que van a marcar la diferencia?&lt;/p&gt;
+&lt;p&gt;Hace unas semanas escuchaba a alguien decir que &lt;strong&gt;sólo con sustituir la palabra «inteligencia» por algo más exacto como «automatización»&lt;/strong&gt; seríamos capaces de valorar mejor el tema de las AI, porque &lt;strong&gt;detrás no hay una inteligencia de ningún tipo&lt;/strong&gt; y es lo que nos hace atribuirle a unas automatizaciones unos &lt;strong&gt;atributos de objetividad y exactitud&lt;/strong&gt;, para empezar...&lt;/p&gt;
+&lt;p&gt;Entiendo que &lt;strong&gt;es fácil perderse entre lo que quieres que sea y lo que es&lt;/strong&gt;. Yo también quiero una &lt;a href=&quot;https://es.wikipedia.org/wiki/Caja_Madre&quot;&gt;caja madre (1971)&lt;/a&gt; que lo sepa todo y me permita hacer cosas increíbles, o &lt;a href=&quot;https://en.wikipedia.org/wiki/Blade_Runner&quot;&gt;ver como evolucionan como seres (1982)&lt;/a&gt;; lo que tenemos es otra cosa.&lt;/p&gt;
+&lt;p&gt;Además, &lt;strong&gt;el sistema es suficientemente perverso&lt;/strong&gt; y sobre lo que ya he contado antes, añade el que se tiene que estar alimentando continuamente con nuevo contenido, ya que si sólo usa el que produce, &lt;strong&gt;el resultado acaba degradándose&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Esto no va de poner puertas al campo, &lt;strong&gt;va de legislar en orden y establecer un marco donde tenga sentido explorar con seguridad&lt;/strong&gt; para todos lo que veamos que queremos explorar, pero sin engañarnos ni que nadie tenga que suspender la realidad, ni un poco. Bueno, &lt;strong&gt;ni robar, ¿no?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Y me pregunto lo mismo que &lt;a href=&quot;https://sidiostedalimones.com/blog/2023/es-licito-el-uso-de-la-ia/&quot;&gt;antes&lt;/a&gt;: ¿Cuál es la posición de tu empresa con respecto al uso por parte de los empleados de estas IA? ¿Y la tuya?&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/imagina-que/img/six.png&quot; width=&quot;56&quot; alt=&quot;Emoji de la mano con seis dedos, como si se hubiese generado por una IA.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>ia</category>
+		
+		<link>https://sidiostedalimones.com/blog/2024/imagina-que/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2024/imagina-que/</guid>
+		<pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>v2.0.0</title>
