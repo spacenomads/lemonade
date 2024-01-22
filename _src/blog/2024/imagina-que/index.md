@@ -20,11 +20,11 @@ Pero vamos al turrón. Imagina que decido **montar un negocio en paralelo**.
 
 Imagina que pido a mis compañeres que me den **acceso a los repos de sus proyectos** bajo la promesa de que **examinando su código les puedo sugerir mejoras en su forma de programar**.
 
-Imagina que **no saltan las alarmas** y consigo ese acceso y me dedico, con un equipo, claro, a hacer eso que he dicho: revisar el código que generamos en la empresa.
+Imagina que **no saltan las alarmas** y consigo ese acceso, y me dedico, con un equipo, claro, a hacer eso que he dicho: revisar el código que generamos en la empresa.
 
 Necesito un poquito de suspensión de la realidad, pero creo que merece la pena.
 
-Bien, supongamos que voy lanzando sugerencias y aunque no siempre funcionen, pues **son sólo sugerencias** y es una promesa que lucha un poco a favor de nuestro síndrome del impostor y la ilusión de que alguien que sabe más está revisando el trabajo y sugiriendo «mejoras».
+Bien, supongamos que voy lanzando sugerencias, aunque no siempre funcionen, pues **sólo son sugerencias**. Éstas, además, son una promesa que lucha un poco a favor de nuestro síndrome del impostor y la ilusión de que alguien que sabe más está revisando el trabajo y sugiriendo «mejoras».
 
 Imaginemos que el sistema tiene suficiente aceptación y decido cobrarles un poco. ¿Sería lo justo, no? **Ellos cobran por su trabajo y yo tb quiero cobrar por el mío.**
 
