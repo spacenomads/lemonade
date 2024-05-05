@@ -3,28 +3,28 @@
   "items": [
     {
       "title":"En papel, o no",
-      "icon":"comic",
-      "content":"Blackhand & Ironhead vol 01, de David López",
+      "icon":"book",
+      "content":"La compañía amable, de Rocío Vega",
       "link":{
-        "url": "https://panelsyndicate.com/comics/blackhand-ironhead",
-        "label": "PanelSyndicate"
+        "url": "https://lectura.social/book/34989/s/la-compania-amable",
+        "label": "Lectura.social"
       }
     },
     {
       "title":"En la Switch",
       "icon":"switch",
-      "content":"The Legend of Zelda: Breath of the Wild",
+      "content":"Princess Peach: Showtime!",
       "link":{
-        "url": "https://zelda.nintendo.com/breath-of-the-wild/",
+        "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Princess-Peach-Showtime--2444445.html",
         "label": "Nintendo.com"
       }
     },
     {
       "title":"En la tele",
       "icon":"tv",
-      "content":"The Dragon Prince: Mystery of Aaravos",
+      "content":"House of Ninjas",
       "link":{
-        "url": "https://www.netflix.com/title/80212245 ",
+        "url": "https://www.netflix.com/title/81465101",
         "label": "Netflix"
       }
     }

@@ -8,7 +8,7 @@
 	@include core.mq(core.$bp-desktop) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: core.rem(core.$page-gap-desktop);
+		gap: core.rem(core.$page-gap-desktop + calc(core.$unit / 2));
 	}
 }
 

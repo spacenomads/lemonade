@@ -180,6 +180,43 @@
 	}
 }
 
+.post__content > blockquote:not(.post__quote-block) {
+	margin: core.rem(core.$unit * 3) 0;
+	padding: core.rem(calc(core.$unit * 3 / 2)) 0 core.rem(core.$unit * 3);
+	position: relative;
+	text-align: center;
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: core.rem(core.$unit * 4) 0;
+		padding: core.rem(core.$unit * 3);
+		grid-area: content;
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 7) 0;
+		padding: core.rem(core.$unit * 4);
+	}
+
+	&::before {
+		background: core.$color-quote-bg;
+		content: '';
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100vw;
+		pointer-events: none;
+		z-index: -1;
+	}
+
+	& > p {
+		@include core.font(quote);
+
+		margin: 0;
+	}
+}
+
 .post__content:not(.post__content--no-featured) > p:first-of-type {
 	@include core.font(bigParagraph);
 }

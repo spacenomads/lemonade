@@ -31,11 +31,11 @@
 				<p class="post__quote-paragraph">{{ p }}</p>
 			{%- endfor -%}
 		</blockquote>
-		<figcaption class="post__quote-caption">—{{ config.author }}
-			{%- if config.cite.work -%}
+		{%- if config.cite.work -%}
+			<figcaption class="post__quote-caption">—{{ config.author }}
 				, <cite class="post__quote-cite">{% if config.cite.url %}<a href="{{ config.cite.url }}">{% endif %}{{ config.cite.work }}{% if config.cite.url %}</a>{% endif %}</cite>
-			{%- endif -%}
-		</figcaption>
+			</figcaption>
+		{%- endif -%}
 	</figure>
 {%- endmacro -%}
 
