@@ -14,7 +14,75 @@
 	</image>
 	<copyright>2024 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Fri, 09 Feb 2024 16:37:50 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 05 May 2024 22:24:38 GMT</lastBuildDate>
+	
+	<item>
+		<title>Mi primer Kobo y mi primer día</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/mi-primer-kobo/img/kobo-cover.jpg&quot; alt=&quot;Kobo Clara Colour sujetado con la mano izquierda&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Me he pillado un lector de ebooks y este ha sido mi aterrizaje en el mundo de la tinta electrónica y &lt;strong&gt;el color&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Por qué ahora?&lt;/h2&gt;
+&lt;p&gt;Aprovechando que ahora leo más y he encontrado un sitio bien chulo en Alcorcón, &lt;a href=&quot;https://x-madrid.com/taste/out-of-the-cup/&quot;&gt;Out Of The Cup&lt;/a&gt;, he jubilado mi iPad Mini 1 que ha aguantado mucho, pero ya no le daba más la vida ni la batería, y me he buscado un lector de libros electrónicos.&lt;/p&gt;
+&lt;p&gt;¿Cuál? Un &lt;a href=&quot;https://es.kobobooks.com/products/kobo-clara-colour&quot;&gt;Kobo Cara Colour&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Por qué este modelo?&lt;/h2&gt;
+&lt;p&gt;Pues me he estado mirando medio Youtube de reviews y comparaciones. Al final lo que ha pesado más ha sido:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Al final no quiero un kindle por que estoy un poco saturado de amazon y me gustaría depender menos de esta gente.&lt;/li&gt;
+&lt;li&gt;De las alternativas, el Kobo es del que he leído mejores comentarios.&lt;/li&gt;
+&lt;li&gt;Quiero que sea bonico, y los asimétricos más ergonómicos no van conmigo.&lt;/li&gt;
+&lt;li&gt;Quiero que sea compatible con eBiblio (aunque 21 días de préstamo me parece poco).&lt;/li&gt;
+&lt;li&gt;Mi mochila de la bici es chiquita, y tiene que caber (cabe).&lt;/li&gt;
+&lt;li&gt;Quiero poder leer de noche :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;El extra del color &lt;strong&gt;ERA NECESARIO&lt;/strong&gt;, lo sabes tú y ahora lo sé yo. o al revés.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Este modelo es chiquito, de 6&amp;quot;, a 300 ppp para blanco y negro, y 150 ppp para color, resistente al agua y con USB-C.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Experiencia&lt;/h2&gt;
+&lt;p&gt;La experiencia de lectura, siendo el primer día, me ha molado bastante. Aún siendo una pantalla pequeña y no habiendo dedicado tiempo suficiente para aprenderme los controles y gestos.&lt;/p&gt;
+&lt;p&gt;Sobre lo que es la lectura, pensaba que iba a haber menos diferencia entre la pantalla del iPad y la de tinta electrónica, &lt;strong&gt;y me alegra ver que LA HAY&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;El tema colores... son suavitos, &lt;strong&gt;más un primer paso&lt;/strong&gt;, aún así agradezco ver las portadas e imágenes a color.&lt;/p&gt;
+&lt;p&gt;Que el dispositivo sea pequeño también lo cuento como una ventaja siendo además, cómodo de sostener en el tiempo.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Cosas que me han molado menos&lt;/h2&gt;
+&lt;p&gt;Alguna cosa no me ha gustado o molado menos, pero tiene que ver más con problemas del formato ebook o decisiones de marca.&lt;/p&gt;
+&lt;h3&gt;Los ebooks son un mundo aparte&lt;/h3&gt;
+&lt;p&gt;Me da la sensación de que más que un estándar hay espacios en los formatos para que cada uno tenga unos ajustes diferentes, de manera que los propios ajustes del dispositivo no sirvan igual para todos los documentos.&lt;/p&gt;
+&lt;h3&gt;Kobo by fnac (publicidad)&lt;/h3&gt;
+&lt;p&gt;El dispositivo tiene una personalización para que cuando se veda por terceros, en este caso la fnac, puedan incluir una pantalla al inicio. Esto es indecente, pero fácil de solucionar conectándolo al ordenador y tocando un archivo de texto.&lt;/p&gt;
+&lt;p&gt;Yo lo compré en la fnac y al arrancar el dispositivo me aparecía una pantalla de &amp;quot;Kobo by fnac&amp;quot;... &lt;strong&gt;¡Sobre mi cadáver tuerto!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Es un poco tricky si no estás acostumbrado, pero nada imposible.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Se conecta el dispositivo al ordenador.&lt;/li&gt;
+&lt;li&gt;Se abre con un explorador de archivos asegurándose de que se muestran los archivos ocultos.&lt;/li&gt;
+&lt;li&gt;En la carpeta oculta &lt;strong&gt;.kobo/&lt;/strong&gt; hay un archivo &lt;strong&gt;affiliate.conf&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Dentro cambiamos el valor de affiliate a «&lt;strong&gt;Kobo&lt;/strong&gt;».&lt;/li&gt;
+&lt;li&gt;Desconectamos, apagamos, encendemos y &lt;strong&gt;¡a tomar por uclo la pantalla de publicidad del vendedor!&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;En mi caso cambié la personalización de la fnac por el valor por defecto, que es que me cago en Crom, hay que ser rata para colarte publicidad así.&lt;/p&gt;
+&lt;div class=&quot;line-numbers&quot;&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;[General]
+affiliate=FNACSpain
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y sustituirlo por&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;[General]
+affiliate=Kobo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;El balance sale a devolver, estoy muy contento con la compra aunque intentaré o volver a la fnac en otros 10/15 años. O más.&lt;/p&gt;
+&lt;p&gt;Por cierto, estoy leyendo &lt;a href=&quot;https://lectura.social/book/34989/s/la-compania-amable&quot;&gt;&lt;strong&gt;La compañía amable&lt;/strong&gt; de Rocío Vega&lt;/a&gt;, y me está gustando mucho.&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/mi-primer-kobo/img/mini-kobo.jpg&quot; width=&quot;56&quot; alt=&quot;Kobo Clara Colour en chiquitico&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>blog</category>
+		
+		<category>review</category>
+		
+		<link>https://sidiostedalimones.com/blog/2024/mi-primer-kobo/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2024/mi-primer-kobo/</guid>
+		<pubDate>Sun, 05 May 2024 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Imagina que...</title>
