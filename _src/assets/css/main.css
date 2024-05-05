@@ -1525,7 +1525,7 @@ p + .post__tldr {
   .hobbies {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
   .hobbies__item + .hobbies__item {
     margin-top: 0;
