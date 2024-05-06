@@ -180,6 +180,14 @@
 	}
 }
 
+.post__content pre {
+	margin: 0 0 core.rem(core.$unit * 3);
+
+	@include core.mq(core.$bp-desktop) {
+		margin-bottom: core.rem(core.$unit * 4);
+	}
+}
+
 .post__content > blockquote:not(.post__quote-block) {
 	margin: core.rem(core.$unit * 3) 0;
 	padding: core.rem(calc(core.$unit * 3 / 2)) 0 core.rem(core.$unit * 3);
