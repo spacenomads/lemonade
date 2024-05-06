@@ -15,15 +15,15 @@ clickbait: Y tú, ¿Qué estás leyendo?
 
 Me he pillado un lector de ebooks y este ha sido mi aterrizaje en el mundo de la tinta electrónica y **el color**.
 
-## Por qué ahora?
+## ¿Por qué ahora?
 
-Aprovechando que ahora leo más y he encontrado un sitio bien chulo en Alcorcón, [Out Of The Cup](https://x-madrid.com/taste/out-of-the-cup/), he jubilado mi iPad Mini 1 que ha aguantado mucho, pero ya no le daba más la vida ni la batería, y me he buscado un lector de libros electrónicos.
+Aprovechando que ahora leo más y he encontrado un sitio bien chulo en Alcorcón, [Out Of The Cup](https://x-madrid.com/taste/out-of-the-cup/), he jubilado mi iPad Mini 1, que ha aguantado mucho, pero ya no le daba más la vida ni la batería, y me he buscado un lector de libros electrónicos.
 
 ¿Cuál? Un [Kobo Cara Colour](https://es.kobobooks.com/products/kobo-clara-colour).
 
-## Por qué este modelo?
+## ¿Por qué este modelo?
 
-Pues me he estado mirando medio Youtube de reviews y comparaciones. Al final lo que ha pesado más ha sido:
+Pues me he estado mirando medio YouTube de reviews y comparaciones. Al final lo que ha pesado más ha sido:
 
 * Al final no quiero un kindle por que estoy un poco saturado de amazon y me gustaría depender menos de esta gente.
 * De las alternativas, el Kobo es del que he leído mejores comentarios.
@@ -38,9 +38,9 @@ El extra del color **ERA NECESARIO**, lo sabes tú y ahora lo sé yo. o al revé
 
 ## Experiencia
 
-La experiencia de lectura, siendo el primer día, me ha molado bastante. Aún siendo una pantalla pequeña y no habiendo dedicado tiempo suficiente para aprenderme los controles y gestos.
+La experiencia de lectura, en el primer día, me ha molado bastante. Aún siendo una pantalla pequeña y no habiendo dedicado tiempo suficiente para aprenderme los controles y gestos.
 
-Sobre lo que es la lectura, pensaba que iba a haber menos diferencia entre la pantalla del iPad y la de tinta electrónica, **y me alegra ver que LA HAY**.
+Sobre lo que es la pantalla, pensaba que iba a haber menos diferencia entre la del iPad y la de tinta electrónica, **y me alegra ver que LA HAY**.
 
 El tema colores... son suavitos, **más un primer paso**, aún así agradezco ver las portadas e imágenes a color.
 
@@ -58,9 +58,9 @@ Me da la sensación de que más que un estándar hay espacios en los formatos pa
 
 ### Kobo by fnac (publicidad)
 
-El dispositivo tiene una personalización para que cuando se veda por terceros, en este caso la fnac, puedan incluir una pantalla al inicio. Esto es indecente, pero fácil de solucionar conectándolo al ordenador y tocando un archivo de texto.
+El dispositivo tiene una personalización para que cuando se venda por terceros, en este caso la fnac, puedan incluir una pantalla al inicio. Esto es indecente, pero fácil de solucionar conectándolo al ordenador y tocando un archivo de texto.
 
-Yo lo compré en la fnac y al arrancar el dispositivo me aparecía una pantalla de "Kobo by fnac"... **¡Sobre mi cadáver tuerto!**
+Al arrancar el dispositivo me aparecía una pantalla de "Kobo by fnac" y bueno... **¡Sobre mi cadáver tuerto!**
 
 Es un poco tricky si no estás acostumbrado, pero nada imposible.
 
@@ -72,6 +72,8 @@ Es un poco tricky si no estás acostumbrado, pero nada imposible.
 
 En mi caso cambié la personalización de la fnac por el valor por defecto, que es que me cago en Crom, hay que ser rata para colarte publicidad así.
 
+En el archivo original aparece esto:
+
 <div class="line-numbers">
 
 ```text
@@ -79,7 +81,11 @@ En mi caso cambié la personalización de la fnac por el valor por defecto, que 
 affiliate=FNACSpain
 ```
 
-Y sustituirlo por
+</div>
+
+Y hay que sustituirlo por esto otro:
+
+<div class="line-numbers">
 
 ```text
 [General]
@@ -88,8 +94,10 @@ affiliate=Kobo
 
 </div>
 
+Obviamente esto lo he encontrado buscando, ni de blás se me ocurriría algo así.
+
 ---
 
-El balance sale a devolver, estoy muy contento con la compra aunque intentaré o volver a la fnac en otros 10/15 años. O más.
+El balance sale a devolver, estoy muy contento con la compra y el cambio.
 
 Por cierto, estoy leyendo [**La compañía amable** de Rocío Vega](https://lectura.social/book/34989/s/la-compania-amable), y me está gustando mucho.

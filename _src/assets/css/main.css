@@ -596,6 +596,10 @@ a {
   margin: 0 0 1.5rem;
 }
 
+.post__content pre {
+  margin: 0 0 1.5rem;
+}
+
 .post__content > blockquote:not(.post__quote-block) {
   margin: 1.5rem 0;
   padding: 0.75rem 0 1.5rem;
@@ -1500,6 +1504,9 @@ p + .post__tldr {
   .post__content > ul,
   .post__content > ol,
   .post__content > blockquote {
+    margin-bottom: 2rem;
+  }
+  .post__content pre {
     margin-bottom: 2rem;
   }
   .post__content > blockquote:not(.post__quote-block) {
