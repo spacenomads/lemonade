@@ -1,8 +1,10 @@
-[
+const settings = require('./settings.js');
+
+module.exports = [
   {
     "label": "Sígueme en Mastondon",
     "id": "mastodon",
-    "url": "https://mastodon.social/@oneeyedman"
+    "url": settings.fedi_account
   },
   {
     "label": "Sígueme en Pixelfed",
@@ -29,4 +31,4 @@
     "id": "codeberg",
     "url": "https://codeberg.org/oneeyedman"
   }
-]
+];

@@ -31,6 +31,7 @@ function getCurrentFormattedDate() {
 module.exports = {
   author: 'Carlos Mañas',
   email: 'carlos@sidiostedalimones.com',
+	fedi_account: 'https://laterracita.online/@oneeyedman',
   lang: 'es',
   long_name: 'Si dios te da limones',
   mode: process.env.MODE,
