@@ -1,18 +1,18 @@
 /* TEAM */
 Your title: Carlos Mañas.
 Site: Sidiostedalimones.com.
-Mastodon: https://mastodon.social/@oneeyedman.
+Mastodon: https://laterracita.online/@oneeyedman.
 Location: Alcorcón, Granada.
 
 /* THANKS */
-Bonaparte: https://paquita.masto.host/@bonapartethecat.
+Bonaparte: https://laterracita.online/@bonapartethecat.
 Trece ❤
 11ty community: https://www.11ty.dev/.
 Giustino Brozacchiello: https://giustino.blog/how-to-drafts-eleventy/.
 Matt Claffey: https://mattclaffey.medium.com/.how-to-reduce-you-html-output-in-11ty-ec0c358be2ac.
 
 /* SITE */
-Last update: 2024/5/6.
+Last update: 2024/5/16.
 Standards: HTML5, CSS3, JS.
 Components: SCSS, 11ty, Node, Gulp.
 Software: VS Code, WebStorm, Penpot, Mindnode.
