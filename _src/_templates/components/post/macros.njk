@@ -55,3 +55,8 @@
 	{%- endif -%}
 </figure>
 {%- endmacro -%}
+
+
+{%- macro video(config) -%}
+<iframe class="post__media post__media--iframe" title="{{ config.title }}" width="{{ config.width }}" src="{{ config.src }}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" style="aspect-ratio: {{ config.aspect_ratio }}"></iframe>
+{%- endmacro -%}
