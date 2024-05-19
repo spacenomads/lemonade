@@ -14,7 +14,89 @@
 	</image>
 	<copyright>2024 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Thu, 16 May 2024 14:04:21 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 19 May 2024 21:46:17 GMT</lastBuildDate>
+	
+	<item>
+		<title>Mazmorreo diario con Rogule</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/mazmorreo-diario-con-rogule/img/post-rogule.jpg&quot; alt=&quot;Pendiente&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;&lt;strong&gt;Rogule&lt;/strong&gt; es uno de estos juegos diarios que inunda las mañanas en las redes sociales.&lt;/p&gt;
+&lt;figure class=&quot;post__tldr&quot;&gt;
+		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
+		&lt;div class=&quot;post__tldr-content&quot;&gt;
+			&lt;div class=&quot;post__tldr-content-inner&quot;&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;En esencia es un &lt;strong&gt;roguelike&lt;/strong&gt; y trata de salir de una mazmorra con sus monstruos, sus laberintos y, claro, sus tesoros.&lt;/p&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/figure&gt;
+&lt;p&gt;Un roguelike es un tipo de &lt;abbr title=&quot;role-playing game&quot;&gt;rpg&lt;/abbr&gt; de arrastrarse por una mazmorra, con niveles generados aleatoriamente, combate por turnos y en los que igual se muere todo el rato. Igual.&lt;/p&gt;
+&lt;p&gt;En Rogule aparecemos en una mazmorra diferente cada vez y, claro, nadie quiere quedarse allí; hay que salir.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--full&quot;&gt;&lt;img src=&quot;img/rogule-map.png&quot; alt=&quot;Vista inicial de una mazmorra, usando emojis y cuadrados se crea el espacio con sus pasillos y recovecos. Nuestro personaje es un elfo (o elfa o elfe), en la imagen hay rocas, plantas y troncos, además de monstruos como el zombie y el murciélago.&quot; class=&quot;post__media-image&quot;  &gt;&lt;figcaption class=&quot;post__media-caption &quot; &gt;Ejemplo de mazmorra.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2&gt;Las reglas&lt;/h2&gt;
+&lt;p&gt;El juego nos procura una reglas básicas, pero vamos a ver alguna mecánica más que igual nos ayuda para que no nos muerdan demasiado o la liemos parda.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--full&quot;&gt;&lt;img src=&quot;img/rogule-rules.png&quot; alt=&quot;Listado de instrucciones básicas&quot; class=&quot;post__media-image&quot;  &gt;&lt;figcaption class=&quot;post__media-caption &quot; &gt;Reglas del juego.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Se trata de un rpg por turnos, esto es importante tenerlo en cuenta porque mientras no avancemos el juego no sigue, vamos, que no hay prisa ninguna ni necesidad de tomar decisiones locas.&lt;/p&gt;
+&lt;p&gt;El juego nos indica que el &lt;strong&gt;.&lt;/strong&gt; se usa para descansar; en realidad es más un pasar turno, pero lo veremos más adelante.&lt;/p&gt;
+&lt;h3&gt;Combates y objetos&lt;/h3&gt;
+&lt;p&gt;Los combates se resuelven con tiradas aleatorias. comenzamos con unos valores de ataque y defensa que se pueden ir mejorando derrotando monstruos o recogiendo &lt;strong&gt;escudos&lt;/strong&gt; (defensa) y/o &lt;strong&gt;armas&lt;/strong&gt; (ataque). Sólo hay un tipo de icono de defensa y dos que mejoran el ataque, una daga y un hacha.&lt;/p&gt;
+&lt;p&gt;El nivel de cada monstruo viene indicado con &lt;strong&gt;un número sobre la criatura&lt;/strong&gt;, y es el máximo daño que puede hacer en un ataque.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;img/rogule-status-bar.png&quot; alt=&quot;Barra de estado del porta, sale el emoji del personaje, el nivel actual (en este caso 3) y diez cuadrados verdes de vida.&quot; class=&quot;post__media-image&quot; style=&quot;&quot; &gt;&lt;figcaption class=&quot;post__media-caption &quot; style=&quot;&quot;&gt;Nuestra barra de estado&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Nosotres empezamos con &lt;strong&gt;nivel 3&lt;/strong&gt; y &lt;strong&gt;10 puntos de vida&lt;/strong&gt;, y podemos subir hasta &lt;strong&gt;nivel 5&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;No conozco la mecánica exacta, pero escudos y armas nos &lt;strong&gt;aumentan la posibilidad de éxito en nuestras tiradas&lt;/strong&gt;. Todes, podemos acertar o fallar, recordemos que al final son tiradas, incluso con modificadores a nuestro favor, nadie le asegura nada a nadie.&lt;/p&gt;
+&lt;p&gt;Las plantas, troncos, piedras que nos encontramos por el camino, al igual que los monstruos, pueden soltar objetos o equipo.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Castañas, diamantes y setas&lt;/strong&gt; no parecen tener impacto en el juego más allá de llevárnoslos a casa si salimos.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Escudos, dagas y hachas&lt;/strong&gt; mejoran nuestras probabilidades de éxito en el combate.&lt;/li&gt;
+&lt;li&gt;Las &lt;strong&gt;pociones de vida&lt;/strong&gt; (vasos) nos recuperan la salud hasta 3 puntos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No hay que perder de vista que el objetivo no es limpiar la mazmorra, sino &lt;strong&gt;encontrar la puerta roja y salir&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Las otras reglas&lt;/h2&gt;
+&lt;p&gt;Juego tras juego se van viendo, o sospechando, más en detalle las diferentes mecánicas o tácticas.&lt;/p&gt;
+&lt;h3&gt;Los monstruos&lt;/h3&gt;
+&lt;p&gt;Dentro de la mazmorra nos podemos encontrar varias criaturas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Animales: rata, murciélago, jabalí, lobo y T-Rex.&lt;/li&gt;
+&lt;li&gt;Monstruos: fantasma, ogro, vampiro, genio, zombie y dragón.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;menos la rata, todas las criaturas te persiguen e intentan rodearte para atacarte a la vez. Suele ser mega buena idea planificar bien lo que vas a hacer y buscar combates 1 a 1 o en pasillos de manera que no le demos una ventaja a quien viene con los colmillos afilados.&lt;/p&gt;
+&lt;h4&gt;La consola&lt;/h4&gt;
+&lt;p&gt;Cada criatura te detecta a una distancia diferente, esto se puede ver en &lt;strong&gt;la consola&lt;/strong&gt; del navegador si se tiene curiosidad. Durante el juego se va ofreciendo información sobre lo que está pasando.&lt;/p&gt;
+&lt;p&gt;Nada más empezar pinta información de la mazmorra generada así como de los monstruos y objetos.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--full&quot;&gt;&lt;img src=&quot;img/rogule-console.png&quot; alt=&quot;Objeto resumen de los objetos y criaturas de nuestra mazmorra&quot; class=&quot;post__media-image&quot;  &gt;&lt;figcaption class=&quot;post__media-caption &quot; &gt;Objeto resumen de los objetos y criaturas de nuestra mazmorra&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Cada criatura tiene una propiedad de &lt;strong&gt;activación&lt;/strong&gt; en la que indica desde cuán lejos te ve.&lt;/p&gt;
+&lt;p&gt;En el ejemplo se puede ver que el zombie tiene una activación de 5 mientras que el lobo tiene una de 20, esto quiere decir que el lobo te detecta desde lejos mientras que el pobre zombie tiene que estar bien cerca para saber que existes y que tu cerebro puede saber bien rico.&lt;/p&gt;
+&lt;h3&gt;Huir&lt;/h3&gt;
+&lt;p&gt;Intentar correr hacia la salida es, desde luego, una opción, pero suele ser una mala opción y que acabes en una esquina con más dientes encima de los deseados.&lt;/p&gt;
+&lt;h3&gt;Los &amp;quot;dados&amp;quot;&lt;/h3&gt;
+&lt;p&gt;Vamos a hacer un breve inciso para recordad que los combates se resuelven por tiradas aleatorias, y estas pueden salir muy bien o muy mal. Morir, vas a morir, igual es más evidente frente a un dragón, pero una buena tirada la puede tener cualquiera, hasta nosotres.&lt;/p&gt;
+&lt;h3&gt;Curarse&lt;/h3&gt;
+&lt;p&gt;También te puedes curar sin las pociones, solo necesitas algo de tiempo: cada 100 acciones recuperas hasta 1 punto de vida.&lt;/p&gt;
+&lt;p&gt;Lo normal, tras un enfrentamiento que ha ido un poco de aquella manera, es buscar un sitio seguro dónde nadie te aceche y spammear el &lt;strong&gt;.&lt;/strong&gt; hasta que recuperes el aliento, intentando conservar las pociones que encuentres para momentos más apurados.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;img/rogule-controls.png&quot; alt=&quot;Cruceta de control del personaje, aparecen las flechas en las 4 direcciones y en el centro, el punto.&quot; class=&quot;post__media-image&quot; style=&quot;&quot; &gt;&lt;figcaption class=&quot;post__media-caption &quot; style=&quot;&quot;&gt;Controles.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Si tienes una pantalla táctil puedes usar la botonera que aparece abajo a la derecha, o las teclas de tu teclado.&lt;/p&gt;
+&lt;h3&gt;Circuitos&lt;/h3&gt;
+&lt;p&gt;A veces en la mazmorra te encuentras peque˜nos circuitos que puedes usar para hacer correr a quien te persigue colocándote delante, apartándoles de la zona que guardan o simplemente para ir recuperando vida.&lt;/p&gt;
+&lt;p&gt;Si los usas para recuperar vida, recuerda que no es ideal y que las criaturas a veces se te dan la vuelta y toman otro camino.&lt;/p&gt;
+&lt;h3&gt;Choques contra los muros&lt;/h3&gt;
+&lt;p&gt;Hay un raro, quizás un bug, en el que si estando junto a un muro, te mueves de nuevo en su dirección, de repente el pasar turno con el &lt;strong&gt;.&lt;/strong&gt; sigue funcionando, pero no cuenta como acción para curarte, y tendrías que separarte de muro para que pueda volver a contar para esas 100 acciones.&lt;/p&gt;
+&lt;h3&gt;Progreso y estadísticas&lt;/h3&gt;
+&lt;p&gt;Tanto el progreso como tus estadísticas, partida tras partida se almacenan en el navegador (nerd alert: en el localStorage), por tanto, si borras los datos almacenados, empezarás de cero.&lt;/p&gt;
+&lt;p&gt;Si cambias de navegador los nuevos datos se guardarán en ese navegador y no tendrás acceso a los anteriores.&lt;/p&gt;
+&lt;p&gt;Esto no es muy relevante, pero se van guardando los éxitos, derrotas así como las rachas actual y máxima.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Y esto es un poco el juego hasta ahora. Si te resulta más cómoda esta información en vídeo, aquí tienes uno ;)&lt;/p&gt;
+&lt;iframe class=&quot;post__media post__media--iframe&quot; title=&quot;Tutorial de Rogule! 🧝🏼 + 🐀🦇👻🐗🐺👹🧛🧞🧟🐉🦖&quot; width=&quot;100%&quot; src=&quot;https://veedeo.org/videos/embed/fbc6fd73-01da-4d99-bc07-f03fdecbbac5&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; sandbox=&quot;allow-same-origin allow-scripts allow-popups&quot; style=&quot;aspect-ratio: 16 / 9&quot;&gt;&lt;/iframe&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/mazmorreo-diario-con-rogule/img/mage.png&quot; width=&quot;56&quot; alt=&quot;Pendiente&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>blog</category>
+		
+		<category>tutorial</category>
+		
+		<link>https://sidiostedalimones.com/blog/2024/mazmorreo-diario-con-rogule/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2024/mazmorreo-diario-con-rogule/</guid>
+		<pubDate>Sun, 19 May 2024 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Mi primer Kobo y mi primer día</title>
