@@ -1,9 +1,9 @@
 ---
 title: Mazmorreo diario con Rogule
 featured_image: post-rogule.jpg
-featured_alt: Pendiente
+featured_alt: Sobre un fondo de un prado se ve una ventana de navegador de Safari (con las tres bolitas de colores, rojo, amarillo y verde) con la web del juego rogule abierta. Aparece el emoji del elfo, una breve introducción y el botón verde de iniciar partida.
 ya_image: mage.png
-ya_alt: Pendiente
+ya_alt: Emoji del mago con su sombrero de pico, barba y báculo. Además tiene un parche en el ojo izquierdo.
 reading_time: 6
 date: 2024-05-19
 draft: false
@@ -13,7 +13,7 @@ clickbait: ¿Has salido hoy de la mazmorra?
 ---
 {% import "components/post/macros.njk" as macros %}
 
-**Rogule** es uno de estos juegos diarios que inunda las mañanas en las redes sociales.
+**[Rogule](https://rogule.com)** es uno de estos juegos diarios que inunda las mañanas en las redes sociales.
 
 {{ macros.tldr(['En esencia es un <strong>roguelike</strong> y trata de salir de una mazmorra con sus monstruos, sus laberintos y, claro, sus tesoros.']) }}
 
