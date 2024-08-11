@@ -12,7 +12,7 @@ Giustino Brozacchiello: https://giustino.blog/how-to-drafts-eleventy/.
 Matt Claffey: https://mattclaffey.medium.com/.how-to-reduce-you-html-output-in-11ty-ec0c358be2ac.
 
 /* SITE */
-Last update: 2024/5/20.
+Last update: 2024/8/11.
 Standards: HTML5, CSS3, JS.
 Components: SCSS, 11ty, Node, Gulp.
 Software: VS Code, WebStorm, Penpot, Mindnode.
