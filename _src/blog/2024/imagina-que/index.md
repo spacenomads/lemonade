@@ -1,7 +1,7 @@
 ---
 title: Imagina que...
 featured_image: the-eyes.jpg
-featured_alt: En la oscuridad dos ojos verdes miran hacia la izquierda.
+featured_alt: En la oscuridad, dos ojos verdes miran hacia la izquierda.
 ya_image: six.png
 ya_alt: Emoji de la mano con seis dedos, como si se hubiese generado por una IA.
 reading_time: 3
