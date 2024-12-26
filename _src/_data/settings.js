@@ -38,6 +38,12 @@ module.exports = {
   siteDescription: 'Si dios te da limones, haces limonada',
   siteName: 'Sidiostedalimones',
   url: 'https://sidiostedalimones.com',
+	og: {
+		home: {
+			img: '/assets/images/brand/og-logo-sidiostedalimones.png',
+			alt: 'Limón pixelado centrado, con píxeles gordotes y, debajo, el texto «sidiostedalimones».',
+		},
+	},
   version: getStaticsVersion(),
   year: getYear(),
 	date: getCurrentFormattedDate(),

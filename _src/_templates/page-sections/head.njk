@@ -12,25 +12,17 @@
 
 
 {% if pageType === 'page' %}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@oneeyedman">
-  <meta name="twitter:title" content="{{ settings.siteName }}">
-  <meta name="twitter:description" content="{{ settings.siteDescription }}">
-  <meta name="twitter:image" content="{{ settings.url }}/assets/images/brand/og-logo-sidiostedalimones.png">
   <meta property="og:title" content="{{ settings.siteName }}">
   <meta property="og:description" content="{{ settings.siteDescription }}">
   <meta property="og:image" content="{{ settings.url }}/assets/images/brand/og-logo-sidiostedalimones.png">
-  <meta property="og:image:secure_url" content="{{ settings.url }}/assets/images/brand/og-logo-sidiostedalimones.png">
+  <meta property="og:image:secure_url" content="{{ settings.url }}{{ settings.og.home.img }}">
+	<meta property="og:image:alt" content="{{ settings.og.home.alt }}" />
 {% else %}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@oneeyedman">
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ excerpt }}">
-  <meta name="twitter:image" content="{{ settings.url }}{{ page.url}}img/{{ featured_image }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ excerpt }}">
   <meta property="og:image" content="{{ settings.url }}{{ page.url}}img/{{ featured_image }}">
   <meta property="og:image:secure_url" content="{{ settings.url }}{{ page.url}}img/{{ featured_image }}">
+	<meta property="og:image:alt" content="{{ featured_alt }}" />
 {% endif %}
 
 <script type="application/ld+json">
