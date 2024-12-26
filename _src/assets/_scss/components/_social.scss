@@ -83,6 +83,16 @@
 	}
 }
 
+.social__link--veedeo {
+	&::before {
+		background-image: linear-gradient(to right, core.$color-veedeo-1, core.$color-veedeo-2);
+	}
+
+	&::after {
+		background-image: core.img('veedeo.svg', core.$theme-icons);
+	}
+}
+
 .social__link--twitch {
 	&::after {
 		background-image: core.img('twitch.svg', core.$theme-icons);

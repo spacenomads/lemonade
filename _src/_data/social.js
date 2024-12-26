@@ -12,9 +12,9 @@ module.exports = [
     "url": "https://pixelfed.social/@oneeyedman"
   },
   {
-    "label": "Sígueme en youtube",
-    "id": "youtube",
-    "url": "https://youtube.com/chuck_as_usual"
+    "label": "Sígueme en Veedeo.org",
+    "id": "veedeo",
+    "url": "https://veedeo.org/a/chuck/video-channels"
   },
   {
     "label": "Sígueme en Twitch",
@@ -22,7 +22,7 @@ module.exports = [
     "url": "https://twitch.tv/chuck_as_usual"
   },
   {
-    "label": "Sígueme en GitHub",
+    "label": "Sígueme en GitHub (por ahora)",
     "id": "github",
     "url": "https://github.com/oneeyedman"
   },

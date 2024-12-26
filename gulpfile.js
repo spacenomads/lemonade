@@ -68,11 +68,11 @@ function scripts() {
 		.pipe(dest(config.scripts.dest));
 }
 
-const build = series(styles, scripts);
+const build = series(styles);
 
 const go = series(build, function (cb) {
 	watch(config.watch.styles, styles);
-	watch(config.watch.scripts, scripts);
+	//watch(config.watch.scripts, scripts);
 	cb();
 });
 
