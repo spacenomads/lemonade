@@ -1,31 +1,31 @@
 {
-  "intro": "Aunque voy un poco despistado me he puesto a terminar todas esas series que llevaba a medias.",
+  "intro": "Ahora estoy pudiendo empezar a ver series de nuevo, series que no haya visto nunca, y a echar ratos de lectura y de videojuegos.",
   "items": [
     {
       "title":"En papel, o no",
       "icon":"book",
-      "content":"Ambaris, de Belén Conde Durán",
+      "content":"El Miedo, de María Hesse",
       "link":{
-        "url": "https://lectura.social/book/113956/s/ambaris",
+        "url": "https://lectura.social/book/130611/s/el-miedo",
         "label": "Lectura.social"
       }
     },
     {
       "title":"En la Play",
       "icon":"ps5",
-      "content":"The Last Of Us Part II",
+      "content":"Soul Reaver 1&2",
       "link":{
-        "url": "https://www.playstation.com/es-es/games/the-last-of-us-part-ii/",
+        "url": "https://www.playstation.com/es-es/games/legacy-of-kain-soul-reaver-1-2-remastered/",
         "label": "playstation.com"
       }
     },
     {
       "title":"En la tele",
       "icon":"tv",
-      "content":"Buffy, The Vampire Slayer",
+      "content":"Arcane, temporada 2",
       "link":{
-        "url": "https://www.disneyplus.com/series/buffy-the-vampire-slayer/DmJepBrlNiUe",
-        "label": "Disney+"
+        "url": "https://www.netflix.com/browse?jbv=81435684",
+        "label": "Netflix"
       }
     }
   ]
