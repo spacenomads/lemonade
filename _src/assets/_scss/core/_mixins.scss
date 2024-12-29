@@ -118,6 +118,23 @@
 		}
 	}
 
+	@if $type == h4 {
+
+		font-size: fn.rem(16);
+		line-height: fn.lh(27, 18);
+		font-weight: vars.$font-medium;
+
+		@include mq(vars.$bp-tablet-v) {
+			font-size: fn.rem(20);
+			line-height: fn.lh(33, 22);
+		}
+
+		@include mq(vars.$bp-desktop) {
+			font-size: fn.rem(26);
+			line-height: fn.lh(42, 28);
+		}
+	}
+
 	@if $type == paragraph {
 
 		font-size: fn.rem(16);
