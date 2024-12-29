@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		
+		<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#212121" media="(prefers-color-scheme: dark)">
+<title>Sidiostedalimones</title>
+<link rel="author" href="/humans.txt">
+<link rel="me" href="https://laterracita.online/@oneeyedman">
+<link rel="icon" href="/favicon.ico"/>
+<link rel="stylesheet" href="/assets/css/main.css?v=20241229200448246">
+<script src="/assets/js/vendor/prism.js?v=20241229200448246" defer></script>
+
+
+
+  <meta property="og:title" content="Cómo migrar de instancia">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/cover.jpg">
+  <meta property="og:image:secure_url" content="https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/cover.jpg">
+	<meta property="og:image:alt" content="Portada de las mini guías. Hoy, cómo migrar de instancia." />
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Sidiostedalimones",
+    "alternateName": "Si dios te da limones",
+    "url": "https://sidiostedalimones.com"
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/Brand",
+    "@type": "Thing",
+    "name": "Sidiostedalimones",
+    "logo": "https://sidiostedalimones.com/assets/images/brand/logo-sidiostedalimones.png",
+    "subjectOf": "CreativeWork"
+  }
+</script>
+
+
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/"
+    },
+    "headline": "Cómo migrar de instancia",
+    "image": [
+        "https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/cover.jpg"
+    ],
+    "datePublished": "2024-12-29T00:00:00.000Z",
+    "author": {
+        "@type": "Person",
+        "name": "Carlos Mañas"
+        "sameAs": "",
+        "email": "carlos@sidiostedalimones.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sidiostedalimones.com/assets/images/brand/logo-sidiostedalimones.png",
+        }
+    },
+    "description": ""
+  }
+  </script>
+
+
+	</head>
+	<body class="lemon">
+		<div class="lemon__container">
+			<header class="lemon__header">
+  <div class="wrapper">
+		<div class="lemon__brand">
+			<a href="/" class="lemon__brand-link">
+				<span class="lemon__brand-name">Sidiostedalimones</span>
+			</a>
+		</div>
+  </div>
+</header>
+
+			<main class="lemon__main main">
+				<article class="post post--entry">
+
+					<header class="post__header">
+	<div class="content">
+		<div class="wrapper">
+			<div class="content__inner">
+				<h1 class="post__title">
+					<span class="post__title-mark"><span class="post__title-mark-item">Cómo</span> <span class="post__title-mark-item">migrar</span> <span class="post__title-mark-item">de</span> <span class="post__title-mark-item">instancia</span></span></h1>
+				<a class="post__back" href="/">Volver a la home</a>
+
+				<div class="post__meta">
+					<p class="post__meta-time">
+						<time class="post__published-date" datetime="2024-12-29">29/12/2024</time>
+
+						
+							<time class="post__reading-time" datetime="PT8M">8 <abbr class="post__reading-time-abbr" title="minutos">min</abbr>.</time>
+						
+					</p>
+
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="post__cover " style="background-color: #">
+		
+			<img class="post__featured-image" src="img/cover.jpg" alt="Portada de las mini guías. Hoy, cómo migrar de instancia.">
+		
+	</div>
+</header>
+
+					<div class="content">
+						<div class="wrapper">
+							<div class="content__inner post__content">
+								<figure class="post__tldr">
+		<figcaption class="post__tldr-caption">TL;DR</figcaption>
+		<div class="post__tldr-content">
+			<div class="post__tldr-content-inner"><p class="post__tldr-paragraph">En Mastodon, y en el fediverso, puedes cambiar de instancia cuando quieras. <strong>El proceso es bastante automático</strong>.</p><p class="post__tldr-paragraph">Solo ten en cuenta que hashtags seguidos, filtros, bookmarks, bloqueos, muteos y las listas las tienes que pasar tú, y que <strong>los posts no se pasan a la nueva cuenta</strong>.</p></div>
+		</div>
+	</figure>
+<p>Hay un sistema para migrar de instancia que se ocupa casi de todo y que deja un mensaje en tu anterior perfil para que se sepa que te &quot;mudaste&quot;.</p>
+<h2>¿Por qué querría mudarme?</h2>
+<p>Pues hay muchas razones. Puede que en tu instancia la moderación no vaya muy bien, o puede que quieras ir a otra donde están tus colegues, o puede que te guste el nombre de otra instancia más, o no cumplas los requisitos de tu instancia actual, o que vaya a cerrar, o algo totalmente diferente. En una red de instancias federadas esto es una opción.</p>
+<h2>Vale, quiero mudarme/migrar, ¿cómo lo hago?</h2>
+<p>Vamos a ver en qué consiste, qué pasos se dan de forma automática y cuáles tienes que dar tú. Primero lo vemos por encima de manera que lo tengamos en la cabeza como idea y luego vamos al detalle.</p>
+<p>Para migrar de instancia necesitas:</p>
+<ol>
+<li>Hacer una copia de seguridad de tus datos y <strong>no borrar la cuenta actual</strong>.</li>
+<li>Crear una cuenta en la instancia nueva.</li>
+<li>En la instancia nueva tienes que marcar tu cuenta como que migras desde otro servidor.</li>
+<li>En la instancia antigua tienes que marcar tu cuenta como que vas a migrar a otro sitio.</li>
+<li>Dar un poco de tiempo porque el sistema es automático, pero no inmediato; puede tardar hasta unas horas.</li>
+<li>En la instancia nueva hay que importar los datos que faltan.</li>
+</ol>
+<p>Y ya estaría.</p>
+<blockquote>
+<p><strong>Tu cuenta antigua no necesitas borrarla</strong>.<br>Los posts se quedan allí y el proceso de migración coloca un mensaje para que quien llegue, sepa que te has mudado.</p>
+</blockquote>
+<h2>Vamos al turrón</h2>
+<p>Ya tenemos más o menos un esquema de lo que queremos hacer, ahora <strong>hay que hacerlo</strong>.</p>
+<h3>1. Copias de seguridad</h3>
+<p>En la cuenta actual/antigua (todavía no se ha migrado nada) vamos a ir a <strong>preferencias</strong>.</p>
+<figure class="post__media post__media--center"><img src="./img/00-preferences.png" alt="Localización de las preferencias desde el perfil de Mastodon" class="post__media-image"  ></figure>
+<p>Ahora nos vamos a <strong>Importar y exportar &gt; Exportar</strong>. Y nos vamos a descargar todos esos archivos CSV.</p>
+<p>Los <a href="https://es.wikipedia.org/wiki/Valores_separados_por_comas">CSV</a> son archivos de texto con datos separados por algún carácter, no tiene que ser una coma, aunque el nombre sea <strong>Comma-separated values</strong>.</p>
+<figure class="post__media post__media--center"><img src="./img/01-export.png" alt="Listado de archivos CSV que nos queremos descargar." class="post__media-image"  ></figure>
+<p>Estos archivos <strong>los vamos a usar más adelante para importarlos en la nueva cuenta</strong>.</p>
+<blockquote>
+<p>El archivo de posts y media (imágenes, vídeos y audios) no es necesario, aunque siempre es buena idea.</p>
+</blockquote>
+<p>Hay dos temas que son un poco más <em>trickies</em> porque ni se pasan automáticamente ni tampoco se importan o exportan. Son los hashtags que sigues y los filtros que tengas.</p>
+<p>Pero no pasa nada porque vamos a ver cómo se hace.</p>
+<h4>Hashtags seguidos</h4>
+<p>Para los hashtags que seguimos nos vamos a nuestro perfil y buscamos <strong>los tres punticos</strong>, que despliegan una serie de opciones.</p>
+<figure class="post__media post__media--center"><img src="./img/02-hashtags.png" alt="Opción para ver los hashtags que seguimos." class="post__media-image"  ></figure>
+<p>Esta opción nos lleva a la pantalla con el listado de hashtag que seguimos y lamentablemente hay que apuntarlos uno a uno.</p>
+<p><strong>Old school</strong>, en una libretica, o en una nota digital, como los modernos.</p>
+<figure class="post__media post__media--center"><img src="./img/03-hashtags.png" alt="Listado de hashtags que seguimos." class="post__media-image"  ></figure>
+<p><strong>¡No juzgarme por mis hashtags! Me ha dado pereza editarlo para que no se vean.</strong></p>
+<h4>Filtros</h4>
+<p>Los filtros es otro &quot;lamentablemente&quot;. Vamos a <strong>Preferencias &gt; Filtros</strong>:</p>
+<figure class="post__media post__media--center"><img src="./img/04-filters.png" alt="Filtros que tenemos configurados." class="post__media-image"  ></figure>
+<p>Y aquí iremos uno a uno, editando y apuntando cómo los tengamos ajustados. ¿Ves de dónde viene el &quot;lamentablemente&quot;?</p>
+<p><strong>Igual que antes, me ha dado pereza editarlo, intentad no juzgarme. Intentadlo bien</strong>.</p>
+<h4>¿Nos hemos dejado algo?</h4>
+<p>Pues puede, el perfil no tengo claro si se rellena solo o no, pero es un buen momento para apuntar lo que necesites y rellenarlo en el siguiente punto, al crear la cuenta. Acuérdate de la imagen del avatar y la del banner ;)</p>
+<h3>2 y 3. Crear la cuenta nueva en la nueva instancia</h3>
+<p>Aquí hay poco que contar: crea la cuenta en la instancia que hayas elegido e inicia sesión.</p>
+<p>Ahora es un buen momento para rellenar el perfil.</p>
+<p>Ahora vamos a ir a <strong>Preferencias &gt; Cuenta &gt; Ajustes</strong> (no sé los nombres exactos en español).</p>
+<figure class="post__media post__media--center"><img src="./img/10-account.png" alt="Sección de cuenta." class="post__media-image"  ></figure>
+<p>Abajo del todo tenemos dos opciones, <strong>Ir a una cuenta diferente</strong> y <strong>Moviéndose desde una cuenta diferente</strong>.</p>
+<p>Estas dos opciones están en el apartado de cuenta de tus dos perfiles.</p>
+<ul>
+<li>La segunda la usaremos en la cuenta nueva (este paso tiene que ser el primero)</li>
+<li>La primera la usaremos en la cuenta antigua.</li>
+</ul>
+<p>Entonces, ya que estamos en la cuenta nueva, vamos a esa segunda opción para decirle a la cuenta nueva de dónde vamos a venir.</p>
+<figure class="post__media post__media--center"><img src="./img/11-moving-from-a-different-account.png" alt="Pantalla para configurar de qué cuenta venimos a la cuenta nueva." class="post__media-image"  ></figure>
+<p>Nos saldrá un campo donde poner nuestra cuenta antigua, tiene que ser algo del tipo <code>@username@domain.ext</code>.
+Y le damos al botón de &quot;Crear alias&quot;.</p>
+<h3>4. Iniciar la migración desde la cuenta antigua</h3>
+<p>Ahora nos vamos a la cuenta antigua, iniciamos sesión y nos vamos a <strong>Preferencias &gt; Cuenta &gt; Ajustes</strong> y buscamos esa primera opción &quot;Ir a una cuenta diferente&quot; y hacemos clic.</p>
+<figure class="post__media post__media--center"><img src="./img/12-move-to-a-different-account.png" alt="Pantalla para iniciar el proceso de migración de followers." class="post__media-image"  ></figure>
+<p>Aquí vamos a decirle a la cuenta antigua que mueva los seguidores a la nueva. Para ello introduciremos el usuario nuevo (en formato <code>@username@domain.ext</code>) y <strong>la contraseña de la cuenta actual</strong>. Y clic al botón de mover seguidores.</p>
+<h3>5. ¿Qué va a pasar ahora?</h3>
+<p>Ahora se inicia el proceso de migración de followers. Esto, por lo visto, no se hace del tirón sino que poco a poco y según vayan de cargados los servidores. Lo normal es que en unas horas tengas a todos los seguidores y seguidos.</p>
+<p>Además, aparecerá una nota en tu cuenta antigua indicando que te has mudado a la nueva.</p>
+<p>La cuenta antigua quedará limitada y podrás entrar a exportar cosas (ya no lo necesitas porque lo hemos hecho lo primero) o reactivarla si cambias de opinión.</p>
+<p>Puedes hacer lo que quieras, pero <strong>no te recomiendo borrarla</strong>.</p>
+<h3>6. Importar en la nueva cuenta lo que falta</h3>
+<p>Como dije al principio, hay una serie de rollis que no se pasan automáticamente y hay que hacerlo a maneto.</p>
+<p>Pues ahora vamos a importar lo que hemos exportado en el paso 1. Quizás es e momento de poner ese podcast al que llevamos dando largas un tiempo. Por lo que sea.</p>
+<p>Primero vamos a ir a por lo facilico y vamos a importar esos CSV que tenemos ahí esperando como agua de mayo.</p>
+<p>Nos vamos, en la cuenta nueva, obvio, a <strong>Preferencias &gt; Importar y exportar &gt; Importar</strong>:</p>
+<figure class="post__media post__media--center"><img src="./img/20-import.png" alt="Pantalla para importar diferentes datos." class="post__media-image"  ></figure>
+<p>El proceso es todo el rato lo mismo:</p>
+<ol>
+<li>Seleccionamos del listado lo que queremos importar.</li>
+<li>Si es una cuenta 100% nueva da igual, pero no duele dejar siempre la opción de &quot;mezclar&quot;.</li>
+<li>Adjuntamos el archivo CSV correspondiente</li>
+<li>Clic al botón de subir.</li>
+<li>Abajo irá apareciendo un reporte de lo que vas haciendo y el progreso, y si algo ha ido mal.</li>
+</ol>
+<p>El el desplegable salen las siguientes opciones:</p>
+<figure class="post__media post__media--center"><img src="./img/21-import-dropdown.png" alt="Opciones del desplegable del tipo de dato que quieres importar." class="post__media-image"  ></figure>
+<ul>
+<li><strong>Seguidos y bookmarks</strong>
+<ul>
+<li>Lista de seguidos</li>
+<li>Bookmarks</li>
+<li>Listas</li>
+</ul>
+</li>
+<li><strong>Bloqueos y mutes</strong>
+<ul>
+<li>Lista de muteados</li>
+<li>Lista de bloqueados</li>
+<li>Lista de dominios bloqueados</li>
+</ul>
+</li>
+</ul>
+<p>Lo normal es que la lista de gente a la que sigues se haya pasado, si eso, la dejaría para el final.</p>
+<blockquote>
+<p>Este proceso también depende de si son 4 o 4000 criaturas; puede llevar un tiempo.</p>
+</blockquote>
+<p>Ahora quedan los hashtags que seguimos y los filtros. Igual esta no va a ser la parte más emocionante:</p>
+<ul>
+<li>Para los <strong>hashtags</strong> hay que ir buscándolos uno a uno, y dándole a seguir.</li>
+<li>Para los <strong>filtros</strong> hay que ir recreándolos uno a uno. No vamos a <strong>Preferencias &gt; Filtros</strong>, y quizás es un buen momento para hacerse un tecito o algo.</li>
+</ul>
+<hr>
+<p>Con esto ya debería estar todo más o menos en su sitio. Es mucho menos de lo que parece y recuerda que no es un trabajo, lo puedes ir haciendo con la calma.</p>
+<p>Y si puedes, <strong>dona al admin de tu instancia y entre todes mantenemos esto :)</strong></p>
+<p>Por cierto, si algo no es correcto o no se entiende, dímelo sin problema y estaré encantado de corregirlo.</p>
+
+								     
+							</div>
+						</div>
+					</div>
+					<footer class="post__footer">
+
+						<figure class="post__ya">
+							<img class="post__ya-image" src="img/masto.svg" alt="Logo simple de Mastodon en azul moradete.">
+						</figure>
+
+						<div class="wrapper">
+							
+
+<a href="mailto:comments@sidiostedalimones.com?subject=%5BComment%5D%20Cómo%20migrar%20de%20instancia&amp;body=→%20Escribe%20tu%20comentario%20aquí%0A%0A%23ComoMigrarDeInstancia%20%23SiDiosTeDaLimones%0Ahttps://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/%0A" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">
+	<div class="content__social-comment">
+		<div class="content__social-comment-icon"></div>
+		<p class="content__social-comment-info">
+			<span class="content__social-comment-info-inner">
+				<span class="content__social-comment-clickbait">¿Te ha servido esta guía?</span> Responde por email!
+			</span>
+		</p>
+	</div>
+</a>
+
+						</div>
+					</footer>
+				</article>
+			</main>
+			<footer class="lemon__footer">
+	<div class="wrapper">
+			<div class="lemon__footer-content">
+				<p class="lemon__license">
+					<a class="lemon__cc" href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a> 2024 ~ <a class="lemon__author" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="/chuck">Carlos Mañas</a>
+				</p>
+			</div>
+		</div>
+</footer>
+
+<a href="https://librecounter.org/referer/show" target="_blank" class="librecounter" aria-hidden="true">
+	<img src="https://librecounter.org/counter.svg" referrerPolicy="unsafe-url" />
+</a>
+
+
+
+		</div>
+	</body>
+</html>

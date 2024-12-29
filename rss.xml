@@ -14,7 +14,142 @@
 	</image>
 	<copyright>2024 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Thu, 26 Dec 2024 16:47:59 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 29 Dec 2024 20:04:48 GMT</lastBuildDate>
+	
+	<item>
+		<title>Cómo migrar de instancia</title>
+		<description>¿Quieres migrar de instancia y no te aclaras? Yo te lo cuento.</description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/cover.jpg&quot; alt=&quot;Portada de las mini guías. Hoy, cómo migrar de instancia.&quot;&gt;&lt;/p&gt;
+			&lt;figure class=&quot;post__tldr&quot;&gt;
+		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
+		&lt;div class=&quot;post__tldr-content&quot;&gt;
+			&lt;div class=&quot;post__tldr-content-inner&quot;&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;En Mastodon, y en el fediverso, puedes cambiar de instancia cuando quieras. &lt;strong&gt;El proceso es bastante automático&lt;/strong&gt;.&lt;/p&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;Solo ten en cuenta que hashtags seguidos, filtros, bookmarks, bloqueos, muteos y las listas las tienes que pasar tú, y que &lt;strong&gt;los posts no se pasan a la nueva cuenta&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/figure&gt;
+&lt;p&gt;Hay un sistema para migrar de instancia que se ocupa casi de todo y que deja un mensaje en tu anterior perfil para que se sepa que te &amp;quot;mudaste&amp;quot;.&lt;/p&gt;
+&lt;h2&gt;¿Por qué querría mudarme?&lt;/h2&gt;
+&lt;p&gt;Pues hay muchas razones. Puede que en tu instancia la moderación no vaya muy bien, o puede que quieras ir a otra donde están tus colegues, o puede que te guste el nombre de otra instancia más, o no cumplas los requisitos de tu instancia actual, o que vaya a cerrar, o algo totalmente diferente. En una red de instancias federadas esto es una opción.&lt;/p&gt;
+&lt;h2&gt;Vale, quiero mudarme/migrar, ¿cómo lo hago?&lt;/h2&gt;
+&lt;p&gt;Vamos a ver en qué consiste, qué pasos se dan de forma automática y cuáles tienes que dar tú. Primero lo vemos por encima de manera que lo tengamos en la cabeza como idea y luego vamos al detalle.&lt;/p&gt;
+&lt;p&gt;Para migrar de instancia necesitas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Hacer una copia de seguridad de tus datos y &lt;strong&gt;no borrar la cuenta actual&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Crear una cuenta en la instancia nueva.&lt;/li&gt;
+&lt;li&gt;En la instancia nueva tienes que marcar tu cuenta como que migras desde otro servidor.&lt;/li&gt;
+&lt;li&gt;En la instancia antigua tienes que marcar tu cuenta como que vas a migrar a otro sitio.&lt;/li&gt;
+&lt;li&gt;Dar un poco de tiempo porque el sistema es automático, pero no inmediato; puede tardar hasta unas horas.&lt;/li&gt;
+&lt;li&gt;En la instancia nueva hay que importar los datos que faltan.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Y ya estaría.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tu cuenta antigua no necesitas borrarla&lt;/strong&gt;.&lt;br&gt;Los posts se quedan allí y el proceso de migración coloca un mensaje para que quien llegue, sepa que te has mudado.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Vamos al turrón&lt;/h2&gt;
+&lt;p&gt;Ya tenemos más o menos un esquema de lo que queremos hacer, ahora &lt;strong&gt;hay que hacerlo&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;1. Copias de seguridad&lt;/h3&gt;
+&lt;p&gt;En la cuenta actual/antigua (todavía no se ha migrado nada) vamos a ir a &lt;strong&gt;preferencias&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/00-preferences.png&quot; alt=&quot;Localización de las preferencias desde el perfil de Mastodon&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;Ahora nos vamos a &lt;strong&gt;Importar y exportar &amp;gt; Exportar&lt;/strong&gt;. Y nos vamos a descargar todos esos archivos CSV.&lt;/p&gt;
+&lt;p&gt;Los &lt;a href=&quot;https://es.wikipedia.org/wiki/Valores_separados_por_comas&quot;&gt;CSV&lt;/a&gt; son archivos de texto con datos separados por algún carácter, no tiene que ser una coma, aunque el nombre sea &lt;strong&gt;Comma-separated values&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/01-export.png&quot; alt=&quot;Listado de archivos CSV que nos queremos descargar.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;Estos archivos &lt;strong&gt;los vamos a usar más adelante para importarlos en la nueva cuenta&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;El archivo de posts y media (imágenes, vídeos y audios) no es necesario, aunque siempre es buena idea.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hay dos temas que son un poco más &lt;em&gt;trickies&lt;/em&gt; porque ni se pasan automáticamente ni tampoco se importan o exportan. Son los hashtags que sigues y los filtros que tengas.&lt;/p&gt;
+&lt;p&gt;Pero no pasa nada porque vamos a ver cómo se hace.&lt;/p&gt;
+&lt;h4&gt;Hashtags seguidos&lt;/h4&gt;
+&lt;p&gt;Para los hashtags que seguimos nos vamos a nuestro perfil y buscamos &lt;strong&gt;los tres punticos&lt;/strong&gt;, que despliegan una serie de opciones.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/02-hashtags.png&quot; alt=&quot;Opción para ver los hashtags que seguimos.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;Esta opción nos lleva a la pantalla con el listado de hashtag que seguimos y lamentablemente hay que apuntarlos uno a uno.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Old school&lt;/strong&gt;, en una libretica, o en una nota digital, como los modernos.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/03-hashtags.png&quot; alt=&quot;Listado de hashtags que seguimos.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;¡No juzgarme por mis hashtags! Me ha dado pereza editarlo para que no se vean.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4&gt;Filtros&lt;/h4&gt;
+&lt;p&gt;Los filtros es otro &amp;quot;lamentablemente&amp;quot;. Vamos a &lt;strong&gt;Preferencias &amp;gt; Filtros&lt;/strong&gt;:&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/04-filters.png&quot; alt=&quot;Filtros que tenemos configurados.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;Y aquí iremos uno a uno, editando y apuntando cómo los tengamos ajustados. ¿Ves de dónde viene el &amp;quot;lamentablemente&amp;quot;?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Igual que antes, me ha dado pereza editarlo, intentad no juzgarme. Intentadlo bien&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4&gt;¿Nos hemos dejado algo?&lt;/h4&gt;
+&lt;p&gt;Pues puede, el perfil no tengo claro si se rellena solo o no, pero es un buen momento para apuntar lo que necesites y rellenarlo en el siguiente punto, al crear la cuenta. Acuérdate de la imagen del avatar y la del banner ;)&lt;/p&gt;
+&lt;h3&gt;2 y 3. Crear la cuenta nueva en la nueva instancia&lt;/h3&gt;
+&lt;p&gt;Aquí hay poco que contar: crea la cuenta en la instancia que hayas elegido e inicia sesión.&lt;/p&gt;
+&lt;p&gt;Ahora es un buen momento para rellenar el perfil.&lt;/p&gt;
+&lt;p&gt;Ahora vamos a ir a &lt;strong&gt;Preferencias &amp;gt; Cuenta &amp;gt; Ajustes&lt;/strong&gt; (no sé los nombres exactos en español).&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/10-account.png&quot; alt=&quot;Sección de cuenta.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;Abajo del todo tenemos dos opciones, &lt;strong&gt;Ir a una cuenta diferente&lt;/strong&gt; y &lt;strong&gt;Moviéndose desde una cuenta diferente&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Estas dos opciones están en el apartado de cuenta de tus dos perfiles.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La segunda la usaremos en la cuenta nueva (este paso tiene que ser el primero)&lt;/li&gt;
+&lt;li&gt;La primera la usaremos en la cuenta antigua.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Entonces, ya que estamos en la cuenta nueva, vamos a esa segunda opción para decirle a la cuenta nueva de dónde vamos a venir.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/11-moving-from-a-different-account.png&quot; alt=&quot;Pantalla para configurar de qué cuenta venimos a la cuenta nueva.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;Nos saldrá un campo donde poner nuestra cuenta antigua, tiene que ser algo del tipo &lt;code&gt;@username@domain.ext&lt;/code&gt;.
+Y le damos al botón de &amp;quot;Crear alias&amp;quot;.&lt;/p&gt;
+&lt;h3&gt;4. Iniciar la migración desde la cuenta antigua&lt;/h3&gt;
+&lt;p&gt;Ahora nos vamos a la cuenta antigua, iniciamos sesión y nos vamos a &lt;strong&gt;Preferencias &amp;gt; Cuenta &amp;gt; Ajustes&lt;/strong&gt; y buscamos esa primera opción &amp;quot;Ir a una cuenta diferente&amp;quot; y hacemos clic.&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/12-move-to-a-different-account.png&quot; alt=&quot;Pantalla para iniciar el proceso de migración de followers.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;Aquí vamos a decirle a la cuenta antigua que mueva los seguidores a la nueva. Para ello introduciremos el usuario nuevo (en formato &lt;code&gt;@username@domain.ext&lt;/code&gt;) y &lt;strong&gt;la contraseña de la cuenta actual&lt;/strong&gt;. Y clic al botón de mover seguidores.&lt;/p&gt;
+&lt;h3&gt;5. ¿Qué va a pasar ahora?&lt;/h3&gt;
+&lt;p&gt;Ahora se inicia el proceso de migración de followers. Esto, por lo visto, no se hace del tirón sino que poco a poco y según vayan de cargados los servidores. Lo normal es que en unas horas tengas a todos los seguidores y seguidos.&lt;/p&gt;
+&lt;p&gt;Además, aparecerá una nota en tu cuenta antigua indicando que te has mudado a la nueva.&lt;/p&gt;
+&lt;p&gt;La cuenta antigua quedará limitada y podrás entrar a exportar cosas (ya no lo necesitas porque lo hemos hecho lo primero) o reactivarla si cambias de opinión.&lt;/p&gt;
+&lt;p&gt;Puedes hacer lo que quieras, pero &lt;strong&gt;no te recomiendo borrarla&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;6. Importar en la nueva cuenta lo que falta&lt;/h3&gt;
+&lt;p&gt;Como dije al principio, hay una serie de rollis que no se pasan automáticamente y hay que hacerlo a maneto.&lt;/p&gt;
+&lt;p&gt;Pues ahora vamos a importar lo que hemos exportado en el paso 1. Quizás es e momento de poner ese podcast al que llevamos dando largas un tiempo. Por lo que sea.&lt;/p&gt;
+&lt;p&gt;Primero vamos a ir a por lo facilico y vamos a importar esos CSV que tenemos ahí esperando como agua de mayo.&lt;/p&gt;
+&lt;p&gt;Nos vamos, en la cuenta nueva, obvio, a &lt;strong&gt;Preferencias &amp;gt; Importar y exportar &amp;gt; Importar&lt;/strong&gt;:&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/20-import.png&quot; alt=&quot;Pantalla para importar diferentes datos.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;p&gt;El proceso es todo el rato lo mismo:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Seleccionamos del listado lo que queremos importar.&lt;/li&gt;
+&lt;li&gt;Si es una cuenta 100% nueva da igual, pero no duele dejar siempre la opción de &amp;quot;mezclar&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Adjuntamos el archivo CSV correspondiente&lt;/li&gt;
+&lt;li&gt;Clic al botón de subir.&lt;/li&gt;
+&lt;li&gt;Abajo irá apareciendo un reporte de lo que vas haciendo y el progreso, y si algo ha ido mal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;El el desplegable salen las siguientes opciones:&lt;/p&gt;
+&lt;figure class=&quot;post__media post__media--center&quot;&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/21-import-dropdown.png&quot; alt=&quot;Opciones del desplegable del tipo de dato que quieres importar.&quot; class=&quot;post__media-image&quot;  &gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Seguidos y bookmarks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Lista de seguidos&lt;/li&gt;
+&lt;li&gt;Bookmarks&lt;/li&gt;
+&lt;li&gt;Listas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bloqueos y mutes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Lista de muteados&lt;/li&gt;
+&lt;li&gt;Lista de bloqueados&lt;/li&gt;
+&lt;li&gt;Lista de dominios bloqueados&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lo normal es que la lista de gente a la que sigues se haya pasado, si eso, la dejaría para el final.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Este proceso también depende de si son 4 o 4000 criaturas; puede llevar un tiempo.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ahora quedan los hashtags que seguimos y los filtros. Igual esta no va a ser la parte más emocionante:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Para los &lt;strong&gt;hashtags&lt;/strong&gt; hay que ir buscándolos uno a uno, y dándole a seguir.&lt;/li&gt;
+&lt;li&gt;Para los &lt;strong&gt;filtros&lt;/strong&gt; hay que ir recreándolos uno a uno. No vamos a &lt;strong&gt;Preferencias &amp;gt; Filtros&lt;/strong&gt;, y quizás es un buen momento para hacerse un tecito o algo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Con esto ya debería estar todo más o menos en su sitio. Es mucho menos de lo que parece y recuerda que no es un trabajo, lo puedes ir haciendo con la calma.&lt;/p&gt;
+&lt;p&gt;Y si puedes, &lt;strong&gt;dona al admin de tu instancia y entre todes mantenemos esto :)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Por cierto, si algo no es correcto o no se entiende, dímelo sin problema y estaré encantado de corregirlo.&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/img/masto.svg&quot; width=&quot;56&quot; alt=&quot;Logo simple de Mastodon en azul moradete.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>guía</category>
+		
+		<link>https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2024/como-migrar-de-instancia/</guid>
+		<pubDate>Sun, 29 Dec 2024 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Mazmorreo diario con Rogule</title>
