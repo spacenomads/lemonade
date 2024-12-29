@@ -586,6 +586,13 @@ a {
   margin: 2rem 0 1.5rem;
 }
 
+.post__content h4 {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 500;
+  margin: 1.5rem 0 1rem;
+}
+
 .post__content > p,
 .post__content > ul,
 .post__content > ol,
@@ -1226,6 +1233,10 @@ p + .post__tldr {
     font-size: 1.375rem;
     line-height: 150%;
   }
+  .post__content h4 {
+    font-size: 1.25rem;
+    line-height: 150%;
+  }
   .post__content > blockquote:not(.post__quote-block) {
     margin: 2rem 0;
     padding: 1.5rem;
@@ -1498,6 +1509,13 @@ p + .post__tldr {
   }
   .post__content h3 {
     margin: 4rem 0 2rem;
+  }
+  .post__content h4 {
+    font-size: 1.625rem;
+    line-height: 150%;
+  }
+  .post__content h4 {
+    margin: 3.5rem 0 1.5rem;
   }
   .post__content > p,
   .post__content > ul,
