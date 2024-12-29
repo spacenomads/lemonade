@@ -218,7 +218,7 @@ El el desplegable salen las siguientes opciones:
 
 Lo normal es que la lista de gente a la que sigues se haya pasado, si eso, la dejaría para el final.
 
-Me dicen por [el pinganillo](https://frikiverse.zone/@loar/113738346084584359) que puede que las listas también se pasan automáticamente. Este archivo también me lo dejaría para el final e iría viendo si igual no hace falta importarlo.
+Me dicen por [el pinganillo](https://frikiverse.zone/@loar/113738346084584359) que puede que las listas también se pasen automáticamente. Este archivo también me lo dejaría para el final e iría viendo si igual no hace falta importarlo.
 
 > Este proceso también depende de si son 4 o 4000 criaturas; puede llevar un tiempo.
 
