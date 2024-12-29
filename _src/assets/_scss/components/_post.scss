@@ -168,6 +168,15 @@
 	}
 }
 
+.post__content h4 {
+	@include core.font(h4);
+	margin: core.rem(core.$unit * 3) 0 core.rem(core.$unit * 2);
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 7) 0 core.rem(core.$unit * 3) ;
+	}
+}
+
 .post__content > p,
 .post__content > ul,
 .post__content > ol,
