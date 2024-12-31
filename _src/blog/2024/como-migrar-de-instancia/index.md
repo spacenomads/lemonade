@@ -9,7 +9,7 @@ date: 2024-12-29
 draft: false
 categories: [guía]
 tags: [mastodon, migrar, instancia]
-description: ¿Quieres migrar de instancia y no te aclaras? Yo te lo cuento.
+excerpt: ¿Quieres migrar de instancia y no te aclaras? Yo te lo cuento.
 clickbait: ¿Te ha servido esta guía?
 ---
 {% import "components/post/macros.njk" as macros %}
