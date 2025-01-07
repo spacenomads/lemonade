@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="rss/pretty-feed-v3.xsl" type="text/xsl"?>
+<?xml-stylesheet href="/feed/pretty-feed-v3.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-	<atom:link href="https://sidiostedalimones.com/rss.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sidiostedalimones.com/feed/rss.xml" rel="self" type="application/rss+xml" />
 	<title>Si dios te da limones</title>
 	<description>Feed RSS de sidiostedalimones.com</description>
 	<link>https://sidiostedalimones.com</link>
 	<language>es-es</language>
 	<image>
-		<url>https://sidiostedalimones.com/rss/lemon.png</url>
+		<url>https://sidiostedalimones.com/feed/lemon.png</url>
 		<title>Si dios te da limones</title>
 		<link>https://sidiostedalimones.com</link>
 	</image>
-	<copyright>2024 CC BY-SA 4.0 International</copyright>
+	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Mon, 30 Dec 2024 10:05:13 GMT</lastBuildDate>
+	<lastBuildDate>Tue, 07 Jan 2025 17:07:30 GMT</lastBuildDate>
 	
 	<item>
 		<title>Cómo migrar de instancia</title>
