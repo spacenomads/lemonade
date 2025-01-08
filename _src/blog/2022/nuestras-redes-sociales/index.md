@@ -9,7 +9,7 @@ date: 2022-05-16
 draft: false
 categories: [rrss, web0]
 tags: [redes sociales, mastodon, pixelfed]
-description: Resumen del problema actual con las redes sociales, y qué opciones tenemos.
+excerpt: Resumen del problema actual con las redes sociales, y qué opciones tenemos.
 clickbait: ¿Te vienes o qué?
 ---
 {% import "components/post/macros.njk" as macros %}

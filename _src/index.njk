@@ -5,19 +5,19 @@ eleventyNavigation:
   key: home
 ---
 {# TODO: Madre de Crom, esto hay que automatizarlo y unificarlo, chatiqui, que yo te quiero mucho y tal, pero me has metido el año en curso y los siguientes a PINCHAQUEN!  #}
-{% set current_posts = collections.blog | filterByYear(2024) | reverse %}
+{% set current_posts = collections.blog | filterByYear(2025) | reverse %}
 {% if (current_posts.length) %}
-<section class="home-posts home-posts--latest home-posts--2024" data-published="{{ settings.version }}" data-mode="{{ settings.mode }}">
+<section class="home-posts home-posts--latest home-posts--2025" data-published="{{ settings.version }}" data-mode="{{ settings.mode }}">
 	<div class="wrapper">
 		<div class="home-posts__content">
 			<h1 class="sr-only">Mis posts</h1>
-			<h2 class="home-posts__year sr-only">2023</h2>
+			<h2 class="home-posts__year sr-only">2025</h2>
 			<ul class="home-posts__items">
 					{% for post in current_posts %}
 						<li class="home-posts__item">
 
 							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
-								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}">
+								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}" {% if post.data.featured_color %}style="background-color: #{{ post.data.featured_color }}" {% endif %}>
 
 									<h3 class="home-post__title">
 										<span class="home-post__mark">{{ post.data.title }}</span>

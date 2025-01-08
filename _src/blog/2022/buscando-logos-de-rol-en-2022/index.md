@@ -9,7 +9,7 @@ date: 2022-02-28
 draft: false
 categories: [rol]
 tags: [rol, logo, vectorial, portadas]
-description: Buscar logos vectoriales de sistemas de rol tiene su aquel, y te lo cuento.
+excerpt: Buscar logos vectoriales de sistemas de rol tiene su aquel, y te lo cuento.
 clickbait: ¿Juegas a rol? ¿A qué?
 ---
 {% import "components/post/macros.njk" as macros %}

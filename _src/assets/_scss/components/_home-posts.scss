@@ -305,7 +305,7 @@
 
 
 
-// 5. 2023
+// 6. 2023
 // ---
 .home-posts--2023 {
 	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
@@ -331,7 +331,7 @@
 
 
 
-// 6. 2024
+// 7. 2024
 // ---
 .home-posts--2024 {
 	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
@@ -365,6 +365,28 @@
 			&:nth-child(5) {
 				grid-row: span 1;
 				grid-column: span 3;
+			}
+		}
+	}
+}
+
+// 8. 2025
+// ---
+.home-posts--2025 {
+	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-row: span 4;
+				grid-column: span 6;
+			}
+		}
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		.home-posts__item {
+			&:nth-child(1) {
+				grid-row: span 3;
+				grid-column: span 6;
 			}
 		}
 	}

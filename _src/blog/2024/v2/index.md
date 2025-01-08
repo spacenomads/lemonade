@@ -9,7 +9,7 @@ date: 2024-01-04
 draft: false
 categories: [blog, front]
 tags: [blog, desarrollo, limonada, cambio de estilo, 11ty, gulp, penpot]
-description: Tras mucho esfuerzo y 40 sesiones en vídeo, he sacado el rediseño de mi blog.
+excerpt: Tras mucho esfuerzo y 40 sesiones en vídeo, he sacado el rediseño de mi blog.
 clickbait: ¿Te gusta el nuevo diseño?
 cover_credits:
   link: https://unsplash.com/@francescocantinellifoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText

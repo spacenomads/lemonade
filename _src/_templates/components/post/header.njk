@@ -24,7 +24,11 @@
 							{% endif%}
 
 							{% if cover_credits.site %}
-							| <a href="{{ credits[cover_credits.site.toLowerCase()]}}" class="post__link">{{ cover_credits.site }}</a>
+								{% if credits[cover_credits.site.toLowerCase()] %}
+									| <a href="{{ credits[cover_credits.site.toLowerCase()]}}" class="post__link">{{ cover_credits.site }}</a>
+								{% else %}
+									| <a href="{{ cover_credits.link }}" class="post__link">{{ cover_credits.site }}</a>
+								{% endif %}
 							{% endif %}
 						</p>
 					{% endif %}
@@ -34,7 +38,7 @@
 		</div>
 	</div>
 
-	<div class="post__cover {{ '' if featured_image else 'post__cover--no-img' }}" style="background-color: #{{ featured_color}}">
+	<div class="post__cover {{ '' if featured_image else 'post__cover--no-img' }}" style="background-color: #{{ featured_color }}">
 		{% if featured_image %}
 			<img class="post__featured-image" src="img/{{ featured_image }}" alt="{{ featured_alt }}">
 		{% endif %}

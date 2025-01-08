@@ -48,5 +48,5 @@ module.exports = {
   year: getYear(),
 	date: getCurrentFormattedDate(),
 	build_date: new Date(),
-	post_years: [2023, 2022, 2021]
+	post_years: [2024, 2023, 2022, 2021]
 }
