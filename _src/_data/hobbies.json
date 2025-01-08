@@ -1,19 +1,19 @@
 {
-  "intro": "Ahora estoy pudiendo empezar a ver series de nuevo, series que no haya visto nunca, y a echar ratos de lectura y de videojuegos.",
+  "intro": "Estoy intentando escribir, y me está molando, que siempre había querido pero no acaba de animarme. Y leer más. Y tb jugar más.",
   "items": [
     {
       "title":"En papel, o no",
       "icon":"book",
-      "content":"El Miedo, de María Hesse",
+      "content":"Cabezología",
       "link":{
-        "url": "https://lectura.social/book/130611/s/el-miedo",
+        "url": "https://lectura.social/book/125982/s/cabezologia",
         "label": "Lectura.social"
       }
     },
     {
       "title":"En la Play",
       "icon":"ps5",
-      "content":"Soul Reaver 1&2",
+      "content":"Soul Reaver 1",
       "link":{
         "url": "https://www.playstation.com/es-es/games/legacy-of-kain-soul-reaver-1-2-remastered/",
         "label": "playstation.com"
