@@ -34,7 +34,7 @@ module.exports = function (config) {
 	config.addPassthroughCopy('_src/assets/css');
 	config.addPassthroughCopy('_src/assets/images');
 	config.addPassthroughCopy('_src/assets/js');
-	config.addPassthroughCopy({'_src/assets/rss': '/rss'});
+	config.addPassthroughCopy({'_src/assets/feed': '/feed'});
 
 	config.addPlugin(eleventyNavigationPlugin);
 
