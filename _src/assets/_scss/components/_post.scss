@@ -189,6 +189,14 @@
 	}
 }
 
+.post__content ul,
+.post__content ol {
+	li::marker {
+		color: core.$color-link;
+
+	}
+}
+
 .post__content pre {
 	margin: 0 0 core.rem(core.$unit * 3);
 

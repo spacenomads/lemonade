@@ -8,7 +8,7 @@ reading_time: 3
 date: 2022-01-05
 draft: false
 categories: [design, front]
-description: Hay más vida fuera de figma. Aquí en casa Kaleidos está desarrollando una herramienta de diseño y prototipado de código abierto y basada en el estándar SVG.
+excerpt: Hay más vida fuera de figma. Aquí en casa Kaleidos está desarrollando una herramienta de diseño y prototipado de código abierto y basada en el estándar SVG.
 clickbait: ¿Lo has probado ya?
 ---
 {% import "components/post/macros.njk" as macros %}

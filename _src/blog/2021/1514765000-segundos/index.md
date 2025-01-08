@@ -8,7 +8,7 @@ reading_time: 2
 date: 2021-10-13
 draft: false
 categories: [birthday]
-description: Cómo vamos a afrontar los 48 años.
+excerpt: Cómo vamos a afrontar los 48 años.
 clickbait: ¿Tiene sentido?
 ---
 

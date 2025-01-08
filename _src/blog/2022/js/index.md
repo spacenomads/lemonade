@@ -9,7 +9,7 @@ date: 2022-04-18
 draft: false
 categories: [front]
 tags: [programación, js, miedo]
-description: Mi relación con javascript no es mala, pero...
+excerpt: Mi relación con javascript no es mala, pero...
 clickbait: ¿Cómo nos llevamos con el JS?
 ---
 

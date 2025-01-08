@@ -9,7 +9,7 @@ date: 2024-01-21
 draft: false
 categories: [ia]
 tags: [ia, robar, privacidad, confidencialidad, empresa, límites]
-description: Estamos pagando por nuestro propio trabajo...
+excerpt: Estamos pagando por nuestro propio trabajo...
 clickbait: ¿De verdad la necesitamos?
 ---
 {% import "components/post/macros.njk" as macros %}

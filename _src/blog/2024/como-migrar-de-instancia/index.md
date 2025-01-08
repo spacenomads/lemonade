@@ -9,7 +9,7 @@ date: 2024-12-29
 draft: false
 categories: [guía]
 tags: [mastodon, migrar, instancia]
-description: ¿Quieres migrar de instancia y no te aclaras? Yo te lo cuento.
+excerpt: ¿Quieres migrar de instancia y no te aclaras? Yo te lo cuento.
 clickbait: ¿Te ha servido esta guía?
 ---
 {% import "components/post/macros.njk" as macros %}
@@ -220,7 +220,7 @@ Lo normal es que la lista de gente a la que sigues se haya pasado, si eso, la de
 
 Me dicen por [el pinganillo](https://frikiverse.zone/@loar/113738346084584359) que puede que las listas también se pasen automáticamente. Este archivo también me lo dejaría para el final e iría viendo si igual no hace falta importarlo.
 
-> Este proceso también depende de si son 4 o 4000 criaturas; puede llevar un tiempo.
+> Este proceso de importación también depende de si los archivos llevan 4 o 4000 criaturas; vamos, que puede llevar un tiempo.
 
 Ahora quedan los hashtags que seguimos y los filtros. Igual esta no va a ser la parte más emocionante:
 

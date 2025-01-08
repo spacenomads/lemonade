@@ -9,7 +9,6 @@ reading_time: 3
 date: 2021-10-10
 draft: false
 categories: [blog, web0]
-description: Recuperar tu espacio en la red pasa por dejarme de medium y volverme a mi blog.
 clickbait: ¿A favor o en contra?
 ---
 {% import "components/post/macros.njk" as macros %}
