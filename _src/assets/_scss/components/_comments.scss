@@ -24,18 +24,18 @@
 	@include core.font(comments);
 
 	display: block;
-	margin: 0 core.rem(-12) core.rem(core.$unit * 3);
+	margin: 0 0 core.rem(core.$unit * 5);
 	text-decoration: none;
 
 	@include core.mq(core.$bp-tablet-v) {
 		grid-area: content;
-		margin: 0 0 core.rem(core.$unit * 4);
+		margin: 0 0 core.rem(core.$unit * 7);
 	}
 
 	@include core.mq(core.$bp-desktop) {
 		grid-area: unset;
 		grid-column: 3 / span 4;
-		margin-bottom: core.rem(core.$unit * 5);
+		margin-bottom: core.rem(core.$unit * 10);
 	}
 }
 
