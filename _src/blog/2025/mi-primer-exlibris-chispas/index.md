@@ -72,7 +72,7 @@ A ver, que los sistemas de trazado han cambiado muchísimo desde que lo hacía c
 
 Y tengo un pequeño vídeo del proceso:
 
-<div style="position: relative; padding-top: 56.25%;"><iframe title="Exlibris: trazado-vectorial" width="100%" height="100%" src="https://veedeo.org/videos/embed/ea1cd078-64d2-4b35-b7f1-7e81136256f9" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" style="position: absolute; inset: 0px;"></iframe></div>
+<div style="position: relative; padding-top: 56.25%;" class="post__media"><iframe title="Exlibris: trazado-vectorial" width="100%" height="100%" src="https://veedeo.org/videos/embed/ea1cd078-64d2-4b35-b7f1-7e81136256f9" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" style="position: absolute; inset: 0px;"></iframe></div>
 
 **Me ha costado sangre y lágrimas**. Durante unos años he estado como "cultivando" un estilo y luego he estado año y pico, o dos, sin dibujar y la mano se resiente. Vaya si se resiente.
 
