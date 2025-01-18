@@ -378,11 +378,12 @@
 		.home-posts__item {
 			&:nth-child(1) {
 				grid-row: span 2;
-				grid-column: span 6;
+				grid-column: span 4;
 			}
-			&:nth-child(2) {
-				grid-row: span 3;
-				grid-column: span 6;
+			&:nth-child(2),
+			&:nth-child(3) {
+				grid-row: span 2;
+				grid-column: span 4;
 			}
 		}
 	}
@@ -394,8 +395,12 @@
 				grid-column: span 6;
 			}
 			&:nth-child(2) {
-				grid-row: span 4;
-				grid-column: span 6;
+				grid-row: span 2;
+				grid-column: span 4;
+			}
+			&:nth-child(3) {
+				grid-row: span 2;
+				grid-column: span 2;
 			}
 		}
 	}

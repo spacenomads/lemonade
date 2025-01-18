@@ -96,7 +96,6 @@ module.exports = function (config) {
 
 
 	config.addNunjucksFilter('filterByYear', function(collection, year) {
-
 		return collection
 			.filter(post => {
 				return year === post.data.date.getFullYear();
@@ -127,7 +126,20 @@ module.exports = function (config) {
 	});
 
 
+	config.addNunjucksFilter('getWordGender', function(str) {
+		const strAbbr = str.toUpperCase();
+		const GENDER = {
+			M: 'Nombre masculino',
+			H: 'Nombre femenino'
+		};
+		if (!GENDER[strAbbr]) return '';
+		return `<abbr title="${GENDER[strAbbr]}">${ str }.</abbr> `;
+	});
 
+
+	config.addNunjucksFilter('getWordSynonyms', function(list) {
+		return `<abbr title="Sinónmimo o afín">Sin.</abbr>: ${list.join(', ')}.`;
+	});
 
 
 	return {

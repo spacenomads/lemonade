@@ -39,6 +39,19 @@
 	</figure>
 {%- endmacro -%}
 
+{%- macro word(config) -%}
+	<figure class="post__word">
+		<dl class="post__word-block">
+			<dt class="post__word-title">{{ config.word }}</dt>
+			{%- if config.note -%}<dt class="post__word-note">{{ config.note }}</dt>{%- endif -%}
+			{%- for item in config.content -%}
+			<dd class="post__word-definition">{{ item.gender | getWordGender | safe }}{{ item.def }}</dd>
+			{%- endfor -%}
+		</dl>
+		{%- if config.synonyms -%}<p class="post__word-synonyms">{{ config.synonyms | getWordSynonyms | safe }}</p>{%- endif -%}
+	</figure>
+{%- endmacro -%}
+
 
 {%- macro img(config) -%}
 <figure class="post__media post__media--{{ config.mode }}">
