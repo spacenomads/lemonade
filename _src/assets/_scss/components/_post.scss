@@ -10,6 +10,7 @@
 //    5. TL;DR
 //    6. Quotes
 //    7. YA image
+//    8. Word
 //
 // ***
 
@@ -522,3 +523,128 @@
 	width: core.rem(core.$unit * 7);
 	height: core.rem(core.$unit * 7);
 }
+
+
+
+
+
+// 8. Word
+// ---
+.post__word {
+	margin: core.rem(core.$unit * 3) 0;
+	padding: 0 0 0 core.rem(core.$unit * 2);
+	position: relative;
+	@include core.font(paragraph);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: core.rem(core.$unit * 4) 0;
+		padding: 0 0 0 core.rem(core.$unit * 3);
+		grid-area: content;
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 7) 0;
+		padding: 0 0 0 core.rem(core.$unit * 5);
+	}
+
+	&::before {
+		background: core.$color-white;
+		border-left: core.rem( calc(core.$unit / 2)) solid core.$color-correct-blue;
+		box-sizing: border-box;
+		content: '';
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100%;
+		pointer-events: none;
+		z-index: -1;
+	}
+
+	abbr {
+		color: core.$color-correct-blue;
+	}
+}
+
+.post__word-content {
+
+}
+
+.post__word-title {
+	@include core.font(h1);
+	display: flex;
+	align-items: center;
+	gap: core.rem(core.$unit);
+
+	&::before {
+		content: '';
+		width: core.rem(core.$unit * 3);
+		height: core.rem(core.$unit * 3);
+		background: core.img('book-white.svg', core.$theme-icons) center no-repeat core.$color-correct-blue;
+		background-size: 60% auto;
+		display: block;
+		border-radius: 50%;
+
+		@include core.mq(core.$bp-tablet-v) {
+			width: core.rem(core.$unit * 4);
+			height: core.rem(core.$unit * 4);
+		}
+
+		@include core.mq(core.$bp-desktop) {
+			width: core.rem(core.$unit * 5);
+			height: core.rem(core.$unit * 5);
+		}
+	}
+}
+
+.post__word-note {
+	margin-inline-start: core.rem(core.$unit * 4);
+	font-style: italic;
+	margin-block: core.rem(core.$unit);
+	color: core.$color-correct-blue;
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin-inline-start: core.rem(core.$unit * 5);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin-inline-start: core.rem(core.$unit * 6);
+	}
+}
+
+.post__word-definition {
+		margin-inline-start: core.rem(core.$unit * 8);
+		margin-block-start: core.rem(core.$unit * 3);
+		position: relative;
+		counter-increment: section;
+
+		@include core.mq(core.$bp-tablet-v) {
+			margin-inline-start: core.rem(core.$unit * 9);
+		}
+		@include core.mq(core.$bp-desktop) {
+			margin-inline-start: core.rem(core.$unit * 11);
+		}
+
+		&::before {
+			content: counter(section) '.';
+			color: core.$color-correct-blue;
+			position: absolute;
+			inset-inline-start: 0;
+			transform: translateX(calc((100% + (core.$unit * 1px)) * -1));
+		}
+}
+
+.post__word-synonyms {
+	margin-inline-start: core.rem(core.$unit * 4);
+	margin-block-start: core.rem(core.$unit * 4);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin-inline-start: core.rem(core.$unit * 5);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin-inline-start: core.rem(core.$unit * 6);
+	}
+}
+
