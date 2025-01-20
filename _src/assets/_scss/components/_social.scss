@@ -122,3 +122,23 @@
 		background-color: core.$color-codeberg;
 	}
 }
+
+.social__link--email {
+	&::after {
+		background-image: core.img('at-sign.svg', core.$theme-icons);
+	}
+
+	&::before {
+		background-color: core.$color-at-sign;
+	}
+}
+
+.social__link--xmpp {
+	&::after {
+		background-image: core.img('xmpp.svg', core.$theme-icons);
+	}
+
+	&::before {
+		background-color: core.$color-xmpp;
+	}
+}
