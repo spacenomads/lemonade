@@ -30,5 +30,15 @@ module.exports = [
     "label": "Sígueme en Codeberg",
     "id": "codeberg",
     "url": "https://codeberg.org/oneeyedman"
+  },
+	{
+    "label": "Tírame un email",
+    "id": "email",
+    "url": "mailto:carlos@sidiostedalimones.com"
+  },
+	{
+    "label": "Escríbeme por XMPP (si tienes aplicación)",
+    "id": "xmpp",
+    "url": "xmpp:chuck@chat.lacentralita.net"
   }
 ];
