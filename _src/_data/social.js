@@ -7,9 +7,9 @@ module.exports = [
     "url": settings.fedi_account
   },
   {
-    "label": "Sígueme en Pixelfed",
+    "label": "Sígueme en Luzeed.org",
     "id": "pixelfed",
-    "url": "https://pixelfed.social/@oneeyedman"
+    "url": "https://luzeed.org/@oneeyedman"
   },
   {
     "label": "Sígueme en Veedeo.org",
