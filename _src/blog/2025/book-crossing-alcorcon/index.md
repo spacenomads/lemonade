@@ -14,7 +14,7 @@ excerpt: Cuando llegué a Alcorcón vi que tenían implementado un sistema para 
 clickbait: ¿Qué libro andas leyendo?
 cover_credits:
   link:
-  author: chuck
+  author: Chuck!
   site: sidiostedalimones
 ---
 {% import "components/post/macros.njk" as macros %}
