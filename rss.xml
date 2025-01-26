@@ -14,7 +14,56 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Fri, 24 Jan 2025 21:40:12 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 26 Jan 2025 08:06:05 GMT</lastBuildDate>
+	
+	<item>
+		<title>Book-crossing Alcorcón</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/book-crossing-alcorcon/img/cover.jpg&quot; alt=&quot;Foto de una de estas casas para intercambiar libros, con su tejado y su color rojizo. De fondo se ve una zona de ejercicios del parque.&quot;&gt;&lt;/p&gt;
+			&lt;h1&gt;Book-crossing Alcorcón&lt;/h1&gt;
+&lt;p&gt;Cuando llegué a Alcorcón vi que tenían estas casitas de colores por los parques &lt;strong&gt;para dejar y coger libros&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Me pareció como entre &lt;strong&gt;entrañable&lt;/strong&gt; y muy de &lt;em&gt;comunidad&lt;/em&gt; que los hubiese puesto el propio ayuntamiento. Y quise participar, claro.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;El plan fue rápido&lt;/strong&gt;: por aquel entonces estaba empezando a leer más y tenía algún libro para el que había hecho la portada (gracias, &lt;a href=&quot;https://foscanetworks.net/autoria/patricia-tablado-felix/&quot;&gt;Patchgirl&lt;/a&gt;), y si me terminaba un libro que me gustase, pensé que en lugar de almacenarlo en casa lo podía &lt;strong&gt;soltar al mundo y que otra persona lo disfrute&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Quien no ha sido rápido he sido yo, &lt;br&gt;porque pesado se nace, pero también se hace.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Unos años y alguna portada más tarde &lt;strong&gt;ya tengo el plan más maduro&lt;/strong&gt;, un exlibris para marcar los libros y una selección para ir dejando por la ciudad. Por la que también ha pasado el tiempo y ahora no sólo tiene las casitas en los parques sino que además tiene unas estructura para pequeños reciclajes (pilas, bolígrafos, y así) con estanterías a los lados para depositar libros.&lt;/p&gt;
+&lt;p&gt;Aparte, hablando un día con Ángela de &lt;a href=&quot;https://foscanetworks.net/&quot;&gt;FoscaNetworks&lt;/a&gt;, me dijo que tiene libros que salieron con algún desperfecto y que no puede vender, pero que son ideales para compartir :) Y ahora tengo unos pocos, que es importante si quieres compartir.&lt;/p&gt;
+&lt;p&gt;Uno de los motores de hacerme mi exlibris era &lt;strong&gt;marcar esos libros para compartir&lt;/strong&gt;. Ya está hecho y tengo una primera tanda de libros que marcar, registrar en bookcrossing.com e ir dejando en diferentes puntos.&lt;/p&gt;
+&lt;h2&gt;Primer libro&lt;/h2&gt;
+&lt;p&gt;He empezado con uno, &lt;a href=&quot;https://openlibrary.org/books/OL9912759M/Five_Ghost_Stories&quot;&gt;“Five Ghost Stories” de Viola Huggins&lt;/a&gt;, que fue el primer libro, o uno de los primeros, que me leí. Esto fue hace mil años en otra vida, y &lt;strong&gt;venía con una casete con el audio del libro&lt;/strong&gt;. Por aquel entonces no existía el concepto de audio libro en mi mente. El caso es que le tengo cierto cariño, aunque no lo recuerdo. Lo acabé encontrando, el mío sigue en Granada, &lt;strong&gt;y quería que le sirviese a alguien como me sirvió a mi&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Seguimiento&lt;/h2&gt;
+&lt;p&gt;El último paso, o reto, ha sido &lt;strong&gt;el registrarlo y hacerle un seguimiento&lt;/strong&gt;. O mejor dicho, poder hacer ese seguimiento. Para ello estoy usando bookcrossing.com que tiene las herramientas y la comunidad. Además tiene una interfaz viejuna y alguno de los flujos, como el de registro, son…  complicados, pero no imposibles, y este es &lt;a href=&quot;https://www.bookcrossing.com/journal/17454132&quot;&gt;el enlace del primer libro&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Aparte quiero tener una página mía que poder enlazar donde tener &lt;strong&gt;listados los libros que comparta&lt;/strong&gt; y poder &lt;strong&gt;editar esta lista con cierta agilidad&lt;/strong&gt;. Como curiosidad, el modelo de dato es el siguiente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;[
+  {
+    &amp;quot;title&amp;quot;: &amp;quot;Five Ghost Stories (Collins English Library Level 3)&amp;quot;,
+    &amp;quot;authors&amp;quot;: [&amp;quot;Viola Huggins&amp;quot;],
+    &amp;quot;isbn&amp;quot;: &amp;quot;0003701352&amp;quot;,
+    &amp;quot;bcid&amp;quot;: &amp;quot;781-17454132&amp;quot;,
+    &amp;quot;link&amp;quot;: &amp;quot;https://www.bookcrossing.com/journal/17454132&amp;quot;,
+    &amp;quot;map&amp;quot;: {
+      &amp;quot;date&amp;quot;: &amp;quot;2025-01-25, 11:00 AM&amp;quot;,
+      &amp;quot;coords&amp;quot;: &amp;quot;40°21&#39;02.1&#92;&amp;quot;N 3°48&#39;52.6&#92;&amp;quot;W&amp;quot;
+    }
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esta página estará lista &lt;strong&gt;más adelante&lt;/strong&gt;, tampoco tengo mucha prisa con esto. Lo voy preparando ahora por ir dando los pasos que puedo con el tiempo que tengo.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Y este es mi proyecto&lt;/strong&gt;. Realmente me cuesta pensar a lo largo y ver que lo voy avanzando poco a poco me enorgullece un poquito.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Un tuerto puede soñar, ¿No?&lt;/strong&gt;&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/book-crossing-alcorcon/img/alcorcolors.png&quot; width=&quot;56&quot; alt=&quot;Colores de la bandera de alcorcón. Un rojo y un verde.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>bookcrossing</category>
+		
+		<category>blog</category>
+		
+		<link>https://sidiostedalimones.com/blog/2025/book-crossing-alcorcon/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2025/book-crossing-alcorcon/</guid>
+		<pubDate>Sun, 26 Jan 2025 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Mi primer Exlibris, ¡Chispas!</title>
