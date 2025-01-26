@@ -19,8 +19,6 @@ cover_credits:
 ---
 {% import "components/post/macros.njk" as macros %}
 
-# Book-crossing Alcorcón
-
 Cuando llegué a Alcorcón vi que tenían estas casitas de colores por los parques **para dejar y coger libros**.
 
 Me pareció como entre **entrañable** y muy de *comunidad* que los hubiese puesto el propio ayuntamiento. Y quise participar, claro.
