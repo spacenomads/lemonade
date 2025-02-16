@@ -14,7 +14,58 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Sun, 26 Jan 2025 08:20:23 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 16 Feb 2025 09:31:47 GMT</lastBuildDate>
+	
+	<item>
+		<title>Salir de Google II</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/salir-de-google/img/cover.png&quot; alt=&quot;Sobre fondo gris claro se ve el logo de Google transparente con línea punteada, como si faltase. Abajo hay cuatro recuadros con los colores azul, verde, amarillo y rojo corporativos.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Migrar el mail es la parte fácil, aún quedan más: Calendar, Drive, Maps y &lt;strong&gt;YouTube&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure class=&quot;post__dialogue&quot;&gt;&lt;p class=&quot;post__dialogue-item&quot;&gt;
+		&lt;b class=&quot;post__dialogue-user post__dialogue-user--chuck&quot;&gt;Chuck!:&lt;/b&gt;
+		&lt;span class=&quot;post__dialogue-text&quot;&gt;Pero Chuck, con youtube no habíamos terminado?&lt;/span&gt;
+	&lt;/p&gt;&lt;p class=&quot;post__dialogue-item&quot;&gt;
+		&lt;b class=&quot;post__dialogue-user post__dialogue-user--chuck&quot;&gt;Chuck!:&lt;/b&gt;
+		&lt;span class=&quot;post__dialogue-text&quot;&gt;Ya te gustaría, solo pasamos los vídeos.&lt;/span&gt;
+	&lt;/p&gt;&lt;/figure&gt;
+&lt;h2&gt;Mail&lt;/h2&gt;
+&lt;p&gt;El correo es quizás la parte más sencilla técnicamente. &lt;strong&gt;Apuntas los registros al nuevo proveedor y ya estaría&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Bueno, molaría &lt;strong&gt;hacer una copia de seguridad&lt;/strong&gt;, eso siempre está bien.&lt;/p&gt;
+&lt;p&gt;Bueno, y pasar correos a la nueva cuenta es relativamente fácil, pero al final no lo es. Han sido &lt;strong&gt;casi 20 años de cuenta &amp;quot;corporativa&amp;quot;&lt;/strong&gt; y me gustaría dejar cosas apartadas y limpiar morralla que he ido acumulado, y &lt;strong&gt;esa es la parte que cuesta&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Por ahora la voy a mover a &lt;strong&gt;iCloud+&lt;/strong&gt; con la de Space Nomads. Por lo que pago, puedo hacerlo y realmente el paso duro es este. Si luego quiero sacarlo de mundo USA, pues ya irá rodado.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Al final todo esto es por salir del agujero que es, y era, Google y que no vi en su momento. Por lo que sea.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Supongo que si no estuviese dentro del ecosistema de Apple haría otras cosas seguro, pero &lt;strong&gt;vamos a ir a por un pozo cada vez&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Calendar&lt;/h2&gt;
+&lt;p&gt;Este es relativamente simple porque de normal va a ir junto con el mail. Y pasar los eventos de un calendario a otro es medio trivial, pero igual no es súper necesario.&lt;/p&gt;
+&lt;h2&gt;Drive&lt;/h2&gt;
+&lt;p&gt;Buah, con este la cagué muy fuerte con el paso de Space Nomads porque se quedó algún archivo y Google me dejaba cancelar el pago, pero no borrar la cuenta. Y supongo que en algún momento la terminarán de borrar ellos, pero se me quedó esa espina.&lt;/p&gt;
+&lt;p&gt;Espero esta vez hacerlo mejor.&lt;/p&gt;
+&lt;h2&gt;Maps y Youtube&lt;/h2&gt;
+&lt;p&gt;Estos son las piedras en el camino, porque los otros rollos los mueves un poco donde quieras, pero l&lt;strong&gt;a cantidad de esfuerzo colectivo que hemos invertido en estas dos plataformas es poca broma&lt;/strong&gt;. Y &lt;strong&gt;la posición&lt;/strong&gt; que le hemos dado con tantísimo contenido.&lt;/p&gt;
+&lt;p&gt;Los mapas de funcionan bastante mejor si no te sales de ciertas ciudades y si estás buscando un vídeo, bueno...&lt;/p&gt;
+&lt;h3&gt;Maps&lt;/h3&gt;
+&lt;p&gt;Por volumen, hay mogollón de información en la plataforma. Iba a escribir que &amp;quot;&lt;strong&gt;tenemos&lt;/strong&gt;&amp;quot;, pero este es el principal problema, que &lt;strong&gt;la información la subimos nosotros, pero no la &amp;quot;tenemos&amp;quot;, la tiene Google&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Google Maps funciona muy decente en un sitio como Madrid, pero te mueves levemente, a Alcorcón, y de repente está todo bastante desactualizado. &lt;strong&gt;Y si te mueves en bici, olvídate, que no te puedes ni fiar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Aquí la opción es &lt;a href=&quot;https://www.openstreetmap.org&quot;&gt;OpenStreetMaps&lt;/a&gt;, lo que pasa es que es tirando a feote, aunque si tengo que invertir tiempo en añadir contenido, &lt;strong&gt;prefiero hacerlo aquí&lt;/strong&gt; que en los perros del &lt;em&gt;&amp;quot;Don&#39;t be evil&amp;quot;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Tengo por ahí algún enlace para importar tus sitios de Google Maps en OpenStreetMaps, y espero que de poca guerra.&lt;/p&gt;
+&lt;h3&gt;YouTube&lt;/h3&gt;
+&lt;p&gt;El mover los vídeo a una instancia (federada) de Peertube, &lt;a href=&quot;/blog/2025/adios-google-hola-peertube/&quot;&gt;ya está hecho&lt;/a&gt;. El problema son &lt;strong&gt;los canales que sigo en YouTube&lt;/strong&gt;. Esta gente no va a salir de la plataforma en un futuro cercano, aunque se va haciendo.&lt;/p&gt;
+&lt;p&gt;De primeras &lt;strong&gt;el objetivo es dejar de pagar el Google Workspace&lt;/strong&gt;, así que limpiaré/mudaré suscripciones y lista a la cuenta gratuita de GMail.&lt;/p&gt;
+&lt;p&gt;En un segundo paso, &lt;strong&gt;pasaré estas suscripciones a mi lector de RSS&lt;/strong&gt;, y eso mejorará algo.&lt;/p&gt;
+&lt;p&gt;Por cierto, &lt;strong&gt;YouTube está a reventar de vídeos hechos por ia&lt;/strong&gt;, pero es una cosa abrumadora.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Espero que con estos movimientos vayamos recuperando un poco esa internet que ya no es nuestra.&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/salir-de-google/img/fy.png&quot; width=&quot;56&quot; alt=&quot;En un círculo gris, aparece el emoji que hace la peseta&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>google</category>
+		
+		<link>https://sidiostedalimones.com/blog/2025/salir-de-google/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2025/salir-de-google/</guid>
+		<pubDate>Sun, 16 Feb 2025 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Book-crossing Alcorcón</title>
@@ -165,6 +216,8 @@
 &lt;p&gt;Cuando sepa más lo iré contando.&lt;/p&gt;
 
 			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/adios-google-hola-peertube/img/veedeo-logo.png&quot; width=&quot;56&quot; alt=&quot;pendiente&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>google</category>
 		
 		<link>https://sidiostedalimones.com/blog/2025/adios-google-hola-peertube/</link>
 		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2025/adios-google-hola-peertube/</guid>
