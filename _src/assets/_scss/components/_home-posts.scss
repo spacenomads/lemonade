@@ -377,18 +377,28 @@
 	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
 		.home-posts__item {
 			&:nth-child(1) {
-				grid-row: span 3;
+				grid-row: span 2;
 				grid-column: span 4;
 			}
-			&:nth-child(2),
-			&:nth-child(4) {
+			&:nth-child(2) {
 				grid-row: span 2;
 				grid-column: span 2;
+				order: 2;
 			}
 			&:nth-child(3) {
-				grid-row: span 3;
+				grid-row: span 2;
+				grid-column: span 4;
+				order: 4;
+			}
+			&:nth-child(4) {
+				grid-row: span 2;
 				grid-column: span 4;
 				order: 1;
+			}
+			&:nth-child(5) {
+				grid-row: span 2;
+				grid-column: span 2;
+				order: 3;
 			}
 		}
 	}
@@ -396,21 +406,29 @@
 	@include core.mq(core.$bp-desktop) {
 		.home-posts__item {
 			&:nth-child(1) {
-				grid-row: span 3;
+				grid-row: span 2;
 				grid-column: span 6;
 			}
 			&:nth-child(2) {
 				grid-row: span 2;
-				grid-column: span 4;
+				grid-column: span 2;
+				order: 2
 			}
 			&:nth-child(3) {
-				grid-row: span 3;
-				grid-column: span 6;
-				order: 1;
+				grid-row: span 2;
+				grid-column: span 4;
+				order: 4;
 			}
 			&:nth-child(4) {
 				grid-row: span 2;
+				grid-column: span 4;
+				order: 1;
+
+			}
+			&:nth-child(5) {
+				grid-row: span 2;
 				grid-column: span 2;
+				order: 3;
 			}
 		}
 	}
