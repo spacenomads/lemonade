@@ -73,3 +73,20 @@
 {%- macro video(config) -%}
 <iframe class="post__media post__media--iframe" title="{{ config.title }}" width="{{ config.width }}" src="{{ config.src }}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" style="aspect-ratio: {{ config.aspect_ratio }}"></iframe>
 {%- endmacro -%}
+
+
+{%- macro dialog(config) -%}
+{%- set me = {
+	id: 'chuck',
+	name: 'Chuck!'
+} -%}
+<figure class="post__dialogue">
+{%- for text in config.content -%}
+	<p class="post__dialogue-item">
+		<b class="post__dialogue-user post__dialogue-user--{{ config.author.id | default(me.id) }}">{{ config.author.name | default(me.name) }}:</b>
+		<span class="post__dialogue-text">{{ text }}</span>
+	</p>
+{%- endfor -%}
+</figure>
+{%- endmacro -%}
+

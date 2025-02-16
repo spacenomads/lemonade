@@ -50,6 +50,11 @@ $color-codeberg: #144b49;
 $color-at-sign: #59abff;
 $color-xmpp: #032830;
 
+// $color-chat-1: #d8f1f3;
+// $color-chat-2: #81c6cd;
+$color-chat-1: color-mix(in srgb, $color-athens-gray, white 30%);
+$color-chat-2: $color-athens-gray;
+
 
 $color-text: $color-pure-black;
 $color-tldr-text: $color-black;
@@ -125,3 +130,5 @@ $levels: background, content, warning, header;
 // ---
 $theme-brand: '../images/brand/';
 $theme-icons: '../images/layout/icons/';
+$theme-layout: '../images/layout/';
+$theme-chat: '../images/layout/chat/';

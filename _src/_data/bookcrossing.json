@@ -1,13 +1,74 @@
 [
   {
     "title": "Five Ghost Stories (Collins English Library Level 3)",
-    "author": "Viola Huggins",
+    "author": ["Viola Huggins"],
     "isbn": "0003701352",
     "bcid": "781-17454132",
     "link": "https://www.bookcrossing.com/journal/17454132",
+    "traveling": true,
     "map": {
       "date": "2025-01-25, 11:00 AM",
-      "coords": "40°21'02.1\"N 3°48'52.6\"W"
+      "coords": "40.35074677179044, -3.8146325518992676"
+    }
+  },
+  {
+    "title": "Chacal",
+    "author": ["Frederick Forsyth"],
+    "isbn": "8401434505",
+    "bcid": "935-17455727",
+    "link": "https://www.bookcrossing.com/journal/17455727",
+    "traveling": true,
+    "map": {
+      "date": "2025-02-12, 06:40 PM",
+      "coords": "40.35013767684691, -3.815779995306556"
+    }
+  },
+  {
+    "title": "Esfera",
+    "author": ["Michael Crichton"],
+    "isbn": "8422634724",
+    "bcid": "933-17455730",
+    "link": "https://www.bookcrossing.com/journal/17455730",
+    "traveling": true,
+    "map": {
+      "date": "2025-02-12, 06:52 PM",
+      "coords": "40.34911461080914, -3.8210436941998074"
+    }
+  },
+  {
+    "title": "Responde primero a la segunda pregunta",
+    "author": ["Patricia Tablado Félix"],
+    "isbn": "9788412351125",
+    "bcid": "278-17455737",
+    "link": "https://www.bookcrossing.com/journal/17455737",
+    "traveling": true,
+    "map": {
+      "date": "2025-02-12, 06:29 PM",
+      "coords": "40.35569063088808, -3.813112928640021"
+    }
+  },
+  {
+    "title": "La responsabilidad de llamarse Beatriz en la toscana",
+    "author": ["Patricia Tablado Félix"],
+    "isbn": "9788412351118",
+    "bcid": "182-17455740",
+    "link": "https://www.bookcrossing.com/journal/17455740",
+    "traveling": true,
+    "map": {
+      "date": "2025-02-12, 06:29 PM",
+      "coords": "40.35569063088808, -3.813112928640021"
+    }
+  },
+  {
+    "title": "Candela y el misterio de San Abrúnculo",
+    "author": ["Patricia Tablado Félix"],
+    "isbn": "9788412520958",
+    "bcid": "173-17455742",
+    "link": "https://www.bookcrossing.com/journal/17455742",
+    "traveling": true,
+    "map": {
+      "date": "2025-02-12, 06:29 PM",
+      "coords": "40.35569063088808, -3.813112928640021"
     }
   }
 ]

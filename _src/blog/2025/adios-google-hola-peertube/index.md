@@ -9,7 +9,7 @@ reading_time: 4
 date: 2025-01-12
 draft: false
 tags: []
-categories: []
+categories: [google]
 excerpt:
 clickbait: ¿Conoces Peertube?
 cover_credits:

@@ -11,6 +11,7 @@
 //    6. Quotes
 //    7. YA image
 //    8. Word
+//    9. Dialogue
 //
 // ***
 
@@ -645,6 +646,98 @@
 
 	@include core.mq(core.$bp-desktop) {
 		margin-inline-start: core.rem(core.$unit * 6);
+	}
+}
+
+
+
+
+
+// 9. Dialogue
+// ---
+.post__dialogue {
+	@include core.font(paragraph);
+	background-color: core.$color-chat-1;
+	border-radius: core.rem(core.$unit * 1.5);
+
+	margin: core.rem(core.$unit * 3) 0;
+	padding: core.rem(calc(core.$unit * 4));
+	position: relative;
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: core.rem(core.$unit * 4) 0;
+		padding: core.rem(core.$unit * 5);
+		grid-area: content;
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 5) 0;
+		padding: core.rem(core.$unit * 6);
+	}
+
+}
+
+.post__dialogue-item {
+	margin: 0;
+	display: flex;
+	column-gap: core.rem(core.$unit);
+	align-items: flex-end;
+}
+
+.post__dialogue-user {
+	height: core.rem(1);
+	overflow: hidden;
+	width: core.rem(core.$unit * 5);
+	padding-top: core.rem(core.$unit * 5);
+	background: core.$color-correct-blue;
+	border-radius: 50%;
+	display: block;
+	flex-shrink: 0;
+
+	@include core.mq(core.$bp-desktop) {
+		width: core.rem(core.$unit * 6);
+		padding-top: core.rem(core.$unit * 6);
+	}
+}
+
+.post__dialogue-user--chuck {
+	background: core.img('avatar-chuck.png', core.$theme-chat) center no-repeat core.$color-white;
+	background-size: cover;
+}
+
+.post__dialogue-text {
+	background-color: core.$color-white;
+	border-radius: core.rem(core.$unit * 2);
+	padding: core.rem(core.$unit) core.rem(core.$unit * 1.5);
+	position: relative;
+	&::before {
+		content: '';
+		background: core.img('dialog-arrow.svg', core.$theme-chat) right bottom no-repeat;
+		width: core.rem(15);
+		height: core.rem(15);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: translateX(-57%);
+	}
+}
+
+
+.post__dialogue-item + .post__dialogue-item {
+	margin-block-start: 1rem;
+	place-content: flex-end;
+
+	.post__dialogue-user--chuck {
+		order: 1;
+	}
+	.post__dialogue-text {
+		text-align: right;
+		&::before {
+
+			left: 100%;
+			transform: scale(-1, 1) translateX(45%);
+
+		}
 	}
 }
 
