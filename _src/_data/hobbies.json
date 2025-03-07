@@ -4,10 +4,10 @@
     {
       "title":"En papel, o no",
       "icon":"book",
-      "content":"La Máquina Del Tiempo",
+      "content":"EverMeet",
       "link":{
-        "url": "https://lectura.social/book/144223/s/la-maquina-del-tiempo",
-        "label": "Lectura.social"
+        "url": "https://bookwyrm.social/book/738146/s/evermeet",
+        "label": "bookwyrm.social"
       }
     },
     {
@@ -22,9 +22,9 @@
     {
       "title":"En la tele",
       "icon":"tv",
-      "content":"Arcane, temporada 2",
+      "content":"She-Ra and the Princesses of Power",
       "link":{
-        "url": "https://www.netflix.com/browse?jbv=81435684",
+        "url": "https://www.netflix.com/title/80179762",
         "label": "Netflix"
       }
     }
