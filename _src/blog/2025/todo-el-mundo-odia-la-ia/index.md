@@ -33,7 +33,7 @@ De postre viene con otra serie de **problemas** que están ahí si los quieres v
 - Mella en el aprendizaje.
 - Presión productiva.
 
-Recordemos, y esto es importante, que hablamos de esta ia en unos términos que nos hacen percibirla como si fuese alguien, e inteligente. Cuando realmente es **una serie de automatismos que van calculando cual es la siguiente palabra estilísticamente más probable**. No hay nadie detrás comprendiendo lo que ha escrito (y esto funciona igual para la generación de imágenes). La ia ni se equivoca, ni miente, ni se inventa, **para eso hace falta que “sepa”** y aunque no estamos ahí, estas expresiones las tenemos interiorizadas.
+Recordemos, y esto es importante, que hablamos de esta ia en unos términos que nos hacen percibirla como si fuese alguien, e inteligente. Cuando realmente es **una serie de automatismos que van calculando cual es la siguiente palabra estadísticamente más probable**. No hay nadie detrás comprendiendo lo que ha escrito (y esto funciona igual para la generación de imágenes). La ia ni se equivoca, ni miente, ni se inventa, **para eso hace falta que “sepa”** y aunque no estamos ahí, estas expresiones las tenemos interiorizadas.
 
 ## Pérdida de la iniciativa
 
