@@ -9,8 +9,6 @@ const {MODE: mode} = process.env;
 
 const publishedPosts = (post) => {
 	if (mode === MODE_DEVELOPMENT) return true;
-	console.log('post.date', post.date);
-	console.log('now', now);
 	return post.date <= now && !post.data.draft;
 };
 
@@ -95,6 +93,8 @@ module.exports = function (config) {
 	config.addNunjucksFilter('isFuture', function(date) {
 		const postDate = new Date(date);
 		const now = new Date();
+		// TODO: Manage Local date
+		now.setHours(now.getHours() + 1);
 		return postDate > now ? 'home-post--future': '';
 	});
 
