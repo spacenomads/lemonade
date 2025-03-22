@@ -3,10 +3,14 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const htmlmin = require('html-minifier');
 
 const now = new Date();
+// TODO: Manage Local date
+now.setHours(now.getHours() + 1);
 const {MODE: mode} = process.env;
 
 const publishedPosts = (post) => {
 	if (mode === MODE_DEVELOPMENT) return true;
+	console.log('post.date', post.date);
+	console.log('now', now);
 	return post.date <= now && !post.data.draft;
 };
 
