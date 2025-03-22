@@ -4,27 +4,27 @@
     {
       "title":"En papel, o no",
       "icon":"book",
-      "content":"EverMeet",
+      "content":"How To Found Your Kingdom",
       "link":{
-        "url": "https://bookwyrm.social/book/738146/s/evermeet",
+        "url": "https://lectura.social/book/147058/s/how-to-found-your-kingdom",
         "label": "bookwyrm.social"
       }
     },
     {
       "title":"En la Play",
       "icon":"ps5",
-      "content":"RoboCop: Rogue City",
+      "content":"Assassin's Creed: Shadows",
       "link":{
-        "url": "https://store.playstation.com/es-es/concept/10003485",
+        "url": "https://store.playstation.com/es-es/concept/10009909/",
         "label": "playstation.com"
       }
     },
     {
       "title":"En la tele",
       "icon":"tv",
-      "content":"She-Ra and the Princesses of Power",
+      "content":"Arcane",
       "link":{
-        "url": "https://www.netflix.com/title/80179762",
+        "url": "https://www.netflix.com/title/81435684",
         "label": "Netflix"
       }
     }
