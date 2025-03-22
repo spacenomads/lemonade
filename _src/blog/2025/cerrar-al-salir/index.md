@@ -9,7 +9,7 @@ reading_time: 6
 date: 2025-03-23
 draft: false
 categories: [google]
-tags: []
+tags: [drive, gmail, calendar]
 excerpt: Borrar casi 17 años de correos es UNA COSA. Y no solo correos, que eliminar las fotos y los archivos de google drive es una experiencia que no se la deseo a nadie.
 clickbait: ¿Usas alternativas a Google?
 cover_credits:
