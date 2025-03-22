@@ -14,7 +14,71 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Sat, 22 Mar 2025 23:04:53 GMT</lastBuildDate>
+	<lastBuildDate>Sat, 22 Mar 2025 23:41:19 GMT</lastBuildDate>
+	
+	<item>
+		<title>Cerrar al salir...</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/cerrar-al-salir/img/cover.jpg&quot; alt=&quot;Sobre un fondo de cielo azul se ve como un lienzo cuadrado con su sombra. En el lienzo aparece el texto Keep Calm and delete your Google account&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Bueno, pues ya no tengo &amp;quot;atado&amp;quot; el correo a Google. No ha sido difícil, pero tampoco fácil.&lt;/p&gt;
+&lt;p&gt;Borrar casi 17 años de correos es &lt;strong&gt;UNA COSA&lt;/strong&gt;. Y no solo correos, que eliminar las fotos y los archivos de google drive es una experiencia que no se la deseo a nadie.&lt;/p&gt;
+&lt;h2&gt;G Suite, Google apps y Google Workspaces&lt;/h2&gt;
+&lt;p&gt;Recuerdo que cuando salió no me pareció ni mala idea, empecé usándolo gratis para sidiostedalimones.com y en algún momento tuvo sentido pasarse a pagar ya que lo usaba para trabajo y porque al poco no dejaron mucha opción. Para el momento, la interfaz de GMail era una ventaja importante, y oye, que molaba mucho. Lo de siempre: &lt;strong&gt;en el momento parecía una buena idea&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Google Drive&lt;/h3&gt;
+&lt;p&gt;Esta fue la siguiente mala decisión. En aquel momento usaba Dropbox, que funcionaba muy bien, pero era sensiblemente más caro. Pasarme a Google Drive era un ahorro de precio aunque creo que ya estábamos en modo caos con las interfaces de esta gente: que puedas &amp;quot;encontrar&amp;quot; cualquier cosa es importante, pero la organización de la aplicación puede ser un caos y funcionar muy regular.&lt;/p&gt;
+&lt;h3&gt;Google Photos&lt;/h3&gt;
+&lt;p&gt;Aquí es que ni sabía lo que había. En algún momento debí activar algo y se empezaron a sincronizar fotos...&lt;/p&gt;
+&lt;h3&gt;Google Contacts&lt;/h3&gt;
+&lt;p&gt;De esto vamos a hablar luego, pero es otra muestra de todo lo que había metido dentro del pozo de esta gente: todos mis contactos los tenía aquí.&lt;/p&gt;
+&lt;h3&gt;Google Calendar&lt;/h3&gt;
+&lt;p&gt;Esto ha sido lo más sencillo de migrar, con diferencia.&lt;/p&gt;
+&lt;p&gt;Aunque una dificultad añadida ha sido la integración entre MacOs y los rollos de Google, en este caso mover los eventos dentro de la aplicación nativa de calendarios de MacOs ha sido coser y cantar.&lt;/p&gt;
+&lt;h2&gt;Migrar y borrar&lt;/h2&gt;
+&lt;p&gt;Para poder eliminar la cuenta de Google Workspaces tienes que seguir una serie de pasos y &lt;strong&gt;borrar todos los archivos&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Cancelar la suscripción es relativamente directo&lt;/strong&gt;. En mi caso, como iba por año completo, puedo indicar que no se renueve, pero aún tengo unos meses pendientes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Migrar&lt;/h3&gt;
+&lt;p&gt;Para la parte de migrar he tirado de la herramienta de &lt;a href=&quot;https://takeout.google.com/&quot;&gt;Google Takeout&lt;/a&gt; para ir haciendo copias de seguridad que ya están en su disco duro.&lt;/p&gt;
+&lt;p&gt;Decidí hacer exportaciones parciales porque luego pienso que puedo necesitar solo cosas concretas y ahorro en tiempos, que tarda dependiendo del volumen de lo que le pidas.&lt;/p&gt;
+&lt;p&gt;Con los datos ya asegurados fui moviendo contenido: correos, contactos, calendarios y archivos.&lt;/p&gt;
+&lt;p&gt;En mi caso uso bastantes cosas de Apple y, por ahora, no va a cambiar, pero tras la experiencia con Google voy gestionando el rollo con cuidado.&lt;/p&gt;
+&lt;p&gt;A ver, &lt;strong&gt;sí que me parece que es cambiar un mal por otro&lt;/strong&gt;, pero en lugar de pagar a dos empresas chungas, pues me quito una de en medio. En este punto, mover el correo a otro proveedor es muchísimo más sencillo y nadie tiene que sufrir las mecánicas de Google. Esto puede que lo haga más adelante, igual no todo, pero puede que me lleve el correo a algún servicio como &lt;a href=&quot;https://tuta.com/&quot;&gt;Tuta&lt;/a&gt; o a &lt;a href=&quot;https://soverin.com&quot;&gt;Soverin&lt;/a&gt;, de hecho hay una web de &lt;a href=&quot;https://european-alternatives.eu/&quot;&gt;alternativas europeas&lt;/a&gt; bastante interesante.&lt;/p&gt;
+&lt;p&gt;Ahora mismo no quiero invertir en aplicaciones extra y en lo que ya tengo viene incluido calendarios y mail, y se me sincroniza bien entre los dispositivos. &lt;strong&gt;Por ahora me vale&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Para los archivos tengo algo de espacio y voy a tirar de discos duros extra.&lt;/p&gt;
+&lt;p&gt;Entonces, migrar, lo que se dice migrar, he necesitado migrar correos, calendarios y contactos.&lt;/p&gt;
+&lt;h4&gt;Contactos&lt;/h4&gt;
+&lt;p&gt;Esto ha sido un jari que hice a última hora y estaba ya demasiado cansando para enfadarme o lamentarme.&lt;/p&gt;
+&lt;p&gt;MacOs y Google no funcionan bien en este punto, y de postre, la interfaz de contactos de Google es una basura inmunda.&lt;/p&gt;
+&lt;p&gt;Intenté pasarlos de la cuenta de Google a la de iCloud, pero no pasaron todos y desconecté la cuenta de Google demasiado rápido, y perdí un porraquen de contactos.&lt;/p&gt;
+&lt;p&gt;Al ir a buscar la copia de seguridad de contactos que hice con Google Takeout, bueno, parecía que solo había exportado las imágenes de los contactos (luego no es así, pero me sigue sorprendiendo que empresas tan tochas tengan sistemas mal planteados, en este caso, por nombrado de archivos y organización).&lt;/p&gt;
+&lt;p&gt;Al final los pude exportar desde la app de contactos de Google, porque encontré cómo exportarlos todos, que no es ni directo ni evidente.&lt;/p&gt;
+&lt;h4&gt;Correos&lt;/h4&gt;
+&lt;p&gt;Aquí la regulera integración entre Google y MacOS también me puso las cosas complicadas. Al final decidí que solo quería unos cuantos correos, que los dividí en carpetas/etiquetas y ya desde la aplicación de correo de MacOs los moví de una cuenta a otra. Tarda, pero se hace solo.&lt;/p&gt;
+&lt;h4&gt;Calendarios&lt;/h4&gt;
+&lt;p&gt;Esto fue lo más agradecido. Desde la aplicación de calendario, con las dos cuentas, buscas eventos y los mueves a la cuenta de iCloud.&lt;/p&gt;
+&lt;h3&gt;Borrar&lt;/h3&gt;
+&lt;p&gt;Esto ha sido un infierno, las mecánicas y los tiempos que tienen las aplicaciones de Google son para que se les caiga la puat cara de vergüenza, si tuviesen alguna.&lt;/p&gt;
+&lt;p&gt;En &lt;strong&gt;GMail&lt;/strong&gt;, borrar unos pocos correos es trivial. Ahora, si tienes muchos, pero muchos, el sistema los borra y te los muestra como no borrados todo el tiempo. Igual si seleccionas +8000 correos y das a borrar, desaparecen, pero solo para que aparezcan de nuevo 7800. Y sospechas que ya están borrados, pero no lo sabes. Y te tiras una tarde muy rica. Y... una vez borrados, te tienes que ir a la papelera a borrarlos de verdad. Y la misma película.&lt;/p&gt;
+&lt;p&gt;Con las &lt;strong&gt;fotos&lt;/strong&gt; la dificultad era no poder seleccionarlas todas del tirón. Y ya te encontrabas con las fotos compartidas, ya que no tienes una opción de dejar de estar compartido, solo de borrar, y no sabes si le estás borrando cosas a alguien (spoiler: no lo estás haciendo).&lt;/p&gt;
+&lt;p&gt;El problema de los archivos compartidos se puot multiplica en &lt;strong&gt;Google Drive&lt;/strong&gt;. Aquí tienes &lt;strong&gt;lo peor de los tiempos de GMail, los archivos compartidos y el horror de las búsquedas&lt;/strong&gt;. Todo con una capa de tener la opción de borrar y no la de dejar de tenerlos como compartidos (spoiler: no se los borras a nadie, creo).&lt;/p&gt;
+&lt;p&gt;HORAS me costó ir buscando y cazando archivos que alguna vez había compartido con alguien, y otros que alguien, alguna vez, había compartido conmigo. Un horror, pero no EL HORROR.&lt;/p&gt;
+&lt;p&gt;El horror fue 1 archivo de un conocido estudio de UX que en algún momento me habían compartido y tenían bloqueado, así que no podía borrarlo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Recordemos que tener 1 archivo sin eliminar impide que puedas borrar la cuenta&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Al final tuve que reportarlo como spam. Eso lo movió a otra carpeta donde sí pude borrarlo. Espero que no se lo borrase a esta gente.&lt;/p&gt;
+&lt;h2&gt;¿Y ahora qué?&lt;/h2&gt;
+&lt;p&gt;Ahora solo me falta que pasen los tres o cuatro meses que me faltan, poder borrar la cuenta y no darle un duro más a esta gente.&lt;/p&gt;
+&lt;p&gt;Y tener cuidado en cómo gestiono mails, calendarios y archivos para que esto no pase otra vez. Tener los datos con empresas americanas se está viendo que es una súper mala idea. Supongo que el siguiente paso será salir de la burbuja de Apple y tirar hacia mundo Linux.&lt;/p&gt;
+&lt;p&gt;Pero eso será otro día.&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/cerrar-al-salir/img/fy.png&quot; width=&quot;56&quot; alt=&quot;En un círculo gris, aparece el emoji que hace la peseta. El gesto, no la moneda&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>google</category>
+		
+		<link>https://sidiostedalimones.com/blog/2025/cerrar-al-salir/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2025/cerrar-al-salir/</guid>
+		<pubDate>Sun, 23 Mar 2025 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Salir de Google II</title>
