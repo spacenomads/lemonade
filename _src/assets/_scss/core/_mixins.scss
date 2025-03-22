@@ -137,8 +137,8 @@
 
 	@if $type == paragraph {
 
-		font-size: fn.rem(16);
-		line-height: fn.lh(27.2, 16);
+		font-size: fn.rem(18);
+		line-height: fn.lh(27.2, 18);
 
 		@include mq(vars.$bp-desktop) {
 			font-size: fn.rem(22);
@@ -147,13 +147,13 @@
 	}
 
 	@if $type == bigParagraph {
-		font-size: fn.rem(18);
-		line-height: fn.lh(27, 18);
+		font-size: fn.rem(20);
+		line-height: fn.lh(27, 20);
 		font-weight: vars.$font-light;
 
 		@include mq(vars.$bp-tablet-v) {
-			font-size: fn.rem(22);
-			line-height: fn.lh(33, 22);
+			font-size: fn.rem(24);
+			line-height: fn.lh(33, 24);
 		}
 
 		@include mq(vars.$bp-desktop) {
