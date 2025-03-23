@@ -4,7 +4,7 @@ module.exports = [
   {
     "label": "Sígueme en Mastondon",
     "id": "mastodon",
-    "url": settings.fedi_account
+    "url": settings.fedi.link
   },
   {
     "label": "Sígueme en Luzeed.org",
