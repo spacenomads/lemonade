@@ -16,7 +16,7 @@ eleventyNavigation:
 					{% for post in current_posts %}
 						<li class="home-posts__item">
 
-							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
+							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.future | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
 								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}" {% if post.data.featured_color %}style="background-color: #{{ post.data.featured_color }}" {% endif %}>
 
 									<h3 class="home-post__title">
@@ -52,7 +52,7 @@ eleventyNavigation:
 						{% for post in posts %}
 							<li class="home-posts__item">
 
-								<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.date | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }}">
+								<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.future | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }}">
 									<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}">
 
 										<h3 class="home-post__title">
