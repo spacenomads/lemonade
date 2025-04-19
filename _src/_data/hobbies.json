@@ -3,11 +3,11 @@
   "items": [
     {
       "title":"En papel, o no",
-      "icon":"book",
-      "content":"How To Found Your Kingdom",
+      "icon":"audio",
+      "content":"El Señor de los Anillos: La Comunidad del Anillo ",
       "link":{
-        "url": "https://lectura.social/book/147058/s/how-to-found-your-kingdom",
-        "label": "bookwyrm.social"
+        "url": "https://lectura.social/book/143838/s/el-senor-de-los-anillos-la-comunidad-del-anillo",
+        "label": "lectura.social"
       }
     },
     {
@@ -22,9 +22,9 @@
     {
       "title":"En la tele",
       "icon":"tv",
-      "content":"Arcane",
+      "content":"El jardinero",
       "link":{
-        "url": "https://www.netflix.com/title/81435684",
+        "url": "https://www.netflix.com/title/81702548",
         "label": "Netflix"
       }
     }
