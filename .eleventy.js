@@ -9,7 +9,7 @@ const {MODE: mode} = process.env;
 
 const publishedPosts = (post) => {
 	if (mode === MODE_DEVELOPMENT) return true;
-	return post.date <= now && !post.data.draft;
+	return !post.data.draft && !post.data.future
 };
 
 const capitalize = str => {
@@ -90,12 +90,8 @@ module.exports = function (config) {
 	});
 
 
-	config.addNunjucksFilter('isFuture', function(date) {
-		const postDate = new Date(date);
-		const now = new Date();
-		// TODO: Manage Local date
-		now.setHours(now.getHours() + 1);
-		return postDate > now ? 'home-post--future': '';
+	config.addNunjucksFilter('isFuture', function(future) {
+		return future ? 'home-post--future' : '';
 	});
 
 
