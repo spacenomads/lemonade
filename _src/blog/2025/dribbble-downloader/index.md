@@ -7,7 +7,7 @@ ya_image: dribbble.png
 ya_alt: Bola de baloncesto de Dribbble en gris.
 reading_time: 0
 date: 2025-04-20
-draft: true
+draft: false
 categories: [tools]
 tags: [dribbble, downloader]
 excerpt: Los jardines con cerca se tienen que acabar y cuento cómo me he hecho una aplicación para descargar mi contenido de Dribbble.
@@ -32,7 +32,7 @@ Esta gente tiene un sistema de exportación en la que solo te ofrecen un <attr t
 Y es que siempre es la misma puat mireda:
 
 1. Plataforma gratis para tal o pascual.
-2. Conseguir base de usarios que la rellene bien.
+2. Conseguir base de usuarios que la rellene bien.
 3. <em lang="en">Oops, we did it again!</em> Ahora nos olvidamos de los usuarios y jugamos como si todo esto fuese nuestro.
 
 He probado varias herramientas y no funcionan como quiero, **así que me he hecho la mía**.
