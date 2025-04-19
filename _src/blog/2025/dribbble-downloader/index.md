@@ -5,7 +5,7 @@ featured_alt: Bola de baloncesto de Dribbble en sus rosas, con un fondo tb en ro
 featured_color: ea4b8b
 ya_image: dribbble.png
 ya_alt: Bola de baloncesto de Dribbble en gris.
-reading_time: 0
+reading_time: 5
 date: 2025-04-20
 draft: false
 categories: [tools]
