@@ -14,7 +14,119 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Sun, 23 Mar 2025 10:58:37 GMT</lastBuildDate>
+	<lastBuildDate>Sat, 19 Apr 2025 10:31:44 GMT</lastBuildDate>
+	
+	<item>
+		<title>Dribbble downloader v1.0.0</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/dribbble-downloader/img/post-dribbble-cover.jpg&quot; alt=&quot;Bola de baloncesto de Dribbble en sus rosas, con un fondo tb en rosa&quot;&gt;&lt;/p&gt;
+			&lt;figure class=&quot;post__tldr&quot;&gt;
+		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
+		&lt;div class=&quot;post__tldr-content&quot;&gt;
+			&lt;div class=&quot;post__tldr-content-inner&quot;&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;Me he hecho una utilidad para descargarme las imágenes de la cuenta de Dribbble.&lt;/p&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/figure&gt;
+&lt;p&gt;Hace poco Dribbble ha tomado la decisión de eliminar las formas de contacto públicas para que todas las transacciones pasen por ellos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A ver, es una decisión, como la mia de dejar de pagar y cerrar la cuenta.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;El inconveniente es un poco lo de siempre: &lt;strong&gt;¿y ahora qué pasa con el contenido?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Esta gente tiene un sistema de exportación en la que solo te ofrecen un &lt;attr title=&quot;JavaScript Object Notation&quot; lang=&quot;en&quot;&gt;JSON&lt;/attr&gt; con todos tus datos. Bien, pero es que un JSON es un archivo de datos DE TEXTO, lo que quiere decir que tienes las &lt;attr title=&quot;Uniform Resource Locator&quot; lang=&quot;en&quot;&gt;url&lt;/attr&gt; de las imágenes que siguen en su plataforma. &lt;strong&gt;Nada de descargarte un zip con todo&lt;/strong&gt;. Con todo tu contenido, que esta peña ponía la plataforma, pero sin el contenido de los usuarios no hubiese llegado ni a la semana dos.&lt;/p&gt;
+&lt;p&gt;Y es que siempre es la misma puat mireda:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Plataforma gratis para tal o pascual.&lt;/li&gt;
+&lt;li&gt;Conseguir base de usuarios que la rellene bien.&lt;/li&gt;
+&lt;li&gt;&lt;em lang=&quot;en&quot;&gt;Oops, we did it again!&lt;/em&gt; Ahora nos olvidamos de los usuarios y jugamos como si todo esto fuese nuestro.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;He probado varias herramientas y no funcionan como quiero, &lt;strong&gt;así que me he hecho la mía&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;La aplicación&lt;/h2&gt;
+&lt;p&gt;Está alojada en un repo de &lt;a href=&quot;https://codeberg.org/oneeyedman/dribbble-image-downloader&quot;&gt;Codeberg&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;El punto de partida es claro: &lt;strong&gt;necesito una aplicación a la que le pase el JSON que me generan y se descargue todas las imágenes&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Al principio pensé en hacer una aplicación web con la que me iba a sentir más cómodo, pero quería aprender y hacer algo divertido.&lt;/p&gt;
+&lt;p&gt;Esto en node es realmente facilico, parece una buena opción que se va a poder instalar en cualquier ordenador y, con unas instrucciones básicas, debería poder echarla a andar casi cualquiera.&lt;/p&gt;
+&lt;p&gt;Como hemos venido a jugar me puse algunas metas más:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tiene que poder funcionar con varios archivos. Yo tengo dos cuentas (personal y de equipo).&lt;/li&gt;
+&lt;li&gt;Hay que renombrar los archivos que descarga para que sean fáciles de asociar al post correcto.&lt;/li&gt;
+&lt;li&gt;Molaría generar un nuevo JSON con esta información añadida, para que sea aún más fácil asociar post e imagen.&lt;/li&gt;
+&lt;li&gt;Quiero que descargue siempre la imagen a mayor calidad.&lt;/li&gt;
+&lt;li&gt;La utilidad tiene que generar una nueva estructura de carpetas lista para meter en un &lt;attr tile=&quot;Formato de compresión sin pérdida&quot;&gt;ZIP&lt;/attr&gt;.&lt;/li&gt;
+&lt;li&gt;Ya que estamos, que haga todo lo anterior y genere el ZIP, listo para guardar en tu disco de backups (por ejemplo).&lt;/li&gt;
+&lt;li&gt;Que añada al saco una pagina &lt;attr title=&quot;HyperText Markup Language&quot; lang=&quot;en&quot;&gt;HTML&lt;/attr&gt; que te permita ver desde local tus posts, e incluso que puedas subir esto a un servidor tuyo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Qué te da Dribbble&lt;/h3&gt;
+&lt;p&gt;El archivo de exportación es tal que así:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+  &amp;quot;user&amp;quot;: {
+    &amp;quot;avatar_url&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;bio&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;created_at&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;html_url&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;links&amp;quot;: {
+      &amp;quot;web&amp;quot;: &amp;quot;&amp;quot;,
+      &amp;quot;twitter&amp;quot;: &amp;quot;&amp;quot;,
+      &amp;quot;github&amp;quot;: &amp;quot;&amp;quot;
+    },
+    &amp;quot;location&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;login&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;name&amp;quot;: &amp;quot;&amp;quot;
+  },
+  &amp;quot;shots&amp;quot;: [
+    {
+      &amp;quot;id&amp;quot;: 1,
+      &amp;quot;title&amp;quot;: &amp;quot;&amp;quot;,
+      &amp;quot;description&amp;quot;: &amp;quot;&amp;quot;,
+      &amp;quot;images&amp;quot;: {
+        &amp;quot;hidpi&amp;quot;: &amp;quot;&amp;quot;,
+        &amp;quot;normal&amp;quot;: &amp;quot;&amp;quot;,
+        &amp;quot;one_x&amp;quot;: &amp;quot;&amp;quot;,
+        &amp;quot;two_x&amp;quot;: &amp;quot;&amp;quot;
+      },
+      &amp;quot;tags&amp;quot;: [],
+      &amp;quot;html_url&amp;quot;: &amp;quot;&amp;quot;,
+      &amp;quot;published_at&amp;quot;: &amp;quot;&amp;quot;
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;De ahí me interesa descargar la imagen de avatar y la imagen a mayor calidad de cada elemento de &amp;quot;shots&amp;quot;. Y todas estas imágenes están nombradas con un numeraco (id) con lo cual, si te las descargas todas a cholaquen va a costar saber cuál va con qué.&lt;/p&gt;
+&lt;h3&gt;La estructura&lt;/h3&gt;
+&lt;p&gt;Como la idea de esto es tener una copia de mi contenido he querido hacer una estructura de carpetas para tenerlo ordenado, por lo que sea.&lt;/p&gt;
+&lt;p&gt;Esta es mi propuesta:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;[usuario]
+├── export.json
+├── shots
+│   └── [imágenes de los posts renombradas]
+└── user
+    └── [imagen de avatar]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Una carpeta por usuario que le pases a la aplicación donde tengas un JSON mejorado con las rutas de cada imagen descargada donde toca (posts y cuenta de usuario), y las imágenes en su carpetica correspondiente. &lt;strong&gt;Como si no nos hubiésemos criado en una cueva de serpientes&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Hasta aquí es dónde he llegado. Voy a ir cerrando una versión 1 y subiendo el repo por si le sirve a alguien.&lt;/p&gt;
+&lt;h2&gt;¿Qué queda pendiente?&lt;/h2&gt;
+&lt;p&gt;Pues alguna cosa:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Todavía no genera el zip.&lt;/li&gt;
+&lt;li&gt;Me gustaría hacer un diseñito de ese html y que lo incluyera.&lt;/li&gt;
+&lt;li&gt;El código está con todas las vergüenzas en vivo. Quiero documentar el código con &lt;a href=&quot;https://jsdoc.app/&quot;&gt;JSDoc&lt;/a&gt;, meterle un linter y distribuir mejor las funciones.&lt;/li&gt;
+&lt;li&gt;Me molaría añadir tests.&lt;/li&gt;
+&lt;li&gt;Yo he usado la cuenta de forma muy light y hay casos que no contemplo de características que han ido añadiendo con el tiempo como el uso de vídeos o múltiples imágenes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pero eso será otra historia.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A partir de ahora, al final de cada post, voy a contar un poco de qué va a ir el siguiente.&lt;/p&gt;
+&lt;p&gt;Voy a empezar una serie de diseño para web. No sé si voy a ir a cara perro llamándola &amp;quot;Puots diseñadores, me tenéis hasta los c...&amp;quot; o algo más moderado como &amp;quot;Como diseñar pensando en que luego viene un ser humano a maquetar&amp;quot;. Posiblemente sea más tirando para la segunda.&lt;/p&gt;
+&lt;p&gt;Quiero plantear una serie de casos que se dan todos los días que no ayudan a poder maquetar mejor. Por lo que sea.&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/dribbble-downloader/img/dribbble.png&quot; width=&quot;56&quot; alt=&quot;Bola de baloncesto de Dribbble en gris.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>tools</category>
+		
+		<link>https://sidiostedalimones.com/blog/2025/dribbble-downloader/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2025/dribbble-downloader/</guid>
+		<pubDate>Sun, 20 Apr 2025 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Cerrar al salir...</title>
