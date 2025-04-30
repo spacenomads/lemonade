@@ -14,7 +14,7 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Wed, 30 Apr 2025 21:32:19 GMT</lastBuildDate>
+	<lastBuildDate>Wed, 30 Apr 2025 21:45:52 GMT</lastBuildDate>
 	
 	<item>
 		<title>Descargar los capítulos de un vídeo en audios</title>
@@ -26,7 +26,7 @@
 			&lt;div class=&quot;post__tldr-content-inner&quot;&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;¿No pasa que a veces te quieres descargar los capítulos de un vídeo de youtube por separado?&lt;/p&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;Pues se puede hacer con &lt;a href=&quot;https://github.com/yt-dlp/yt-dlp&quot;&gt;yt-dlp&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/figure&gt;
-&lt;p&gt;Esta mini guía, fuera de programación, es porque siempre se me olvida cómo se hace y me lleva un rato buscar.&lt;/p&gt;
+&lt;p&gt;Esta mini guía, fuera de la programación del blog, es porque siempre se me olvida cómo se hace y me lleva un rato buscar.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Antes de seguir, &lt;strong&gt;esto no es igual para todo el mundo&lt;/strong&gt;. Yo estoy usando &lt;a href=&quot;https://brew.sh/&quot;&gt;homebrew&lt;/a&gt; para instalarlo en un mac, y luego el comando se ejecuta desde la terminal.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -61,7 +61,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Esto se descarga el audio completo del vídeo y luego extrae cada capítulo por separado nombrando cada archivo con el título del vídeo, el número del capítulo con 3 dígitos, el título del capítulo y, entre corchetes el id del vídeo.&lt;/p&gt;
+&lt;p&gt;Esto se descarga el audio completo del vídeo y luego extrae cada capítulo por separado nombrando cada archivo con el título del vídeo, el número del capítulo con 3 dígitos, el título del capítulo y, entre corchetes, el id del vídeo.&lt;/p&gt;
 &lt;p&gt;Por ejemplo:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;All She-Ra and the Princesses of Power Songs - 002 I&#39;m Sea Hawk (Jordan Fisher) [AmpJD5yTqPo].mp3&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
