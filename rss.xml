@@ -14,7 +14,74 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Sat, 19 Apr 2025 17:37:06 GMT</lastBuildDate>
+	<lastBuildDate>Wed, 30 Apr 2025 21:32:19 GMT</lastBuildDate>
+	
+	<item>
+		<title>Descargar los capítulos de un vídeo en audios</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/descargar-los-capitulos-de-un-video-en-audios/img/post-guia-descargar-audio.jpg&quot; alt=&quot;Portada de las mini guías. Hoy, cómo descargar los capítulos de un vídeo de youtube en archivos de audio separados.&quot;&gt;&lt;/p&gt;
+			&lt;figure class=&quot;post__tldr&quot;&gt;
+		&lt;figcaption class=&quot;post__tldr-caption&quot;&gt;TL;DR&lt;/figcaption&gt;
+		&lt;div class=&quot;post__tldr-content&quot;&gt;
+			&lt;div class=&quot;post__tldr-content-inner&quot;&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;¿No pasa que a veces te quieres descargar los capítulos de un vídeo de youtube por separado?&lt;/p&gt;&lt;p class=&quot;post__tldr-paragraph&quot;&gt;Pues se puede hacer con &lt;a href=&quot;https://github.com/yt-dlp/yt-dlp&quot;&gt;yt-dlp&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/figure&gt;
+&lt;p&gt;Esta mini guía, fuera de programación, es porque siempre se me olvida cómo se hace y me lleva un rato buscar.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Antes de seguir, &lt;strong&gt;esto no es igual para todo el mundo&lt;/strong&gt;. Yo estoy usando &lt;a href=&quot;https://brew.sh/&quot;&gt;homebrew&lt;/a&gt; para instalarlo en un mac, y luego el comando se ejecuta desde la terminal.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Estoy un poco obsesionado con She-Ra And The Princesses Of Power. No me juguéis que es mi lugar feliz y lo necesito. El caso es que hay unas canciones, las de Sea Hawk, que no encuentro salvo en un &lt;a href=&quot;https://www.youtube.com/watch?v=AmpJD5yTqPo&quot;&gt;vídeo de Youtube por capítulos&lt;/a&gt;. Y que me lo puedo descargar como audio y editarlo e ir sacando cada canción, pero ¿y no habrá alguien resuelto este &amp;quot;problema&amp;quot;? Pues sí, con &lt;a href=&quot;https://github.com/yt-dlp/yt-dlp&quot;&gt;yt-dlp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En la página de GitHub tienen descargables y tal, pero te lo puedes instalar con Homebrew:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ brew install yt-dlp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ahora, las instrucciones no me han parecido súper claras, ni me lo parecieron la vez anterior, así que esto es lo que yo lancé:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ yt-dlp --split-chapters -x --audio-format MP3 --audio-quality 0 AmpJD5yTqPo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lo más importante es que parece que no tienes que poner toda la url, &lt;strong&gt;solo el id&lt;/strong&gt;. Ni tampoco hay que poner &amp;quot;URL&amp;quot; como parece indicar en el apartado de &lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options&quot;&gt;uso y opciones&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Las otras opciones son muy directas:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Opción&lt;/th&gt;
+&lt;th&gt;Para qué sirve&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-x&lt;/td&gt;
+&lt;td&gt;Descarga solo el audio.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;--split-chapters&lt;/td&gt;
+&lt;td&gt;Hace justo que nos separe el audio en archivos por capítulos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;--audio-quality 0&lt;/td&gt;
+&lt;td&gt;Setea la calidad del audio al máximo disponible.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Esto se descarga el audio completo del vídeo y luego extrae cada capítulo por separado nombrando cada archivo con el título del vídeo, el número del capítulo con 3 dígitos, el título del capítulo y, entre corchetes el id del vídeo.&lt;/p&gt;
+&lt;p&gt;Por ejemplo:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;All She-Ra and the Princesses of Power Songs - 002 I&#39;m Sea Hawk (Jordan Fisher) [AmpJD5yTqPo].mp3&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Ahora, Tuerto del futuro, cuando te encuentres otra vez con un vídeo por capítulos del que quieras rapiñear los audios, no tendrás que hacer todo el proceso de nuevo.&lt;/p&gt;
+&lt;figure class=&quot;post__dialogue&quot;&gt;&lt;p class=&quot;post__dialogue-item&quot;&gt;
+		&lt;b class=&quot;post__dialogue-user post__dialogue-user--chuck&quot;&gt;Chuck!:&lt;/b&gt;
+		&lt;span class=&quot;post__dialogue-text&quot;&gt;Gracias, chato.&lt;/span&gt;
+	&lt;/p&gt;&lt;p class=&quot;post__dialogue-item&quot;&gt;
+		&lt;b class=&quot;post__dialogue-user post__dialogue-user--chuck&quot;&gt;Chuck!:&lt;/b&gt;
+		&lt;span class=&quot;post__dialogue-text&quot;&gt;De na.&lt;/span&gt;
+	&lt;/p&gt;&lt;/figure&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/descargar-los-capitulos-de-un-video-en-audios/img/youtube.png&quot; width=&quot;56&quot; alt=&quot;Logo de Youtube&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>guía</category>
+		
+		<link>https://sidiostedalimones.com/blog/2025/descargar-los-capitulos-de-un-video-en-audios/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2025/descargar-los-capitulos-de-un-video-en-audios/</guid>
+		<pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Dribbble downloader v1.0.0</title>
