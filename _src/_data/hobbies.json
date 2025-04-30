@@ -2,29 +2,29 @@
   "intro": "Estoy intentando escribir, y me está molando, que siempre había querido, pero no acaba de animarme. Y leer más. Y tb jugar más.",
   "items": [
     {
-      "title":"En papel, o no",
-      "icon":"audio",
-      "content":"El Señor de los Anillos: La Comunidad del Anillo ",
-      "link":{
-        "url": "https://lectura.social/book/143838/s/el-senor-de-los-anillos-la-comunidad-del-anillo",
+      "title": "En papel, o no",
+      "icon": "book",
+      "content": "El Eternauta",
+      "link": {
+        "url": "https://lectura.social/book/149711/s/el-eternauta",
         "label": "lectura.social"
       }
     },
     {
-      "title":"En la Play",
-      "icon":"ps5",
-      "content":"Assassin's Creed: Shadows",
-      "link":{
+      "title": "En la Play",
+      "icon": "ps5",
+      "content": "Assassin's Creed: Shadows",
+      "link": {
         "url": "https://store.playstation.com/es-es/concept/10009909/",
         "label": "playstation.com"
       }
     },
     {
-      "title":"En la tele",
-      "icon":"tv",
-      "content":"El jardinero",
-      "link":{
-        "url": "https://www.netflix.com/title/81702548",
+      "title": "En la tele",
+      "icon": "tv",
+      "content": "She-Ra And The Princesses Of Power",
+      "link": {
+        "url": "https://www.netflix.com/title/80179762",
         "label": "Netflix"
       }
     }
