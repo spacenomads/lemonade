@@ -12,6 +12,7 @@
 //    7. YA image
 //    8. Word
 //    9. Dialogue
+//    10. Table
 //
 // ***
 
@@ -741,3 +742,35 @@
 	}
 }
 
+
+
+
+
+// 10. Table
+// ---
+.post__content {
+	& table {
+		@include core.font(paragraph);
+		border-collapse: collapse;
+		margin: 0;
+		padding: 0;
+		border-radius: 8px;
+		border-radius: 8px;
+		margin: core.rem(core.$unit * 4) 0;
+
+		@include core.mq(core.$bp-desktop) {
+			margin: core.rem(core.$unit * 5) 0;
+		}
+	}
+
+	& th, & td {
+		border: 1px solid core.$color-light-border;
+		text-align: left;
+		padding: core.rem(4) core.rem(16) core.rem(4) core.rem(8);
+	}
+
+	& th {
+		background-color: rgba(core.$color-light-border, .2);
+	}
+
+}
