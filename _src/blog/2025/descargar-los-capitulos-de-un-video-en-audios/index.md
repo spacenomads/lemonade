@@ -21,7 +21,7 @@ cover_credits:
 
 {{ macros.tldr(['¿No pasa que a veces te quieres descargar los capítulos de un vídeo de youtube por separado?', 'Pues se puede hacer con <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>.']) }}
 
-Esta mini guía, fuera de programación, es porque siempre se me olvida cómo se hace y me lleva un rato buscar.
+Esta mini guía, fuera de la programación del blog, es porque siempre se me olvida cómo se hace y me lleva un rato buscar.
 
 > Antes de seguir, **esto no es igual para todo el mundo**. Yo estoy usando [homebrew](https://brew.sh/) para instalarlo en un mac, y luego el comando se ejecuta desde la terminal.
 
@@ -49,7 +49,7 @@ Las otras opciones son muy directas:
 | --split-chapters | Hace justo que nos separe el audio en archivos por capítulos. |
 | --audio-quality 0 | Setea la calidad del audio al máximo disponible. |
 
-Esto se descarga el audio completo del vídeo y luego extrae cada capítulo por separado nombrando cada archivo con el título del vídeo, el número del capítulo con 3 dígitos, el título del capítulo y, entre corchetes el id del vídeo.
+Esto se descarga el audio completo del vídeo y luego extrae cada capítulo por separado nombrando cada archivo con el título del vídeo, el número del capítulo con 3 dígitos, el título del capítulo y, entre corchetes, el id del vídeo.
 
 Por ejemplo:
 
