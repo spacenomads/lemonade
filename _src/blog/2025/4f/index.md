@@ -11,7 +11,7 @@ draft: false
 future: false
 categories: [review, film, superheroes, comics]
 tags: [4f, fantastic four]
-excerpt:
+excerpt: La película me ha gustado muchísimo, aunque fuese con otras expectativas, y espero que este camino más tranquilo "afecte" a las siguientes películas de esta fase y de las siguientes.
 clickbait: ¿Qué? ¿Te ha gustado la peli?
 cover_credits:
   link:
