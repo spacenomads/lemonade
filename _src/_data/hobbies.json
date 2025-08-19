@@ -1,12 +1,12 @@
 {
-  "intro": "Estoy intentando escribir, y me está molando, que siempre había querido, pero no acaba de animarme. Y leer más. Y tb jugar más.",
+  "intro": "Estoy intentando volver a escribir y me está costando un esfuerzo mortal. Sí que estoy retomando la lectura y el ver series.",
   "items": [
     {
       "title": "En papel, o no",
       "icon": "book",
-      "content": "Us",
+      "content": "Blackhand And Ironhead: Consecuencias",
       "link": {
-        "url": "https://lectura.social/book/97676/s/us",
+        "url": "https://lectura.social/book/159286/s/blackhand-and-ironhead-volumen-2",
         "label": "lectura.social"
       }
     },
@@ -22,10 +22,10 @@
     {
       "title": "En pantalla",
       "icon": "tv",
-      "content": "Star Trek: Strange New Worlds",
+      "content": "Interview With The Vampire",
       "link": {
-        "url": "https://www.skyshowtime.com/es/stream/tv/star-trek-strange-new-worlds/62d5da7c-307c-3860-8b69-258c3e4bc615/seasons/1/episodes/strange-new-worlds-episode-1/e42d5e24-dc71-3dcf-bda7-6f449e9ca857",
-        "label": "SkyShowtime"
+        "url": "https://trakt.tv/shows/interview-with-the-vampire",
+        "label": "amc+"
       }
     }
   ]
