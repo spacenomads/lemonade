@@ -378,7 +378,7 @@
 		.home-posts__item {
 			&:nth-child(1) {
 				grid-column: span 4;
-				grid-row: span 3;
+				grid-row: span 2;
 			}
 			&:nth-child(2) {
 				grid-column: span 4;
@@ -388,14 +388,18 @@
 				grid-column: span 4;
 				grid-row: span 2;
 			}
-			&:nth-child(4) {}
+			&:nth-child(4) {
+				grid-column: span 4;
+				grid-row: span 2;
+			}
 			&:nth-child(5) {}
 			&:nth-child(6) {}
 			&:nth-child(7) {}
-			&:nth-child(8) {
+			&:nth-child(8) {}
+			&:nth-child(9) {
 				grid-column: span 4;
 			}
-			&:nth-child(9) {
+			&:nth-child(10) {
 				grid-column: span 4;
 			}
 		}
@@ -404,39 +408,43 @@
 	@include core.mq(core.$bp-desktop) {
 		.home-posts__item {
 			&:nth-child(1) {
-				grid-row: span 4;
+				grid-row: span 2;
 				grid-column: span 6;
 			}
 			&:nth-child(2) {
 				grid-row: span 2;
-				grid-column: span 4;
+				grid-column: span 6;
 			}
 			&:nth-child(3) {
 				grid-row: span 2;
-				grid-column: span 2;
+				grid-column: span 4;
 			}
 			&:nth-child(4) {
+				grid-row: span 2;
+				grid-column: span 2;
+			}
+			&:nth-child(5) {
 				grid-row: span 1;
 				order: 1;
 			}
-			&:nth-child(5) {
+			&:nth-child(6) {
 				order: 4;
 			}
-			&:nth-child(6) {
+			&:nth-child(7) {
 				grid-row: span 2;
 				order: 2;
 			}
-			&:nth-child(7) {
+			&:nth-child(8) {
 				grid-row: span 2;
 				order: 3;
 
 			}
-			&:nth-child(8) {
+			&:nth-child(9) {
 				grid-column: span 3;
 				grid-row: span 2;
 				order: 5;
 			}
-			&:nth-child(9) {
+			&:nth-child(10) {
 				grid-column: span 3;
 				grid-row: span 2;
 				order: 6;
