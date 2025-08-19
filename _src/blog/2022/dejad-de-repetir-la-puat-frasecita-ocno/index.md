@@ -13,6 +13,8 @@ excerpt: No sabéis el daño que hacéis entre jajas y jejes; dejad a Yoda en pa
 clickbait: Tú tb repites LA FRASECITA?
 ---
 
+{% import "components/post/macros.njk" as macros %}
+
 "**Hazlo... o no lo hagas. Pero no lo intentes.**"
 Vaya tela tener que leer/escuchar a alguien cada poco tiempo citar la frasecita. Como si fuese un buen ejemplo de algo. Como si ellos lo aplicasen.
 
@@ -31,5 +33,10 @@ Pero claro, **esto no se cuenta**.
 
 No seáis como Yoda y permitid al personal equivocarse, aprender y mejorar; no seáis pequeños sacos de mireda verde.
 
-—No, hombre, que no se dice en serio, hay que ver cómo te pones, XD.
-—Que te calles, pesao!
+{% set config = {
+  content: [
+    'No, hombre, que no se dice en serio, hay que ver cómo te pones, XD.',
+    'Que te calles, pesao!.'
+  ]
+} %}
+{{ macros.dialog(config) }}
