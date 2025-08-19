@@ -14,7 +14,7 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Tue, 19 Aug 2025 15:51:22 GMT</lastBuildDate>
+	<lastBuildDate>Tue, 19 Aug 2025 16:01:31 GMT</lastBuildDate>
 	
 	<item>
 		<title>Postmortem Xxxxxxxx</title>
@@ -1342,8 +1342,13 @@ Vaya tela tener que leer/escuchar a alguien cada poco tiempo citar la frasecita.
 Pero claro, &lt;strong&gt;esto no se cuenta&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;No seáis como Yoda y permitid al personal equivocarse, aprender y mejorar; no seáis pequeños sacos de mireda verde.&lt;/p&gt;
-&lt;p&gt;—No, hombre, que no se dice en serio, hay que ver cómo te pones, XD.
-—Que te calles, pesao!&lt;/p&gt;
+&lt;figure class=&quot;post__dialogue&quot;&gt;&lt;p class=&quot;post__dialogue-item&quot;&gt;
+		&lt;b class=&quot;post__dialogue-user post__dialogue-user--chuck&quot;&gt;Chuck!:&lt;/b&gt;
+		&lt;span class=&quot;post__dialogue-text&quot;&gt;No, hombre, que no se dice en serio, hay que ver cómo te pones, XD.&lt;/span&gt;
+	&lt;/p&gt;&lt;p class=&quot;post__dialogue-item&quot;&gt;
+		&lt;b class=&quot;post__dialogue-user post__dialogue-user--chuck&quot;&gt;Chuck!:&lt;/b&gt;
+		&lt;span class=&quot;post__dialogue-text&quot;&gt;Que te calles, pesao!.&lt;/span&gt;
+	&lt;/p&gt;&lt;/figure&gt;
 
 			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2022/dejad-de-repetir-la-puat-frasecita-ocno/img/death-star.png&quot; width=&quot;56&quot; alt=&quot;Imagen de la siguiente Estrella de la muerte.&quot;&gt;&lt;/p&gt;</content:encoded>
 		
