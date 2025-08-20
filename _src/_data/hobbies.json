@@ -22,10 +22,10 @@
     {
       "title": "En pantalla",
       "icon": "tv",
-      "content": "Interview With The Vampire",
+      "content": "Wednesday S02",
       "link": {
-        "url": "https://trakt.tv/shows/interview-with-the-vampire",
-        "label": "amc+"
+        "url": "https://www.netflix.com/browse?jbv=81231974",
+        "label": "Netflix"
       }
     }
   ]
