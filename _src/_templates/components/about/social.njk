@@ -1,7 +1,9 @@
 <ul class="social">
 	{% for item in social %}
-		<li class="social__item">
-			<a href="{{ item.url }}" class="social__link social__link--{{ item.id }}">{{ item.label }}</a>
-		</li>
+		{% if not item.disable %}
+			<li class="social__item">
+				<a href="{{ item.url }}" class="social__link social__link--{{ item.id }}">{{ item.label }}</a>
+			</li>
+		{% endif %}
 	{% endfor %}
 </ul>

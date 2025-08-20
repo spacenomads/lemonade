@@ -24,7 +24,8 @@ module.exports = [
   {
     "label": "Sígueme en GitHub (por ahora)",
     "id": "github",
-    "url": "https://github.com/oneeyedman"
+    "url": "https://github.com/oneeyedman",
+		"disable": true,
   },
   {
     "label": "Sígueme en Codeberg",
