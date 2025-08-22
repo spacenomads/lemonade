@@ -39,6 +39,10 @@
 	</figure>
 {%- endmacro -%}
 
+
+
+
+
 {%- macro word(config) -%}
 	<figure class="post__word">
 		<dl class="post__word-block">
@@ -51,6 +55,8 @@
 		{%- if config.synonyms -%}<p class="post__word-synonyms">{{ config.synonyms | getWordSynonyms | safe }}</p>{%- endif -%}
 	</figure>
 {%- endmacro -%}
+
+
 
 
 {%- macro img(config) -%}
@@ -70,9 +76,15 @@
 {%- endmacro -%}
 
 
+
+
+
 {%- macro video(config) -%}
 <iframe class="post__media post__media--iframe" title="{{ config.title }}" width="{{ config.width }}" src="{{ config.src }}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" style="aspect-ratio: {{ config.aspect_ratio }}"></iframe>
 {%- endmacro -%}
+
+
+
 
 
 {%- macro dialog(config) -%}
@@ -87,6 +99,52 @@
 		<span class="post__dialogue-text">{{ text }}</span>
 	</p>
 {%- endfor -%}
+</figure>
+{%- endmacro -%}
+
+
+
+
+
+{%- macro emoji(emojiConfig) -%}
+<span role="img" aria-label="{{ emojiConfig.label }}">{{ emojiConfig.icon }}</span>
+{%- endmacro-%}
+
+
+
+
+
+{%- macro panel(config) -%}
+{%- set defaultEmojis = {
+	info: {
+		icon: '👉',
+		label: 'Manita cerrada apuntando a la derecha'
+	},
+	warning: {
+		icon: '⚠️',
+		label: 'Señal triangular amarilla con exclamación dentro'
+	},
+	dont: {
+		icon: '🤬',
+		label: 'Señor maldiciendo en arameo'
+	},
+	unicorn: {
+		icon: '🦄',
+		label: 'Unicornio de melena magenta y cuerno multicolor'
+	}
+} -%}
+<figure class="post__panel {{ 'post__panel--' + config.type if config.type }} {{ 'post__panel--custom-icon' if config.custom_icon }}">
+	{%- if (config.custom_icon) -%}
+	{%- set emojiConfig = { icon: config.custom_icon.icon, label: config.custom_icon.label} -%}
+		<div class="post__panel-icon">{{ emoji(emojiConfig) }}</div>
+	{%- else -%}
+		<div class="post__panel-icon">{{ emoji(defaultEmojis[config.type]) }}</div>
+	{%- endif -%}
+	<div class="post__panel-content">
+	{%- for line in config.content -%}
+		<p class="post__panel-line">{{ line | safe }}</p>
+	{%- endfor -%}
+	</div>
 </figure>
 {%- endmacro -%}
 

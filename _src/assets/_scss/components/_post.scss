@@ -13,6 +13,7 @@
 //    8. Word
 //    9. Dialogue
 //    10. Table
+//    11. Panel
 //
 // ***
 
@@ -773,4 +774,67 @@
 		background-color: rgba(core.$color-light-border, .2);
 	}
 
+}
+
+
+
+
+
+// 11. Panel
+// ---
+
+.post__panel {
+	@include core.font(paragraph);
+
+	background: rgba(core.$color-athens-gray, .25);
+	margin: core.rem(core.$unit * 3) 0;
+	border-radius: core.rem(core.$unit * 1.2);
+	padding: core.rem(calc(core.$unit * 2));
+	position: relative;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: core.rem(core.$unit * 1.5);
+
+	@include core.mq(core.$bp-tablet-v) {
+		margin: core.rem(core.$unit * 4) 0;
+		padding: core.rem(core.$unit * 3);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 7) 0;
+		padding: core.rem(core.$unit * 4);
+	}
+}
+
+
+.post__panel-icon {}
+
+.post__panel-content {}
+
+.post__panel-line {
+	margin: 0;
+
+	&:not(:last-child) {
+		margin-bottom: 1em;
+	}
+}
+
+.post__panel--info {
+	background-color: rgba(core.$color-at-sign, .25);
+}
+
+.post__panel--warning {
+	background-color: rgba(core.$color-tangerine, .15);
+}
+
+.post__panel--dont {}
+
+.post__panel--unicorn {
+	background-color: rgba(deeppink, .25);
+}
+
+.post__panel--custom-icon {
+	&::before {
+		content: unset;
+	}
 }
