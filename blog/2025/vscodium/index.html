@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		
+		<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#212121" media="(prefers-color-scheme: dark)">
+<title>Sidiostedalimones</title>
+<link rel="author" href="/humans.txt">
+<link rel="me" href="https://laterracita.online/@oneeyedman">
+<meta name="fediverse:creator" content="@oneeyedman@laterracita.online">
+<link rel="icon" href="/favicon.ico"/>
+<link rel="stylesheet" href="/assets/css/main.css?v=20250823141858155">
+<script src="/assets/js/vendor/prism.js?v=20250823141858155" defer></script>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed | Sidiostedalimones" href="https://sidiostedalimones.com/rss.xml">
+
+
+
+  <meta property="og:title" content="VSCodium">
+  <meta property="og:description" content="Vamos a ver por qué y cómo migrar de VS Code a VS Codium manteniendo la sincronización entre equipos y todo lo que se pueda.">
+  <meta property="og:image" content="https://sidiostedalimones.com/blog/2025/vscodium/img/vscodium-cover.jpg">
+  <meta property="og:image:secure_url" content="https://sidiostedalimones.com/blog/2025/vscodium/img/vscodium-cover.jpg">
+	<meta property="og:image:alt" content="Imagen a base de formas cuadradas giradas 45 grados y de colores que se van superponiendo. Hay como un rombo principal central en blanco, una especie de borde grueso en azul y el resto es verde. Por las 4 puntas del rombo central asoman unos rombos grises oscureciendo los colores anteriores. En el centro tb aparece un icono como de una cornamenta de ciervo con trazos anchos y redondeados, que es el icono de la aplicación. y todo tiene una textura como de lienzo." />
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Sidiostedalimones",
+    "alternateName": "Si dios te da limones",
+    "url": "https://sidiostedalimones.com"
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/Brand",
+    "@type": "Thing",
+    "name": "Sidiostedalimones",
+    "logo": "https://sidiostedalimones.com/assets/images/brand/logo-sidiostedalimones.png",
+    "subjectOf": "CreativeWork"
+  }
+</script>
+
+
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sidiostedalimones.com/blog/2025/vscodium/"
+    },
+    "headline": "VSCodium",
+    "image": [
+        "https://sidiostedalimones.com/blog/2025/vscodium/img/vscodium-cover.jpg"
+    ],
+    "datePublished": "2025-08-24T00:00:00.000Z",
+    "author": {
+        "@type": "Person",
+        "name": "Carlos Mañas"
+        "sameAs": "",
+        "email": "carlos@sidiostedalimones.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sidiostedalimones.com/assets/images/brand/logo-sidiostedalimones.png",
+        }
+    },
+    "description": "Vamos a ver por qué y cómo migrar de VS Code a VS Codium manteniendo la sincronización entre equipos y todo lo que se pueda."
+  }
+  </script>
+
+
+	</head>
+	<body class="lemon">
+		<div class="lemon__container">
+			<header class="lemon__header">
+  <div class="wrapper">
+		<div class="lemon__brand">
+			<a href="/" class="lemon__brand-link">
+				<span class="lemon__brand-name">Sidiostedalimones</span>
+			</a>
+		</div>
+  </div>
+</header>
+
+			<main class="lemon__main main">
+				<article class="post post--entry">
+
+					<header class="post__header">
+	<div class="content">
+		<div class="wrapper">
+			<div class="content__inner">
+				<h1 class="post__title">
+					<span class="post__title-mark"><span class="post__title-mark-item">VSCodium</span></span></h1>
+				<a class="post__back" href="/">Volver a la home</a>
+
+				<div class="post__meta">
+					<p class="post__meta-time">
+						<time class="post__published-date" datetime="2025-08-24">24/08/2025</time>
+
+						
+							<time class="post__reading-time" datetime="PT14M">14 <abbr class="post__reading-time-abbr" title="minutos">min</abbr>.</time>
+						
+					</p>
+
+					
+						<p class="post__credits">Portada:
+							
+								Chuck! (inspirada en las de The Verge)
+							
+
+							
+								
+									| <a href="https://sidiostedalimones.com" class="post__link">sidiostedalimones</a>
+								
+							
+						</p>
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="post__cover " style="background-color: #0ab4a1">
+		
+			<img class="post__featured-image" src="img/vscodium-cover.jpg" alt="Imagen a base de formas cuadradas giradas 45 grados y de colores que se van superponiendo. Hay como un rombo principal central en blanco, una especie de borde grueso en azul y el resto es verde. Por las 4 puntas del rombo central asoman unos rombos grises oscureciendo los colores anteriores. En el centro tb aparece un icono como de una cornamenta de ciervo con trazos anchos y redondeados, que es el icono de la aplicación. y todo tiene una textura como de lienzo.">
+		
+	</div>
+</header>
+
+					<div class="content">
+						<div class="wrapper">
+							<div class="content__inner post__content">
+								<p>Cada vez es más difícil tener cosas bonitas, a veces parece que ya es imposible.</p>
+<p>Siempre he pensado que microsoft (me niego a ponerlo en mayúsculas) eran <strong>las rémoras de internet</strong>. Yo empecé a trabajar para una parte de ellos en septiembre de 2001, sí, ese día, por aquel entonces <strong>ms no daba un paso sin que alguien lo hubiese dado antes</strong>, y ya luego contaban que lo suyo era más seguro; no podían decir que eran los primeros.</p>
+<p>No recuerdo el año, pero nos pasaron por lo bajini <strong>una propuesta que tenían para hotmail</strong>, con un <strong>rediseño nuevo y novedoso</strong>, y no se atrevieron. Años más tarde sacaron el Zune con una interfaz de tipografía que sí que me pareció valiente, lo suficiente para descolocarme un poco.</p>
+<p>Más tarde salió GitHub, <em>creció con una comunidad importante</em> y un editor, Atom,  con la interfaz que más voy a echar de menos (<strong>las de ms son terribles</strong>). Y esta gente compra GitHub y cuenta que va a aportar a la comunidad con proyectos de código abierto e incluso liberando algunos propios. Y sacaron VS Code, y <strong>más tarde fagocitaron Atom</strong>, y <strong>más tarde fagocitaron la comunidad entera</strong> y esto es lo que tenemos hoy, <strong>copilot con calzador y acceso hasta a los proyectos privados</strong>. El otro día salía el CEO, o ex-CEO, diciendo que <strong>o entrabas por el aro de la ia o fuera del sector</strong>.</p>
+<blockquote>
+<p>Hay varias formas de echarte de un sitio, una de ellas es hacerlo inhabitable y que seas tú el que dices de irte.</p>
+</blockquote>
+<p>Llevaba tiempo dando pasos atrás de otros sitios y <strong>ahora toca a GitHub</strong>. Como alternativa estoy usando <a href="https://codeberg.org">Codeberg</a> que no es 100% lo mismo, pero eso está bien. No hay la misma comunidad, pero eso también está bien porque <strong>nunca la vamos a conseguir si nos quedamos en los jardines cerrados</strong> de esta gente.</p>
+<p>El editor que uso, VS Code, está 100% integrado con GitHub, y <strong>por eso tb es un problema</strong>.</p>
+<p>En front hay como dos «tareas»: maquetar y programar. Si me dedico a más javascript o frameworks, un editor como Webstorm es una solución más recia que VS Code, pero si lo que busco es más HTML y CSS, entonces encuentro mejor opción en un editor menos exigente y con una base de desarrolladores que hacen mayor variedad de extensiones. Igual no está súper bien dicho, pero esta es un poco la idea. <strong>A mi me gusta maquetar y entre los editores, el que se adapta mejor a cómo trabajo, por ahora, es VS Code</strong>.</p>
+<p>Esto no quiere decir que sea mejor ni que esté mejor hecho.</p>
+<p>Pues hace poco me enteré de que hay una alternativa: <strong>VS Codium</strong></p>
+<h2>Qué es</h2>
+<p><strong><a href="https://vscodium.com/">VS Codium</a> es el proyecto open source sobre el que se construye VS Code</strong>. Dicho de otra manera, VS Code es un VS Codium con toda la telemetría y miredas de ms y una licencia menos abierta.</p>
+<h2>Por qué cambiar si es lo mismo</h2>
+<p>Porque no es lo mismo. <strong>Solo con que sea de código abierto, que no tenga la telemetría y el tracking de la gente esta ya suena mejor</strong>, por lo menos para unos primeros pasos.</p>
+<p>Esto no es un paso final, esto es un paso intermedio. Salir de un entorno cerrado requiere salir, pero tb hay que empezar a moverse para eso.</p>
+<h3>Github</h3>
+<p>VS Codium <strong>no tiene integrada de base la capa GitHub</strong>, y ya lo siento como que puedes respirar algo más. Es una aberración, precisamente en nuestro sector, que haya un jardín central y no <strong>infinidad de jardines vecinales conectados</strong>. ms se compró el jardín de una comunidad muy tocha y no la está cuidando, la está exprimiendo.</p>
+<p>Es verdad que hay mogollón de proyectos en GitHub. Y es verdad que no seguir la rueda es difícil. Al final parece que te echas a un lado y simplemente te apartas de «la luz». Pues <strong>fuera hay mucha más gente</strong>, y a los que estamos dentro <strong>tb nos hace bien mirar por las ventanas y ver que la vida no solo sucede dentro de los muros que nos han colocado</strong>.</p>
+<p><strong>GitHub no es git</strong>. Y tu comunidad puede cambiar y ampliarse y trasladarse y aún así ser comunidad.</p>
+<p>Salir del todo tampoco es fácil, tus compañeres lo siguen usando y eso de alguna manera te ata. Vale, <strong>y aún así creo que este es el camino</strong> (THISISTHEWAY.GIF).</p>
+<h3>VS Code y microsoft</h3>
+<p>Atom sí que tenía extensiones guapas que me hacían la vida MUCHO más fácil, pero ya no hay Atom. Algunas las encontré para VS Code y otras no he aprendido a hacerlas, aunque <strong>me pregunto si realmente quiero aprender a hacer extensiones para un producto de esta gente</strong>. Lo decía antes: es un paso intermedio, no final.</p>
+<p>Salir de ms es más complicado porque el jardín es más grande. <strong>Para el trabajo voy vendido</strong>. Todavía puedo usar el editor que quiero, sí, pero aquí entran <strong>decisiones corporativas o con compañeres</strong>, ya que si la mayoría usa VS Code, es una ventaja seguir usándolo.</p>
+<p>En el día a día se trabaja en grupo y <strong>es más fácil compartir con las mismas reglas</strong>.</p>
+<p>Para mis proyectos hobby puedo usar lo que me de la gana. Reconozco que ahora mismo no veo súper opciones; ya vendrán.</p>
+<p>VS Codium es ese paso intermedio que me va a permitir <strong>no saltar directamente a los márgenes</strong>, sino ir teniendo poco y poco de lo bueno y de lo no tan bueno.</p>
+<p><strong>La integración con su copilot es desesperante</strong> hasta el punto que cada x tiempo tengo que volver a desinstalarlo/desactivarlo. Con VS Codium lo voy a tener más sencillo.</p>
+<p>Como decía: <strong>pasos intermedios, pero es el camino</strong>.</p>
+<h2>Problemas</h2>
+<p>Aquí nada es un camino de rosas y nadie te da nada gratis, al menos esta gente no. Te quitas la capa de GitHub y la de ms, y alguna cosa se complica.</p>
+<h3>Marketplace propio</h3>
+<p>Al ser un proyecto de código abierto tiene todo el sentido del mundo que tire de un <strong>marketplace de extensiones que sigan esa misma filosofía</strong>. Aquí hay muchas y otras tantas tienen la puerta abierta, pero de primeras no están todas las que tienes.</p>
+<h3>Dependencia de GitHub</h3>
+<p>Además, hay una serie de extensiones propias de ms que ya no están incluidas, como la sincronización de configuración o eso de clonarse un repo de GitHub desde el propio editor.</p>
+<h2>Requerimientos</h2>
+<p>Después de 27 años en el sector ya tengo una forma de usar las herramientas que me gustaría mantener.</p>
+<h3>Sincronización remota</h3>
+<p>Esto me parece una <strong>ventaja imprescindible</strong>, bien porque tengas dos equipos y lo que mejores en el editor en uno no lo quieras perder en el otro, o simplemente porque no lo quieras perder. Mañana tienes que trabajar en otro equipo y yo no puedo depender de recordar lo que tenía instalado y lo que no como en los 2000, no: <strong>me conecto a donde esté la configuración, me la descargo y sigo por dónde lo dejé</strong>.</p>
+<h3>Conservar la configuración de VS Code</h3>
+<p>Toda esa personalización cuidada, más o menos, no se puede perder. <strong>Necesito encontrar un sistema para migrarlo todo o la mayoría</strong>. Si se tratase de otro editor diferente, pues tira que te va, pero siendo la misma base quiero conservarlo todo. O casi todo.</p>
+<h3>No GitHub</h3>
+<p>GitHub para su ceo y para su puat<strong><em>SE LO LLEVAN</em></strong>.</p>
+<p>No, en serio. Salir de GitHub no va a ser fácil, pero <strong>quiero hacerlo</strong>. De primeras pierdo la <strong>sincronización transparente de la configuración</strong> del editor y el poder <strong>compartir sesiones de trabajo</strong> con mis compañeres.</p>
+<p>Hay alguna cosa más: al ser un viejales yo trabajo a veces con tema blanco, y <strong>el tema de GitHub no lo voy a volver a instalar</strong>. Tengo algunos parecidos, pero no el mismo.</p>
+<h2>Pasos</h2>
+<p>Dando bandazos de prueba y error he sacado en claro un orden de pasos para conseguir la mayor parte de las cosas que quería. El orden es medio importante porque <strong>si configuras Sync Settings antes de cambiar el marketplace, vas a tener que configurarlo dos veces</strong>.</p>
+<h3>1. Repo settings (Codeberg)</h3>
+<p>Lo primero es tener un sitio donde guardar la configuración ya sea como backup o para sincronizarla entre equipos. <strong>Yo he elegido Codeberg</strong>, que es a donde voy a ir moviendo mis proyectos de GitHub.</p>
+<p>He creado <strong>un repo público al que puedo acceder por ssh</strong> desde la terminal, como los frontenders mayores. El punto de la terminal es importante para luego.</p>
+<h3>2. Instalar VSCodium</h3>
+<p>Esta parte <strong>viene perfectamente explicada en la web del proyecto</strong>: <a href="https://vscodium.com/#install">vscodium.com - instalación</a>.</p>
+<p>Yo me lo instalé con brew:</p>
+<pre><code class="language-shell">brew install --cask vscodium
+</code></pre>
+<h3>3. Cambiar al Marketplace malo</h3>
+<p>Igual primero habría que <strong>valorar si tiene sentido hacer este cambio</strong>. Por una parte ya que te mueves a un entorno más abierto tiene todo el sentido que el repertorio de extensiones disponibles vaya en ese sentido. Por el otro lado hay dos tipos de extensiones que no vas a encontrar: las propietarias de ms/GitHub y las que no se hayan dado de alta.</p>
+<p>Con las propietarias no hay mucho que hacer, pero <strong>a quienes mantienen las otras se les puede escribir y pedirles que las den de alta en <a href="https://open-vsx.org/">este otro marketplace</a></strong> (la comunidad va un poco de esto). No es algo a coste cero ni nadie te garantiza que lo vayan a hacer.</p>
+<p>Hay una tercera opción, que es descargarte las extensiones (se puede hacer desde VS Code) e instalarlas manualmente. Aunque, ojo, que pierdes la actualización automática.</p>
+<p>Yo, por ahora, <strong>he decidido cambiar al marketplace malo</strong>, el de ms, por lo menos durante el periodo de transición.</p>
+<h4>El turrón</h4>
+<p>El proceso es irse a la carpeta de VS Codium y crear un archivo <strong>product.json</strong> con el siguiente contenido, y <strong>reiniciar VS Codium</strong>.</p>
+<pre><code class="language-json"> {
+   &quot;nameShort&quot;: &quot;Visual Studio Code&quot;,
+   &quot;nameLong&quot;: &quot;Visual Studio Code&quot;,
+   &quot;extensionsGallery&quot;: {
+     &quot;serviceUrl&quot;: &quot;https://marketplace.visualstudio.com/_apis/public/gallery&quot;,
+     &quot;cacheUrl&quot;: &quot;https://vscode.blob.core.windows.net/gallery/index&quot;,
+     &quot;itemUrl&quot;: &quot;https://marketplace.visualstudio.com/items&quot;
+   }
+ }
+</code></pre>
+<p><a id="system-folder"></a>Las carpetas para cada sistema están en:</p>
+<table>
+<thead>
+<tr>
+<th>OS</th>
+<th>localización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linux</td>
+<td><strong>$XDG_CONFIG_HOME/VSCodium</strong> or <strong>~/.config/VSCodium</strong></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><strong>~/Library/Application\ Support/VSCodium</strong></td>
+</tr>
+<tr>
+<td>Windows</td>
+<td><strong>%APPDATA%\VSCodium</strong> o <strong>%USERPROFILE%\AppData\Roaming\VSCodium</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Esto lo he sacado de este <a href="https://gist.github.com/anxkhn/9ae7b2248999168b73f303dec5851460">tutorial de Anxkhn</a>.</p>
+<figure class="post__panel post__panel--warning post__panel--custom-icon"><div class="post__panel-icon"><span role="img" aria-label="Señor gafotas con cara de listillo">🤓</span></div><div class="post__panel-content"><p class="post__panel-line">Una vez hecho el cambio se pueden buscar e instalar extensiones desde el panel lateral de VS Codium, pero <strong>seguía sin encontrar las «propietarias» si las instalaba desde la terminal</strong>.</p></div>
+</figure>
+<h3>4. Sync Settings</h3>
+<p>Esta es la parte más importante para mi. No es solo que el editor de código sea mi herramienta de trabajo o que sea uno de mis hobbies y no quiera mantener configuraciones diferentes, es que me voy a olvidar, o un día la voy a perder y me va a costar un quintal recuperarla.</p>
+<p>Al no tener la integración con GitHub se pierde el que tal como cambies algo, se guarde la configuración: <strong>cambias algo en un equipo y para cuando pasas a otro, ya lo tienes</strong>.</p>
+<p>Para esto hay una extensión muy molona que se llama Sync Settings.</p>
+<h4>Instalar</h4>
+<p>Se puede encontrar en cualquiera de los marketplaces:</p>
+<ul>
+<li><a href="https://open-vsx.org/extension/zokugun/sync-settings">Sync Settings en el marketplace abierto</a>.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=zokugun.sync-settings">Sync Settings en el marketplace de ms</a>.</li>
+</ul>
+<h4>Configurar</h4>
+<p>Instalarlo no tiene mucho rollo, solo hay que tener en cuenta que esta extensión se puede configurar igual para todos los dispositivos desde el archivo <strong>settings.json</strong>, o puedes tener una configuración local para poder tener particularidades dependiendo del equipo. Esta última es la que yo he elegido. En la página del plugin lo explican casi bien para mi gusto. Desde el lanzador de VS Codium buscamos <strong>Sync Settings: Open the repository settings</strong> y esto abre el archivo <strong>settings.yml</strong>:</p>
+<ul>
+<li>Hay que recordar que arriba del todo hay una configuración de prueba que hay que comentar: la parte de &quot;repository&quot; bajo &quot;profile&quot;</li>
+<li>En mi caso fui a la sección &quot;# sync on remote git&quot; puse la url completa de mi repo de Codeberg (ssh://...) y la rama. Y ya.</li>
+<li>Por lo visto no se guarda ninguna identificación y tienes que poder acceder (escritura/lectura) al repo desde la terminal.</li>
+</ul>
+<p>Una vez hecho esto, cuando quieras, puedes tirar de los comandos para subir o descargar las configuraciones:</p>
+<ul>
+<li><strong>Sync Settings: Upload (user -&gt; repository)</strong></li>
+<li><strong>Sync Settings: Download (repository -&gt; user)</strong></li>
+</ul>
+<h3>5. Migrar lo que falta</h3>
+<p>Esto se puede hacer en el orden que sea. Dentro de <a href="#system-folder">la carpeta de VS Codium</a> hay una carpeta <strong>user/</strong> donde iremos dejando los atajos, las settings y la carpeta de snippets.</p>
+<p>Desde VS Code me fui a las settings, busqué cualquier enlace al archivo, click derecho en la pestaña cuando se abra y lo mostramos en el explorador de archivos del sistema, y ya tenemos los archivos settings.json, keybindings.json y la carpeta de snippets para moverla a la carpeta user de VS Codium de la que hablábamos antes.</p>
+<figure class="post__panel post__panel--warning "><div class="post__panel-icon"><span role="img" aria-label="Señal triangular amarilla con exclamación dentro">⚠️</span></div><div class="post__panel-content"><p class="post__panel-line">Si no tenemos <strong>snippets</strong> puede que no esté ni la carpeta.</p></div>
+</figure>
+<h4>Extensiones</h4>
+<p>Esta parte es un poco tricky y vamos a tirar de la terminal un poco, así que vamos a necesitar instalados 'code' y 'codium'en el PATH para usarlos desde la terminal.</p>
+<p>Si no se tienen se hace desde la paleta de comandos con:</p>
+<pre><code class="language-text">shell Command: Install 'code' command in PATH
+shell Command: Install 'codium' command in PATH
+</code></pre>
+<p>Uno desde VS Code y el otro desde VS Codium.</p>
+<p>Ahora vamos a sacar la lista de extensiones. Abrimos la terminal en una carpeta conocida y sacamos el listado a un archivo de texto:</p>
+<pre><code class="language-shell">code --list-extensions &gt; vscode-extensions.txt
+</code></pre>
+<figure class="post__panel post__panel--info "><div class="post__panel-icon"><span role="img" aria-label="Manita cerrada apuntando a la derecha">👉</span></div><div class="post__panel-content"><p class="post__panel-line">El sacarlo primero a un archivo de texto nos da la oportunidad de abrirlo y revisar lo que hay porque seguro que a simple vista hay algunas que nos sobran.</p></div>
+</figure>
+<p>Una vez revisado las vamos a ir instalando, desde la terminal:</p>
+<pre><code class="language-shell">xargs -n1 codium --install-extension &lt; vscode-extensions.txt
+</code></pre>
+<p>Esto las va a ir instalando una a una. A mi no me funcionaron todas y luego tuve que ir buscándolas en el panel de extensiones de VS Codium, y por eso las exporto primero a un archivo.</p>
+<h3>6. Algunas cosas no son “iguales”</h3>
+<p>A estas alturas ya está todo. ¿No? Pues casi, pero he visto que todavía quedan detallicos que afinar. No parece mucho y va a depender de las extensiones que se tuviesen instaladas. Esto ya se va viendo con el día a día <span role="img" aria-label="Carilla sonriente">🙂</span>.</p>
+<hr>
+<p>Por ahora el cambio me está pareciendo bien, incluso juraría que Codium va un poco más suelto, pero <strong>igual es solo en mi corazón</strong>.</p>
+<p>Como nota, un par de compañeres lo instalaron y avisaban de que iba súper mal de rendimiento. A mi me va bastante decente, aunque esto es un <a href="https://www.electronjs.org/">electron</a> por debajo y va como va.</p>
+<p>Los siguientes pasos me cuesta verlos. Me gustaría darle una vuelta a <a href="https://www.sublimetext.com/">Sublime Text</a> a ver cómo ha avanzado, tb he visto que <a href="https://macromates.com/">TextMate</a> sigue vivo y quizás hasta pruebe <a href="https://nova.app/">Nova</a> o me líe la manta a la cabeza con <a href="https://www.gnu.org/software/emacs/">Emacs</a> o <a href="https://neovim.io/">NeoVim</a>. Pero con esto ya me entra la risa floja...</p>
+
+								     
+							</div>
+						</div>
+					</div>
+					<footer class="post__footer">
+
+						<figure class="post__ya">
+							<img class="post__ya-image" src="img/ya.png" alt="Sobre un círculo azul se ve el icono de VS Codium en blanco">
+						</figure>
+
+						<div class="wrapper">
+							
+
+<a href="mailto:comments@sidiostedalimones.com?subject=%5BComment%5D%20VSCodium&amp;body=→%20Escribe%20tu%20comentario%20aquí%0A%0A%23Vscodium%20%23SiDiosTeDaLimones%0Ahttps://sidiostedalimones.com/blog/2025/vscodium/%0A" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">
+	<div class="content__social-comment">
+		<div class="content__social-comment-icon"></div>
+		<p class="content__social-comment-info">
+			<span class="content__social-comment-info-inner">
+				<span class="content__social-comment-clickbait">¿Qué editor usas?</span> Responde por correo.
+			</span>
+		</p>
+	</div>
+</a>
+
+						</div>
+					</footer>
+				</article>
+			</main>
+			<footer class="lemon__footer">
+	<div class="wrapper">
+			<div class="lemon__footer-content">
+				<p class="lemon__license">
+					<a class="lemon__cc" href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a> 2025 ~ <a class="lemon__author" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="/now">Carlos Mañas</a>
+				</p>
+			</div>
+		</div>
+</footer>
+
+<a href="https://librecounter.org/referer/show" target="_blank" class="librecounter" aria-hidden="true">
+	<img src="https://librecounter.org/counter.svg" referrerPolicy="unsafe-url" />
+</a>
+
+
+
+		</div>
+	</body>
+</html>
