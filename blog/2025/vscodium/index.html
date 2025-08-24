@@ -12,8 +12,8 @@
 <link rel="me" href="https://laterracita.online/@oneeyedman">
 <meta name="fediverse:creator" content="@oneeyedman@laterracita.online">
 <link rel="icon" href="/favicon.ico"/>
-<link rel="stylesheet" href="/assets/css/main.css?v=20250823141858155">
-<script src="/assets/js/vendor/prism.js?v=20250823141858155" defer></script>
+<link rel="stylesheet" href="/assets/css/main.css?v=20250824073612010">
+<script src="/assets/js/vendor/prism.js?v=20250824073612010" defer></script>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed | Sidiostedalimones" href="https://sidiostedalimones.com/rss.xml">
 
 
@@ -171,33 +171,33 @@
 <p><strong>La integración con su copilot es desesperante</strong> hasta el punto que cada x tiempo tengo que volver a desinstalarlo/desactivarlo. Con VS Codium lo voy a tener más sencillo.</p>
 <p>Como decía: <strong>pasos intermedios, pero es el camino</strong>.</p>
 <h2>Problemas</h2>
-<p>Aquí nada es un camino de rosas y nadie te da nada gratis, al menos esta gente no. Te quitas la capa de GitHub y la de ms, y alguna cosa se complica.</p>
+<p>Aquí nada es un camino de rosas y nadie te da nada gratis, al menos esta gente no. En VS Codium te quitas la capa de GitHub y la de ms, y alguna cosa se complica.</p>
 <h3>Marketplace propio</h3>
 <p>Al ser un proyecto de código abierto tiene todo el sentido del mundo que tire de un <strong>marketplace de extensiones que sigan esa misma filosofía</strong>. Aquí hay muchas y otras tantas tienen la puerta abierta, pero de primeras no están todas las que tienes.</p>
 <h3>Dependencia de GitHub</h3>
 <p>Además, hay una serie de extensiones propias de ms que ya no están incluidas, como la sincronización de configuración o eso de clonarse un repo de GitHub desde el propio editor.</p>
 <h2>Requerimientos</h2>
-<p>Después de 27 años en el sector ya tengo una forma de usar las herramientas que me gustaría mantener.</p>
+<p>Después de 27 años en el sector ya tengo una forma de usar las herramientas que me gustaría mantener. Quiero tener, o conservar, unos mínimos.</p>
 <h3>Sincronización remota</h3>
-<p>Esto me parece una <strong>ventaja imprescindible</strong>, bien porque tengas dos equipos y lo que mejores en el editor en uno no lo quieras perder en el otro, o simplemente porque no lo quieras perder. Mañana tienes que trabajar en otro equipo y yo no puedo depender de recordar lo que tenía instalado y lo que no como en los 2000, no: <strong>me conecto a donde esté la configuración, me la descargo y sigo por dónde lo dejé</strong>.</p>
+<p>Esto me parece una <strong>ventaja imprescindible</strong>, bien porque tengas dos equipos y lo que mejores en el editor en uno no lo quieras perder en el otro, o simplemente porque no lo quieras perder. Mañana tienes que trabajar en otro equipo y yo no puedo depender de recordar lo que tenía instalado y lo que no, como en los 2000, no: <strong>me conecto a donde esté la configuración, me la descargo y sigo por dónde lo dejé</strong>.</p>
 <h3>Conservar la configuración de VS Code</h3>
 <p>Toda esa personalización cuidada, más o menos, no se puede perder. <strong>Necesito encontrar un sistema para migrarlo todo o la mayoría</strong>. Si se tratase de otro editor diferente, pues tira que te va, pero siendo la misma base quiero conservarlo todo. O casi todo.</p>
 <h3>No GitHub</h3>
-<p>GitHub para su ceo y para su puat<strong><em>SE LO LLEVAN</em></strong>.</p>
+<p>GitHub para su ceo y para su puat<strong>* SE LO LLEVAN *</strong>.</p>
 <p>No, en serio. Salir de GitHub no va a ser fácil, pero <strong>quiero hacerlo</strong>. De primeras pierdo la <strong>sincronización transparente de la configuración</strong> del editor y el poder <strong>compartir sesiones de trabajo</strong> con mis compañeres.</p>
 <p>Hay alguna cosa más: al ser un viejales yo trabajo a veces con tema blanco, y <strong>el tema de GitHub no lo voy a volver a instalar</strong>. Tengo algunos parecidos, pero no el mismo.</p>
-<h2>Pasos</h2>
+<h2>Pasos para instalarlo y migrar la configuración</h2>
 <p>Dando bandazos de prueba y error he sacado en claro un orden de pasos para conseguir la mayor parte de las cosas que quería. El orden es medio importante porque <strong>si configuras Sync Settings antes de cambiar el marketplace, vas a tener que configurarlo dos veces</strong>.</p>
-<h3>1. Repo settings (Codeberg)</h3>
+<h3>1. Repo para las nuevas settings (Codeberg)</h3>
 <p>Lo primero es tener un sitio donde guardar la configuración ya sea como backup o para sincronizarla entre equipos. <strong>Yo he elegido Codeberg</strong>, que es a donde voy a ir moviendo mis proyectos de GitHub.</p>
-<p>He creado <strong>un repo público al que puedo acceder por ssh</strong> desde la terminal, como los frontenders mayores. El punto de la terminal es importante para luego.</p>
+<p>He creado <strong>un repo público al que puedo acceder por ssh</strong> desde la terminal, como los frontenders mayores. <strong>El punto de la terminal es importante para luego</strong>.</p>
 <h3>2. Instalar VSCodium</h3>
 <p>Esta parte <strong>viene perfectamente explicada en la web del proyecto</strong>: <a href="https://vscodium.com/#install">vscodium.com - instalación</a>.</p>
 <p>Yo me lo instalé con brew:</p>
 <pre><code class="language-shell">brew install --cask vscodium
 </code></pre>
 <h3>3. Cambiar al Marketplace malo</h3>
-<p>Igual primero habría que <strong>valorar si tiene sentido hacer este cambio</strong>. Por una parte ya que te mueves a un entorno más abierto tiene todo el sentido que el repertorio de extensiones disponibles vaya en ese sentido. Por el otro lado hay dos tipos de extensiones que no vas a encontrar: las propietarias de ms/GitHub y las que no se hayan dado de alta.</p>
+<p>Igual primero habría que <strong>valorar si tiene sentido hacer este cambio</strong>. Por una parte ya que te mueves a un entorno más abierto tiene todo el sentido que el repertorio de extensiones disponibles vaya en esa dirección. Por el otro lado hay dos tipos de extensiones que no vas a encontrar: las propietarias de ms/GitHub y las que no se hayan dado de alta.</p>
 <p>Con las propietarias no hay mucho que hacer, pero <strong>a quienes mantienen las otras se les puede escribir y pedirles que las den de alta en <a href="https://open-vsx.org/">este otro marketplace</a></strong> (la comunidad va un poco de esto). No es algo a coste cero ni nadie te garantiza que lo vayan a hacer.</p>
 <p>Hay una tercera opción, que es descargarte las extensiones (se puede hacer desde VS Code) e instalarlas manualmente. Aunque, ojo, que pierdes la actualización automática.</p>
 <p>Yo, por ahora, <strong>he decidido cambiar al marketplace malo</strong>, el de ms, por lo menos durante el periodo de transición.</p>
@@ -240,7 +240,7 @@
 <figure class="post__panel post__panel--warning post__panel--custom-icon"><div class="post__panel-icon"><span role="img" aria-label="Señor gafotas con cara de listillo">🤓</span></div><div class="post__panel-content"><p class="post__panel-line">Una vez hecho el cambio se pueden buscar e instalar extensiones desde el panel lateral de VS Codium, pero <strong>seguía sin encontrar las «propietarias» si las instalaba desde la terminal</strong>.</p></div>
 </figure>
 <h3>4. Sync Settings</h3>
-<p>Esta es la parte más importante para mi. No es solo que el editor de código sea mi herramienta de trabajo o que sea uno de mis hobbies y no quiera mantener configuraciones diferentes, es que me voy a olvidar, o un día la voy a perder y me va a costar un quintal recuperarla.</p>
+<p>La sincronización es la parte más importante para mi. No es solo que el editor de código sea mi herramienta de trabajo o que sea uno de mis hobbies y no quiera mantener configuraciones diferentes, es que me voy a olvidar, o un día la voy a perder y me va a costar un quintal recuperarla.</p>
 <p>Al no tener la integración con GitHub se pierde el que tal como cambies algo, se guarde la configuración: <strong>cambias algo en un equipo y para cuando pasas a otro, ya lo tienes</strong>.</p>
 <p>Para esto hay una extensión muy molona que se llama Sync Settings.</p>
 <h4>Instalar</h4>
