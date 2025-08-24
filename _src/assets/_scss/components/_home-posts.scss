@@ -91,15 +91,18 @@
 .home-post__title {
 	@include core.font(gridTitle);
 
-	bottom: core.rem(core.$post-title-offset);
-	box-sizing: border-box;
-	margin: 0;
-	padding: core.rem(core.$unit);
-	position: absolute;
-	right: 0;
-	text-align: right;
-	width: 100%;
-	z-index: 1;
+	& {
+		bottom: core.rem(core.$post-title-offset);
+		box-sizing: border-box;
+		margin: 0;
+		padding: core.rem(core.$unit);
+		position: absolute;
+		right: 0;
+		text-align: right;
+		width: 100%;
+		z-index: 1;
+	}
+
 
 	@media (prefers-reduced-motion: no-preference) {
 		opacity: 0.1;
@@ -115,7 +118,9 @@
 .home-post__mark {
 	@include core.mark();
 
-	box-shadow: 0 0 core.rem(6) rgba(core.$color-black, 0.25);
+	& {
+		box-shadow: 0 0 core.rem(6) rgba(core.$color-black, 0.25);
+	}
 }
 
 .home-post__cover {

@@ -1,6 +1,6 @@
-const settings = require('./settings.js');
+import settings from './settings.js';
 
-module.exports = [
+export default [
   {
     "label": "Sígueme en Mastondon",
     "id": "mastodon",

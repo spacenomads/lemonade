@@ -1,5 +1,5 @@
 ---
-title: VSCodium
+title: VS Codium
 featured_image: vscodium-cover.jpg
 featured_alt: Imagen a base de formas cuadradas giradas 45 grados y de colores que se van superponiendo. Hay como un rombo principal central en blanco, una especie de borde grueso en azul y el resto es verde. Por las 4 puntas del rombo central asoman unos rombos grises oscureciendo los colores anteriores. En el centro tb aparece un icono como de una cornamenta de ciervo con trazos anchos y redondeados, que es el icono de la aplicación. y todo tiene una textura como de lienzo.
 featured_color: 0ab4a1

@@ -1,8 +1,9 @@
 {
   "name": "lemonade",
-  "version": "2.0.2",
-  "description": "Sidiostedalimones.com 2024 version 🦄",
+  "version": "3.0.0",
+  "description": "Sidiostedalimones.com 2025 version 🌵",
   "main": "dist/index.html",
+  "type": "module",
   "scripts": {
     "build": "(npm run clean || true) && npm run build:assets && eleventy",
     "build:pro": "cross-env MODE=pro npm run build",
@@ -31,20 +32,24 @@
     "eslint-config-recommended": "^4.1.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-file-contents-to-json": "^0.2.2",
     "gulp-if": "^3.0.0",
     "gulp-minify": "^3.1.0",
     "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-zip": "^5.1.0",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.17",
-    "sass": "^1.55.0",
+    "sass": "^1.90.0",
     "stylelint": "^14.13.0",
     "stylelint-config-standard-scss": "^5.0.0"
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "@11ty/eleventy-upgrade-help": "^3.0.1"
+  }
 }

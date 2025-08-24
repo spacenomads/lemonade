@@ -20,6 +20,7 @@
 // ---
 @use 'variables' as vars;
 @use 'functions' as fn;
+@use 'sass:list';
 
 
 
@@ -273,7 +274,7 @@
 // 3. z()
 // ---
 @mixin z($level, $list: vars.$levels) {
-	z-index: index($list, $level);
+	z-index: list.index($list, $level);
 }
 
 

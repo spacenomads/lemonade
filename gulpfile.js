@@ -1,17 +1,23 @@
-const { src, dest, series, watch } = require('gulp');
-const autoprefixer = require('gulp-autoprefixer');
-const config = require('./config.json');
-const packageJson = require('./package.json');
-const gulpif = require('gulp-if');
+
+import { readFile } from 'fs/promises';
+import { src, dest, series, watch } from 'gulp';
+import autoprefixer from 'gulp-autoprefixer';
+import gulpif from 'gulp-if';
+import minify from 'gulp-minify';
+import mqpacker from '@hail2u/css-mqpacker';
+import postcss from 'gulp-postcss';
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+import sourcemaps from 'gulp-sourcemaps';
+import zip from 'gulp-zip';
+
+
+const configFile = await readFile('./config.json', 'utf-8');
+const config = JSON.parse(configFile);
+const packageFile = await readFile('./package.json', 'utf-8');
+const packageJson = JSON.parse(packageFile);
 const isDev = process.env.MODE === config.env.dev;
-const minify = require('gulp-minify');
-const mqpacker = require('@hail2u/css-mqpacker');
-const postcss = require('gulp-postcss');
-const sass = require('gulp-sass')(require('sass'));
-const sourcemaps = require('gulp-sourcemaps');
-const zip = require('gulp-zip');
-
-
 
 
 
@@ -44,8 +50,9 @@ function styles() {
 	const plugins = [mqpacker({ sort: true })];
 	return src(config.styles.src)
 		.pipe(gulpif(isDev, sourcemaps.init()))
-		.pipe(sass({
-			outputStyle: isDev ? 'expanded' : 'compressed',
+		.pipe(sass.sync({
+			api: 'modern-compiler',
+			style: isDev ? 'expanded' : 'compressed',
 		}).on('error', sass.logError))
 		.pipe(postcss(plugins))
 		.pipe(autoprefixer({
@@ -76,7 +83,7 @@ const go = series(build, function (cb) {
 	cb();
 });
 
-module.exports = {
+export {
 	build,
 	styles,
 	go,

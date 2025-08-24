@@ -1,6 +1,7 @@
 const MODE_DEVELOPMENT = 'dev';
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const htmlmin = require('html-minifier');
+
+import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
+import htmlmin from 'html-minifier';
 
 const now = new Date();
 // TODO: Manage Local date
@@ -28,7 +29,7 @@ function getLocaleDate(date) {
 
 
 
-module.exports = function (config) {
+export default function (config) {
 	config.addPassthroughCopy({'_src/assets/_domain/cname.txt': '/CNAME'});
 	config.addPassthroughCopy({'_src/assets/_icon/favicon.ico': '/favicon.ico'});
 	config.addPassthroughCopy('_src/blog/**/img/*.{png,svg,jpg,webp}');

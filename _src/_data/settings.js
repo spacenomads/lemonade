@@ -28,7 +28,7 @@ function getCurrentFormattedDate() {
 
 
 
-module.exports = {
+export default {
   author: 'Carlos Mañas',
   email: 'carlos@sidiostedalimones.com',
 	fedi: {

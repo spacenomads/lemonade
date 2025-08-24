@@ -23,9 +23,11 @@
 .content__social-comment-link {
 	@include core.font(comments);
 
-	display: block;
-	margin: 0 0 core.rem(core.$unit * 5);
-	text-decoration: none;
+	& {
+		display: block;
+		margin: 0 0 core.rem(core.$unit * 5);
+		text-decoration: none;
+	}
 
 	@include core.mq(core.$bp-tablet-v) {
 		grid-area: content;

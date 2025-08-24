@@ -9,15 +9,17 @@
 .wrapper {
 	@include core.grid();
 
-	margin: 0 core.rem(core.$page-mobile);
+	& {
+		margin: 0 core.rem(core.$page-mobile);
 
-	@include core.mq(core.$bp-tablet-v) {
-		margin: 0 core.rem(core.$page-tablet);
-	}
+		@include core.mq(core.$bp-tablet-v) {
+			margin: 0 core.rem(core.$page-tablet);
+		}
 
-	@include core.mq(core.$bp-desktop) {
-		margin: 0 auto;
-		max-width: core.rem(core.$page-max-width);
+		@include core.mq(core.$bp-desktop) {
+			margin: 0 auto;
+			max-width: core.rem(core.$page-max-width);
+		}
 	}
 }
 

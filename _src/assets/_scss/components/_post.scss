@@ -152,7 +152,10 @@
 // ---
 .post__content h2 {
 	@include core.font(h2);
-	margin: core.rem(core.$unit * 6) 0 core.rem(core.$unit * 3);
+
+	& {
+		margin: core.rem(core.$unit * 6) 0 core.rem(core.$unit * 3);
+	}
 
 	@include core.mq(core.$bp-tablet-v) {
 		margin-top: core.rem(core.$unit * 7);
@@ -165,16 +168,22 @@
 
 .post__content h3 {
 	@include core.font(h3);
-	margin: core.rem(core.$unit * 4) 0 core.rem(core.$unit * 3);
+
+	& {
+		margin: core.rem(core.$unit * 4) 0 core.rem(core.$unit * 3);
+	}
 
 	@include core.mq(core.$bp-desktop) {
-		margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 4) ;
-	}
+			margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 4) ;
+		}
 }
 
 .post__content h4 {
 	@include core.font(h4);
-	margin: core.rem(core.$unit * 3) 0 core.rem(core.$unit * 2);
+
+	& {
+		margin: core.rem(core.$unit * 3) 0 core.rem(core.$unit * 2);
+	}
 
 	@include core.mq(core.$bp-desktop) {
 		margin: core.rem(core.$unit * 7) 0 core.rem(core.$unit * 3) ;
@@ -186,7 +195,10 @@
 .post__content > ol,
 .post__content > blockquote {
 	@include core.font(paragraph);
-	margin: 0 0 core.rem(core.$unit * 3);
+
+	& {
+		margin: 0 0 core.rem(core.$unit * 3);
+	}
 
 	@include core.mq(core.$bp-desktop) {
 		margin-bottom: core.rem(core.$unit * 4);
@@ -242,7 +254,9 @@
 	& > p {
 		@include core.font(quote);
 
-		margin: 0;
+		& {
+			margin: 0;
+		}
 	}
 }
 
@@ -283,8 +297,10 @@
 .post__media-caption {
 	@include core.font(meta);
 
-	margin-top: core.rem(core.$unit);
-	text-align: center;
+	& {
+		margin-top: core.rem(core.$unit);
+		text-align: center;
+	}
 }
 
 
@@ -369,14 +385,16 @@
 .post__tldr-caption {
 	@include core.font(tldrIcon);
 
-	background-color: core.$color-graphic-block;
-	color: core.$color-tldr-text;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	padding-right: core.rem(core.$unit * 2);
-	margin-left: core.rem(core.$unit * -3);
-	min-height: core.rem(core.$unit * 6);
+	& {
+		background-color: core.$color-graphic-block;
+		color: core.$color-tldr-text;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: core.rem(core.$unit * 2);
+		margin-left: core.rem(core.$unit * -3);
+		min-height: core.rem(core.$unit * 6);
+	}
 
 	@include core.mq(core.$bp-tablet-v) {
 		justify-content: center;
@@ -394,8 +412,10 @@
 .post__tldr-content {
 	@include core.font(tldrParagraph);
 
-	display: flex;
-	align-items: center;
+	& {
+		display: flex;
+		align-items: center;
+	}
 
 	@include core.mq(core.$bp-tablet-v) {
 		grid-column: span 3;
@@ -476,7 +496,9 @@
 .post__quote-block {
 	@include core.font(quote);
 
-	margin: 0;
+	& {
+		margin: 0;
+	}
 }
 
 .post__quote-paragraph {
@@ -490,8 +512,10 @@
 .post__quote-caption {
 	@include core.font(quoteAuthor);
 
-	margin-top: core.rem(core.$unit);
-	text-align: end;
+	& {
+		margin-top: core.rem(core.$unit);
+		text-align: end;
+	}
 
 	@include core.mq(core.$bp-tablet-v) {
 		margin-top: core.rem(core.$unit * 2);
@@ -570,15 +594,15 @@
 	}
 }
 
-.post__word-content {
-
-}
+.post__word-content {}
 
 .post__word-title {
 	@include core.font(h1);
-	display: flex;
-	align-items: center;
-	gap: core.rem(core.$unit);
+	& {
+		display: flex;
+		align-items: center;
+		gap: core.rem(core.$unit);
+	}
 
 	&::before {
 		content: '';
@@ -659,12 +683,15 @@
 // ---
 .post__dialogue {
 	@include core.font(paragraph);
-	background-color: core.$color-chat-1;
-	border-radius: core.rem(core.$unit * 1.5);
 
-	margin: core.rem(core.$unit * 3) 0;
-	padding: core.rem(calc(core.$unit * 4));
-	position: relative;
+	& {
+		background-color: core.$color-chat-1;
+		border-radius: core.rem(core.$unit * 1.5);
+
+		margin: core.rem(core.$unit * 3) 0;
+		padding: core.rem(calc(core.$unit * 4));
+		position: relative;
+	}
 
 	@include core.mq(core.$bp-tablet-v) {
 		margin: core.rem(core.$unit * 4) 0;
@@ -712,6 +739,7 @@
 	border-radius: core.rem(core.$unit * 2);
 	padding: core.rem(core.$unit) core.rem(core.$unit * 1.5);
 	position: relative;
+
 	&::before {
 		content: '';
 		background: core.img('dialog-arrow.svg', core.$theme-chat) right bottom no-repeat;
@@ -752,12 +780,15 @@
 .post__content {
 	& table {
 		@include core.font(paragraph);
-		border-collapse: collapse;
-		margin: 0;
-		padding: 0;
-		border-radius: 8px;
-		border-radius: 8px;
-		margin: core.rem(core.$unit * 4) 0;
+
+		& {
+			border-collapse: collapse;
+			margin: 0;
+			padding: 0;
+			border-radius: 8px;
+			border-radius: 8px;
+			margin: core.rem(core.$unit * 4) 0;
+		}
 
 		@include core.mq(core.$bp-desktop) {
 			margin: core.rem(core.$unit * 5) 0;
@@ -786,14 +817,16 @@
 .post__panel {
 	@include core.font(paragraph);
 
-	background: rgba(core.$color-athens-gray, .25);
-	margin: core.rem(core.$unit * 3) 0;
-	border-radius: core.rem(core.$unit * 1.2);
-	padding: core.rem(calc(core.$unit * 2));
-	position: relative;
-	display: grid;
-	grid-template-columns: auto 1fr;
-	gap: core.rem(core.$unit * 1.5);
+	& {
+		background: rgba(core.$color-athens-gray, .25);
+		margin: core.rem(core.$unit * 3) 0;
+		border-radius: core.rem(core.$unit * 1.2);
+		padding: core.rem(calc(core.$unit * 2));
+		position: relative;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: core.rem(core.$unit * 1.5);
+	}
 
 	@include core.mq(core.$bp-tablet-v) {
 		margin: core.rem(core.$unit * 4) 0;
