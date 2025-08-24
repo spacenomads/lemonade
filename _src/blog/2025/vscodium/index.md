@@ -79,7 +79,7 @@ Como decía: **pasos intermedios, pero es el camino**.
 
 ## Problemas
 
-Aquí nada es un camino de rosas y nadie te da nada gratis, al menos esta gente no. Te quitas la capa de GitHub y la de ms, y alguna cosa se complica.
+Aquí nada es un camino de rosas y nadie te da nada gratis, al menos esta gente no. En VS Codium te quitas la capa de GitHub y la de ms, y alguna cosa se complica.
 
 ### Marketplace propio
 
@@ -91,11 +91,11 @@ Además, hay una serie de extensiones propias de ms que ya no están incluidas, 
 
 ## Requerimientos
 
-Después de 27 años en el sector ya tengo una forma de usar las herramientas que me gustaría mantener.
+Después de 27 años en el sector ya tengo una forma de usar las herramientas que me gustaría mantener. Quiero tener, o conservar, unos mínimos.
 
 ### Sincronización remota
 
-Esto me parece una **ventaja imprescindible**, bien porque tengas dos equipos y lo que mejores en el editor en uno no lo quieras perder en el otro, o simplemente porque no lo quieras perder. Mañana tienes que trabajar en otro equipo y yo no puedo depender de recordar lo que tenía instalado y lo que no como en los 2000, no: **me conecto a donde esté la configuración, me la descargo y sigo por dónde lo dejé**.
+Esto me parece una **ventaja imprescindible**, bien porque tengas dos equipos y lo que mejores en el editor en uno no lo quieras perder en el otro, o simplemente porque no lo quieras perder. Mañana tienes que trabajar en otro equipo y yo no puedo depender de recordar lo que tenía instalado y lo que no, como en los 2000, no: **me conecto a donde esté la configuración, me la descargo y sigo por dónde lo dejé**.
 
 ### Conservar la configuración de VS Code
 
@@ -103,21 +103,21 @@ Toda esa personalización cuidada, más o menos, no se puede perder. **Necesito 
 
 ### No GitHub
 
-GitHub para su ceo y para su puat<strong>*SE LO LLEVAN*</strong>.
+GitHub para su ceo y para su puat<strong>* SE LO LLEVAN *</strong>.
 
 No, en serio. Salir de GitHub no va a ser fácil, pero **quiero hacerlo**. De primeras pierdo la **sincronización transparente de la configuración** del editor y el poder **compartir sesiones de trabajo** con mis compañeres.
 
 Hay alguna cosa más: al ser un viejales yo trabajo a veces con tema blanco, y **el tema de GitHub no lo voy a volver a instalar**. Tengo algunos parecidos, pero no el mismo.
 
-## Pasos
+## Pasos para instalarlo y migrar la configuración
 
 Dando bandazos de prueba y error he sacado en claro un orden de pasos para conseguir la mayor parte de las cosas que quería. El orden es medio importante porque **si configuras Sync Settings antes de cambiar el marketplace, vas a tener que configurarlo dos veces**.
 
-### 1. Repo settings (Codeberg)
+### 1. Repo para las nuevas settings (Codeberg)
 
 Lo primero es tener un sitio donde guardar la configuración ya sea como backup o para sincronizarla entre equipos. **Yo he elegido Codeberg**, que es a donde voy a ir moviendo mis proyectos de GitHub.
 
-He creado **un repo público al que puedo acceder por ssh** desde la terminal, como los frontenders mayores. El punto de la terminal es importante para luego.
+He creado **un repo público al que puedo acceder por ssh** desde la terminal, como los frontenders mayores. **El punto de la terminal es importante para luego**.
 
 ### 2. Instalar VSCodium
 
@@ -131,7 +131,7 @@ brew install --cask vscodium
 
 ### 3. Cambiar al Marketplace malo
 
-Igual primero habría que **valorar si tiene sentido hacer este cambio**. Por una parte ya que te mueves a un entorno más abierto tiene todo el sentido que el repertorio de extensiones disponibles vaya en ese sentido. Por el otro lado hay dos tipos de extensiones que no vas a encontrar: las propietarias de ms/GitHub y las que no se hayan dado de alta.
+Igual primero habría que **valorar si tiene sentido hacer este cambio**. Por una parte ya que te mueves a un entorno más abierto tiene todo el sentido que el repertorio de extensiones disponibles vaya en esa dirección. Por el otro lado hay dos tipos de extensiones que no vas a encontrar: las propietarias de ms/GitHub y las que no se hayan dado de alta.
 
 Con las propietarias no hay mucho que hacer, pero **a quienes mantienen las otras se les puede escribir y pedirles que las den de alta en [este otro marketplace](https://open-vsx.org/)** (la comunidad va un poco de esto). No es algo a coste cero ni nadie te garantiza que lo vayan a hacer.
 
@@ -179,7 +179,7 @@ Esto lo he sacado de este [tutorial de Anxkhn](https://gist.github.com/anxkhn/9a
 
 ### 4. Sync Settings
 
-Esta es la parte más importante para mi. No es solo que el editor de código sea mi herramienta de trabajo o que sea uno de mis hobbies y no quiera mantener configuraciones diferentes, es que me voy a olvidar, o un día la voy a perder y me va a costar un quintal recuperarla.
+La sincronización es la parte más importante para mi. No es solo que el editor de código sea mi herramienta de trabajo o que sea uno de mis hobbies y no quiera mantener configuraciones diferentes, es que me voy a olvidar, o un día la voy a perder y me va a costar un quintal recuperarla.
 
 Al no tener la integración con GitHub se pierde el que tal como cambies algo, se guarde la configuración: **cambias algo en un equipo y para cuando pasas a otro, ya lo tienes**.
 
