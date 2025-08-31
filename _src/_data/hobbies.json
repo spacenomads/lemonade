@@ -4,9 +4,9 @@
     {
       "title": "En papel, o no",
       "icon": "book",
-      "content": "Blackhand And Ironhead: Consecuencias",
+      "content": "Zorro",
       "link": {
-        "url": "https://lectura.social/book/159286/s/blackhand-and-ironhead-volumen-2",
+        "url": "https://lectura.social/book/160109/s/el-zorro-comienza-la-leyenda",
         "label": "lectura.social"
       }
     },
@@ -22,10 +22,10 @@
     {
       "title": "En pantalla",
       "icon": "tv",
-      "content": "Wednesday S02",
+      "content": "Alien: Earth",
       "link": {
-        "url": "https://www.netflix.com/browse?jbv=81231974",
-        "label": "Netflix"
+        "url": "https://www.disneyplus.com/browse/entity-23c8484e-a657-440b-8bf9-678f547331ff",
+        "label": "Disney+"
       }
     }
   ]
