@@ -10,7 +10,7 @@ date: 2025-08-31
 categories: [review, film]
 tags: [jaws, aniversario, 50]
 excerpt: He ido al reestreno de Tiburón por el 50 aniversario y me he asustado lo que no me asusté ninguna de las veces anteriores :)
-clickbait: ¿Qué te preció la película?
+clickbait: ¿Qué te pareció la película?
 cover_credits:
   link: https://www.universalpictures.com/
   author: Universal Pictures
