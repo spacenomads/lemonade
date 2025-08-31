@@ -5,7 +5,7 @@ featured_alt: Cartel clásico de la película Tiburón con la bañista nadando y
 featured_color: 127e9e
 ya_image: blobhaj.png
 ya_alt: Emote del Blobhaj con las manitas mirando al cielo.
-reading_time: 0
+reading_time: 9
 date: 2025-08-31
 categories: [review, film]
 tags: [jaws, aniversario, 50]
