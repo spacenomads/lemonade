@@ -49,7 +49,7 @@ Hay dos detalles que me han llamado poderosamente la atención ya que es la prim
 
 1. **El desnudo del principio, es desnudo**. Siempre pensé que la primera victima no iba desnuda durante el rodaje y que se esperaba que siendo de noche y con las burbujas no se viese. Se me olvida cómo eran los 70 y esa señora va en bolas. Igual es que siempre lo vi con otros ojos o en pantalla muy regulera. Ayer en la pantallaca, la señora tenía más del tamaño real y ni burbujas ni oscuridad.
 
-1. **El señor que va a quejarse al jefe Brody en la playa tiene «pechos»**. Yo no me enteré de que esto era posible, supongo que mucha otra gente, hasta que vi El CLub De La Lucha. Supongo que cuando no contemplas algo como posibles, simplemente no lo ves. Desde entonces ha cambiado que una de las pastillas que tomo, no debí leer el papelito que viene dentro, cuenta entre uno de los infinitos efectos secundarios con ese desarrollo del pecho y se me quedó grabado a fuego de más.
+1. **El señor que va a quejarse al jefe Brody en la playa tiene «pechos»**. Yo no me enteré de que esto podía pasar, supongo que como mucha otra gente, hasta que vi El Club De La Lucha. Supongo que cuando no contemplas algo como posible, simplemente no lo ves. Desde entonces ha cambiado que una de las pastillas que tomo, no debí leer el papelito que viene dentro, cuenta entre uno de los infinitos posibles efectos secundarios con ese desarrollo del pecho y se me quedó grabado a fuego de más.
 
 ## Lecturas adicionales
 
