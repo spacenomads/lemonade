@@ -17,6 +17,7 @@ cover_credits:
   link:
   author: Chuck!
   site: sidiostedalimones
+comments: false
 ---
 {% import "components/post/macros.njk" as macros %}
 
