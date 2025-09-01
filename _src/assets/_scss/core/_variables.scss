@@ -65,6 +65,8 @@ $color-future: $color-dev-fiery-rose;
 $color-graphic-block: $color-tangerine;
 $color-quote-bg: rgba($color-athens-gray, .5);
 
+$color-comments-disabled: $color-dev-fiery-rose;
+$color-comments-disabled-bg: color-mix(in srgb, $color-link, $color-athens-gray 80%);
 
 
 

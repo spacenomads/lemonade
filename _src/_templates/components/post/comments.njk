@@ -1,12 +1,20 @@
 {% set url = 'mailto:comments@sidiostedalimones.com?subject=[Comment] ' + title + '&body=→%20Escribe%20tu%20comentario%20aquí%0A%0A' + (title | hashtag) + '%0Ahttps://sidiostedalimones.com' + page.url + '%0A' %}
 
+{% if comments === false %}
+<div class="content__social-comment-link content__social-comment-link--disabled">
+{% else %}
 <a href="{{ url | replace('#', '%23') | replace(' ', '%20') | replace('[', '%5B') | replace(']', '%5D') }}" class="content__social-comment-link" target="_blank" rel="noopener noreferrer">
+{% endif %}
 	<div class="content__social-comment">
 		<div class="content__social-comment-icon"></div>
 		<p class="content__social-comment-info">
 			<span class="content__social-comment-info-inner">
-				<span class="content__social-comment-clickbait">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</span> Responde por correo.
+				<span class="content__social-comment-clickbait">{{ clickbait if clickbait else '¿Qué te ha parecido?' }}</span> {{ 'Comentarios cerrados' if comments === false else 'Responde por correo.'}}
 			</span>
 		</p>
 	</div>
+{% if comments === false %}
+</div>
+{% else %}
 </a>
+{% endif %}

@@ -4,6 +4,7 @@
 //  Table of Contents:
 //    0. @use
 //    1. Comments
+//   2. Disabled
 //
 // ***
 
@@ -14,6 +15,7 @@
 // 0. @use
 // ---
 @use 'core/core';
+
 
 
 
@@ -58,8 +60,9 @@
 
 .content__social-comment-icon {
 	aspect-ratio: 1;
-	background: core.img('mail.svg', core.$theme-icons) center no-repeat core.$color-link;
+	background: core.img('mail.svg', core.$theme-icons) center no-repeat currentColor;
 	position: relative;
+	color: core.$color-link;
 
 	@include core.mq(core.$bp-tablet-v) {
 		background-size: core.rem(core.$unit * 4);
@@ -76,7 +79,7 @@
 		top: 100%;
 		width: 0;
 		height: 0;
-		border: core.rem(core.$unit) solid core.$color-link;
+		border: core.rem(core.$unit) solid currentColor;
 		border-bottom-color: transparent;
 		border-right-color: transparent;
 
@@ -107,4 +110,20 @@
 .content__social-comment-clickbait {
 	color: core.$color-text;
 	display: block;
+}
+
+
+
+
+
+// 1. Disabled
+// ---
+.content__social-comment-link--disabled {
+	.content__social-comment-icon {
+		color: core.$color-comments-disabled-bg;
+	}
+
+	.content__social-comment {
+		color: core.$color-comments-disabled;
+	}
 }
