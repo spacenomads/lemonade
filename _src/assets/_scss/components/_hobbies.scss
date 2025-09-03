@@ -67,6 +67,22 @@
 	background-image: core.img('tv.svg', core.$theme-icons);
 }
 
+.hobby__title--smartphone::before {
+	background-image: core.img('smartphone.svg', core.$theme-icons);
+}
+
+.hobby__title--tablet::before {
+	background-image: core.img('tablet.svg', core.$theme-icons);
+}
+
+.hobby__title--imac::before {
+	background-image: core.img('imac.svg', core.$theme-icons);
+}
+
+.hobby__title--files::before {
+	background-image: core.img('media-video-list.svg', core.$theme-icons);
+}
+
 .hobby__content {
 	margin: 0;
 }

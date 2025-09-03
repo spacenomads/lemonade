@@ -20,8 +20,8 @@
       }
     },
     {
-      "title": "En pantalla",
-      "icon": "tv",
+      "title": "En el media player",
+      "icon": "files",
       "content": "Ulysses 31",
       "link": {
         "url": "https://trakt.tv/shows/ulysses-31",
