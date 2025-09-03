@@ -22,10 +22,10 @@
     {
       "title": "En pantalla",
       "icon": "tv",
-      "content": "Alien: Earth",
+      "content": "Ulysses 31",
       "link": {
-        "url": "https://www.disneyplus.com/browse/entity-23c8484e-a657-440b-8bf9-678f547331ff",
-        "label": "Disney+"
+        "url": "https://trakt.tv/shows/ulysses-31",
+        "label": "Trakt.tv"
       }
     }
   ]
