@@ -14,20 +14,13 @@
 //    9. Dialogue
 //    10. Table
 //    11. Panel
+//    12. Gallery grid
 //
 // ***
 
-
-
-
-
 // 0. @use
 // ---
-@use 'core/core';
-
-
-
-
+@use "core/core";
 
 // 1. Header
 // ---
@@ -79,7 +72,8 @@
 
 .post__back {
 	position: absolute;
-	background: core.img('back.svg', core.$theme-icons) center no-repeat core.$color-athens-gray;
+	background: core.img("back.svg", core.$theme-icons) center no-repeat
+		core.$color-athens-gray;
 	top: 0;
 	left: 0;
 	width: core.rem(24);
@@ -119,9 +113,8 @@
 	}
 }
 
-
 .post__reading-time {
-	background: core.img('timer.svg', core.$theme-icons) left center no-repeat;
+	background: core.img("timer.svg", core.$theme-icons) left center no-repeat;
 	background-size: core.rem(16);
 	padding-left: core.rem(20);
 }
@@ -136,17 +129,13 @@
 	.post__link {
 		color: inherit;
 		text-decoration: underline core.$color-correct-blue;
-		transition: color ease .3s;
+		transition: color ease 0.3s;
 
 		&:hover {
 			color: core.$color-correct-blue;
 		}
 	}
 }
-
-
-
-
 
 // 2. Content
 // ---
@@ -162,7 +151,7 @@
 	}
 
 	@include core.mq(core.$bp-desktop) {
-		margin: core.rem(core.$unit * 9) 0 core.rem(core.$unit * 4) ;
+		margin: core.rem(core.$unit * 9) 0 core.rem(core.$unit * 4);
 	}
 }
 
@@ -174,8 +163,8 @@
 	}
 
 	@include core.mq(core.$bp-desktop) {
-			margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 4) ;
-		}
+		margin: core.rem(core.$unit * 8) 0 core.rem(core.$unit * 4);
+	}
 }
 
 .post__content h4 {
@@ -186,7 +175,7 @@
 	}
 
 	@include core.mq(core.$bp-desktop) {
-		margin: core.rem(core.$unit * 7) 0 core.rem(core.$unit * 3) ;
+		margin: core.rem(core.$unit * 7) 0 core.rem(core.$unit * 3);
 	}
 }
 
@@ -209,7 +198,6 @@
 .post__content ol {
 	li::marker {
 		color: core.$color-link;
-
 	}
 }
 
@@ -240,7 +228,7 @@
 
 	&::before {
 		background: core.$color-quote-bg;
-		content: '';
+		content: "";
 		height: 100%;
 		left: 50%;
 		position: absolute;
@@ -265,18 +253,12 @@
 }
 
 .post__content > *:last-child {
-		margin-bottom: 0;
+	margin-bottom: 0;
 }
-
 
 .post__content a {
 	color: core.$color-link;
 }
-
-
-
-
-
 
 // 3. Images
 // ---
@@ -303,7 +285,6 @@
 	}
 }
 
-
 .post__media--center {
 	.post__media-image,
 	.post__media-caption {
@@ -313,7 +294,6 @@
 }
 
 .post__media--mini {
-
 	margin: core.rem(core.$unit * 3) 0;
 
 	@include core.mq(core.$bp-desktop) {
@@ -326,11 +306,7 @@
 }
 
 .post__media--iframe {
-
 }
-
-
-
 
 // 4. HR
 // ---
@@ -338,17 +314,14 @@
 	border: 0;
 	width: core.rem(core.$unit * 4);
 	height: core.rem(core.$unit * 4);
-	background: core.img('divider.svg', core.$theme-icons) center no-repeat core.$color-graphic-block;
+	background: core.img("divider.svg", core.$theme-icons) center no-repeat
+		core.$color-graphic-block;
 	margin: core.rem(core.$unit * 3) auto;
 
 	@include core.mq(core.$bp-tablet-v) {
 		margin: core.rem(core.$unit * 4) auto;
 	}
 }
-
-
-
-
 
 // 5. TL;DR
 // ---
@@ -360,11 +333,11 @@
 
 	@include core.mq(core.$bp-tablet-v) {
 		margin: 0 0 core.rem(core.$unit * 4);
-		grid-template-columns:repeat(4, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	@include core.mq(core.$bp-desktop) {
-		grid-template-columns:repeat(6, 1fr);
+		grid-template-columns: repeat(6, 1fr);
 		column-gap: core.rem(core.$unit * 3);
 		margin: 0 0 core.rem(core.$unit * 5);
 	}
@@ -434,31 +407,30 @@
 	margin-top: 1em;
 }
 
-
-
-
-
 // 6. Quotes
 // ---
 .post__quote {
 	margin: core.rem(core.$unit * 3) 0;
-	padding: core.rem(calc(core.$unit * 3 / 2)) 0 core.rem(core.$unit * 3) core.rem(core.$unit * 3);
+	padding: core.rem(calc(core.$unit * 3 / 2)) 0 core.rem(core.$unit * 3)
+		core.rem(core.$unit * 3);
 	position: relative;
 
 	@include core.mq(core.$bp-tablet-v) {
 		margin: core.rem(core.$unit * 4) 0;
-		padding: core.rem(core.$unit * 3) 0 core.rem(core.$unit * 3) core.rem(core.$unit * 9);
+		padding: core.rem(core.$unit * 3) 0 core.rem(core.$unit * 3)
+			core.rem(core.$unit * 9);
 		grid-area: content;
 	}
 
 	@include core.mq(core.$bp-desktop) {
 		margin: core.rem(core.$unit * 7) 0;
-		padding: core.rem(core.$unit * 4) 0 core.rem(core.$unit * 4) core.rem(core.$unit * 11);
+		padding: core.rem(core.$unit * 4) 0 core.rem(core.$unit * 4)
+			core.rem(core.$unit * 11);
 	}
 
 	&::before {
 		background: core.$color-quote-bg;
-		content: '';
+		content: "";
 		height: 100%;
 		left: 50%;
 		position: absolute;
@@ -470,8 +442,9 @@
 	}
 
 	&::after {
-		content: '';
-		background: core.img('quotes.svg', core.$theme-icons) left bottom no-repeat core.$color-black;
+		content: "";
+		background: core.img("quotes.svg", core.$theme-icons) left bottom no-repeat
+			core.$color-black;
 		background-size: 100% auto;
 		position: absolute;
 		left: 0;
@@ -526,11 +499,6 @@
 	}
 }
 
-
-
-
-
-
 // 7. YA image
 // ---
 .post__ya {
@@ -550,10 +518,6 @@
 	width: core.rem(core.$unit * 7);
 	height: core.rem(core.$unit * 7);
 }
-
-
-
-
 
 // 8. Word
 // ---
@@ -576,9 +540,9 @@
 
 	&::before {
 		background: core.$color-white;
-		border-left: core.rem( calc(core.$unit / 2)) solid core.$color-correct-blue;
+		border-left: core.rem(calc(core.$unit / 2)) solid core.$color-correct-blue;
 		box-sizing: border-box;
-		content: '';
+		content: "";
 		height: 100%;
 		left: 50%;
 		position: absolute;
@@ -594,7 +558,8 @@
 	}
 }
 
-.post__word-content {}
+.post__word-content {
+}
 
 .post__word-title {
 	@include core.font(h1);
@@ -605,10 +570,11 @@
 	}
 
 	&::before {
-		content: '';
+		content: "";
 		width: core.rem(core.$unit * 3);
 		height: core.rem(core.$unit * 3);
-		background: core.img('book-white.svg', core.$theme-icons) center no-repeat core.$color-correct-blue;
+		background: core.img("book-white.svg", core.$theme-icons) center no-repeat
+			core.$color-correct-blue;
 		background-size: 60% auto;
 		display: block;
 		border-radius: 50%;
@@ -641,25 +607,25 @@
 }
 
 .post__word-definition {
-		margin-inline-start: core.rem(core.$unit * 8);
-		margin-block-start: core.rem(core.$unit * 3);
-		position: relative;
-		counter-increment: section;
+	margin-inline-start: core.rem(core.$unit * 8);
+	margin-block-start: core.rem(core.$unit * 3);
+	position: relative;
+	counter-increment: section;
 
-		@include core.mq(core.$bp-tablet-v) {
-			margin-inline-start: core.rem(core.$unit * 9);
-		}
-		@include core.mq(core.$bp-desktop) {
-			margin-inline-start: core.rem(core.$unit * 11);
-		}
+	@include core.mq(core.$bp-tablet-v) {
+		margin-inline-start: core.rem(core.$unit * 9);
+	}
+	@include core.mq(core.$bp-desktop) {
+		margin-inline-start: core.rem(core.$unit * 11);
+	}
 
-		&::before {
-			content: counter(section) '.';
-			color: core.$color-correct-blue;
-			position: absolute;
-			inset-inline-start: 0;
-			transform: translateX(calc((100% + (core.$unit * 1px)) * -1));
-		}
+	&::before {
+		content: counter(section) ".";
+		color: core.$color-correct-blue;
+		position: absolute;
+		inset-inline-start: 0;
+		transform: translateX(calc((100% + (core.$unit * 1px)) * -1));
+	}
 }
 
 .post__word-synonyms {
@@ -674,10 +640,6 @@
 		margin-inline-start: core.rem(core.$unit * 6);
 	}
 }
-
-
-
-
 
 // 9. Dialogue
 // ---
@@ -703,7 +665,6 @@
 		margin: core.rem(core.$unit * 5) 0;
 		padding: core.rem(core.$unit * 6);
 	}
-
 }
 
 .post__dialogue-item {
@@ -730,7 +691,8 @@
 }
 
 .post__dialogue-user--chuck {
-	background: core.img('avatar-chuck.png', core.$theme-chat) center no-repeat core.$color-white;
+	background: core.img("avatar-chuck.png", core.$theme-chat) center no-repeat
+		core.$color-white;
 	background-size: cover;
 }
 
@@ -741,8 +703,9 @@
 	position: relative;
 
 	&::before {
-		content: '';
-		background: core.img('dialog-arrow.svg', core.$theme-chat) right bottom no-repeat;
+		content: "";
+		background: core.img("dialog-arrow.svg", core.$theme-chat) right bottom
+			no-repeat;
 		width: core.rem(15);
 		height: core.rem(15);
 		position: absolute;
@@ -751,7 +714,6 @@
 		transform: translateX(-57%);
 	}
 }
-
 
 .post__dialogue-item + .post__dialogue-item {
 	margin-block-start: 1rem;
@@ -763,17 +725,11 @@
 	.post__dialogue-text {
 		text-align: right;
 		&::before {
-
 			left: 100%;
 			transform: scale(-1, 1) translateX(45%);
-
 		}
 	}
 }
-
-
-
-
 
 // 10. Table
 // ---
@@ -795,30 +751,25 @@
 		}
 	}
 
-	& th, & td {
+	& th,
+	& td {
 		border: 1px solid core.$color-light-border;
 		text-align: left;
 		padding: core.rem(4) core.rem(16) core.rem(4) core.rem(8);
 	}
 
 	& th {
-		background-color: rgba(core.$color-light-border, .2);
+		background-color: rgba(core.$color-light-border, 0.2);
 	}
-
 }
-
-
-
-
 
 // 11. Panel
 // ---
-
 .post__panel {
 	@include core.font(paragraph);
 
 	& {
-		background: rgba(core.$color-athens-gray, .25);
+		background: rgba(core.$color-athens-gray, 0.25);
 		margin: core.rem(core.$unit * 3) 0;
 		border-radius: core.rem(core.$unit * 1.2);
 		padding: core.rem(calc(core.$unit * 2));
@@ -839,10 +790,11 @@
 	}
 }
 
+.post__panel-icon {
+}
 
-.post__panel-icon {}
-
-.post__panel-content {}
+.post__panel-content {
+}
 
 .post__panel-line {
 	margin: 0;
@@ -853,21 +805,60 @@
 }
 
 .post__panel--info {
-	background-color: rgba(core.$color-at-sign, .25);
+	background-color: rgba(core.$color-at-sign, 0.1);
 }
 
 .post__panel--warning {
-	background-color: rgba(core.$color-tangerine, .15);
+	background-color: rgba(core.$color-tangerine, 0.15);
 }
 
-.post__panel--dont {}
+.post__panel--dont {
+}
 
 .post__panel--unicorn {
-	background-color: rgba(deeppink, .25);
+	background-color: rgba(deeppink, 0.25);
 }
 
 .post__panel--custom-icon {
 	&::before {
 		content: unset;
+	}
+}
+
+// 12. Gallery grid
+// ---
+.post__gallery-grid {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: core.rem(core.$unit);
+	margin: core.rem(core.$unit * 4) 0;
+
+	@include core.mq(core.$bp_tablet-h) {
+		grid-template-columns: repeat(4, 1fr);
+		grid-column: span 2;
+		gap: core.rem(core.$unit * 2);
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 5) 0;
+		gap: core.rem(core.$unit * 3);
+	}
+}
+.post__gallery-grid__item {
+	img {
+		display: block;
+		width: 100%;
+	}
+	&.--col-2 {
+		grid-column: span 2;
+	}
+	&.--col-4 {
+		grid-column: span 2;
+
+		@include core.mq(core.$bp_tablet-h) {
+			grid-column: span 4;
+		}
 	}
 }
