@@ -14,7 +14,60 @@
 	</image>
 	<copyright>2025 CC BY-SA 4.0 International</copyright>
 	<webMaster>carlos@sidiostedalimones.com (Carlos Mañas)</webMaster>
-	<lastBuildDate>Sat, 06 Sep 2025 15:01:41 GMT</lastBuildDate>
+	<lastBuildDate>Sat, 06 Sep 2025 20:22:34 GMT</lastBuildDate>
+	
+	<item>
+		<title>Firmas de email</title>
+		<description></description>
+		<content:encoded>&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/firmas-cover.jpg&quot; alt=&quot;Sobre un fondo azul oscuro con el código HTML de una de las firma de email se ve la parte superior de la ventana de correo nuevo de Apple Mail.&quot;&gt;&lt;/p&gt;
+			&lt;p&gt;Una de las cosas que más disfruto de lo que sé hacer es &lt;strong&gt;diseñar y maquetar firmas de mails&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure class=&quot;post__panel post__panel--info post__panel--custom-icon&quot;&gt;&lt;div class=&quot;post__panel-icon&quot;&gt;&lt;span role=&quot;img&quot; aria-label=&quot;Carita de pensando...&quot;&gt;🤔&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;post__panel-content&quot;&gt;&lt;p class=&quot;post__panel-line&quot;&gt;Me gusta hacer la distinción entre «&lt;strong&gt;lo que sé hacer&lt;/strong&gt;» y mi trabajo como front.&lt;/p&gt;&lt;p class=&quot;post__panel-line&quot;&gt;Son dos cosas distintas que se hacen con las mismas herramientas.&lt;/p&gt;&lt;/div&gt;
+&lt;/figure&gt;
+&lt;p&gt;Igual es mi &lt;span lang=&quot;es&quot;&gt;guilty pleasure&lt;/span&gt; de esos porque maquetar para mail es una mireda indecible, &lt;strong&gt;PERO&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hacer estas pequeñas piezas es como ese espacio que puedo &lt;strong&gt;disfrutar de otra manera&lt;/strong&gt;, sin prisa o presión.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Digo que son «pequeñas» porque la propia información de la firma ya manda lo suficiente sobre la estructura, y no tiene sentido que haya muchos elementos. Por eso creo que &lt;strong&gt;son muy agradecidas de diseñar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Para web sería otra historia, pero en mail vamos muy limitades si quieres que se vea en todos los clientes de correo.&lt;/p&gt;
+&lt;p&gt;En estos 27 años creo que es el formato que más he disfrutado con diferencia. También &lt;strong&gt;el que he hecho más por gusto y con más tiempo para dedicarle&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Estos son algunas de las primeras:&lt;/p&gt;
+&lt;ul class=&quot;post__gallery-grid&quot;&gt;&lt;li class=&quot;post__gallery-grid__item --col-2&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/sidiostedalimones.png&quot; alt=&quot;Firma (en correo nuevo de la aplicación que usase en el momento) primera para mi proyecto sidiostedalimones.com. Aparece la parte de arriba de un exprimidor Braun pixelado con mi nombre, cargo, correo y url.&quot;&gt;
+	&lt;/li&gt;&lt;li class=&quot;post__gallery-grid__item --col-2&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/iahorro.png&quot; alt=&quot;Firma (en correo nuevo de la aplicación que usase en el momento) para iAhorro tras el rediseño en el que participé. El motivo gráfico principal es una llave cerrada negra acompañando a la palabra «iAhorro». Esta firma tiene muchos datos, como las redes sociales, cardo, correo, teléfono particular y dirección, teléfono y fax de la oficina.&quot;&gt;
+	&lt;/li&gt;&lt;li class=&quot;post__gallery-grid__item --col-4&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/murdock.png&quot; alt=&quot;Firma (en correo nuevo de la aplicación que usase en el momento) más simple para la empresa Murdock. Tiene nombre, cargo, logo de la empresa, teléfono y id de skype. Esta en grises y verdes turquesa.&quot;&gt;
+	&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Muy al principio se hicieron verdaderas fantasías que sólo se podían resolver como imágenes si querías que se viese medio parecido en los diferentes clientes de correo. A mi siempre me gustó invertir tiempo en algún detalle gráfico y resolver el resto con texto, pero en mail nada es gratis.&lt;/p&gt;
+&lt;p&gt;Ahora tenemos las pantallas con alta densidad de pixels y para que las imágenes salgan definidas necesitamos imágenes más grandes a las que les forzamos el tamaño, generalmente vale con &lt;strong&gt;el doble del tamaño final&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Para estas últimas, esto del tamaño de las imágenes ha sido un poco tricky porque uso Apple Mail, y Apple lo hace todo fácil, pero a su manera.&lt;/p&gt;
+&lt;figure class=&quot;post__panel post__panel--info &quot;&gt;&lt;div class=&quot;post__panel-icon&quot;&gt;&lt;span role=&quot;img&quot; aria-label=&quot;Manita cerrada apuntando a la derecha&quot;&gt;👉&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;post__panel-content&quot;&gt;&lt;p class=&quot;post__panel-line&quot;&gt;Por si a alguien le sirve &lt;a href=&quot;https://apple.stackexchange.com/questions/250967/how-to-stop-images-in-apple-mail-signature-is-being-magnified#answer-251012&quot;&gt;aquí cuentan cómo impedir que Apple Mail haga la imagen de la firma demasiado grande&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
+&lt;/figure&gt;
+&lt;p&gt;Y estas son las últimas que hice para Sidiostedalimones y para Spacenomads.&lt;/p&gt;
+&lt;ul class=&quot;post__gallery-grid&quot;&gt;&lt;li class=&quot;post__gallery-grid__item --col-4&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/sidiostedalimones-v1.png&quot; alt=&quot;Firma (en correo nuevo de la aplicación que usase en el momento) muy básica con un limón pixelado apoyado en un «suelo» ya que se ve la sombra y, debajo, se ve el nombre, cargo y url.&quot;&gt;
+	&lt;/li&gt;&lt;li class=&quot;post__gallery-grid__item --col-4&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/spacenomads.png&quot; alt=&quot;Diseño de la firma sin la interfaz del cliente de correo. El motivo gráfico es un círculo con fondo como del espacio con estrellas y puntos luminosos, en primer problema un «asteroide» cae. Aparece además, el nombre, cargo y url. Aquí el texto está desplazado a la derecha para que la curva de «Carl» coincida con la del círculo.&quot;&gt;
+	&lt;/li&gt;&lt;li class=&quot;post__gallery-grid__item --col-4&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/lemon-v2-light.png&quot; alt=&quot;Firma (en correo nuevo de la aplicación Apple Mail) con el limón pixelado dentro de un cuadrado gris claro con esquinas redondeadas para que si se activa el modo oscuro no quede raro, debajo, se ve el nombre, cargo y url.&quot;&gt;
+	&lt;/li&gt;&lt;li class=&quot;post__gallery-grid__item --col-4&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/lemon-v2-dark.png&quot; alt=&quot;Firma (en correo nuevo de la aplicación Apple Mail con modo oscuro activado) con el limón pixelado dentro de un cuadrado gris claro con esquinas redondeadas, debajo, se ve el nombre, cargo y url.&quot;&gt;
+	&lt;/li&gt;&lt;li class=&quot;post__gallery-grid__item --col-4&quot;&gt;
+		&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/lemon-v2-txt.png&quot; alt=&quot;Firma (en correo nuevo de la aplicación Apple Mail) pero solo usando texto en fuente monoespaciada. En lugar del limón pixelado está el emoji del limón, cargo, separador punteado «------», cargo y url.&quot;&gt;
+	&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;Generador de firmas&lt;/h2&gt;
+&lt;p&gt;en paralelo me estoy haciendo un generador de firmas al que le puedas alimentar con plantillas y campos, pero &lt;strong&gt;eso es otra historia&lt;/strong&gt;.&lt;/p&gt;
+
+			&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;img src=&quot;https://sidiostedalimones.com/blog/2025/firmas-de-email/img/send.png&quot; width=&quot;56&quot; alt=&quot;Simulación del icono de Apple Mail con su fondo azul y el icono de sobre resuelto con líneas blancas.&quot;&gt;&lt;/p&gt;</content:encoded>
+		
+		<category>hobby</category>
+		
+		<category>email signature</category>
+		
+		<link>https://sidiostedalimones.com/blog/2025/firmas-de-email/</link>
+		<guid isPermaLink="true">https://sidiostedalimones.com/blog/2025/firmas-de-email/</guid>
+		<pubDate>Sun, 07 Sep 2025 00:00:00 GMT</pubDate>
+	</item>
 	
 	<item>
 		<title>Jaws</title>
