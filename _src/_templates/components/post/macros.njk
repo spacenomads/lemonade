@@ -148,3 +148,17 @@
 </figure>
 {%- endmacro -%}
 
+
+
+
+
+{%- macro galleryGrid(galleryConfig) -%}
+<ul class="post__gallery-grid">
+	{%- for item in galleryConfig -%}
+	<li class="post__gallery-grid__item {{item.classes}}">
+		<img src="{{item.src}}" alt="{{ item.alt }}">
+	</li>
+	{%- endfor -%}
+</ul>
+{%- endmacro -%}
+
