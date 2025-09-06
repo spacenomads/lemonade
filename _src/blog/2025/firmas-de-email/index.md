@@ -114,4 +114,4 @@ Y estas son las últimas que hice para Sidiostedalimones y para Spacenomads.
 
 ## Generador de firmas
 
-en paralelo me estoy haciendo un generador de firmas al que le puedas alimentar con plantillas y campos, pero **eso es otra historia**.
+En paralelo me estoy haciendo un generador de firmas al que puedas alimentar con plantillas y campos, pero **eso es otra historia**.
