@@ -15,6 +15,7 @@
 //    10. Table
 //    11. Panel
 //    12. Gallery grid
+//    13. Oda
 //
 // ***
 
@@ -825,6 +826,10 @@
 	}
 }
 
+
+
+
+
 // 12. Gallery grid
 // ---
 .post__gallery-grid {
@@ -860,5 +865,30 @@
 		@include core.mq(core.$bp_tablet-h) {
 			grid-column: span 4;
 		}
+	}
+}
+
+
+
+
+
+// 13. Oda
+// ---
+.post__oda {
+	font-family: inherit;
+	margin: core.rem(core.$unit * 4) 0;
+  background-image:  linear-gradient(rgba(core.$color-dev-green-sheen, .25) 1px, transparent 1px);
+  background-size: 100% core.rem(27.2);
+	padding-inline-start: 1em;
+	padding-block-end: .1em;
+
+
+	@include core.mq(core.$bp-desktop) {
+		margin: core.rem(core.$unit * 5) 0;
+		background-size: 100% core.rem(37.4);
+	}
+
+	& {
+		@include core.font(paragraph);
 	}
 }

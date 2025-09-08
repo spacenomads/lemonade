@@ -236,6 +236,19 @@
 		.home-posts__item:nth-child(1) {
 			grid-row: span 2;
 		}
+
+		.home-posts__item:nth-child(2) {
+			grid-row: span 2;
+		}
+
+		.home-posts__item:nth-child(3) {
+			grid-column: span 4;
+		}
+
+		.home-posts__item:nth-child(4) {
+			grid-column: span 4;
+			grid-row: span 2;
+		}
 	}
 
 	@include core.mq(core.$bp-desktop) {
@@ -251,6 +264,11 @@
 
 		.home-posts__item:nth-child(3) {
 			grid-row: span 1;
+			grid-column: span 6;
+		}
+
+		.home-posts__item:nth-child(4) {
+			grid-row: span 3;
 			grid-column: span 6;
 		}
 	}

@@ -162,3 +162,16 @@
 </ul>
 {%- endmacro -%}
 
+
+
+
+{% macro oda(content) %}
+<pre class="post__oda">
+{%- for block in content -%}
+{%- for item in block -%}
+{{ item}}{{'\n'}}
+{%- endfor -%}
+{%- if not loop.last -%}{{ '\n' }}{%-endif-%}
+{%- endfor -%}
+</pre>
+{% endmacro %}
