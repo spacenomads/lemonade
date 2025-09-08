@@ -7,7 +7,7 @@ ya_image: bean.png
 ya_alt: Grano de café
 reading_time: 1
 date: 2021-07-21
-draft: true
+draft: false
 categories: [oda, medium]
 tags: []
 excerpt: ¿Quién no ha tenido un crush inalcanzable a quien nunca le propuso tomar un café?
