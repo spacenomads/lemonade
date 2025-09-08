@@ -44,9 +44,9 @@ Digo que son «pequeñas» porque la propia información de la firma ya manda lo
 
 Para web sería otra historia, pero en mail vamos muy limitades si quieres que se vea en todos los clientes de correo.
 
-En estos 27 años creo que es el formato que más he disfrutado con diferencia. También **el que he hecho más por gusto y con más tiempo para dedicarle**.
+En 27 años creo que es el formato que más he disfrutado con diferencia. También **el que he hecho más por gusto y con más tiempo para dedicarle**.
 
-Estos son algunas de las primeras:
+Estas son algunas de las primeras que hice:
 
 {% set galleryConfig = [
   {
@@ -114,4 +114,4 @@ Y estas son las últimas que hice para Sidiostedalimones y para Spacenomads.
 
 ## Generador de firmas
 
-en paralelo me estoy haciendo un generador de firmas al que le puedas alimentar con plantillas y campos, pero **eso es otra historia**.
+En paralelo me estoy haciendo un generador de firmas al que puedas alimentar con plantillas y campos, pero **eso es otra historia**.
