@@ -1,5 +1,6 @@
 ---
 title: Postmortem Xxxxxxxx
+post_id: xxxxxxx
 featured_image: post-mortem-cover.jpg
 featured_alt: Fondo de nubes sobre lo que podría ser un mar en representación de ese estado de nublado del que hablo
 featured_color: abd2d9

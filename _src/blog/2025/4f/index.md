@@ -1,5 +1,6 @@
 ---
 title: Los 4 fantásticos
+post_id: 4f
 featured_image: 4f-post.jpg
 featured_alt: Logo personalizado de Los Cuatro Fantásticos, con un 4 y una F en el centro de un círculo, y sobre una base como de tela azul.
 featured_color: 199cc2

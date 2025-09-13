@@ -1,5 +1,6 @@
 ---
 title: Adios, google; Hola, Peertube
+post_id: peertube
 featured_image: veedeo-cover.jpg
 featured_alt: pendiente
 featured_color: 0055c4

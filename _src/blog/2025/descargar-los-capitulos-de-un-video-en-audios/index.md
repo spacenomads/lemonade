@@ -1,5 +1,6 @@
 ---
 title: Descargar los capítulos de un vídeo en audios
+post_id: chapters
 featured_image: post-guia-descargar-audio.jpg
 featured_alt: Portada de las mini guías. Hoy, cómo descargar los capítulos de un vídeo de youtube en archivos de audio separados.
 featured_color: 91a7b4
