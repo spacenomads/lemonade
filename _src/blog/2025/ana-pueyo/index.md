@@ -8,8 +8,8 @@ ya_image: telemaco.jpg
 ya_alt: Detalle de un boceto a lápiz de Michi Himeno de Telémaco, de la serie Ulises31.
 reading_time: 2
 date: 2025-09-14
-draft: true
-future: true
+draft: false
+future: false
 categories: [despidos]
 tags: []
 excerpt: Todos los días sale gente de empresas, pero no todes dejan el mismo vacío que ha dejado Ana Pueyo.
