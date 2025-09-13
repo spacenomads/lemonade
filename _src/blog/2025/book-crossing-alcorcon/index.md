@@ -1,5 +1,6 @@
 ---
 title: Book-crossing Alcorcón
+post_id: bookcrossing
 featured_image: cover.jpg
 featured_alt: Foto de una de estas casas para intercambiar libros, con su tejado y su color rojizo. De fondo se ve una zona de ejercicios del parque.
 featured_color: b9cedf

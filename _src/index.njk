@@ -14,7 +14,7 @@ eleventyNavigation:
 			<h2 class="home-posts__year sr-only">2025</h2>
 			<ul class="home-posts__items">
 					{% for post in current_posts %}
-						<li class="home-posts__item">
+						<li class="home-posts__item {{ 'home-posts__item--' + post.data.post_id if post.data.post_id }}">
 
 							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.future | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
 								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}" {% if post.data.featured_color %}style="background-color: #{{ post.data.featured_color }}" {% endif %}>

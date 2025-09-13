@@ -45,6 +45,7 @@
 
 .content__social-comment {
 	display: grid;
+	align-items: stretch;
 	grid-template-columns: core.rem(53) 1fr;
 	background-color: rgba(core.$color-athens-gray, .5);
 
@@ -110,6 +111,7 @@
 .content__social-comment-clickbait {
 	color: core.$color-text;
 	display: block;
+	line-height: 140%;
 }
 
 

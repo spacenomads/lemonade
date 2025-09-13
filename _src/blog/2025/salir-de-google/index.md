@@ -1,5 +1,6 @@
 ---
 title: Salir de Google II
+post_id: google
 featured_image: cover.png
 featured_alt: Sobre fondo gris claro se ve el logo de Google transparente con línea punteada, como si faltase. Abajo hay cuatro recuadros con los colores azul, verde, amarillo y rojo corporativos.
 featured_color: f4f5f6

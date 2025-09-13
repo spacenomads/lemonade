@@ -1,5 +1,6 @@
 ---
 title: Mi primer Exlibris, ¡Chispas!
+post_id: exlibris
 featured_image: cover.jpg
 featured_alt: Simulación de cómo quedará el exlibris sobre una textura de papel. Dibujo a línea. En un marco rectangular de bordes redondeados, estamos mi gato y yo abajo, yo con un libro y él (dormido) con un eReader sin batería. sobre nosotros hay una bombilla feliz colgando y, en el centro, el texto del Exlibris con nuestros nombres y el año en números romanos.
 featured_color: d4d4d4

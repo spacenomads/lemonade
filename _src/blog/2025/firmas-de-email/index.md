@@ -1,5 +1,6 @@
 ---
 title: Firmas de email
+post_id: signature
 featured_image: firmas-cover.jpg
 featured_alt: Sobre un fondo azul oscuro con el código HTML de una de las firma de email se ve la parte superior de la ventana de correo nuevo de Apple Mail.
 featured_color: '031625'

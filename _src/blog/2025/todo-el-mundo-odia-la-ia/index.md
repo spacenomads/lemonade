@@ -1,5 +1,6 @@
 ---
 title: Todo el mundo odia la ia
+post_id: ia
 featured_image: everyone-hates-it.png
 featured_alt: Meme contra la ia generativa. Dice en inglés 'Stop forcing ai into fucking everything. Nobody asked for it, everyone hates it'
 featured_color: b60202

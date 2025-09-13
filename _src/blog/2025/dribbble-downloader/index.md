@@ -1,5 +1,6 @@
 ---
 title: Dribbble downloader v1.0.0
+post_id: dribbble
 featured_image: post-dribbble-cover.jpg
 featured_alt: Bola de baloncesto de Dribbble en sus rosas, con un fondo tb en rosa
 featured_color: ea4b8b

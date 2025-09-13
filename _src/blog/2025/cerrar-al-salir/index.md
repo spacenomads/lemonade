@@ -1,5 +1,6 @@
 ---
 title: Cerrar al salir...
+post_id: exiting-google
 featured_image: cover.jpg
 featured_alt: Sobre un fondo de cielo azul se ve como un lienzo cuadrado con su sombra. En el lienzo aparece el texto Keep Calm and delete your Google account
 featured_color: 3f7fe9
