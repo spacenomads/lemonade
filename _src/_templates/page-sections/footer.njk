@@ -1,10 +1,11 @@
 <footer class="lemon__footer">
 	<div class="wrapper">
-			<div class="lemon__footer-content">
-				<p class="lemon__license">
-					<a class="lemon__cc" href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a> {{ settings.year }} ~ <a class="lemon__author" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="/now">Carlos Mañas</a>
-				</p>
-			</div>
+		<div class="lemon__footer-content">
+			<p class="lemon__license">
+				<a class="lemon__cc" href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a>
+				{{ settings.year }} ~ <a class="lemon__author" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="/now">Carlos Mañas</a>
+			</p>
+			{% include "components/librecounter.njk" %}
 		</div>
+	</div>
 </footer>
-{% include "components/librecounter.njk" %}
