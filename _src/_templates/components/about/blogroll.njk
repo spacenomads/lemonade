@@ -1,0 +1,40 @@
+<section class="about__blogroll">
+	<div class="wrapper">
+		<div class="about__content post__content post__content--no-featured">
+			<h2>{{ blogroll.title | safe }}</h2>
+			{% for line in blogroll.intro %}
+				<p>{{ line | safe }}</p>
+			{% endfor %}
+
+			<ul class="about__blogroll-content blogroll">
+				{% for cat in blogroll.categories %}
+					<li class="blogroll__category">
+						<div class="blogroll__block">
+							<h3 class="blogroll__block-title blogroll__block-title--{{ cat.id }}">{{ cat.label | safe }}</h3>
+							<ul class="blogroll__block-links">
+								{% for link in cat.links %}
+									<li class="blogroll__block-link">
+										<a class="blogroll__link" href="{{link.url}}">
+											<div class="blogroll-item">
+												<p class="blogroll-item__title">{{ link.label | safe }}</p>
+												<div class="blogroll-item__icon">
+													<img src="{{ link.avatar | getBlogrollAvatar }}" alt="" class="blogroll-item__media">
+												</div>
+												<div class="blogroll-item__meta">
+													{% for tag in link.tags %}
+														<div class="blogroll-item__tag blogroll-item__tag--{{ tag | lower }}">{{ tag }}</div>
+													{% endfor %}
+													<div class="blogroll-item__author">{{ link.author }}</div>
+												</div>
+											</div>
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

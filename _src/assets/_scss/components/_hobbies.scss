@@ -25,7 +25,7 @@
 
 .about__content  .hobby__title {
 	display: flex;
-	gap: core.rem(core.$unit);
+	gap: core.rem(core.$unit * .5);
 	align-items: center;
 	margin: 0 0 core.rem(core.$unit);
 }
