@@ -16,10 +16,25 @@
 
 {% if pageType === 'page' %}
   <meta property="og:title" content="{{ settings.siteName }}">
-  <meta property="og:description" content="{{ settings.siteDescription }}">
+	{% if description %}
+  	<meta property="description" content="{{ description }}">
+  	<meta property="og:description" content="{{ description }}">
+	{% else %}
+  	<meta property="description" content="{{ settings.siteDescription }}">
+  	<meta property="og:description" content="{{ settings.siteDescription }}">
+	{% endif %}
+
+	{% if eleventyNavigation.key === 'now' %}
+  <meta property="og:image" content="{{ settings.url }}{{ settings.url }}{{ settings.og.now.img }}">
+  <meta property="og:image:secure_url" content="{{ settings.url }}{{ settings.og.now.img }}">
+	<meta property="og:image:alt" content="{{ settings.og.now.alt }}" />
+
+	{% else %}
   <meta property="og:image" content="{{ settings.url }}/assets/images/brand/og-logo-sidiostedalimones.png">
   <meta property="og:image:secure_url" content="{{ settings.url }}{{ settings.og.home.img }}">
 	<meta property="og:image:alt" content="{{ settings.og.home.alt }}" />
+
+	{% endif %}
 {% else %}
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ excerpt }}">
