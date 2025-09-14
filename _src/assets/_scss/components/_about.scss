@@ -291,7 +291,8 @@
 	line-height: 1;
 	font-size: 0.75em;
 	grid-area: meta;
-	margin-block-start: core.rem(core.$unit / 2);
+	margin-block-start: core.rem(calc(core.$unit / 2));
+
 }
 
 .blogroll-item__tag {
