@@ -1,0 +1,10 @@
+<div class="blogroll__block">
+	<h3 class="blogroll__block-title blogroll__block-title--{{ cat.id }}">{{ cat.label | safe }}</h3>
+	<ul class="blogroll__block-links">
+		{% for link in cat.links %}
+			<li class="blogroll__block-link">
+				{% include "components/about/blogroll-link.njk" %}
+			</li>
+		{% endfor %}
+	</ul>
+</div>
