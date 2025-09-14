@@ -46,6 +46,10 @@ export default {
 			img: '/assets/images/brand/og-logo-sidiostedalimones.png',
 			alt: 'Limón pixelado centrado, con píxeles gordotes y, debajo, el texto «sidiostedalimones».',
 		},
+		now: {
+			img: '/assets/images/now.png',
+			alt: 'Dibujo en blanco y negro, y bordes gruesos sobre fondo amarillo. Aparezco con un parche y diciendo «Hi!».',
+		},
 	},
   version: getStaticsVersion(),
   year: getYear(),
