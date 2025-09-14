@@ -1,0 +1,18 @@
+<section class="about__blogroll">
+	<div class="wrapper">
+		<div class="about__content post__content post__content--no-featured">
+			<h2>{{ blogroll.title | safe }}</h2>
+			{% for line in blogroll.intro %}
+				<p>{{ line | safe }}</p>
+			{% endfor %}
+
+			<ul class="about__blogroll-content blogroll">
+				{% for cat in blogroll.categories %}
+					<li class="blogroll__category">
+						{% include "components/about/blogroll-category.njk" %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

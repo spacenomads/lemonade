@@ -1,0 +1,186 @@
+{
+  "title": "Blogroll",
+  "intro": [
+    "Siempre he querido tener una lista de sitios/proyectos que sigo, pero siempre he pensado que no eran suficientes. Igual no tienen que serlo, <strong>solo ser los míos</strong>.",
+    "Estos son los sitios que reviso frecuentemente en mi lector de <abbr title=\"Really Simple Syndication\" lang=\"en\">RSS</abbr>."
+  ],
+  "categories": [
+    {
+        "label": "Blogs",
+        "id": "post",
+        "links": [
+          {
+            "label": "Jodida, pero no sorprendida",
+            "url": "https://jodidaperonosorprendida.mataroa.blog",
+            "avatar": "https://masto.es/system/accounts/avatars/113/362/169/069/995/099/original/72d1638a192b900f.jpg",
+            "author": "Bettie"
+          },
+          {
+            "label": "The Femme Urge",
+            "url": "https://thefemmeurge.maltita.es/",
+            "avatar": "maltita.png",
+            "author": "Maltita"
+          },
+          {
+            "label": "Blog de @janadelbosco",
+            "url": "https://janadelbosco.vercel.app/",
+            "avatar": "janadelbosco.jpg",
+            "author": "Jana del Bosco"
+          },
+          {
+            "label": "Diarios interplanetarios",
+            "url": "https://write.as/diarios-interplanetarios/",
+            "avatar": "alien.jpg",
+            "author": "Alien"
+          },
+          {
+            "label": "Guillermo Latorre",
+            "url": "https://guillermolatorre.com/",
+            "avatar": "guillermo-latorre.jpeg",
+            "author": "Guillermo Latorre"
+          },
+          {
+            "label": "Basic Apple Guy <small>| Apple Wallpapers, Reviews, and Merch</small>",
+            "url": "https://www.basicappleguy.com/basicappleblog",
+            "avatar": "basic-apple-guy.png",
+            "author": "BasicAppleGuy"
+          },
+          {
+            "label": "Godiva Ghoul's Cabinet of Curiosities",
+            "url": "https://godivaghoul.tumblr.com/",
+            "avatar": "godiva-ghoul.jpg",
+            "author": "Godiva Ghoul",
+            "tags": [
+              "NSFW"
+            ]
+          },
+          {
+            "label": "Cabfolio",
+            "url": "https://cabfolio.com/blog/",
+            "avatar": "cab.png",
+            "author": "Caroline Breault"
+          }
+        ]
+    },
+    {
+      "label": "Vídeo",
+      "id": "video",
+      "links": [
+        {
+          "label": "Choan Plays Ukelele",
+          "url": "https://video.anartist.org/c/choanplaysukulele/videos",
+          "avatar": "choan.png",
+          "author": "Choan Gálvez",
+          "tags": [
+            "peertube"
+          ]
+        },
+        {
+          "label": "Ginny Di",
+          "url": "https://www.youtube.com/@GinnyDi/videos",
+          "avatar": "ginny-di.jpg",
+          "author": "Ginny Di",
+          "tags": [
+            "youtube"
+          ]
+        },
+        {
+          "label": "DamiLee",
+          "url": "https://www.youtube.com/@DamiLeeArch/videos",
+          "avatar": "dami-lee.jpg",
+          "author": "Dami Lee",
+          "tags": [
+            "youtube"
+          ]
+        },
+        {
+          "label": "Critical Role",
+          "url": "https://www.youtube.com/@criticalrole/videos",
+          "avatar": "critical-role.jpg",
+          "author": "Critical Role",
+          "tags": [
+            "youtube"
+          ]
+        },
+        {
+          "label": "Siya Oum",
+          "url": "https://www.youtube.com/@SiyaOum/videos",
+          "avatar": "siya-oum.jpg",
+          "author": "Siya Oum",
+          "tags": [
+            "youtube"
+          ]
+        },
+        {
+          "label": "JP Coovert",
+          "url": "https://www.youtube.com/@JPCoovert/videos",
+          "avatar": "jp-coovert.jpg",
+          "author": "JP Coovert",
+          "tags": [
+            "youtube"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Streamers",
+      "id": "stream",
+      "links": [
+        {
+          "label": "Lord Bogle",
+          "url": "https://www.twitch.tv/lordbogle",
+          "avatar": "lord-bogle.png",
+          "author": "Lord Bogle",
+          "tags": [
+            "twitch"
+          ]
+        },
+        {
+          "label": "LIZZ",
+          "url": "https://www.twitch.tv/lizz",
+          "avatar": "lizz.png",
+          "author": "Lizz",
+          "tags": [
+            "twitch"
+          ]
+        },
+        {
+          "label": "MAKO_VICE",
+          "url": "https://www.twitch.tv/mako_vice",
+          "avatar": "mako-vice.png",
+          "author": "Mako Vice",
+          "tags": [
+            "twitch"
+          ]
+        },
+        {
+          "label": "PSuzume",
+          "url": "https://www.twitch.tv/psuzume",
+          "avatar": "psuzume.png",
+          "author": "PSuzume",
+          "tags": [
+            "twitch"
+          ]
+        },
+        {
+          "label": "legaia_",
+          "url": "https://www.twitch.tv/legaia_",
+          "avatar": "legaia.png",
+          "author": "legaia_",
+          "tags": [
+            "twitch"
+          ]
+        },
+        {
+          "label": "ItsMoura",
+          "url": "https://www.twitch.tv/itsmoura",
+          "avatar": "its-moura.png",
+          "author": "Moura",
+          "tags": [
+            "twitch"
+          ]
+        }
+      ]
+    }
+  ]
+}

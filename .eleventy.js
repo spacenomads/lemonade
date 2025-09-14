@@ -143,6 +143,11 @@ export default function (config) {
 	});
 
 
+	config.addNunjucksFilter('getBlogrollAvatar', function(str) {
+		return str.includes('https') ? str : `/assets/images/blogroll/${str}`;
+	});
+
+
 	return {
 		dir: {
 			input: '_src',
