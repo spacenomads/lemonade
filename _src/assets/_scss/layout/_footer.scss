@@ -5,7 +5,12 @@
 	color: core.$color-white;
 	grid-area: content;
 	padding: core.rem(core.$unit * 2);
+	padding-inline-end: core.rem(core.$unit * (2 + 6) );
 	position: relative;
+
+	@include core.mq(core.$bp-mobile-large) {
+		padding-inline-end: core.rem(core.$unit * 2 );
+	}
 }
 
 .lemon__license {
