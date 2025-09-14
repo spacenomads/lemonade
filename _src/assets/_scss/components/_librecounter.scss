@@ -1,5 +1,18 @@
-@use 'core/mixins';
+@use 'core/core';
 
 .librecounter {
-	@include mixins.screen-reader-only();
+	display: block;
+	background: core.$color-black;
+	background: core.$color-librecounter-red;
+	position: absolute;
+	inset-inline-end: 0;
+	inset-block-start: 0;
+	height: 100%;
+	display: flex;
+	aspect-ratio: 1 / 1;
+}
+
+.librecounter__media {
+	width: 80%;
+	margin: auto;
 }

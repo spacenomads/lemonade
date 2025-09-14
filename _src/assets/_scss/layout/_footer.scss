@@ -5,6 +5,7 @@
 	color: core.$color-white;
 	grid-area: content;
 	padding: core.rem(core.$unit * 2);
+	position: relative;
 }
 
 .lemon__license {
@@ -12,7 +13,7 @@
 
 	align-items: center;
 	display: flex;
-	gap: core.rem( calc(core.$unit/2) );
+	gap: core.rem(calc(core.$unit/2));
 	justify-content: center;
 	margin: 0;
 }
