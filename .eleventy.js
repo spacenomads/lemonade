@@ -84,9 +84,14 @@ export default function (config) {
 	});
 
 
-	config.addNunjucksFilter('spanMe', function(str) {
+	config.addNunjucksFilter('spanMe', function(str, noClass = false) {
 		return str.split(' ')
-			.map(word => `<span class="post__title-mark-item">${word}</span>`)
+			.map(word => {
+				return !noClass ?
+				`<span class="post__title-mark-item">${word}</span>`
+				:
+				`<span>${word}</span>`
+			})
 			.join(' ');
 	});
 

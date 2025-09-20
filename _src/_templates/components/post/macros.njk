@@ -3,10 +3,6 @@
 	<p style="color:red; font-size:3em;">Yas!</p>
 {%- endmacro -%}
 
-
-
-
-
 {%- macro tldr(content) -%}
 	<figure class="post__tldr">
 		<figcaption class="post__tldr-caption">TL;DR</figcaption>
@@ -20,10 +16,6 @@
 	</figure>
 {%- endmacro -%}
 
-
-
-
-
 {%- macro quote(config) -%}
 	<figure class="post__quote">
 		<blockquote class="post__quote-block"{% if config.cite.url %} cite="{{ config.cite.url }}"{% endif %}>
@@ -31,142 +23,126 @@
 				<p class="post__quote-paragraph">{{ p }}</p>
 			{%- endfor -%}
 		</blockquote>
-		{%- if config.cite.work -%}
+		{%- if config.author -%}
 			<figcaption class="post__quote-caption">—{{ config.author }}
-				, <cite class="post__quote-cite">{% if config.cite.url %}<a href="{{ config.cite.url }}">{% endif %}{{ config.cite.work }}{% if config.cite.url %}</a>{% endif %}</cite>
+				{%- if config.cite.work -%}
+				, <cite class="post__quote-cite">
+					{%- if config.cite.url -%}
+					<a href="{{ config.cite.url }}">
+					{%- endif -%}
+						{{ config.cite.work }}
+					{%- if config.cite.url -%}
+					</a>
+					{%- endif -%}
+				{%- endif -%}
+				</cite>
 			</figcaption>
 		{%- endif -%}
 	</figure>
 {%- endmacro -%}
 
-
-
-
-
 {%- macro word(config) -%}
 	<figure class="post__word">
 		<dl class="post__word-block">
 			<dt class="post__word-title">{{ config.word }}</dt>
-			{%- if config.note -%}<dt class="post__word-note">{{ config.note }}</dt>{%- endif -%}
+			{%- if config.note -%}
+				<dt class="post__word-note">{{ config.note }}</dt>
+			{%- endif -%}
 			{%- for item in config.content -%}
-			<dd class="post__word-definition">{{ item.gender | getWordGender | safe }}{{ item.def }}</dd>
+				<dd class="post__word-definition">{{ item.gender | getWordGender | safe }}{{ item.def }}</dd>
 			{%- endfor -%}
 		</dl>
-		{%- if config.synonyms -%}<p class="post__word-synonyms">{{ config.synonyms | getWordSynonyms | safe }}</p>{%- endif -%}
+		{%- if config.synonyms -%}
+			<p class="post__word-synonyms">{{ config.synonyms | getWordSynonyms | safe }}</p>
+		{%- endif -%}
 	</figure>
 {%- endmacro -%}
 
-
-
-
 {%- macro img(config) -%}
-<figure class="post__media post__media--{{ config.mode }}">
+	<figure class="post__media post__media--{{ config.mode }}">
 
-	{%- if config.link.url -%}
-		<a href="{{ config.link.url }}">
-	{%- endif -%}
-	<img src="{{ config.src }}" alt="{{ config.alt }}" class="post__media-image" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %} {% if config.title %}title="{{ config.title }}"{% endif %}>
-	{%- if config.link.url -%}
-		</a>
-	{%- endif -%}
-	{%- if config.caption -%}
-		<figcaption class="post__media-caption {{ 'sr-only' if config.mode === 'mini' }}" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %}>{{ config.caption | safe }}</figcaption>
-	{%- endif -%}
-</figure>
+		{%- if config.link.url -%}
+			<a href="{{ config.link.url }}">
+			{%- endif -%}
+			<img src="{{ config.src }}" alt="{{ config.alt }}" class="post__media-image" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %} {% if config.title %}title="{{ config.title }}"{% endif %}>
+			{%- if config.link.url -%}
+			</a>
+		{%- endif -%}
+		{%- if config.caption -%}
+			<figcaption class="post__media-caption {{ 'sr-only' if config.mode === 'mini' }}" {% if config.max_width %}style="max-width:{{ config.max_width }}px;"{% endif %}>{{ config.caption | safe }}</figcaption>
+		{%- endif -%}
+	</figure>
 {%- endmacro -%}
-
-
-
-
 
 {%- macro video(config) -%}
-<iframe class="post__media post__media--iframe" title="{{ config.title }}" width="{{ config.width }}" src="{{ config.src }}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" style="aspect-ratio: {{ config.aspect_ratio }}"></iframe>
+	<iframe class="post__media post__media--iframe" title="{{ config.title }}" width="{{ config.width }}" src="{{ config.src }}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" style="aspect-ratio: {{ config.aspect_ratio }}"></iframe>
 {%- endmacro -%}
 
-
-
-
-
 {%- macro dialog(config) -%}
-{%- set me = {
+	{%- set me = {
 	id: 'chuck',
 	name: 'Chuck!'
 } -%}
-<figure class="post__dialogue">
-{%- for text in config.content -%}
-	<p class="post__dialogue-item">
-		<b class="post__dialogue-user post__dialogue-user--{{ config.author.id | default(me.id) }}">{{ config.author.name | default(me.name) }}:</b>
-		<span class="post__dialogue-text">{{ text }}</span>
-	</p>
-{%- endfor -%}
-</figure>
+	<figure class="post__dialogue">
+		{%- for text in config.content -%}
+			<p class="post__dialogue-item">
+				<b class="post__dialogue-user post__dialogue-user--{{ config.author.id | default(me.id) }}">{{ config.author.name | default(me.name) }}:</b>
+				<span class="post__dialogue-text">{{ text | safe }}</span>
+			</p>
+		{%- endfor -%}
+	</figure>
 {%- endmacro -%}
-
-
-
-
 
 {%- macro emoji(emojiConfig) -%}
-<span role="img" aria-label="{{ emojiConfig.label }}">{{ emojiConfig.icon }}</span>
+	<span role="img" aria-label="{{ emojiConfig.label }}">{{ emojiConfig.icon }}</span>
 {%- endmacro-%}
 
-
-
-
-
 {%- macro panel(config) -%}
-{%- set defaultEmojis = {
-	info: {
-		icon: '👉',
-		label: 'Manita cerrada apuntando a la derecha'
-	},
-	warning: {
-		icon: '⚠️',
-		label: 'Señal triangular amarilla con exclamación dentro'
-	},
-	dont: {
-		icon: '🤬',
-		label: 'Señor maldiciendo en arameo'
-	},
-	unicorn: {
-		icon: '🦄',
-		label: 'Unicornio de melena magenta y cuerno multicolor'
-	}
+	{%- set defaultEmojis = {
+info: {
+	icon: '👉',
+	label: 'Manita cerrada apuntando a la derecha'
+},
+warning: {
+	icon: '⚠️',
+	label: 'Señal triangular amarilla con exclamación dentro'
+},
+dont: {
+	icon: '🤬',
+	label: 'Señor maldiciendo en arameo'
+},
+unicorn: {
+	icon: '🦄',
+	label: 'Unicornio de melena magenta y cuerno multicolor'
+}
 } -%}
-<figure class="post__panel {{ 'post__panel--' + config.type if config.type }} {{ 'post__panel--custom-icon' if config.custom_icon }}">
-	{%- if (config.custom_icon) -%}
-	{%- set emojiConfig = { icon: config.custom_icon.icon, label: config.custom_icon.label} -%}
-		<div class="post__panel-icon">{{ emoji(emojiConfig) }}</div>
-	{%- else -%}
-		<div class="post__panel-icon">{{ emoji(defaultEmojis[config.type]) }}</div>
-	{%- endif -%}
-	<div class="post__panel-content">
-	{%- for line in config.content -%}
-		<p class="post__panel-line">{{ line | safe }}</p>
-	{%- endfor -%}
-	</div>
-</figure>
+	<figure class="post__panel {{ 'post__panel--' + config.type if config.type }} {{ 'post__panel--custom-icon' if config.custom_icon }}">
+		{%- if (config.custom_icon) -%}
+			{%- set emojiConfig = { icon: config.custom_icon.icon, label: config.custom_icon.label} -%}
+			<div class="post__panel-icon">{{ emoji(emojiConfig) }}</div>
+		{%- else -%}
+			<div class="post__panel-icon">{{ emoji(defaultEmojis[config.type]) }}</div>
+		{%- endif -%}
+		<div class="post__panel-content">
+			{%- for line in config.content -%}
+				<p class="post__panel-line">{{ line | safe }}</p>
+			{%- endfor -%}
+		</div>
+	</figure>
 {%- endmacro -%}
-
-
-
-
 
 {%- macro galleryGrid(galleryConfig) -%}
-<ul class="post__gallery-grid">
-	{%- for item in galleryConfig -%}
-	<li class="post__gallery-grid__item {{item.classes}}">
-		<img src="{{item.src}}" alt="{{ item.alt }}">
-	</li>
-	{%- endfor -%}
-</ul>
+	<ul class="post__gallery-grid">
+		{%- for item in galleryConfig -%}
+			<li class="post__gallery-grid__item {{item.classes}}">
+				<img src="{{item.src}}" alt="{{ item.alt }}">
+			</li>
+		{%- endfor -%}
+	</ul>
 {%- endmacro -%}
 
-
-
-
 {% macro oda(content) %}
-<pre class="post__oda">
+	<pre class="post__oda">
 {%- for block in content -%}
 {%- for item in block -%}
 {{ item}}{{'\n'}}
@@ -174,4 +150,40 @@
 {%- if not loop.last -%}{{ '\n' }}{%-endif-%}
 {%- endfor -%}
 </pre>
+{% endmacro %}
+
+{% macro previewCard(config) %}
+<a href="{{ config.url }}" class="post__preview-card-link" aria-label="{{ config.title }}">
+	<article class="post__preview-card{% if config.type %} post__preview-card--{{ config.type }}{% endif %}" lang="{{ config.lang }}">
+		<div class="post__preview-card-inner">
+			<h2 class="post__preview-card-title">{{ config.title }}</h2>
+			<p class="post__preview-card-preview">
+				{%- if config.mode === 'dev' -%}
+					<img src="img/{{ config.meta.img.local_url }}" alt="{{ config.meta.img.alt }}" class="post__preview-card-media">
+				{%- else -%}
+					<img src="{{ config.meta.img.url }}" alt="{{ config.meta.img.alt }}" class="post__preview-card-media">
+				{%- endif -%}
+			</p>
+			{%- if config.type -%}
+			<p class="post__preview-card-description">{{ config.meta.description }}</p>
+			{%- endif -%}
+			{%- if config.author -%}
+				<div class="post__preview-card-meta">
+					<p class="post__preview-card-author-name">
+						{{ config.author.name }}
+						<span class="post__preview-card-author-avatar" style="background-image: url({{ config.author.avatar }});"></span>
+					</p>
+					<p class="post__preview-card-date">{{ config.meta.date }}</p>
+					{%- if config.type -%}
+					<p class="post__preview-card-domain">{{ config.meta.domain }}</p>
+					{%- endif -%}
+				</div>
+			{%- endif -%}
+		</div>
+	</article>
+	</a>
+{% endmacro %}
+
+{% macro abbr(config) %}
+<abbr title="{{ config.title }}"{% if config.lang %} lang="{{ config.lang }}"{% endif %}>{{ config.word }}</abbr>
 {% endmacro %}
