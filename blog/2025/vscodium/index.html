@@ -13,8 +13,8 @@
 <meta name="fediverse:creator" content="@oneeyedman@laterracita.online">
 <meta name="generator" content="Eleventy v3.1.2">
 <link rel="icon" href="/favicon.ico"/>
-<link rel="stylesheet" href="/assets/css/main.css?v=20250914202516805">
-<script src="/assets/js/vendor/prism.js?v=20250914202516805" defer></script>
+<link rel="stylesheet" href="/assets/css/main.css?v=20250920143256822">
+<script src="/assets/js/vendor/prism.js?v=20250920143256822" defer></script>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed | Sidiostedalimones" href="https://sidiostedalimones.com/rss.xml">
 
 
@@ -239,7 +239,7 @@
 </table>
 <p>Esto lo he sacado de este <a href="https://gist.github.com/anxkhn/9ae7b2248999168b73f303dec5851460">tutorial de Anxkhn</a>.</p>
 <figure class="post__panel post__panel--warning post__panel--custom-icon"><div class="post__panel-icon"><span role="img" aria-label="Señor gafotas con cara de listillo">🤓</span></div><div class="post__panel-content"><p class="post__panel-line">Una vez hecho el cambio se pueden buscar e instalar extensiones desde el panel lateral de VS Codium, pero <strong>seguía sin encontrar las «propietarias» si las instalaba desde la terminal</strong>.</p></div>
-</figure>
+	</figure>
 <h3>4. Sync Settings</h3>
 <p>La sincronización es la parte más importante para mi. No es solo que el editor de código sea mi herramienta de trabajo o que sea uno de mis hobbies y no quiera mantener configuraciones diferentes, es que me voy a olvidar, o un día la voy a perder y me va a costar un quintal recuperarla.</p>
 <p>Al no tener la integración con GitHub se pierde el que tal como cambies algo, se guarde la configuración: <strong>cambias algo en un equipo y para cuando pasas a otro, ya lo tienes</strong>.</p>
@@ -266,7 +266,7 @@
 <p>Esto se puede hacer en el orden que sea. Dentro de <a href="#system-folder">la carpeta de VS Codium</a> hay una carpeta <strong>user/</strong> donde iremos dejando los atajos, las settings y la carpeta de snippets.</p>
 <p>Desde VS Code me fui a las settings, busqué cualquier enlace al archivo, click derecho en la pestaña cuando se abra y lo mostramos en el explorador de archivos del sistema, y ya tenemos los archivos settings.json, keybindings.json y la carpeta de snippets para moverla a la carpeta user de VS Codium de la que hablábamos antes.</p>
 <figure class="post__panel post__panel--warning "><div class="post__panel-icon"><span role="img" aria-label="Señal triangular amarilla con exclamación dentro">⚠️</span></div><div class="post__panel-content"><p class="post__panel-line">Si no tenemos <strong>snippets</strong> puede que no esté ni la carpeta.</p></div>
-</figure>
+	</figure>
 <h4>Extensiones</h4>
 <p>Esta parte es un poco tricky y vamos a tirar de la terminal un poco, así que vamos a necesitar instalados 'code' y 'codium'en el PATH para usarlos desde la terminal.</p>
 <p>Si no se tienen se hace desde la paleta de comandos con:</p>
@@ -278,7 +278,7 @@ shell Command: Install 'codium' command in PATH
 <pre><code class="language-shell">code --list-extensions &gt; vscode-extensions.txt
 </code></pre>
 <figure class="post__panel post__panel--info "><div class="post__panel-icon"><span role="img" aria-label="Manita cerrada apuntando a la derecha">👉</span></div><div class="post__panel-content"><p class="post__panel-line">El sacarlo primero a un archivo de texto nos da la oportunidad de abrirlo y revisar lo que hay porque seguro que a simple vista hay algunas que nos sobran.</p></div>
-</figure>
+	</figure>
 <p>Una vez revisado las vamos a ir instalando, desde la terminal:</p>
 <pre><code class="language-shell">xargs -n1 codium --install-extension &lt; vscode-extensions.txt
 </code></pre>
