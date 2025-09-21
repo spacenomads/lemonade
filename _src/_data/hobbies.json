@@ -20,12 +20,12 @@
       }
     },
     {
-      "title": "En el VLC",
-      "icon": "files",
-      "content": "Ulysses 31",
+      "title": "En la tablet",
+      "icon": "tablet",
+      "content": "Buffy, The Vampire Slayer",
       "link": {
-        "url": "https://trakt.tv/shows/ulysses-31",
-        "label": "Trakt.tv"
+        "url": "https://www.disneyplus.com/series/buffy-the-vampire-slayer/DmJepBrlNiUe",
+        "label": "Disney+"
       }
     }
   ]
