@@ -29,7 +29,7 @@
 }
 
 .home-posts__item {
-	& + .home-posts__item {
+	&+.home-posts__item {
 		margin-top: core.rem(core.$unit * 2);
 
 		@include core.mq(core.$bp-tablet-v) {
@@ -72,6 +72,7 @@
 	min-height: core.rem(core.$unit * 15);
 	height: 100%;
 }
+
 .home-post__link {
 	background: core.$color-tangerine;
 	display: block;
@@ -179,6 +180,7 @@
 		}
 	}
 }
+
 @media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
 	.home-posts--latest {
 		.home-posts__items {
@@ -218,6 +220,7 @@
 			&:nth-child(1) {
 				grid-column: span 4;
 			}
+
 			&:nth-child(2) {
 				grid-column: span 2;
 			}
@@ -311,12 +314,15 @@
 				grid-row: span 2;
 				grid-column: span 4;
 			}
-			&:nth-child(5){
+
+			&:nth-child(5) {
 				grid-column: span 3;
 			}
-			&:nth-child(6){
+
+			&:nth-child(6) {
 				grid-column: span 3;
 			}
+
 			&:nth-child(7) {
 				grid-row: 2 / 4;
 				grid-column: 5 / 7;
@@ -364,11 +370,15 @@
 				grid-row: span 2;
 				grid-column: span 4;
 			}
+
 			&:nth-child(2) {
 				grid-row: span 2;
 				grid-column: span 4;
 			}
-			&:nth-child(3), &:nth-child(4), &:nth-child(5) {
+
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5) {
 				grid-row: span 2;
 				grid-column: span 4;
 			}
@@ -381,10 +391,13 @@
 				grid-row: span 2;
 				grid-column: span 6;
 			}
-			&:nth-child(2), &:nth-child(3) {
+
+			&:nth-child(2),
+			&:nth-child(3) {
 				grid-row: span 2;
 				grid-column: span 3;
 			}
+
 			&:nth-child(4),
 			&:nth-child(5) {
 				grid-row: span 1;
@@ -403,38 +416,51 @@
 .home-posts--2025 {
 	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
 		.home-posts__item {
-			&.home-posts__item--vivaldi-human-navigation {
+			&.home-posts__item--gloomy {
 				grid-column: span 4;
 				grid-row: span 3;
 			}
-			&.home-posts__item--telemaco {
-				grid-column: span 4;
+
+			&.home-posts__item--vivaldi-human-navigation {
+				grid-column: span 2;
 				grid-row: span 2;
 			}
+
+			&.home-posts__item--telemaco {
+				grid-column: span 2;
+				grid-row: span 2;
+			}
+
 			&.home-posts__item--signature {
 				grid-column: span 4;
 				grid-row: span 1;
 			}
+
 			&.home-posts__item--jaws50 {
 				grid-column: span 2;
 				grid-row: span 6;
 			}
+
 			&.home-posts__item--vscodium {
 				grid-column: span 2;
 				grid-row: span 2;
 			}
+
 			&.home-posts__item--xxxxxxx {
 				grid-column: span 2;
 				grid-row: span 2;
 			}
+
 			&.home-posts__item--4f {
 				grid-column: span 2;
 				grid-row: span 2;
 			}
+
 			&.home-posts__item--chapters {
 				grid-column: span 4;
 				grid-row: span 2;
 			}
+
 			&.home-posts__item--dribbble {
 				grid-column: span 4;
 				grid-row: span 1;
@@ -443,6 +469,7 @@
 			&.home-posts__item--peertube {
 				grid-column: span 4;
 			}
+
 			&.home-posts__item--ia {
 				grid-column: span 4;
 			}
@@ -451,62 +478,81 @@
 
 	@include core.mq(core.$bp-desktop) {
 		.home-posts__item {
-			&.home-posts__item--vivaldi-human-navigation {
-				grid-row: span 3;
+			&.home-posts__item--gloomy {
 				grid-column: span 6;
+				grid-row: span 2;
 			}
+
+			&.home-posts__item--vivaldi-human-navigation {
+				grid-row: span 2;
+				grid-column: span 3;
+			}
+
 			&.home-posts__item--telemaco {
 				grid-row: span 2;
-				grid-column: span 6;
+				grid-column: span 3;
 			}
+
 			&.home-posts__item--signature {
 				grid-row: span 2;
 				grid-column: span 6;
 			}
+
 			&.home-posts__item--jaws50 {
 				grid-row: span 4;
 				grid-column: span 2;
 			}
+
 			&.home-posts__item--vscodium {
 				grid-row: span 2;
 				grid-column: span 2;
 			}
+
 			&.home-posts__item--xxxxxxx {
 				grid-row: span 2;
 				grid-column: span 2;
 			}
+
 			&.home-posts__item--4f {
 				grid-row: span 2;
 				grid-column: span 4;
 			}
+
 			&.home-posts__item--chapters {
 				grid-row: span 2;
 				grid-column: span 4;
 			}
+
 			&.home-posts__item--dribbble {
 				grid-row: span 2;
 				grid-column: span 2;
 			}
+
 			&.home-posts__item--exiting-google {
 				grid-row: span 1;
 				order: 1;
 			}
+
 			&.home-posts__item--google {
 				order: 4;
 			}
+
 			&.home-posts__item--bookcrossing {
 				grid-row: span 2;
 				order: 2;
 			}
+
 			&.home-posts__item--exlibris {
 				grid-row: span 2;
 				order: 3;
 			}
+
 			&.home-posts__item--peertube {
 				grid-column: span 3;
 				grid-row: span 2;
 				order: 5;
 			}
+
 			&.home-posts__item--ia {
 				grid-column: span 3;
 				grid-row: span 2;
