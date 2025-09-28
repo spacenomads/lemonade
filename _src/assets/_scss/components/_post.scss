@@ -866,6 +866,10 @@
 	}
 }
 
+
+
+
+
 // 13. Oda
 // ---
 .post__oda {
@@ -875,19 +879,29 @@
 		rgba(core.$color-dev-green-sheen, 0.25) 1px,
 		transparent 1px
 	);
-	background-size: 100% core.rem(27.2);
+	background-size: 100% core.rem(32);
 	padding-inline-start: 1em;
 	padding-block-end: 0.1em;
 
 	@include core.mq(core.$bp-desktop) {
 		margin: core.rem(core.$unit * 5) 0;
-		background-size: 100% core.rem(37.4);
+		background-size: 100% core.rem(40);
 	}
 
 	& {
 		@include core.font(paragraph);
+
+		line-height: core.rem(32);
+
+		@include core.mq(core.$bp-desktop) {
+			line-height: core.rem(40);
+		}
 	}
 }
+
+
+
+
 
 // 14. Preview card
 // ---
