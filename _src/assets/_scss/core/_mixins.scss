@@ -12,27 +12,18 @@
 //
 // ***
 
-
-
-
-
 // 0. @use
 // ---
-@use 'variables' as vars;
-@use 'functions' as fn;
-@use 'sass:list';
-
-
-
+@use "variables" as vars;
+@use "functions" as fn;
+@use "sass:list";
 
 // 1. font()
 // ---
 @mixin font($type) {
-
 	$done: vars.$color_text;
 
 	@if $type == brand {
-
 		font-size: fn.rem(18);
 		line-height: fn.lh(32, 18);
 		font-weight: vars.$font-medium;
@@ -44,14 +35,12 @@
 	}
 
 	@if $type == footer {
-
 		font-size: fn.rem(14);
 		line-height: fn.lh(16, 14);
 		font-weight: vars.$font-regular;
 	}
 
 	@if $type == gridTitle {
-
 		font-size: fn.rem(18);
 		line-height: fn.lh(27, 18);
 		font-weight: vars.$font-semibold;
@@ -63,13 +52,11 @@
 	}
 
 	@if $type == gridTitleLG {
-
 		font-size: fn.rem(32);
 		line-height: fn.lh(46, 32);
 	}
 
 	@if $type == h1 {
-
 		font-size: fn.rem(28);
 		line-height: fn.rem(36);
 		font-weight: vars.$font-medium;
@@ -86,7 +73,6 @@
 	}
 
 	@if $type == h2 {
-
 		font-size: fn.rem(22);
 		line-height: fn.lh(33, 22);
 		font-weight: vars.$font-medium;
@@ -103,7 +89,6 @@
 	}
 
 	@if $type == h3 {
-
 		font-size: fn.rem(18);
 		line-height: fn.lh(27, 18);
 		font-weight: vars.$font-medium;
@@ -120,7 +105,6 @@
 	}
 
 	@if $type == h4 {
-
 		font-size: fn.rem(16);
 		line-height: fn.lh(27, 18);
 		font-weight: vars.$font-medium;
@@ -137,13 +121,14 @@
 	}
 
 	@if $type == paragraph {
-
-		font-size: fn.rem(18);
-		line-height: fn.lh(27.2, 18);
+		& {
+			font-size: fn.rem(18);
+			line-height: fn.lh(32, 18);
+		}
 
 		@include mq(vars.$bp-desktop) {
 			font-size: fn.rem(22);
-			line-height: fn.lh(37.4, 22);
+			line-height: fn.lh(40, 22);
 		}
 	}
 
@@ -165,7 +150,6 @@
 	}
 
 	@if $type == meta {
-
 		font-size: fn.rem(14);
 		line-height: fn.lh(16, 14);
 
@@ -176,7 +160,6 @@
 	}
 
 	@if $type == tldrIcon {
-
 		font-size: fn.rem(18);
 		line-height: fn.lh(27, 18);
 		font-weight: vars.$font-medium;
@@ -188,7 +171,6 @@
 	}
 
 	@if $type == tldrParagraph {
-
 		font-size: fn.rem(16);
 		line-height: fn.lh(24, 16);
 		font-weight: vars.$font-regular;
@@ -205,7 +187,6 @@
 	}
 
 	@if $type == quote {
-
 		font-size: fn.rem(16);
 		line-height: fn.lh(27.2, 16);
 		font-weight: vars.$font-regular;
@@ -222,7 +203,6 @@
 	}
 
 	@if $type == quoteAuthor {
-
 		font-size: fn.rem(14);
 		line-height: fn.lh(18.2, 14);
 
@@ -233,7 +213,6 @@
 	}
 
 	@if $type == comments {
-
 		font-size: fn.rem(15);
 		line-height: fn.lh(18, 15);
 		font-weight: vars.$font-regular;
@@ -250,10 +229,6 @@
 	}
 }
 
-
-
-
-
 // 2. mark()
 // ---
 @mixin mark() {
@@ -267,19 +242,11 @@
 	}
 }
 
-
-
-
-
 // 3. z()
 // ---
 @mixin z($level, $list: vars.$levels) {
 	z-index: list.index($list, $level);
 }
-
-
-
-
 
 // 4. mq()
 // ---
@@ -288,10 +255,6 @@
 		@content;
 	}
 }
-
-
-
-
 
 // 5. grid()
 // ---
@@ -308,10 +271,6 @@
 		grid-template-columns: repeat(vars.$page-cols-desktop, 1fr);
 	}
 }
-
-
-
-
 
 // 6. screen-reader-only()
 // ---

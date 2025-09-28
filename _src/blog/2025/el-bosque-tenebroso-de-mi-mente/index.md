@@ -38,7 +38,7 @@ En «El Miedo», que tb lo recomiendo, solo venían las dos primeras estrofas, l
   [
     'Ven, asómate al abismo',
     'del bosque tenebroso de mi mente.',
-    'Mira lo que hay abajo',
+    'Mira lo que hay abajo.',
     'Restos de las batallas.',
     'He tenido que luchar hasta caer exhausta',
     'y a veces he perdido.',

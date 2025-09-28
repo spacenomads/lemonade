@@ -888,15 +888,17 @@
 		background-size: 100% core.rem(40);
 	}
 
-	& {
 		@include core.font(paragraph);
 
+		& {
 		line-height: core.rem(32);
+		}
 
 		@include core.mq(core.$bp-desktop) {
 			line-height: core.rem(40);
+
 		}
-	}
+
 }
 
 
