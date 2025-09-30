@@ -416,9 +416,14 @@
 .home-posts--2025 {
 	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
 		.home-posts__item {
-			&.home-posts__item--gloomy {
+			&.home-posts__item--chucktober {
 				grid-column: span 4;
 				grid-row: span 3;
+			}
+
+			&.home-posts__item--gloomy {
+				grid-column: span 4;
+				grid-row: span 2;
 			}
 
 			&.home-posts__item--vivaldi-human-navigation {
@@ -478,6 +483,10 @@
 
 	@include core.mq(core.$bp-desktop) {
 		.home-posts__item {
+			&.home-posts__item--chucktober {
+				grid-column: span 6;
+				grid-row: span 2;
+			}
 			&.home-posts__item--gloomy {
 				grid-column: span 6;
 				grid-row: span 2;
