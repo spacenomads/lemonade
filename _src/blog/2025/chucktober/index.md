@@ -2,18 +2,18 @@
 title: '#Chucktober'
 post_id: chucktober
 featured_image: chucktober-cover.jpg
-featured_alt:
-featured_color:
+featured_alt: Libreta de tapa dura y cinta de cierre elástica, también azul, con un bolígrafo transparente y negro. De fondo hay una superficie azul clarita y solo se ven los elementos como desde el centro hacia arriba.
+featured_color: 65ace0
 ya_image: pencil-end.jpg
-ya_alt:
-reading_time: 0
-date: 2025-09-29
-draft: true
-future: true
+ya_alt: Parte superior de un lápiz negro sobre un fondo como de papel
+reading_time: 6
+date: 2025-09-30
+draft: false
+future: false
 categories: [projects]
 tags: []
-excerpt:
-clickbait: ¿Qué te ha parecido?
+excerpt: Llega octubre y me he creado mi propio reto para hacer cada día del mes, el Chucktober.
+clickbait: Entonces... ¿te animas?
 cover_credits:
   link: https://unsplash.com/photos/a-blue-notebook-and-a-pen-on-a-blue-surface-ReYnnUhN0DA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
   author: Cinthya González
@@ -44,7 +44,7 @@ Pues este año quiero intentar hacer algo más asequible y voy a hacerlo de escr
 
 Me está costando volver a escribir y esta me parece una excusa perfecta, pero tiene que ser un formato a lo que le pueda dedicar tiempo y que si luego me gusta pueda evolucionar, como unos **microrrelatos**.
 
-También me gustaría hilar las historias con ese [bosque tenebroso](/blog/2025/el-bosque-tenebroso-de-mi-mente) del último post. Ya que se trata de la misma mente, me imagino que al estilo [roguelike](https://es.wikipedia.org/wiki/Videojuego_de_mazmorras) cada noche, al caer inconsciente, apareces en una zona de ese bosque.
+También me gustaría hilar las historias con ese [bosque tenebroso](/blog/2025/el-bosque-tenebroso-de-mi-mente) del último post. Ya que se trata de la misma mente, me imagino que al estilo [roguelike](https://es.wikipedia.org/wiki/Videojuego_de_mazmorras) **cada noche, al caer inconsciente, apareces en una zona de ese bosque**.
 
 Este **«pues me hago yo uno»** es de lo mejor que me llevo de Bellas Artes. En segundo nos enseñaban a hacernos prácticamente todo, lienzos, pinturas, herramientas de modelado y eso me ha ayudado mogollón en general.
 
@@ -54,23 +54,102 @@ Así que vamos a darle un poco de forma a esto.
 
 Voy a poner 3, como en [Gremlins](https://trakt.tv/movies/gremlins-1984):
 
-1. La primera regla del Chucktober es que no hay... que no. La primera regla es que esto es por diversión y se puede hacer a cualquier ritmo y reinterpretando lo que se quiera.
+1. La primera regla del Chucktober es que **esto tiene que ser por diversión** y se puede hacer a cualquier ritmo, y reinterpretando lo que se quiera.
 
-2. Dicho esto, hay 31 temas como 31 días tiene octubre. Lo ideas es que haya solo un tema principal, pero se pueden mezclar si se prefiere.
+2. Dicho esto, **hay 31 temas como 31 días tiene octubre**. Lo ideal es que haya solo un tema principal, pero se pueden mezclar si se prefiere o resolver varios días en uno.
 
-3. Se puede usar el medio que se quiera. Yo voy a usar microrrelatos, pero si encarta ¿por qué no hacer una foto o un dibujo?
+3. **Se puede usar el medio que se quiera**. Yo voy a usar microrrelatos (o relatos cortos), pero si encarta ¿por qué no hacer una foto o un dibujo?
 
-Ahora, ya que si quiero hilar las historias al menos debo saber algunas cosas de cómo funciona este mundo y me gustaría empezar aterrizando un poco el punto de partida de cada historia.
+Ahora, si quiero hilar las historias con un conductor común, al menos debo saber algunas cosas de cómo funciona este mundo y me gustaría empezar **aterrizando un poco el punto de partida de cada historia**.
 
-Cada día amaneces en el bosque tenebroso de tu mente. Unas veces más en el borde y otras más en el interior.
+### El punto de partida
+
+**Cada día amaneces en el bosque tenebroso de tu mente**. Unas veces más en el borde y otras más en el interior.
 
 En mi bosque tenebroso los bordes son más inestables que el interior ya que limitan con la realidad. Conforme te adentras se va estabilizando el paisaje y los elementos pueden permanecer de una vez a la siguiente.
 
 ## ¿Y si quiero participar?
 
-Pues sin problema. Enlaza este post y usa el hashtag **#chucktober25**. Resuelve los temas como quieras, en papel, en digital, escrito, pintado, esculpido... lo importante es divertirte.
+Pues sin problema. Enlaza este post y usa el hashtag **#chucktober25**. Resuelve los temas como quieras, lo importante es divertirte.
 
 Ahora, **si te animas, dame un toque por mail que vea lo que vas haciendo :)**
 
+## Los temas
 
+Me han costado bastante porque mi fuerte no es tomar decisiones, al menos no de las buenas, pero esta es la primera vez, no tiene que salir todo estupendo.
+
+He buscado temas que me gusten o que quiera explorar en este «bosque tenebroso». Los únicos puntos fijos son «La puerta» y «La visita» como inicio y fin, y «El mar» para el día de mi cumpleaños:
+
+{% set configColList = {
+  ordered: true,
+  cols: 2,
+  items: [
+    'La puerta',
+    'La llamada',
+    'El cuerpo',
+    'El árbol',
+    'La llave',
+    'La muralla',
+    'La hoguera',
+    'Las huellas',
+    'El dragón',
+    'La risa',
+    'El hambre',
+    'La verja',
+    'El mar',
+    'La brújula',
+    'La mano',
+    'El martillo',
+    'La cruz',
+    'La figura',
+    'La noche',
+    'La carta',
+    'El túnel',
+    'La lluvia',
+    'La guerrera',
+    'El libro',
+    'La isla',
+    'La celda',
+    'El anillo',
+    'El intercambio',
+    'El robot',
+    'Los piratas',
+    'La visita'
+    ]
+} %}
+
+{{ macros.colList(configColList) }}
+
+
+### ¿Y si quiero compartirlo en redes?
+
+Pues me he hecho una imagen solo para eso. ¿Cómo te quedas?
+
+{% set imgConfig = {
+  src: './img/chucktober-2025.jpg',
+  alt: 'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. Te título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto (http://sidiostedalimones.com/blog/2025/chucktober). La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita.',
+  mode: 'center',
+  max_width: 500
+} %}
+{{ macros.img(imgConfig) }}
+
+Además dejo un texto alternativo porque compartir está bien, pero que estamos en el maldito 2025.
+
+{% set panelConfig = {
+  type: '',
+  content: [
+    'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. Te título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto (http://sidiostedalimones.com/blog/2025/chucktober). La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita'
+  ],
+  custom_icon: {
+    icon: '👉',
+    label: 'Mano con dedo señalando hacia la derecha'
+  }
+} %}
+{{ macros.panel(panelConfig) }}
+
+---
+
+Pues este es mi proyecto para octubre. De verdad espero ser capaz de llevarlo y disfrutarlo.
+
+Deseadme suerte o recordadme **tuerto**.
 

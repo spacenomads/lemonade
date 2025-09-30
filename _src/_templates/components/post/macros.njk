@@ -187,3 +187,11 @@
 {%- macro abbr(config) -%}
 	<abbr title="{{ config.title }}"{% if config.lang %} lang="{{ config.lang }}"{% endif %}>{{ config.word }}</abbr>
 {%- endmacro -%}
+
+{%- macro colList(config) -%}
+<ol class="post__columnList post__columnList--col-{{ config.cols }}">
+  {%- for item in config.items -%}
+  <li>{{ item }}</li>
+  {%- endfor -%}
+</ol>
+{%- endmacro -%}
