@@ -138,7 +138,7 @@ Además dejo un texto alternativo porque compartir está bien, pero que estamos 
 {% set panelConfig = {
   type: '',
   content: [
-    'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. Te título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto (http://sidiostedalimones.com/blog/2025/chucktober). La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita'
+    'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. Te título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto. La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita'
   ],
   custom_icon: {
     icon: '👉',
