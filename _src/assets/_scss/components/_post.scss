@@ -18,6 +18,7 @@
 //    13. Oda
 //    14. Preview card
 //    15. ColumnList
+//    16. MiniStory
 //
 // ***
 
@@ -816,7 +817,7 @@
 }
 
 .post__panel--dont {
-	background-color: rgba(core.$color-safety-orange, .5);
+	background-color: rgba(core.$color-safety-orange, 0.5);
 }
 
 .post__panel--unicorn {
@@ -867,10 +868,6 @@
 	}
 }
 
-
-
-
-
 // 13. Oda
 // ---
 .post__oda {
@@ -889,22 +886,16 @@
 		background-size: 100% core.rem(40);
 	}
 
-		@include core.font(paragraph);
+	@include core.font(paragraph);
 
-		& {
+	& {
 		line-height: core.rem(32);
-		}
+	}
 
-		@include core.mq(core.$bp-desktop) {
-			line-height: core.rem(40);
-
-		}
-
+	@include core.mq(core.$bp-desktop) {
+		line-height: core.rem(40);
+	}
 }
-
-
-
-
 
 // 14. Preview card
 // ---
@@ -925,10 +916,11 @@
 
 	&:hover {
 		.post__preview-card {
-			box-shadow: 0 0 core.rem(core.$unit * .2) rgba(black, 0.15), 0 2px core.rem(core.$unit * 1.5) rgba(black, 0.25);
+			box-shadow: 0 0 core.rem(core.$unit * 0.2) rgba(black, 0.15),
+				0 2px core.rem(core.$unit * 1.5) rgba(black, 0.25);
 		}
 		.post__preview-card-media {
-			opacity: .9;
+			opacity: 0.9;
 		}
 		.post__preview-card-title {
 			color: core.$color-link;
@@ -1008,18 +1000,68 @@
 	text-decoration: none;
 }
 
-
-
-
-
 // 15. ColumnList
 // ---
-.post__columnList {}
+.post__columnList {
+}
 
 .post__columnList--col-2 {
 	// @include core.mq(core.$bp-tablet-v) {
 	@include core.mq(500) {
 		columns: 2;
 		gap: 60px;
+	}
+}
+
+// 16. MiniStory
+// ---
+.post__miniStory {
+	box-shadow: 0 core.rem(5) core.rem(core.$unit * 3)
+			rgba(core.$color-black, 0.15),
+		0 core.rem(3) core.rem(core.$unit) rgba(core.$color-black, 0.15);
+	padding: 2em 2em;
+	border-radius: core.rem(core.$unit);
+	margin-block: core.rem(core.$unit * 4);
+
+	@include core.mq(core.$bp-mobile-large) {
+		padding: 3em 4em;
+	}
+
+	@include core.mq(core.$bp-tablet-v) {
+		padding: 5em 6em;
+	}
+
+	@include core.mq(core.$bp-desktop) {
+		margin-block: core.rem(core.$unit * 5);
+	}
+
+	.post__miniStory-title {
+		margin-block-start: 0;
+		position: relative;
+
+		&::before {
+			content: "#";
+			position: absolute;
+			inset-inline-start: 0;
+			inset-block-start: 0;
+			transform: translateX(calc((100% + 0.25em) * -1));
+
+			@include core.mq(core.$bp-mobile-large) {
+				transform: translateX(calc((100% + 0.5em) * -1));
+			}
+		}
+	}
+
+	p {
+		@include core.font(paragraph);
+	}
+}
+
+.post__miniStory-footer {
+	text-align: end;
+	margin-block-start: 2em;
+
+	p {
+		margin-block-end: 0;
 	}
 }

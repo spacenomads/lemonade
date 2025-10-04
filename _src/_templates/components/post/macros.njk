@@ -189,9 +189,28 @@
 {%- endmacro -%}
 
 {%- macro colList(config) -%}
-<ol class="post__columnList post__columnList--col-{{ config.cols }}">
-  {%- for item in config.items -%}
-  <li>{{ item }}</li>
-  {%- endfor -%}
-</ol>
+	<ol class="post__columnList post__columnList--col-{{ config.cols }}">
+		{%- for item in config.items -%}
+			<li>{{ item }}</li>
+		{%- endfor -%}
+	</ol>
+{%- endmacro -%}
+
+{%- macro miniStory(config) -%}
+	<section class="post__miniStory" aria-labelledby="{{ config.id }}-title" >
+		<h2 id="{{ config.id }}-title" class="post__miniStory-title">{{ config.title }}</h2>
+		{%- for item in config.content -%}
+			<p>{{ item }}</p>
+		{%- endfor -%}
+		{%- if config.author -%}
+			<footer class="post__miniStory-footer" aria-label="Autor del microrrelato">
+				{%- if config.author.link -%}
+					<p>Autor: <a href="{{ config.author.link }}">{{ config.author.name }}</a>
+					</p>
+				{%- else -%}
+					<p>Autor: {{ config.author.name }}</p>
+				{%- endif -%}
+			</footer>
+		{%- endif -%}
+	</section>
 {%- endmacro -%}
