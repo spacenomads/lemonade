@@ -127,7 +127,7 @@ Pues me he hecho una imagen solo para eso. ¿Cómo te quedas?
 
 {% set imgConfig = {
   src: './img/chucktober-2025.jpg',
-  alt: 'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. Te título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto (http://sidiostedalimones.com/blog/2025/chucktober). La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita.',
+  alt: 'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. De título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto (http://sidiostedalimones.com/blog/2025/chucktober). La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita.',
   mode: 'center',
   max_width: 500
 } %}
@@ -138,7 +138,7 @@ Además dejo un texto alternativo porque compartir está bien, pero que estamos 
 {% set panelConfig = {
   type: '',
   content: [
-    'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. Te título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto. La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita'
+    'Formato cuadrado con fondo de hoja de papel rayado para el Chucktober. De título aparece «#Chucktober» como si fuesen botones de un teclado, algunos girados. Se ve la lista de 31 temas para octubre, los hashtags para usar (#Chucktober y #Chucktober2025) y la url donde se detalla el proyecto. La lista es la siguiente: la puerta, la llamada, el cuerpo, el árbol, la llave, la muralla, la hoguera, las huellas, el dragón, la risa, el hambre, la verja, el mar, la brújula, la mano, el martillo, la cruz, la figura, la noche, la carta, el túnel, la lluvia, la guerrera, el libro, la isla, la celda, el anillo, el intercambio, el robot, los piratas y la visita'
   ],
   custom_icon: {
     icon: '👉',
@@ -152,4 +152,23 @@ Además dejo un texto alternativo porque compartir está bien, pero que estamos 
 Pues este es mi proyecto para octubre. De verdad espero ser capaz de llevarlo y disfrutarlo.
 
 Deseadme suerte o recordadme **tuerto**.
+
+---
+
+Voy a ir añadiendo los relatos también aquí.
+
+{% set story = {
+  title: 'La puerta',
+  id: 'la-puerta-01',
+  content: [
+    'El imperio del árbol llega hasta donde alcanza la vista. Sus murallas de madera mantienen a raya al mismo sol y desde cada rincón, miles de ojos invisibles observan igual de sorprendidos. Hasta la hierba se enreda en mis piernas, curiosa.',
+    'Minutos antes, dormido y frente a las puertas, escucho una que se abre.'
+  ],
+  author: {
+    name: 'Chuck!',
+    link: '/now'
+  }
+} %}
+
+{{ macros.miniStory(story) }}
 
