@@ -166,9 +166,25 @@ Voy a ir añadiendo los relatos también aquí.
   ],
   author: {
     name: 'Chuck!',
-    link: '/now'
+    link: 'https://escritura.social/chuck/la-puerta'
   }
 } %}
 
 {{ macros.miniStory(story) }}
+
+{% set story = {
+  title: 'La llamada',
+  id: 'la-llamada-02',
+  content: [
+    'Dormido, cruzando la puerta, atravesando la muralla de madera, arrancando la hierba, esquivando las miradas, me pierdo y grito.',
+    'En mi mundo nadie puede oír tus gritos.'
+  ],
+  author: {
+    name: 'Chuck!',
+    link: 'https://escritura.social/chuck/la-llamada'
+  }
+} %}
+
+{{ macros.miniStory(story) }}
+
 
