@@ -70,6 +70,7 @@ export default function (config) {
 
 	config.addNunjucksFilter('hashtag', function(str) {
 		const tag = str
+		.toString()
 		.toLowerCase()
 		.trim()
 		.normalize("NFD")
@@ -85,7 +86,7 @@ export default function (config) {
 
 
 	config.addNunjucksFilter('spanMe', function(str, noClass = false) {
-		return str.split(' ')
+		return str.toString().split(' ')
 			.map(word => {
 				return !noClass ?
 				`<span class="post__title-mark-item">${word}</span>`
