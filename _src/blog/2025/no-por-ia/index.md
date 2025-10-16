@@ -13,7 +13,7 @@ future: false
 categories: [ia]
 tags: []
 excerpt: El proceso de creación es un sistema complejo, que se enriquece de la experiencia y es un camino que hay que recorrer, cada vez. Este post, va de eso.
-clickbait: ¿Qué te ha parecido?
+clickbait: ¿Usarías las insignias?
 cover_credits:
   author: Chuck!
   site: sidiostedalimones
