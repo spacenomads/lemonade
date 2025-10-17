@@ -4,8 +4,11 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#212121" media="(prefers-color-scheme: dark)">
 <title>{{ settings.siteName }}</title>
+<link rel="canonical" href="{{ settings.url }}{{ page.url}}">
 <link rel="author" href="/humans.txt">
 <link rel="me" href="{{ settings.fedi.link }}">
+<meta name="author" content="{{ settings.author }}">
+<meta name="language" content="{{ settings.lang }}">
 <meta name="fediverse:creator" content="{{ settings.fedi.account }}">
 <meta name="generator" content="{{ eleventy.generator }}">
 <link rel="icon" href="/favicon.ico"/>
@@ -17,10 +20,10 @@
 {% if pageType === 'page' %}
   <meta property="og:title" content="{{ settings.siteName }}">
 	{% if description %}
-  	<meta property="description" content="{{ description }}">
+  	<meta name="description" content="{{ description }}">
   	<meta property="og:description" content="{{ description }}">
 	{% else %}
-  	<meta property="description" content="{{ settings.siteDescription }}">
+  	<meta name="description" content="{{ settings.siteDescription }}">
   	<meta property="og:description" content="{{ settings.siteDescription }}">
 	{% endif %}
 
@@ -36,6 +39,7 @@
 
 	{% endif %}
 {% else %}
+  <meta name="description" content="{{ excerpt }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ excerpt }}">
   <meta property="og:image" content="{{ settings.url }}{{ page.url}}img/{{ featured_image }}">
@@ -80,12 +84,12 @@
     "author": {
         "@type": "Person",
         "name": "{{ settings.author}}"
-        "sameAs": "{{ settings.twitter }}",
+        "sameAs": "{{ settings.fedi.account }}",
         "email": "{{ settings.email }}"
     },
     "publisher": {
         "@type": "Organization",
-        "name": "{{ settings.suteName }}",
+        "name": "{{ settings.siteName }}",
         "logo": {
           "@type": "ImageObject",
           "url": "{{ settings.url }}/assets/images/brand/logo-sidiostedalimones.png",
