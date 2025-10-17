@@ -17,9 +17,9 @@ eleventyNavigation:
 						<li class="home-posts__item {{ 'home-posts__item--' + post.data.post_id if post.data.post_id }}">
 
 							<article class="home-post {{ 'home-post--draft' if post.data.draft }} {{ post.data.future | isFuture }} {{ 'home-post--no-img' if post.data.featured_image === false }} {{ 'home-post--featured' if loop.first }}">
-								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}" {% if post.data.featured_color %}style="background-color: #{{ post.data.featured_color }}" {% endif %}>
+								<a class="home-post__link" href="{{ post.url }}" aria-label="{{ post.data.title }}" {% if post.data.featured_color %}style="background-color: #{{ post.data.featured_color }}" {% endif %} {% if post.data.title_lang %}lang="{{ post.data.title_lang }}"{% endif %}>
 
-									<h3 class="home-post__title">
+									<h3 class="home-post__title" {% if post.data.title_lang %}lang="{{ post.data.title_lang }}"{% endif %}>
 										<span class="home-post__mark">{{ post.data.title }}</span>
 									</h3>
 

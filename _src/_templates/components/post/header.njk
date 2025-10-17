@@ -2,7 +2,7 @@
 	<div class="content">
 		<div class="wrapper">
 			<div class="content__inner">
-				<h1 class="post__title">
+				<h1 class="post__title" {% if title_lang %}lang="{{ title_lang }}"{% endif %}>
 					<span class="post__title-mark">{{ title | spanMe | safe }}</span></h1>
 				<a class="post__back" href="/">Volver a la home</a>
 
