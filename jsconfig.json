@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "esnext",
-    "checkJs": true,
+    "checkJs": false,
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {

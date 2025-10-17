@@ -17,7 +17,7 @@ const capitalize = str => {
 	const parts = str.split('');
 	parts[0] = parts[0].toUpperCase();
 	return parts.join('');
-}
+};
 
 function getLocaleDate(date) {
 	return date.toLocaleString('es-ES', {
@@ -25,7 +25,7 @@ function getLocaleDate(date) {
 		month: '2-digit',
 		year: 'numeric'
 	});
-}
+};
 
 
 
@@ -51,6 +51,8 @@ export default function (config) {
 				preserveLineBreaks: false,
 				caseSensitive: true
 			});
+
+			// TODO: Revisar esta función
 		}
 
 		if (outputPath.endsWith('.xml')) {
@@ -59,6 +61,7 @@ export default function (config) {
 
 			return undangeredContent;
 		}
+
 		return content;
 	});
 
@@ -133,6 +136,7 @@ export default function (config) {
 	});
 
 
+// TODO: Esto se usa en algún sitio?
 	config.addNunjucksFilter('getWordGender', function(str) {
 		const strAbbr = str.toUpperCase();
 		const GENDER = {
@@ -164,5 +168,5 @@ export default function (config) {
 		templateFormats: ['njk', 'md'],
 		htmlTemplateEngine: 'njk',
 		markdownTemplateEngine: 'njk',
-	}
+	};
 }
