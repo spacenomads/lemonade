@@ -69,7 +69,7 @@
 // 2. Posts
 // ---
 .home-post {
-	min-height: core.rem(core.$unit * 15);
+	min-height: core.rem(core.$unit * 18);
 	height: 100%;
 }
 
@@ -170,9 +170,9 @@
 		.home-posts__items {
 			display: grid;
 			gap: core.rem(core.$page-gap);
-			grid-auto-rows: core.rem(120);
+			grid-auto-rows: core.rem(core.$unit * 18);
 			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: core.rem(120);
+			grid-template-rows: core.rem(core.$unit * 18);
 		}
 
 		.home-posts__item {
@@ -416,24 +416,29 @@
 .home-posts--2025 {
 	@media (min-width: core.em(core.$bp-tablet-v)) and (max-width: core.em(core.$bp-desktop - 1)) {
 		.home-posts__item {
-			&.home-posts__item--52 {
+			&.home-posts__item--ywba {
 				grid-column: span 4;
-				grid-row: span 3;
+				grid-row: span 2;
+			}
+
+			&.home-posts__item--52 {
+				grid-column: span 2;
+				grid-row: span 1;
 			}
 
 			&.home-posts__item--not-by-ai {
-				grid-column: span 4;
-				grid-row: span 3;
+				grid-column: span 2;
+				grid-row: span 1;
 			}
 
 			&.home-posts__item--chucktober {
 				grid-column: span 2;
-				grid-row: span 2;
+				grid-row: span 1;
 			}
 
 			&.home-posts__item--gloomy {
 				grid-column: span 2;
-				grid-row: span 2;
+				grid-row: span 1;
 			}
 
 			&.home-posts__item--vivaldi-human-navigation {
@@ -493,34 +498,39 @@
 
 	@include core.mq(core.$bp-desktop) {
 		.home-posts__item {
-			&.home-posts__item--52 {
+			&.home-posts__item--ywba {
 				grid-column: span 6;
-				grid-row: span 3;
+				grid-row: span 2;
+			}
+
+			&.home-posts__item--52 {
+				grid-column: span 4;
+				grid-row: span 2;
 			}
 
 			&.home-posts__item--not-by-ai {
-				grid-column: span 6;
-				grid-row: span 3;
+				grid-column: span 2;
+				grid-row: span 2;
 			}
 
 			&.home-posts__item--chucktober {
-				grid-column: span 6;
-				grid-row: span 3;
+				grid-column: span 3;
+				grid-row: span 2;
 			}
 
 			&.home-posts__item--gloomy {
-				grid-column: span 6;
+				grid-column: span 3;
 				grid-row: span 2;
 			}
 
 			&.home-posts__item--vivaldi-human-navigation {
+				grid-column: span 2;
 				grid-row: span 2;
-				grid-column: span 3;
 			}
 
 			&.home-posts__item--telemaco {
+				grid-column: span 4;
 				grid-row: span 2;
-				grid-column: span 3;
 			}
 
 			&.home-posts__item--signature {
