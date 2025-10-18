@@ -23,7 +23,7 @@ comments: true
 ---
 {% import "components/post/macros.njk" as macros %}
 
-Le he puesto un 8 sobre 10, que me ha gustado, aunque se he ha hecho un poco bola porque a pesar de las ganas que le tenía a la película no me quedaba claro qué esperar de ella.
+Le he puesto un 8 sobre 10, que me ha gustado, aunque se me ha hecho un poco bola porque a pesar de las ganas que le tenía a la película no me quedaba claro qué esperar de ella.
 
 {% set panelConfig = {
   type: 'warning',
