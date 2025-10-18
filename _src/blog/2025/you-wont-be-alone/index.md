@@ -9,8 +9,8 @@ ya_image: ywba-end.png
 ya_alt: Letra S con una grafía como una corona sobre un círculo oscuro
 reading_time: 4
 date: 2025-10-19
-draft: true
-future: true
+draft: false
+future: false
 categories: [review, film, magic]
 tags: [shapeshifters, supernatural, magic, witch]
 excerpt: Por fin he visto esta película y me ha gustado lo suficiente para contarlo.
