@@ -1,5 +1,6 @@
 ---
 title: Jaws
+title_lang: en
 post_id: jaws50
 featured_image: jaws-cover.jpg
 featured_alt: Cartel clásico de la película Tiburón con la bañista nadando y el tiburón acercándose desde abajo. El mar ocupa como tres cuartos de la imagen y se ha retocado para hacerla apaisada en lugar de vertical añadiendo mar a los lados y manteniendo a los sujetos centrados.

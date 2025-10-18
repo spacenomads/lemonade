@@ -32,7 +32,7 @@ export default defineConfig([
 		language: "markdown/commonmark",
 		extends: ["markdown/recommended"],
 		rules: {
-			"markdown/no-html": "warn",
+			"markdown/no-html": ["warn",{allowed: ["strong", "span"]}],
 			"markdown/no-missing-label-refs": "off"
 		}
 	}
