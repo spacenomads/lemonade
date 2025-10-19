@@ -20,12 +20,12 @@
       }
     },
     {
-      "title": "En la tablet",
+      "title": "En vídeo",
       "icon": "tablet",
-      "content": "The Punisher S02",
+      "content": "Attack on Titan",
       "link": {
-        "url": "https://www.disneyplus.com/browse/entity-bbe154ae-af21-49dd-8129-90077e61c991",
-        "label": "Disney+"
+        "url": "https://www.netflix.com/browse/genre/6721?bc=83&jbv=70299043",
+        "label": "Netflix"
       }
     }
   ]
