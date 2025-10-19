@@ -197,7 +197,7 @@
 {%- endmacro -%}
 
 {%- macro miniStory(config) -%}
-	<section class="post__miniStory" aria-labelledby="{{ config.id }}-title" >
+	<section class="post__miniStory">
 		<h2 id="{{ config.id }}-title" class="post__miniStory-title">{{ config.title }}</h2>
 		{%- for item in config.content -%}
 			<p>{{ item }}</p>
@@ -213,4 +213,11 @@
 			</footer>
 		{%- endif -%}
 	</section>
+{%- endmacro -%}
+
+
+{%- macro chucktober(stories, year) -%}
+{%- for story in stories[year] -%}
+{{ miniStory(story) }}
+{%- endfor -%}
 {%- endmacro -%}
