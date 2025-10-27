@@ -196,9 +196,10 @@
 	</ol>
 {%- endmacro -%}
 
-{%- macro miniStory(config) -%}
-	<section class="post__miniStory">
-		<h2 id="{{ config.id }}-title" class="post__miniStory-title">{{ config.title }}</h2>
+{%- macro miniStory(config, index) -%}
+	<section class="post__miniStory" data-index="{{ index | numberToTwoDigits }}">
+		{%- set storyId = config.title | parseToId + '-' + index | numberToTwoDigits -%}
+		<h2 id="{{ storyId }}-title" class="post__miniStory-title">{{ config.title }}</h2>
 		{%- for item in config.content -%}
 			<p>{{ item  | safe }}</p>
 		{%- endfor -%}
@@ -218,6 +219,6 @@
 
 {%- macro chucktober(stories, year) -%}
 {%- for story in stories[year] -%}
-{{ miniStory(story) }}
+{{ miniStory(story, loop.index) }}
 {%- endfor -%}
 {%- endmacro -%}

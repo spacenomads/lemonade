@@ -2,7 +2,6 @@
   "2025": [
     {
       "title": "La puerta",
-      "id": "la-puerta-01",
       "content": [
         "El imperio del árbol llega hasta donde alcanza la vista. Sus murallas de madera mantienen a raya al mismo sol y desde cada rincón, miles de ojos invisibles observan igual de sorprendidos. Hasta la hierba se enreda en mis piernas, curiosa.",
         "Minutos antes, dormido y frente a las puertas, escucho una que se abre."
@@ -14,7 +13,6 @@
     },
     {
       "title": "La llamada",
-      "id": "la-llamada-02",
       "content": [
         "Dormido, cruzando la puerta, atravesando la muralla de madera, arrancando la hierba, esquivando las miradas, me pierdo y grito.",
         "En mi mundo nadie puede oír tus gritos."
@@ -26,7 +24,6 @@
     },
     {
       "title": "El cuerpo",
-      "id": "el-cuerpo-03",
       "content": [
         "Algo se mueve entre los árboles. Es grande y peludo, como un oso. Como uno dibujado por Frazetta, con patas de más, garras de más y ojos de más. Y arrastra algo. ¿Es eso un cuerpo? Los sigo a pesar del miedo y el buen juicio, porque si este lugar está dentro de mí, entonces, ¿ese cuerpo podría ser el mío?",
         "Ramas, maleza y terreno se oponen en firme a que avance, pero al animal no parece importarle. Dudo que no sepa que estoy aquí. Supongo que, con esos dientes, a mi tampoco me importaría, más aún cuando ya llevo a mi cuerpo a rastras.",
@@ -40,7 +37,6 @@
     },
     {
       "title": "El árbol",
-      "id": "el-arbol-04",
       "content": [
         "Reacciona ante mí, se mueve, crece, se estira y aparta al propio bosque hasta que un foco me rodea. La hierba parece calmarse con la luz y me acomodo en el plató. Me invade la paz de saber qué es mi sitio, mío. Rasgando la ropa salen pequeñas protuberancias hundiéndose en la tierra, reclamando el espacio. Me anclo mientras otras atan mis brazos al cuerpo que se va agrietando y secando. Hojas rojas brotan de aquí y allí, y voy creciendo hasta ser parte del bosque de nuevo."
       ],
@@ -51,7 +47,6 @@
     },
     {
       "title": "La llave",
-      "id": "la-llave-05",
       "content": [
         "En un bosque donde no entra la luz, ¿cómo de normal es ver un brillo parpadear? Es un brillo metálico, los ojos deben tener el día libre.",
         "Conforme me acerco el brillo se puede escuchar más nítidamente. El brillo es un susurro. El brillo es un diálogo.",
@@ -65,7 +60,6 @@
     },
     {
       "title": "La muralla",
-      "id": "la-muralla-06",
       "content": [
         "Esta muralla es nueva. Al menos como muralla real y no la metafórica «muralla» de árboles que rodea al bosque. Se extiende interminable a ambos lados y no parece tener entrada alguna.<br>—Puedes entrar por ahí —resuena mientras una puerta nueva se abre delante de mi.<br>—¿Pero tú estás seguro de que quieres entrar? —pregunta la voz antes de que avance.<br>Suspiro y entro. Una muralla interior se extiende a izquierda y derecha, interminable, pero esta vez no hay pregunta ni puerta.",
         "El lugar está abandonado y los restos de lo que debió ser el bosque ahora son un recuerdo seco aferrado al muro, o rendido a sus pies.",
@@ -75,6 +69,31 @@
       "author": {
         "name": "Chuck!",
         "link": "https://escritura.social/chuck/la-muralla"
+      }
+    },
+    {
+      "title": "La hoguera",
+      "content": [
+        "Al final de la noche, el bosque bulle en torno a una gran hoguera. Las bestias salen y comparten historias y risas. Al verme, hacen hueco para que me una; conversan sin palabras y cuentan cómo ha ido el día. Hablan de criaturas y lugares a los que lucho por dar forma en mi cabeza y espero que les míes les resulten igual de extrañes.",
+        "En un momento, todes paran y la noche se llena de aullidos, relinchos, balidos, ululaciones, bufidos y graznidos. Luego, se levantan y comienzan a bailar al ritmo del fuego. Tiran de mí y danzamos, y reímos hasta que, une a une, nos vamos arrojando a las llamas."
+      ],
+      "author": {
+        "name": "Chuck!",
+        "link": "https://escritura.social/chuck/la-hoguera"
+      }
+    },
+    {
+      "title": "Las huellas",
+      "content": [
+        "—¡Shh! No hagas ruido —me digo en voz baja, intentando prevenir que la figura a la que voy siguiendo me descubra. Encontré sus huellas nada más entrar y, al rato, le vi. Camina despacio, como ocultándose también; parece que está, que estamos, siguiendo a alguien. ¿Serán estas sus huellas o las de su «presa»?",
+
+				"Piso una rama y el sonido resuena y rebota en cada árbol y piedra. Me oculto rápidamente tras una roca. ¿Me habrá oído? Imposible no hacerlo, pero, ¿sabrá dónde estoy?",
+
+				"Pasan los minutos y no se oye nada. Con cuidado, me asomo y le veo, tras otra roca, asomándose en dirección a su objetivo. Ahora que me fijo, vamos vestidos igual."
+      ],
+      "author": {
+        "name": "Chuck!",
+        "link": "https://escritura.social/chuck/las-huellas"
       }
     }
   ]
