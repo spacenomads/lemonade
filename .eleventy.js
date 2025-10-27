@@ -88,6 +88,26 @@ export default function (config) {
 	});
 
 
+	config.addNunjucksFilter('parseToId', function(str) {
+		const tag = str
+		.toString()
+		.toLowerCase()
+		.trim()
+		.normalize("NFD")
+		.replace(/\p{Diacritic}/gu, '')
+		.replace(/[¿?!¡\.,-]/g, '')
+		.replace(/ +/g, ' ')
+		.split(' ')
+		.join('-');
+
+		return tag;
+	});
+
+	config.addNunjucksFilter('numberToTwoDigits', function(number) {
+		if (typeof number !== 'number') return '00';
+		return number.toString().padStart(2, '0');
+	});
+
 	config.addNunjucksFilter('spanMe', function(str, noClass = false) {
 		return str.toString().split(' ')
 			.map(word => {

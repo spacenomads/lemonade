@@ -1019,9 +1019,11 @@
 	box-shadow: 0 core.rem(5) core.rem(core.$unit * 3)
 			rgba(core.$color-black, 0.15),
 		0 core.rem(3) core.rem(core.$unit) rgba(core.$color-black, 0.15);
-	padding: 2em 2em;
+	padding: 2em;
 	border-radius: core.rem(core.$unit);
 	margin-block: core.rem(core.$unit * 4);
+	position: relative;
+	overflow: hidden;
 
 	@include core.mq(core.$bp-mobile-large) {
 		padding: 3em 4em;
@@ -1033,6 +1035,34 @@
 
 	@include core.mq(core.$bp-desktop) {
 		margin-block: core.rem(core.$unit * 5);
+	}
+
+	&::before {
+		--size: 40;
+
+		content: attr(data-index);
+		position: absolute;
+		inset-inline-end: 2em;
+		inset-block-start: 0;
+		width: core.rem(var(--size));
+		aspect-ratio: 1 / 1;
+		background-color: core.$color-athens-gray;
+		text-align: center;
+		line-height: core.rem(var(--size));
+		font-weight: core.$font-medium;
+
+
+		@include core.mq(core.$bp-mobile-large) {
+			inset-inline-end: 4em;
+	}
+
+	@include core.mq(core.$bp-tablet-v) {
+		--size: 60;
+
+		inset-inline-end: 6em;
+	}
+
+
 	}
 
 	.post__miniStory-title {
